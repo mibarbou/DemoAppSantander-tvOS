@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Vídeos-->
@@ -87,6 +86,67 @@
             </objects>
             <point key="canvasLocation" x="4750" y="-713"/>
         </scene>
+        <!--Pdf View Controller-->
+        <scene sceneID="Xnu-St-6gd">
+            <objects>
+                <viewController id="GTk-Wj-dKC" customClass="PdfViewController" customModule="BancoSantanderShareholder_tvOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Zmc-St-dZ1"/>
+                        <viewControllerLayoutGuide type="bottom" id="sGU-BF-rFx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TKt-ah-BPy">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Fx1-eR-DxL">
+                                <rect key="frame" x="0.0" y="161" width="1920" height="919"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="njd-Kc-Fng">
+                                    <size key="itemSize" width="500" height="500"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PdfCell" id="EY3-6L-Qad" customClass="PdfCell" customModule="BancoSantanderShareholder_tvOS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="210" width="500" height="500"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="500" height="500"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gse-qt-FOm">
+                                                    <rect key="frame" x="52" y="24" width="400" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tuP-v7-ezj">
+                                                    <rect key="frame" x="83" y="65" width="334" height="394"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <connections>
+                                            <outlet property="imageView" destination="tuP-v7-ezj" id="3nD-FO-8pV"/>
+                                            <outlet property="titleLabel" destination="gse-qt-FOm" id="9j4-kS-9BF"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="GTk-Wj-dKC" id="wEy-bf-0g5"/>
+                                    <outlet property="delegate" destination="GTk-Wj-dKC" id="F1O-9w-VWr"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="Fx1-eR-DxL" id="jpO-Xo-R8E"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iqW-Qa-H7y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4765" y="507"/>
+        </scene>
         <!--Documentos-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
@@ -115,32 +175,18 @@
                                             <rect key="frame" x="0.0" y="0.0" width="500" height="500"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3mf-gQ-Fz5">
-                                                    <rect key="frame" x="71" y="23" width="329" height="21"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="21" id="20J-NB-mwi"/>
-                                                        <constraint firstAttribute="width" constant="329" id="LJd-o7-XdN"/>
-                                                    </constraints>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qfI-LB-mHM">
+                                                    <rect key="frame" x="46" y="63" width="409" height="390"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3mf-gQ-Fz5">
+                                                    <rect key="frame" x="86" y="23" width="329" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qfI-LB-mHM">
-                                                    <rect key="frame" x="46" y="63" width="409" height="390"/>
-                                                </imageView>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
-                                        <constraints>
-                                            <constraint firstItem="3mf-gQ-Fz5" firstAttribute="leading" secondItem="iDd-wo-urY" secondAttribute="leadingMargin" constant="63" id="Ahm-0H-Bcp"/>
-                                            <constraint firstItem="3mf-gQ-Fz5" firstAttribute="centerX" secondItem="iDd-wo-urY" secondAttribute="centerX" id="NB3-hK-uc4"/>
-                                            <constraint firstAttribute="bottomMargin" secondItem="qfI-LB-mHM" secondAttribute="bottom" constant="39" id="OZY-Lv-H8D"/>
-                                            <constraint firstItem="qfI-LB-mHM" firstAttribute="top" secondItem="3mf-gQ-Fz5" secondAttribute="bottom" constant="19" id="R1G-3W-r01"/>
-                                            <constraint firstItem="qfI-LB-mHM" firstAttribute="leading" secondItem="iDd-wo-urY" secondAttribute="leadingMargin" constant="38" id="TTQ-IV-9OC"/>
-                                            <constraint firstAttribute="trailingMargin" secondItem="qfI-LB-mHM" secondAttribute="trailing" constant="37" id="UOp-LU-B2h"/>
-                                            <constraint firstItem="3mf-gQ-Fz5" firstAttribute="top" secondItem="iDd-wo-urY" secondAttribute="topMargin" constant="15" id="edi-Y3-g2e"/>
-                                            <constraint firstAttribute="trailingMargin" secondItem="3mf-gQ-Fz5" secondAttribute="trailing" constant="92" id="rZd-QG-cmV"/>
-                                        </constraints>
                                         <connections>
                                             <outlet property="imageView" destination="qfI-LB-mHM" id="dBL-dA-JUQ"/>
                                             <outlet property="titleLabel" destination="3mf-gQ-Fz5" id="2KS-le-eMy"/>
@@ -158,6 +204,7 @@
                     <tabBarItem key="tabBarItem" title="Documentos" image="second" id="cPa-gy-q4n"/>
                     <connections>
                         <outlet property="collectionView" destination="7Ri-Dr-6VS" id="1dC-08-XW8"/>
+                        <segue destination="GTk-Wj-dKC" kind="show" identifier="goToPdfSegue" id="EP7-O0-aW1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>

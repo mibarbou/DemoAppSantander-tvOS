@@ -22,6 +22,7 @@
 		D0C2E4981C6FBB1A00A45199 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C2E4971C6FBB1A00A45199 /* ThirdViewController.swift */; };
 		D0FF6C101C71FE5700222584 /* DocumentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FF6C0F1C71FE5700222584 /* DocumentCell.swift */; };
 		D0FF6C121C721E8C00222584 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FF6C111C721E8C00222584 /* VideoViewController.swift */; };
+		D0FF6C141C723CB000222584 /* PdfViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FF6C131C723CB000222584 /* PdfViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		D0C2E4971C6FBB1A00A45199 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		D0FF6C0F1C71FE5700222584 /* DocumentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentCell.swift; sourceTree = "<group>"; };
 		D0FF6C111C721E8C00222584 /* VideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
+		D0FF6C131C723CB000222584 /* PdfViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PdfViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 				D007104C1C6DC9D9008DE13C /* SecondViewController.swift */,
 				D0C2E4971C6FBB1A00A45199 /* ThirdViewController.swift */,
 				D0FF6C111C721E8C00222584 /* VideoViewController.swift */,
+				D0FF6C131C723CB000222584 /* PdfViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 				D0C2E4981C6FBB1A00A45199 /* ThirdViewController.swift in Sources */,
 				D0FF6C121C721E8C00222584 /* VideoViewController.swift in Sources */,
 				D007105F1C6DCF73008DE13C /* Movie.swift in Sources */,
+				D0FF6C141C723CB000222584 /* PdfViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

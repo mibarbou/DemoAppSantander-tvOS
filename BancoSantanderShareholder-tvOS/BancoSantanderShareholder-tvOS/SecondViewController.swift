@@ -16,27 +16,42 @@ class SecondViewController: UIViewController, UICollectionViewDataSource, UIColl
     let defaultSize = CGSizeMake(500, 500)
     
     let focusSize = CGSizeMake(600, 600)
-
+    
+    var images = [UIImage]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-//        let urlpath = NSBundle.mainBundle().pathForResource("Financialreport4Q2015", ofType: "pdf")
-//        let url:NSURL = NSURL.fileURLWithPath(urlpath!)
-//
-//        let images = getImagesFromURL(url)
-//
-//        if let theImages = images {
-//
-//            print(theImages)
-//        }
-//    
+        let urlpath = NSBundle.mainBundle().pathForResource("Financialreport4Q2015", ofType: "pdf")
+        let url:NSURL = NSURL.fileURLWithPath(urlpath!)
+
+        let images = getImagesFromURL(url)
+
+        if let theImages = images {
+
+            self.images = theImages
+        }
+    
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        if segue.identifier == "goToPdfSegue" {
+            
+            if let pdfVC = segue.destinationViewController as? PdfViewController {
+                
+                if let theImages = sender {
+                    
+                    pdfVC.images = (theImages as? [UIImage])!
+                }
+            }
+        }
     }
     
     // MARK: UICollectionViewDataSource
@@ -107,7 +122,10 @@ class SecondViewController: UIViewController, UICollectionViewDataSource, UIColl
     
     func tapped(gesture: UITapGestureRecognizer) {
         
-        
+        if images.count > 0 {
+            
+            self.performSegueWithIdentifier("goToPdfSegue", sender: self.images)
+        }
         
     }
     
