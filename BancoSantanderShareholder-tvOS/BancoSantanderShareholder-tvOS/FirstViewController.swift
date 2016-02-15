@@ -9,6 +9,8 @@
 import UIKit
 import Alamofire
 import SWXMLHash
+import HCYoutubeParser
+import AVFoundation
 
 
 class FirstViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate  {
@@ -25,48 +27,52 @@ class FirstViewController: UIViewController, UICollectionViewDataSource, UIColle
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        Alamofire.request(.GET, "https://microsite.bancosantander.es/files/2015_junta_es/galeria_medios.xml").response { (request, response, data, error) -> Void in
-            
-            if error != nil {
-                
-                print(error)
-                
-            } else {
-            
-                let xml = SWXMLHash.parse(data!)
-                
-                for elem in xml["media"]["videos"]["item"] {
-                    
-                    print(elem["title"].element!.text!)
-                    
-                    let title = elem["title"].element!.text!
-                    let description = elem["description"].element!.text!
-                    let url = elem["url"].element!.text!
-                    let thumbnail = elem["thumbnail"].element!.text!
-                    
-                    let movie = Movie(title: title, url: url, thumbnail: thumbnail, description: description)
-                    
-                    self.movies.append(movie)
-                    
-                }
-                
-                print(xml)
-                print(request)
-                print(response)
-                self.collectionView.reloadData()
-            
-            }
-        }
+        // AIzaSyDihxCK70Qsf6S2e98dM8ku9tnYvdeO3LU   api youtube
         
-        let urlpath = NSBundle.mainBundle().pathForResource("Financialreport4Q2015", ofType: "pdf")
-        let url:NSURL = NSURL.fileURLWithPath(urlpath!)
+        dummy()
         
-        let images = getImagesFromURL(url)
+//        Alamofire.request(.GET, "https://www.googleapis.com/youtube/v3/channels?part=banco+santander&managedByMe=false&maxResults=20&mine=false&key=AIzaSyDihxCK70Qsf6S2e98dM8ku9tnYvdeO3LU").response { (request, response, data, error) -> Void in
+//            
+//            if error != nil {
+//                
+//                print(error)
+//                
+//            } else {
+//            
+//                let xml = SWXMLHash.parse(data!)
+//                
+//                for elem in xml["media"]["videos"]["item"] {
+//                    
+//                    print(elem["title"].element!.text!)
+//                    
+//                    let title = elem["title"].element!.text!
+//                    let description = elem["description"].element!.text!
+//                    let url = elem["url"].element!.text!
+//                    let thumbnail = elem["thumbnail"].element!.text!
+//                    
+//                    let movie = Movie(title: title, url: url, thumbnail: thumbnail, description: description)
+//                    
+//                    self.movies.append(movie)
+//                    
+//                }
+//                
+//                print(xml)
+//                print(request)
+//                print(response)
+//                self.collectionView.reloadData()
+//            
+//            }
+//        }
         
-        if let theImages = images {
-            
-            print(theImages)
-        }
+//        let urlpath = NSBundle.mainBundle().pathForResource("Financialreport4Q2015", ofType: "pdf")
+//        let url:NSURL = NSURL.fileURLWithPath(urlpath!)
+//        
+//        let images = getImagesFromURL(url)
+//        
+//        if let theImages = images {
+//            
+//            print(theImages)
+//        }
 
     }
 
@@ -74,6 +80,21 @@ class FirstViewController: UIViewController, UICollectionViewDataSource, UIColle
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        if segue.identifier == "goToVideoSegue" {
+            
+            if let movieVC = segue.destinationViewController as? VideoViewController {
+                
+                if let theMovie = sender {
+                
+                    movieVC.movie = theMovie as? Movie
+                }
+            }
+        }
+    }
+ 
     
     // MARK: UICollectionViewDataSource
     
@@ -101,6 +122,8 @@ class FirstViewController: UIViewController, UICollectionViewDataSource, UIColle
             
             let movie = movies[indexPath.row]
             
+            
+            cell.movie = movie
             cell.imageView.image = UIImage(contentsOfFile: movie.thumbnail)
             cell.titleLabel.text = movie.title
             
@@ -140,6 +163,9 @@ class FirstViewController: UIViewController, UICollectionViewDataSource, UIColle
         }
     }
     
+    // MARK: UICollectionViewDelegate
+
+    
     override func didUpdateFocusInContext(context: UIFocusUpdateContext, withAnimationCoordinator coordinator: UIFocusAnimationCoordinator) {
         
         if let prev = context.previouslyFocusedView as? MovieCell {
@@ -160,12 +186,32 @@ class FirstViewController: UIViewController, UICollectionViewDataSource, UIColle
         
     }
     
+    // MARK: Private functions
+    
     
     func tapped(gesture: UITapGestureRecognizer) {
         
         if let cell = gesture.view as? MovieCell {
             // Load the next view controller and pass in the movie
             print("Tap detected... " + cell.titleLabel.text!)
+            
+            if let theMovie = cell.movie {
+                
+                self.performSegueWithIdentifier("goToVideoSegue", sender: theMovie)
+                
+            
+//                let youTubeString : String = "https://www.youtube.com/watch?v=" + theMovie.videoId
+//                let videos : NSDictionary = HCYoutubeParser.h264videosWithYoutubeURL(NSURL(string: youTubeString))
+//                let urlString : String = videos["medium"] as! String
+//                let asset = AVAsset(URL: NSURL(string: urlString)!)
+//                
+//                let avPlayerItem = AVPlayerItem(asset:asset)
+//                let avPlayer = AVPlayer(playerItem: avPlayerItem)
+//                let avPlayerLayer  = AVPlayerLayer(player: avPlayer)
+//                avPlayerLayer.frame = CGRectMake(0, 0, self.view.frame.width, self.view.frame.height);
+//                self.view.layer.addSublayer(avPlayerLayer)
+//                avPlayer.play()
+            }
             
         }
     }
@@ -203,6 +249,44 @@ class FirstViewController: UIViewController, UICollectionViewDataSource, UIColle
         UIGraphicsEndImageContext()
         
         return images
+    }
+    
+    func dummy() {
+        
+        Alamofire.request(.GET, "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet%2CcontentDetails&maxResults=50&playlistId=UUL8xzwgqyOr4748Efwe_dFw&key=AIzaSyALEEpQoXgEfav7Jb-1qj7e8fiU30V9nsw").response { (request, response, data, error) -> Void in
+            
+            
+            if error != nil {
+                
+                print(error.debugDescription)
+                
+            } else {
+                
+                do {
+                    
+                    let dict = try NSJSONSerialization.JSONObjectWithData(data!, options: .AllowFragments) as? Dictionary<String, AnyObject>
+                    
+                    if let results = dict!["items"] as? [Dictionary<String, AnyObject>]{
+                        
+                        print(results)
+                        
+                        for obj in results {
+
+                            let movie = Movie(movieDict: obj)
+                            self.movies.append(movie)
+                        }
+                        
+                        self.collectionView.reloadData()
+                    }
+                    
+                    
+                } catch {
+                    
+                }
+            }
+            
+        }
+        
     }
 
 

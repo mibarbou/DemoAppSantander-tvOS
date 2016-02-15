@@ -1,15 +1,23 @@
 PODS:
   - Alamofire (3.2.0)
+  - HCYoutubeParser (0.0.5)
+  - SDWebImage (3.7.5):
+    - SDWebImage/Core (= 3.7.5)
+  - SDWebImage/Core (3.7.5)
   - SWXMLHash (2.1.0)
 
 DEPENDENCIES:
   - Alamofire (~> 3.2.0)
+  - HCYoutubeParser
+  - SDWebImage
   - SWXMLHash
 
 SPEC CHECKSUMS:
   Alamofire: 4da478599fccddff361205c8929333d7fe18dceb
+  HCYoutubeParser: bc1db8c062e4b835eda381f2be2f9970f6a8d071
+  SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
   SWXMLHash: 7257a358b3ab2f7a209e0b4e4cf552e8b6df5f0f
 
-PODFILE CHECKSUM: 99f776beaa5083e2de9a80e92ce842901b0d8b8e
+PODFILE CHECKSUM: c52c1511c1604c9c9081bd7ebb0eb776cd8215f3
 
 COCOAPODS: 1.0.0.beta.3

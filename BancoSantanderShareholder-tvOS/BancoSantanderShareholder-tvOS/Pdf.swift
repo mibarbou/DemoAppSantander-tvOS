@@ -10,13 +10,14 @@ import Foundation
 
 class Pdf {
     
+    var docname = ""
     var url = ""
     var title = ""
     
-    init(title: String, url: String){
+    init(docname:String, title: String, url: String){
         
+        self.docname = docname
         self.title = title
-        
         self.url = url
         
     }

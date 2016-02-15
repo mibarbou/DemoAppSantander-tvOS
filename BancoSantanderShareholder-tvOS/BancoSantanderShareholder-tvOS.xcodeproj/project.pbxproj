@@ -19,6 +19,9 @@
 		D00710631C6DD8C4008DE13C /* PdfCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00710621C6DD8C4008DE13C /* PdfCell.swift */; };
 		D00710651C6DD8EE008DE13C /* Pdf.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00710641C6DD8EE008DE13C /* Pdf.swift */; };
 		D0C2E4961C6F88A000A45199 /* Financialreport4Q2015.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D0C2E4951C6F88A000A45199 /* Financialreport4Q2015.pdf */; };
+		D0C2E4981C6FBB1A00A45199 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C2E4971C6FBB1A00A45199 /* ThirdViewController.swift */; };
+		D0FF6C101C71FE5700222584 /* DocumentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FF6C0F1C71FE5700222584 /* DocumentCell.swift */; };
+		D0FF6C121C721E8C00222584 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FF6C111C721E8C00222584 /* VideoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +41,9 @@
 		D00710621C6DD8C4008DE13C /* PdfCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PdfCell.swift; sourceTree = "<group>"; };
 		D00710641C6DD8EE008DE13C /* Pdf.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pdf.swift; sourceTree = "<group>"; };
 		D0C2E4951C6F88A000A45199 /* Financialreport4Q2015.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Financialreport4Q2015.pdf; sourceTree = "<group>"; };
+		D0C2E4971C6FBB1A00A45199 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		D0FF6C0F1C71FE5700222584 /* DocumentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentCell.swift; sourceTree = "<group>"; };
+		D0FF6C111C721E8C00222584 /* VideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +114,8 @@
 			children = (
 				D007104A1C6DC9D9008DE13C /* FirstViewController.swift */,
 				D007104C1C6DC9D9008DE13C /* SecondViewController.swift */,
+				D0C2E4971C6FBB1A00A45199 /* ThirdViewController.swift */,
+				D0FF6C111C721E8C00222584 /* VideoViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -117,6 +125,7 @@
 			children = (
 				D007105B1C6DCED4008DE13C /* MovieCell.swift */,
 				D00710621C6DD8C4008DE13C /* PdfCell.swift */,
+				D0FF6C0F1C71FE5700222584 /* DocumentCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -260,6 +269,9 @@
 				D00710651C6DD8EE008DE13C /* Pdf.swift in Sources */,
 				D007105C1C6DCED4008DE13C /* MovieCell.swift in Sources */,
 				D007104B1C6DC9D9008DE13C /* FirstViewController.swift in Sources */,
+				D0FF6C101C71FE5700222584 /* DocumentCell.swift in Sources */,
+				D0C2E4981C6FBB1A00A45199 /* ThirdViewController.swift in Sources */,
+				D0FF6C121C721E8C00222584 /* VideoViewController.swift in Sources */,
 				D007105F1C6DCF73008DE13C /* Movie.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
