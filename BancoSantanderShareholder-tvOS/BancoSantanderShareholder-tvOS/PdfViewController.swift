@@ -43,15 +43,17 @@ class PdfViewController: UIViewController, UICollectionViewDataSource, UICollect
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
         
-        return CGSizeMake(500, 500)
+        return CGSizeMake(768, 1080)
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         
         if let cell = collectionView.dequeueReusableCellWithReuseIdentifier("PdfCell", forIndexPath: indexPath) as? PdfCell {
             
+            cell.titleLabel.layer.cornerRadius = 10
+            cell.titleLabel.layer.masksToBounds = true
             
-            cell.titleLabel.text = "Página \(indexPath.row)"
+            cell.titleLabel.text = "Página \(indexPath.row + 1)"
             cell.imageView.image = images[indexPath.row]
             cell.imageView.contentMode = .ScaleAspectFit
             
@@ -80,7 +82,11 @@ class PdfViewController: UIViewController, UICollectionViewDataSource, UICollect
             
             UIView.animateWithDuration(0.1, animations: { () -> Void in
                 
-                prev.imageView.frame.size = self.defaultSize
+                prev.imageView.adjustsImageWhenAncestorFocused = false
+                prev.titleLabel.alpha = 0.8
+                
+                
+//                prev.imageView.frame.size = self.defaultSize
             })
         }
         
@@ -88,7 +94,16 @@ class PdfViewController: UIViewController, UICollectionViewDataSource, UICollect
             
             UIView.animateWithDuration(0.1, animations: { () -> Void in
                 
-                next.imageView.frame.size = self.focusSize
+//                next.imageView.frame.size = self.focusSize
+                
+                next.imageView.adjustsImageWhenAncestorFocused = true
+            })
+            
+            UIView.animateWithDuration(2.0, animations: { () -> Void in
+                
+                //                next.imageView.frame.size = self.focusSize
+                
+                next.titleLabel.alpha = 0
             })
         }
         
