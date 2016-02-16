@@ -16,6 +16,8 @@ import AVFoundation
 class FirstViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate  {
 
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+
     
     let defaultSize = CGSizeMake(350, 220)
     let focusSize = CGSizeMake(420, 264)
@@ -31,7 +33,7 @@ class FirstViewController: UIViewController, UICollectionViewDataSource, UIColle
         
         // AIzaSyDihxCK70Qsf6S2e98dM8ku9tnYvdeO3LU   api youtube
         
-        dummy()
+        getYoutubeVideos()
         
 //        Alamofire.request(.GET, "https://www.googleapis.com/youtube/v3/channels?part=banco+santander&managedByMe=false&maxResults=20&mine=false&key=AIzaSyDihxCK70Qsf6S2e98dM8ku9tnYvdeO3LU").response { (request, response, data, error) -> Void in
 //            
@@ -268,7 +270,9 @@ class FirstViewController: UIViewController, UICollectionViewDataSource, UIColle
         return images
     }
     
-    func dummy() {
+    func getYoutubeVideos() {
+        
+        self.activityIndicator.startAnimating()
         
         Alamofire.request(.GET, "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet%2CcontentDetails&maxResults=50&playlistId=UUL8xzwgqyOr4748Efwe_dFw&key=AIzaSyALEEpQoXgEfav7Jb-1qj7e8fiU30V9nsw").response { (request, response, data, error) -> Void in
             
@@ -276,6 +280,7 @@ class FirstViewController: UIViewController, UICollectionViewDataSource, UIColle
             if error != nil {
                 
                 print(error.debugDescription)
+                self.activityIndicator.stopAnimating()
                 
             } else {
                 
@@ -293,11 +298,14 @@ class FirstViewController: UIViewController, UICollectionViewDataSource, UIColle
                             self.movies.append(movie)
                         }
                         
+                        self.activityIndicator.stopAnimating()
                         self.collectionView.reloadData()
                     }
                     
                     
                 } catch {
+                    
+                    self.activityIndicator.stopAnimating()
                     
                 }
             }
