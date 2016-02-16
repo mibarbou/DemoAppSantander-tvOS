@@ -18,6 +18,7 @@
 		D00710611C6DD60D008DE13C /* santander.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D00710601C6DD60D008DE13C /* santander.jpg */; };
 		D00710631C6DD8C4008DE13C /* PdfCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00710621C6DD8C4008DE13C /* PdfCell.swift */; };
 		D00710651C6DD8EE008DE13C /* Pdf.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00710641C6DD8EE008DE13C /* Pdf.swift */; };
+		D0BDFD3C1C731FAC007B1F01 /* bannerSantander.png in Resources */ = {isa = PBXBuildFile; fileRef = D0BDFD3B1C731FAC007B1F01 /* bannerSantander.png */; };
 		D0C2E4961C6F88A000A45199 /* Financialreport4Q2015.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D0C2E4951C6F88A000A45199 /* Financialreport4Q2015.pdf */; };
 		D0C2E4981C6FBB1A00A45199 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C2E4971C6FBB1A00A45199 /* ThirdViewController.swift */; };
 		D0FF6C101C71FE5700222584 /* DocumentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FF6C0F1C71FE5700222584 /* DocumentCell.swift */; };
@@ -41,6 +42,7 @@
 		D00710601C6DD60D008DE13C /* santander.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = santander.jpg; sourceTree = "<group>"; };
 		D00710621C6DD8C4008DE13C /* PdfCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PdfCell.swift; sourceTree = "<group>"; };
 		D00710641C6DD8EE008DE13C /* Pdf.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pdf.swift; sourceTree = "<group>"; };
+		D0BDFD3B1C731FAC007B1F01 /* bannerSantander.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bannerSantander.png; sourceTree = "<group>"; };
 		D0C2E4951C6F88A000A45199 /* Financialreport4Q2015.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Financialreport4Q2015.pdf; sourceTree = "<group>"; };
 		D0C2E4971C6FBB1A00A45199 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		D0FF6C0F1C71FE5700222584 /* DocumentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentCell.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 		D00710471C6DC9D9008DE13C /* BancoSantanderShareholder-tvOS */ = {
 			isa = PBXGroup;
 			children = (
+				D0BDFD3B1C731FAC007B1F01 /* bannerSantander.png */,
 				D0C2E4951C6F88A000A45199 /* Financialreport4Q2015.pdf */,
 				D00710601C6DD60D008DE13C /* santander.jpg */,
 				D007105D1C6DCF29008DE13C /* Model */,
@@ -207,6 +210,7 @@
 				D00710521C6DC9D9008DE13C /* Assets.xcassets in Resources */,
 				D00710501C6DC9D9008DE13C /* Main.storyboard in Resources */,
 				D00710611C6DD60D008DE13C /* santander.jpg in Resources */,
+				D0BDFD3C1C731FAC007B1F01 /* bannerSantander.png in Resources */,
 				D0C2E4961C6F88A000A45199 /* Financialreport4Q2015.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

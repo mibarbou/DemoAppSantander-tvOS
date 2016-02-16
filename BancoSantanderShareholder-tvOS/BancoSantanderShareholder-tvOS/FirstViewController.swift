@@ -17,9 +17,11 @@ class FirstViewController: UIViewController, UICollectionViewDataSource, UIColle
 
     @IBOutlet weak var collectionView: UICollectionView!
     
-    let defaultSize = CGSizeMake(320, 420)
+    let defaultSize = CGSizeMake(350, 220)
+    let focusSize = CGSizeMake(420, 264)
     
-    let focusSize = CGSizeMake(384, 504)
+    let defaultCellSize = CGSizeMake(540, 600)
+    let focusCellSize = CGSizeMake(648, 720)
     
     var movies = [Movie]()
     
@@ -110,7 +112,7 @@ class FirstViewController: UIViewController, UICollectionViewDataSource, UIColle
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
         
-        return CGSizeMake(500, 660)
+        return CGSizeMake(540, 600)
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
@@ -120,12 +122,17 @@ class FirstViewController: UIViewController, UICollectionViewDataSource, UIColle
 //            let movie = movies[indexPath.row]
 //            cell.configureCell(movie)
             
+            cell.layer.cornerRadius = 10
+            cell.layer.shadowColor = UIColor.darkGrayColor().CGColor
+            cell.layer.shadowOffset = CGSizeMake(2.0, 2.0)
+            
             let movie = movies[indexPath.row]
             
             
             cell.movie = movie
             cell.imageView.image = UIImage(contentsOfFile: movie.thumbnail)
             cell.titleLabel.text = movie.title
+            cell.descriptionLabel.text = movie.description
             
             if movie.thumbnail != "" {
             
@@ -170,17 +177,27 @@ class FirstViewController: UIViewController, UICollectionViewDataSource, UIColle
         
         if let prev = context.previouslyFocusedView as? MovieCell {
             
+            
             UIView.animateWithDuration(0.1, animations: { () -> Void in
                 
-                prev.imageView.frame.size = self.defaultSize
+                prev.imageView.adjustsImageWhenAncestorFocused = false
+
+                
+//                prev.frame.size = self.defaultCellSize
+//                prev.imageView.frame.size = self.defaultSize
             })
         }
         
         if let next = context.nextFocusedView as? MovieCell {
             
+            
             UIView.animateWithDuration(0.1, animations: { () -> Void in
                 
-                next.imageView.frame.size = self.focusSize
+                next.imageView.adjustsImageWhenAncestorFocused = true
+
+                
+//                next.frame.size = self.focusCellSize
+//                next.imageView.frame.size = self.focusSize
             })
         }
         

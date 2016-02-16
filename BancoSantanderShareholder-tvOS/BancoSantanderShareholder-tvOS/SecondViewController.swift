@@ -68,13 +68,16 @@ class SecondViewController: UIViewController, UICollectionViewDataSource, UIColl
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
         
-        return CGSizeMake(500, 500)
+        return CGSizeMake(500, 600)
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         
         if let cell = collectionView.dequeueReusableCellWithReuseIdentifier("DocumentCell", forIndexPath: indexPath) as? DocumentCell {
             
+            cell.layer.cornerRadius = 10
+            cell.layer.shadowColor = UIColor.darkGrayColor().CGColor
+            cell.layer.shadowOffset = CGSizeMake(2.0, 2.0)
             
             cell.titleLabel.text = "Financialreport4Q2015 \(indexPath.row)"
             cell.imageView.image = UIImage(named: "santander.jpg")
@@ -105,7 +108,10 @@ class SecondViewController: UIViewController, UICollectionViewDataSource, UIColl
             
             UIView.animateWithDuration(0.1, animations: { () -> Void in
                 
-                prev.imageView.frame.size = self.defaultSize
+                prev.imageView.adjustsImageWhenAncestorFocused = false
+
+                
+//                prev.imageView.frame.size = self.defaultSize
             })
         }
         
@@ -113,7 +119,10 @@ class SecondViewController: UIViewController, UICollectionViewDataSource, UIColl
             
             UIView.animateWithDuration(0.1, animations: { () -> Void in
                 
-                next.imageView.frame.size = self.focusSize
+                next.imageView.adjustsImageWhenAncestorFocused = true
+
+                
+//                next.imageView.frame.size = self.focusSize
             })
         }
         
