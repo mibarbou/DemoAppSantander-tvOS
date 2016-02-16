@@ -125,8 +125,6 @@ class FirstViewController: UIViewController, UICollectionViewDataSource, UIColle
 //            cell.configureCell(movie)
             
             cell.layer.cornerRadius = 10
-            cell.layer.shadowColor = UIColor.darkGrayColor().CGColor
-            cell.layer.shadowOffset = CGSizeMake(2.0, 2.0)
             
             let movie = movies[indexPath.row]
             
@@ -135,6 +133,7 @@ class FirstViewController: UIViewController, UICollectionViewDataSource, UIColle
             cell.imageView.image = UIImage(contentsOfFile: movie.thumbnail)
             cell.titleLabel.text = movie.title
             cell.descriptionLabel.text = movie.description
+            cell.descriptionLabel.hidden = true
             
             if movie.thumbnail != "" {
             
@@ -183,6 +182,7 @@ class FirstViewController: UIViewController, UICollectionViewDataSource, UIColle
             UIView.animateWithDuration(0.1, animations: { () -> Void in
                 
                 prev.imageView.adjustsImageWhenAncestorFocused = false
+                prev.descriptionLabel.hidden = true
 
                 
 //                prev.frame.size = self.defaultCellSize
@@ -196,7 +196,7 @@ class FirstViewController: UIViewController, UICollectionViewDataSource, UIColle
             UIView.animateWithDuration(0.1, animations: { () -> Void in
                 
                 next.imageView.adjustsImageWhenAncestorFocused = true
-
+                next.descriptionLabel.hidden = false
                 
 //                next.frame.size = self.focusCellSize
 //                next.imageView.frame.size = self.focusSize

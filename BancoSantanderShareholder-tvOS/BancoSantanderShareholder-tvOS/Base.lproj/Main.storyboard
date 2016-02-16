@@ -45,9 +45,9 @@
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="v8c-zu-7SU">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="v8c-zu-7SU">
                                 <rect key="frame" x="68" y="375" width="1920" height="742"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="80" minimumInteritemSpacing="100" id="J1T-cr-LNA">
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="60" minimumInteritemSpacing="10" id="J1T-cr-LNA">
                                     <size key="itemSize" width="540" height="600"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -116,14 +116,14 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="v8c-zu-7SU" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="-20" id="Am7-3k-Fgo"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="v8c-zu-7SU" secondAttribute="trailing" constant="-20" id="EeZ-6b-Qu9"/>
+                            <constraint firstItem="v8c-zu-7SU" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="48" id="Am7-3k-Fgo"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="v8c-zu-7SU" secondAttribute="trailing" constant="-88" id="EeZ-6b-Qu9"/>
                             <constraint firstItem="Gth-e5-mI7" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="EwZ-Nt-AmD"/>
                             <constraint firstItem="GoS-Zq-iIt" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="170" id="MZU-um-c8Z"/>
                             <constraint firstItem="bG2-sE-kpQ" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="151" id="Uyi-5U-qS1"/>
-                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="v8c-zu-7SU" secondAttribute="bottom" id="dfq-Il-sNF"/>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="v8c-zu-7SU" secondAttribute="bottom" constant="-37" id="dfq-Il-sNF"/>
                             <constraint firstItem="Gth-e5-mI7" firstAttribute="centerY" secondItem="tsR-hK-woN" secondAttribute="centerY" id="gQU-mV-YQb"/>
-                            <constraint firstItem="v8c-zu-7SU" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="338" id="hyL-vj-2O2"/>
+                            <constraint firstItem="v8c-zu-7SU" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="375" id="hyL-vj-2O2"/>
                             <constraint firstItem="bG2-sE-kpQ" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="i2n-0d-TMr"/>
                             <constraint firstItem="GoS-Zq-iIt" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="20" id="t3V-fb-YP1"/>
                         </constraints>
@@ -168,8 +168,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Fx1-eR-DxL">
-                                <rect key="frame" x="0.0" y="0.0" width="1900" height="1080"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Fx1-eR-DxL">
+                                <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="40" minimumInteritemSpacing="10" id="njd-Kc-Fng">
                                     <size key="itemSize" width="768" height="1080"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -226,6 +226,12 @@
                                 </connections>
                             </collectionView>
                         </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Fx1-eR-DxL" secondAttribute="trailing" constant="-20" id="Q22-J6-VAK"/>
+                            <constraint firstItem="Fx1-eR-DxL" firstAttribute="top" secondItem="Zmc-St-dZ1" secondAttribute="bottom" id="oKN-nj-xTb"/>
+                            <constraint firstItem="sGU-BF-rFx" firstAttribute="top" secondItem="Fx1-eR-DxL" secondAttribute="bottom" id="slz-4Z-fVp"/>
+                            <constraint firstItem="Fx1-eR-DxL" firstAttribute="leading" secondItem="TKt-ah-BPy" secondAttribute="leadingMargin" constant="-20" id="vZC-UB-xUF"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="Fx1-eR-DxL" id="jpO-Xo-R8E"/>
