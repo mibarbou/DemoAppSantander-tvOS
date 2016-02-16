@@ -24,6 +24,10 @@
 		D0FF6C101C71FE5700222584 /* DocumentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FF6C0F1C71FE5700222584 /* DocumentCell.swift */; };
 		D0FF6C121C721E8C00222584 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FF6C111C721E8C00222584 /* VideoViewController.swift */; };
 		D0FF6C141C723CB000222584 /* PdfViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FF6C131C723CB000222584 /* PdfViewController.swift */; };
+		D0FFD3F71C73568400F6F2AD /* documentos_pdf.xml in Resources */ = {isa = PBXBuildFile; fileRef = D0FFD3F61C73568400F6F2AD /* documentos_pdf.xml */; };
+		D0FFD3F91C73711300F6F2AD /* PastedGraphic-10.tiff in Resources */ = {isa = PBXBuildFile; fileRef = D0FFD3F81C73711300F6F2AD /* PastedGraphic-10.tiff */; };
+		D0FFD3FB1C73720F00F6F2AD /* PastedGraphic-1.tiff in Resources */ = {isa = PBXBuildFile; fileRef = D0FFD3FA1C73720F00F6F2AD /* PastedGraphic-1.tiff */; };
+		D0FFD3FD1C73721900F6F2AD /* PastedGraphic-3.tiff in Resources */ = {isa = PBXBuildFile; fileRef = D0FFD3FC1C73721900F6F2AD /* PastedGraphic-3.tiff */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +52,10 @@
 		D0FF6C0F1C71FE5700222584 /* DocumentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentCell.swift; sourceTree = "<group>"; };
 		D0FF6C111C721E8C00222584 /* VideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
 		D0FF6C131C723CB000222584 /* PdfViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PdfViewController.swift; sourceTree = "<group>"; };
+		D0FFD3F61C73568400F6F2AD /* documentos_pdf.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = documentos_pdf.xml; sourceTree = "<group>"; };
+		D0FFD3F81C73711300F6F2AD /* PastedGraphic-10.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = "PastedGraphic-10.tiff"; sourceTree = "<group>"; };
+		D0FFD3FA1C73720F00F6F2AD /* PastedGraphic-1.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = "PastedGraphic-1.tiff"; sourceTree = "<group>"; };
+		D0FFD3FC1C73721900F6F2AD /* PastedGraphic-3.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = "PastedGraphic-3.tiff"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +108,10 @@
 		D00710471C6DC9D9008DE13C /* BancoSantanderShareholder-tvOS */ = {
 			isa = PBXGroup;
 			children = (
+				D0FFD3FA1C73720F00F6F2AD /* PastedGraphic-1.tiff */,
+				D0FFD3FC1C73721900F6F2AD /* PastedGraphic-3.tiff */,
+				D0FFD3F81C73711300F6F2AD /* PastedGraphic-10.tiff */,
+				D0FFD3F61C73568400F6F2AD /* documentos_pdf.xml */,
 				D0BDFD3B1C731FAC007B1F01 /* bannerSantander.png */,
 				D0C2E4951C6F88A000A45199 /* Financialreport4Q2015.pdf */,
 				D00710601C6DD60D008DE13C /* santander.jpg */,
@@ -207,11 +219,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0FFD3FB1C73720F00F6F2AD /* PastedGraphic-1.tiff in Resources */,
 				D00710521C6DC9D9008DE13C /* Assets.xcassets in Resources */,
 				D00710501C6DC9D9008DE13C /* Main.storyboard in Resources */,
+				D0FFD3FD1C73721900F6F2AD /* PastedGraphic-3.tiff in Resources */,
 				D00710611C6DD60D008DE13C /* santander.jpg in Resources */,
+				D0FFD3F91C73711300F6F2AD /* PastedGraphic-10.tiff in Resources */,
 				D0BDFD3C1C731FAC007B1F01 /* bannerSantander.png in Resources */,
 				D0C2E4961C6F88A000A45199 /* Financialreport4Q2015.pdf in Resources */,
+				D0FFD3F71C73568400F6F2AD /* documentos_pdf.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

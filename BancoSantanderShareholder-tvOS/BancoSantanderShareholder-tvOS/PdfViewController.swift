@@ -14,12 +14,16 @@ class PdfViewController: UIViewController, UICollectionViewDataSource, UICollect
     
     var images = [UIImage]()
     
+    var pdf = Pdf()
+    
     let defaultSize = CGSizeMake(500, 500)
     
     let focusSize = CGSizeMake(600, 600)
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        print(pdf.url)
 
         // Do any additional setup after loading the view.
     }
@@ -118,6 +122,41 @@ class PdfViewController: UIViewController, UICollectionViewDataSource, UICollect
         
         
         
+    }
+    
+    func getImagesFromURL(url: NSURL) -> Array<UIImage>? {
+        
+        var images = [UIImage]()
+        
+        guard let document = CGPDFDocumentCreateWithURL(url) else { return nil }
+        
+        let pdfPages = CGPDFDocumentGetNumberOfPages(document);
+        
+        for (var i = 1; i <= pdfPages; i++){
+            
+            guard let page = CGPDFDocumentGetPage(document, i) else { return nil }
+            
+            let pageRect = CGPDFPageGetBoxRect(page, .MediaBox)
+            
+            UIGraphicsBeginImageContextWithOptions(pageRect.size, true, 0)
+            let context = UIGraphicsGetCurrentContext()
+            
+            CGContextSetFillColorWithColor(context, UIColor.whiteColor().CGColor)
+            CGContextFillRect(context,pageRect)
+            
+            CGContextTranslateCTM(context, 0.0, pageRect.size.height);
+            CGContextScaleCTM(context, 1.0, -1.0);
+            
+            CGContextDrawPDFPage(context, page);
+            let img = UIGraphicsGetImageFromCurrentImageContext()
+            
+            images.append(img)
+            
+        }
+        
+        UIGraphicsEndImageContext()
+        
+        return images
     }
     
 

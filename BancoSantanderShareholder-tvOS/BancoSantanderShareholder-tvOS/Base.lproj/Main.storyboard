@@ -18,6 +18,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PastedGraphic-1.tiff" translatesAutoresizingMaskIntoConstraints="NO" id="eEu-NE-xs8">
+                                <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                            </imageView>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Gth-e5-mI7">
                                 <rect key="frame" x="928" y="508" width="64" height="64"/>
                                 <constraints>
@@ -26,25 +29,6 @@
                                 </constraints>
                                 <color key="color" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             </activityIndicatorView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bannerSantander.png" translatesAutoresizingMaskIntoConstraints="NO" id="GoS-Zq-iIt">
-                                <rect key="frame" x="40" y="170" width="410" height="100"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="410" id="4qd-Vy-FPy"/>
-                                    <constraint firstAttribute="height" constant="100" id="9Ei-CI-frP"/>
-                                    <constraint firstAttribute="width" constant="410" id="IZb-R4-KJh"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="tc5-cP-IdK"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VÍDEOS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bG2-sE-kpQ">
-                                <rect key="frame" x="706" y="151" width="508" height="119"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="508" id="RpV-mp-qAF"/>
-                                    <constraint firstAttribute="height" constant="119" id="X4M-Ov-hyj"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="50"/>
-                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="v8c-zu-7SU">
                                 <rect key="frame" x="68" y="375" width="1920" height="742"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="60" minimumInteritemSpacing="10" id="J1T-cr-LNA">
@@ -113,18 +97,41 @@
                                     <outlet property="delegate" destination="9pv-A4-QxB" id="gBq-Ud-puy"/>
                                 </connections>
                             </collectionView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bannerSantander.png" translatesAutoresizingMaskIntoConstraints="NO" id="GoS-Zq-iIt">
+                                <rect key="frame" x="40" y="170" width="410" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="410" id="4qd-Vy-FPy"/>
+                                    <constraint firstAttribute="height" constant="100" id="9Ei-CI-frP"/>
+                                    <constraint firstAttribute="width" constant="410" id="IZb-R4-KJh"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="tc5-cP-IdK"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VÍDEOS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bG2-sE-kpQ">
+                                <rect key="frame" x="706" y="151" width="508" height="119"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="508" id="RpV-mp-qAF"/>
+                                    <constraint firstAttribute="height" constant="119" id="X4M-Ov-hyj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="50"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="v8c-zu-7SU" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="48" id="Am7-3k-Fgo"/>
+                            <constraint firstItem="eEu-NE-xs8" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="-20" id="E5d-2n-nvR"/>
                             <constraint firstAttribute="trailingMargin" secondItem="v8c-zu-7SU" secondAttribute="trailing" constant="-88" id="EeZ-6b-Qu9"/>
                             <constraint firstItem="Gth-e5-mI7" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="EwZ-Nt-AmD"/>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="eEu-NE-xs8" secondAttribute="bottom" id="LL5-Tr-K5w"/>
                             <constraint firstItem="GoS-Zq-iIt" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="170" id="MZU-um-c8Z"/>
                             <constraint firstItem="bG2-sE-kpQ" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="151" id="Uyi-5U-qS1"/>
+                            <constraint firstItem="eEu-NE-xs8" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" id="acT-fe-20U"/>
                             <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="v8c-zu-7SU" secondAttribute="bottom" constant="-37" id="dfq-Il-sNF"/>
                             <constraint firstItem="Gth-e5-mI7" firstAttribute="centerY" secondItem="tsR-hK-woN" secondAttribute="centerY" id="gQU-mV-YQb"/>
                             <constraint firstItem="v8c-zu-7SU" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="375" id="hyL-vj-2O2"/>
                             <constraint firstItem="bG2-sE-kpQ" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="i2n-0d-TMr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="eEu-NE-xs8" secondAttribute="trailing" constant="-20" id="iQb-69-DFe"/>
                             <constraint firstItem="GoS-Zq-iIt" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="20" id="t3V-fb-YP1"/>
                         </constraints>
                     </view>
@@ -388,6 +395,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="PastedGraphic-1.tiff" width="507" height="337"/>
         <image name="bannerSantander.png" width="410" height="100"/>
         <image name="first" width="30" height="30"/>
         <image name="second" width="30" height="30"/>

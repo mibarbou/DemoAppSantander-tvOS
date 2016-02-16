@@ -7,7 +7,8 @@
 //
 
 import UIKit
-import Alamofire
+import SWXMLHash
+
 
 class SecondViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
 
@@ -19,19 +20,24 @@ class SecondViewController: UIViewController, UICollectionViewDataSource, UIColl
     
     var images = [UIImage]()
     
+    var pdfArray = [Pdf]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        let urlpath = NSBundle.mainBundle().pathForResource("Financialreport4Q2015", ofType: "pdf")
-        let url:NSURL = NSURL.fileURLWithPath(urlpath!)
-
-        let images = getImagesFromURL(url)
-
-        if let theImages = images {
-
-            self.images = theImages
-        }
+        getXmlFile()
+        self.collectionView.reloadData()
+        
+//        let urlpath = NSBundle.mainBundle().pathForResource("Financialreport4Q2015", ofType: "pdf")
+//        let url:NSURL = NSURL.fileURLWithPath(urlpath!)
+//
+//        let images = getImagesFromURL(url)
+//
+//        if let theImages = images {
+//
+//            self.images = theImages
+//        }
     
     }
 
@@ -46,9 +52,9 @@ class SecondViewController: UIViewController, UICollectionViewDataSource, UIColl
             
             if let pdfVC = segue.destinationViewController as? PdfViewController {
                 
-                if let theImages = sender {
+                if let thePdf = sender {
                     
-                    pdfVC.images = (theImages as? [UIImage])!
+                    pdfVC.pdf = (thePdf as? Pdf)!
                 }
             }
         }
@@ -63,7 +69,7 @@ class SecondViewController: UIViewController, UICollectionViewDataSource, UIColl
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
-        return 10;
+        return pdfArray.count;
     }
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
@@ -76,16 +82,35 @@ class SecondViewController: UIViewController, UICollectionViewDataSource, UIColl
         if let cell = collectionView.dequeueReusableCellWithReuseIdentifier("DocumentCell", forIndexPath: indexPath) as? DocumentCell {
             
             cell.layer.cornerRadius = 10
-            cell.layer.shadowColor = UIColor.darkGrayColor().CGColor
-            cell.layer.shadowOffset = CGSizeMake(2.0, 2.0)
+//            cell.layer.shadowColor = UIColor.darkGrayColor().CGColor
+//            cell.layer.shadowOffset = CGSizeMake(2.0, 2.0)
             
-            cell.titleLabel.text = "Financialreport4Q2015 \(indexPath.row)"
-            cell.imageView.image = UIImage(named: "santander.jpg")
+            let pdf = pdfArray[indexPath.row]
+            
+            cell.titleLabel.text = pdf.title
+            
+            if pdf.icon != "" {
+                
+                if let theIcon = NSURL(string: pdf.icon) {
+                    
+                    if let data = NSData(contentsOfURL: theIcon) {
+                        
+                        cell.imageView.image = UIImage(data: data)
+                    }
+                    
+                }
+                
+            } else {
+                
+                cell.imageView.image = UIImage(named: "santander.jpg")
+            }
+                
+            
             cell.imageView.contentMode = .ScaleAspectFit
            
             if cell.gestureRecognizers?.count == nil {
-                
-                let tap = UITapGestureRecognizer(target: self, action: "tapped:")
+             
+                let tap = UITapGestureRecognizer(target: self, action: "tapped:" )
                 tap.allowedPressTypes = [NSNumber(integer: UIPressType.Select.rawValue)]
                 cell.addGestureRecognizer(tap)
                 
@@ -127,18 +152,73 @@ class SecondViewController: UIViewController, UICollectionViewDataSource, UIColl
         }
         
     }
-    
+
     
     func tapped(gesture: UITapGestureRecognizer) {
         
-        if images.count > 0 {
+        if pdfArray.count > 0  {
             
-            self.performSegueWithIdentifier("goToPdfSegue", sender: self.images)
+            let itemTapped = gesture.view as? DocumentCell
+            
+            if let theItem = itemTapped {
+            
+                let indexPath = self.collectionView.indexPathForCell(theItem)
+                
+                if let theIndex = indexPath {
+                    
+                    print("celda pulsada: \(theIndex.row)")
+                    
+                    self.performSegueWithIdentifier("goToPdfSegue", sender:pdfArray[theIndex.row])
+                }
+                
+            }
+
         }
         
     }
     
     // MARK: Utils
+    
+    func getXmlFile() {
+        
+        let path = NSBundle.mainBundle().pathForResource("documentos_pdf", ofType: "xml")
+        
+        if path != nil {
+            
+            let data: NSData? = NSData(contentsOfFile:path!)
+            
+            if let fileData = data {
+                
+                let xml = SWXMLHash.parse(fileData)
+                print(xml)
+                
+                for elem in xml["pdf_documents"]["reports"]["annual_reports"]["year"] {
+                    
+                    for item in elem["documents"]["item"] {
+                        
+                        let title = item["title"].element!.text!
+                        let docname = item["title"].element!.text!
+                        let url = item["url"].element!.text!
+                        let size = item["size"].element!.text!
+                        let icon = item["icon"].element!.text!
+                        
+                        let pdf = Pdf(docname: docname, title: title, url: url, size: size, icon: icon)
+                        
+                        pdfArray.append(pdf)
+                        
+                        print(item)
+                    }
+                    
+                    
+                }
+                
+            }
+            
+            
+            
+        }
+    }
+    
     
     func getImagesFromURL(url: NSURL) -> Array<UIImage>? {
         

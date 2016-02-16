@@ -1,0 +1,1796 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pdf_documents>
+	<!-- Sección de informes -->
+	<!-- NOTA IMPORTANTE: las URLs deben estar en una sóla línea para que en Android no fallen -->
+	<reports>
+		<annual_reports>
+			<year id="2016">
+				<documents>
+					<item id="">
+						<title>Informee Anual 2014</title>
+						<format>PDF</format>
+						<size>11322</size> <!--En Kb -->
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?blobcol=urldata&blobheadername1=content-type&blobheadername2=Content-Disposition&blobheadername3=appID&blobheadervalue1=application%2Fpdf&blobheadervalue2=inline%3Bfilename%3D725%5C930%5CInforme+Anual+SPA+ACCE.pdf&blobheadervalue3=santander.wc.CFWCSancomQP01&blobkey=id&blobtable=MungoBlobs&blobwhere=1278707205478&ssbinary=true]]></url>
+						<icon><![CDATA[]]></icon>
+					</item>
+					<item id="">
+						<title>Informe de Auditoría y Cuentas Anuales 2014</title>
+						<format>PDF</format>
+						<size>5204</size> <!--En Kb -->
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?blobcol=urldata&blobheadername1=content-type&blobheadername2=Content-Disposition&blobheadername3=appID&blobheadervalue1=application%2Fpdf&blobheadervalue2=inline%3Bfilename%3D152%5C195%5CInf.+Audit+y+cuentas+2014+SPA+ACCE_.pdf&blobheadervalue3=santander.wc.CFWCSancomQP01&blobkey=id&blobtable=MungoBlobs&blobwhere=1278707206270&ssbinary=true]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2014.png]]></icon>
+					</item>
+					<item id="">
+						<title>Informe de actividades 2014</title>
+						<format>PDF</format>
+						<size>5084</size> <!--En Kb -->
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?blobcol=urldata&blobheadername1=content-type&blobheadername2=Content-Disposition&blobheadername3=appID&blobheadervalue1=application%2Fpdf&blobheadervalue2=inline%3Bfilename%3D430%5C802%5CInfo.+Actividades+2014+SPA+ACCE.pdf&blobheadervalue3=santander.wc.CFWCSancomQP01&blobkey=id&blobtable=MungoBlobs&blobwhere=1278707205622&ssbinary=true]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2014.png]]></icon>
+					</item>
+					<item id="">
+						<title>Datos relevantes 2014</title>
+						<format>PDF</format>
+						<size>633</size> <!--En Kb -->
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?blobcol=urldata&blobheadername1=content-type&blobheadername2=Content-Disposition&blobheadername3=appID&blobheadervalue1=application%2Fpdf&blobheadervalue2=inline%3Bfilename%3D916%5C266%5CDatos+relevantes+SPA+ACCE.pdf&blobheadervalue3=santander.wc.CFWCSancomQP01&blobkey=id&blobtable=MungoBlobs&blobwhere=1278707310143&ssbinary=true]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2014.png]]></icon>
+					</item>
+					<item id="">
+						<title>Carta de la Presidenta</title>
+						<format>PDF</format>
+						<size>841</size> <!--En Kb -->
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?blobcol=urldata&blobheadername1=content-type&blobheadername2=Content-Disposition&blobheadername3=appID&blobheadervalue1=application%2Fpdf&blobheadervalue2=inline%3Bfilename%3D759%5C984%5C01+Mensaje+de+la+Presidenta+SPA+ACCE.pdf&blobheadervalue3=santander.wc.CFWCSancomQP01&blobkey=id&blobtable=MungoBlobs&blobwhere=1278707207626&ssbinary=true]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2014.png]]></icon>
+					</item>
+					<item id="">
+						<title>Carta del Consejero Delegado 2014</title>
+						<format>PDF</format>
+						<size>578</size> <!--En Kb -->
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?blobcol=urldata&blobheadername1=content-type&blobheadername2=Content-Disposition&blobheadername3=appID&blobheadervalue1=application%2Fpdf&blobheadervalue2=inline%3Bfilename%3D971%5C29%5C02+Mensaje+del+CEO+SPA+ACCE.pdf&blobheadervalue3=santander.wc.CFWCSancomQP01&blobkey=id&blobtable=MungoBlobs&blobwhere=1278707207420&ssbinary=true]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2014.png]]></icon>
+					</item>
+					<item id="">
+						<title>Informe de Gobierno Corporativo 2014</title>
+						<format>PDF</format>
+						<size>3678</size> <!--En Kb -->
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?blobcol=urldata&blobheadername1=content-type&blobheadername2=Content-Disposition&blobheadername3=appID&blobheadervalue1=application%2Fpdf&blobheadervalue2=inline%3Bfilename%3D680%5C921%5C03+Gobierno+Corporativo+SPA+ACCE.pdf&blobheadervalue3=santander.wc.CFWCSancomQP01&blobkey=id&blobtable=MungoBlobs&blobwhere=1278707207511&ssbinary=true]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2014.png]]></icon>
+					</item>
+					<item id="">
+						<title>Información Económico-Financiera 2014</title>
+						<format>PDF</format>
+						<size>1527</size> <!--En Kb -->
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?blobcol=urldata&blobheadername1=content-type&blobheadername2=Content-Disposition&blobheadername3=appID&blobheadervalue1=application%2Fpdf&blobheadervalue2=inline%3Bfilename%3D160%5C223%5C04+Informe+Financiero+SPA+ACCE.pdf&blobheadervalue3=santander.wc.CFWCSancomQP01&blobkey=id&blobtable=MungoBlobs&blobwhere=1278707207536&ssbinary=true]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2014.png]]></icon>
+					</item>
+					<item id="">
+						<title>Gestión del Riesgo 2014</title>
+						<format>PDF</format>
+						<size>3856</size> <!--En Kb -->
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?blobcol=urldata&blobheadername1=content-type&blobheadername2=Content-Disposition&blobheadername3=appID&blobheadervalue1=application%2Fpdf&blobheadervalue2=inline%3Bfilename%3D620%5C217%5C05+Gesti%C3%B3n+del+Riesgo+SPA+ACCE.pdf&blobheadervalue3=santander.wc.CFWCSancomQP01&blobkey=id&blobtable=MungoBlobs&blobwhere=1278707207488&ssbinary=true]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2014.png]]></icon>
+					</item>
+					<item id="">
+						<title>Anexos 2014</title>
+						<format>PDF</format>
+						<size>99</size> <!--En Kb -->
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?blobcol=urldata&blobheadername1=content-type&blobheadername2=Content-Disposition&blobheadername3=appID&blobheadervalue1=application%2Fpdf&blobheadervalue2=inline%3Bfilename%3D262%5C461%5C06+Anexos+SPA+ACCE.pdf&blobheadervalue3=santander.wc.CFWCSancomQP01&blobkey=id&blobtable=MungoBlobs&blobwhere=1278707207399&ssbinary=true]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2014.png]]></icon>
+					</item>
+				</documents>
+			</year>
+			<year id="2013">
+				<documents>
+					<item id="">
+						<title>Informe Anual 2013</title>
+						<format>PDF</format>
+						<size>12933</size> <!--En Kb -->
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&SSURIsscontext=Satellite+Server&blobcol=urldata&SSURIsession=false&blobheadervalue1=application%2Fpdf&blobwhere=1278704743134&blobheadervalue2=inline%3Bfilename%3D152%5C185%5CInforme+Anual+2013+ACCE_new.pdf&blobheadervalue3=santander.wc.CFWCSancomQP01&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition&blobheadername3=appID#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2013.png]]></icon>
+					</item>
+					
+					<item id="">
+						<title>Informe de Auditoría y Cuentas Anuales 2013</title>
+						<format>PDF</format>
+						<size>6511</size> <!--En Kb -->
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&SSURIsscontext=Satellite+Server&blobcol=urldata&SSURIsession=false&blobheadervalue1=application%2Fpdf&blobwhere=1278700159267&blobheadervalue2=inline%3Bfilename%3D409%5C145%5CInforme+de+Auditori%C2%A6%C3%BCa+y+Cuentas+Anuales+SPA_ACCE.pdf&blobheadervalue3=santander.wc.CFWCSancomQP01&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition&blobheadername3=appID#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2013.png]]></icon>
+					</item>
+					
+					<item id="">
+						<title>Informe de Actividades 2013</title>
+						<format>PDF</format>
+						<size>6601</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&SSURIsscontext=Satellite+Server&blobcol=urldata&SSURIsession=false&blobheadervalue1=application%2Fpdf&blobwhere=1278704742073&blobheadervalue2=inline%3Bfilename%3D341%5C804%5CInforme+de+Actividades+ESP_ACCE.pdf&blobheadervalue3=santander.wc.CFWCSancomQP01&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition&blobheadername3=appID#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2013.png]]></icon>
+					</item>
+					
+					<item id="">
+						<title>Datos relevantes 2013</title>
+						<format>PDF</format>
+						<size>80</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&SSURIsscontext=Satellite+Server&blobcol=urldata&SSURIsession=false&blobheadervalue1=application%2Fpdf&blobwhere=1278704742736&blobheadervalue2=inline%3Bfilename%3D951%5C734%5C01_datos_relevantes_ESP_ACCE.pdf&blobheadervalue3=santander.wc.CFWCSancomQP01&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition&blobheadername3=appID#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2013.png]]></icon>
+					</item>
+					
+					<item id="">
+						<title>Carta del Presidente</title>
+						<format>PDF</format>
+						<size>313</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&SSURIsscontext=Satellite+Server&blobcol=urldata&SSURIsession=false&blobheadervalue1=application%2Fpdf&blobwhere=1278704742402&blobheadervalue2=inline%3Bfilename%3D804%5C167%5C02_carta_presidente_ESP_ACCE.pdf&blobheadervalue3=santander.wc.CFWCSancomQP01&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition&blobheadername3=appID#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2013.png]]></icon>
+					</item>
+					
+					<item id="">
+						<title>Carta del Consejero Delegado 2013</title>
+						<format>PDF</format>
+						<size>302</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&SSURIsscontext=Satellite+Server&blobcol=urldata&SSURIsession=false&blobheadervalue1=application%2Fpdf&blobwhere=1278704743030&blobheadervalue2=inline%3Bfilename%3D786%5C685%5C03_carta_consejero_ESP_ACCE.pdf&blobheadervalue3=santander.wc.CFWCSancomQP01&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition&blobheadername3=appID#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2013.png]]></icon>
+					</item>
+					
+					<item id="">
+						<title>Informe de Gobierno Corporativo 2013</title>
+						<format>PDF</format>
+						<size>1476</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&SSURIsscontext=Satellite+Server&blobcol=urldata&SSURIsession=false&blobheadervalue1=application%2Fpdf&blobwhere=1278704742859&blobheadervalue2=inline%3Bfilename%3D482%5C946%5CInforme+de+Gobierno+Corporativo+2013+ACCE.pdf&blobheadervalue3=santander.wc.CFWCSancomQP01&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition&blobheadername3=appID#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2013.png]]></icon>
+					</item>
+					
+					<item id="">
+						<title>Información Económico-Financiera 2013</title>
+						<format>PDF</format>
+						<size>3269</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&SSURIsscontext=Satellite+Server&blobcol=urldata&SSURIsession=false&blobheadervalue1=application%2Fpdf&blobwhere=1278704743265&blobheadervalue2=inline%3Bfilename%3D39%5C526%5CInformacion+Economico+Financiera+2013+ACCE.pdf&blobheadervalue3=santander.wc.CFWCSancomQP01&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition&blobheadername3=appID#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2013.png]]></icon>
+					</item>
+					
+					<item id="">
+						<title>Gestion de Riesgo 2013</title>
+						<format>PDF</format>
+						<size>2044</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&SSURIsscontext=Satellite+Server&blobcol=urldata&SSURIsession=false&blobheadervalue1=application%2Fpdf&blobwhere=1278704742956&blobheadervalue2=inline%3Bfilename%3D30%5C428%5CGestion+de+Riesgo+2013+ACCE_new.pdf&blobheadervalue3=santander.wc.CFWCSancomQP01&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition&blobheadername3=appID#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2013.png]]></icon>
+					</item>
+					
+					<item id="">
+						<title>Anexos 2013</title>
+						<format>PDF</format>
+						<size>214</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&SSURIsscontext=Satellite+Server&blobcol=urldata&SSURIsession=false&blobheadervalue1=application%2Fpdf&blobwhere=1278704742757&blobheadervalue2=inline%3Bfilename%3D232%5C687%5C07_anexos_ESP_ACCE.pdf&blobheadervalue3=santander.wc.CFWCSancomQP01&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition&blobheadername3=appID#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2013.png]]></icon>
+					</item>
+				</documents>
+			</year>
+			<year id="2012">
+				<documents>
+					<item id="">
+						<title>Informe Anual 2012</title>
+						<format>PDF</format>
+						<size>8259</size> <!--En Kb -->
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&SSURIsscontext=Satellite+Server&blobcol=urldata&SSURIsession=false&blobheadervalue1=application%2Fpdf&blobwhere=1278704742836&blobheadervalue2=inline%3Bfilename%3D279%5C768%5CINFORME_ANUAL_ESP.pdf&blobheadervalue3=santander.wc.CFWCSancomQP01&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition&blobheadername3=appID#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2012.png]]></icon>
+					</item>
+					
+					<item id="">
+						<title>Informe de Auditoría y Cuentas Anuales 2012</title>
+						<format>PDF</format>
+						<size>9582</size> <!--En Kb -->
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&SSURIsscontext=Satellite+Server&blobcol=urldata&SSURIsession=false&blobheadervalue1=application%2Fpdf&blobwhere=1278704742561&blobheadervalue2=inline%3Bfilename%3D922%5C760%5Cinforme_auditoria_cuentas_anuales_consolidadas_es%5B1%5D.pdf&blobheadervalue3=santander.wc.CFWCSancomQP01&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition&blobheadername3=appID#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2012.png]]></icon>
+					</item>
+					
+					<item id="">
+						<title>Informe de Actividades 2012</title>
+						<format>PDF</format>
+						<size>3724</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&SSURIsscontext=Satellite+Server&blobcol=urldata&SSURIsession=false&blobheadervalue1=application%2Fpdf&blobwhere=1278704742538&blobheadervalue2=inline%3Bfilename%3D827%5C927%5CINF+ACTIVIDADES+2012+SPA.pdf&blobheadervalue3=santander.wc.CFWCSancomQP01&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition&blobheadername3=appID#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2012.png]]></icon>
+					</item>
+					
+					<item id="">
+						<title>Datos relevantes 2012</title>
+						<format>PDF</format>
+						<size>418</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&SSURIsscontext=Satellite+Server&blobcol=urldata&SSURIsession=false&blobheadervalue1=application%2Fpdf&blobwhere=1278704742355&blobheadervalue2=inline%3Bfilename%3D280%5C236%5C04_05+Datos+relevantes+SPA.pdf&blobheadervalue3=santander.wc.CFWCSancomQP01&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition&blobheadername3=appID#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2012.png]]></icon>
+					</item>
+					
+					<item id="">
+						<title>Carta del Presidente</title>
+						<format>PDF</format>
+						<size>540</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&SSURIsscontext=Satellite+Server&blobcol=urldata&SSURIsession=false&blobheadervalue1=application%2Fpdf&blobwhere=1278704743288&blobheadervalue2=inline%3Bfilename%3D801%5C983%5CCarta+del+presidente+SPA.pdf&blobheadervalue3=santander.wc.CFWCSancomQP01&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition&blobheadername3=appID#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2012.png]]></icon>
+					</item>
+					
+					<item id="">
+						<title>Carta del Consejero Delegado 2012</title>
+						<format>PDF</format>
+						<size>522</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&SSURIsscontext=Satellite+Server&blobcol=urldata&SSURIsession=false&blobheadervalue1=application%2Fpdf&blobwhere=1278704742717&blobheadervalue2=inline%3Bfilename%3D423%5C84%5CStaticBS.pdf&blobheadervalue3=santander.wc.CFWCSancomQP01&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition&blobheadername3=appID#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2012.png]]></icon>
+					</item>
+					
+					<item id="">
+						<title>Informe de Gobierno Corporativo 2012 </title>
+						<format>PDF</format>
+						<size>2947</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&SSURIsscontext=Satellite+Server&blobcol=urldata&SSURIsession=false&blobheadervalue1=application%2Fpdf&blobwhere=1278704742880&blobheadervalue2=inline%3Bfilename%3D705%5C72%5CGobiernoCorp-InformeAnual.pdf&blobheadervalue3=santander.wc.CFWCSancomQP01&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition&blobheadername3=appID#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2012.png]]></icon>
+					</item>
+					
+					<item id="">
+						<title>Información Económico-Financiera 2012</title>
+						<format>PDF</format>
+						<size>1019</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&SSURIsscontext=Satellite+Server&blobcol=urldata&SSURIsession=false&blobheadervalue1=application%2Fpdf&blobwhere=1278704742481&blobheadervalue2=inline%3Bfilename%3D1000%5C0%5CInforme+Financiero+2012_castellano.pdf&blobheadervalue3=santander.wc.CFWCSancomQP01&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition&blobheadername3=appID#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2012.png]]></icon>
+					</item>
+					
+					<item id="">
+						<title>Gestion de Riesgo 2012</title>
+						<format>PDF</format>
+						<size>5997</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&SSURIsscontext=Satellite+Server&blobcol=urldata&SSURIsession=false&blobheadervalue1=application%2Fpdf&blobwhere=1278704742813&blobheadervalue2=inline%3Bfilename%3D1022%5C220%5CInforme+de+gesti%C3%B3n+de+riesgo+SPA.pdf&blobheadervalue3=santander.wc.CFWCSancomQP01&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition&blobheadername3=appID#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2012.png]]></icon>
+					</item>
+					
+					<item id="">
+						<title>Anexos 2012</title>
+						<format>PDF</format>
+						<size>806</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&SSURIsscontext=Satellite+Server&blobcol=urldata&SSURIsession=false&blobheadervalue1=application%2Fpdf&blobwhere=1278704742462&blobheadervalue2=inline%3Bfilename%3D90%5C249%5CAnexos+e+inf+general+SPA.pdf&blobheadervalue3=santander.wc.CFWCSancomQP01&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition&blobheadername3=appID#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2012.png]]></icon>
+					</item>
+				</documents>
+			</year>
+		
+			<year id="2011">
+				<documents>
+									
+					<item id="">
+						<title>Informe Anual 2011</title>
+						<format>PDF</format>
+						<size>8016</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278681725134&SSURIsession=false&blobheadervalue2=inline%3B+filename%3D258%5C810%5CInforme+anual_es.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2011.png]]></icon>
+					</item>		
+					
+					<item id="">
+						<title>Informe de Auditoría y Cuentas Anuales 2011pdf</title>
+						<format>PDF</format>
+						<size>8847</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&SSURIsscontext=Satellite+Server&blobcol=urldata&SSURIsession=false&blobheadervalue1=application%2Fpdf&blobwhere=1278704742903&blobheadervalue2=inline%3Bfilename%3D48%5C876%5C01+Informe_cuentas_2011_V20_esp.pdf&blobheadervalue3=santander.wc.CFWCSancomQP01&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition&blobheadername3=appID#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2011.png]]></icon>
+					</item>	
+
+					<item id="">
+						<title>Informe de actividades 2011</title>
+						<format>PDF</format>
+						<size>11220</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&SSURIsscontext=Satellite+Server&blobcol=urldata&SSURIsession=false&blobheadervalue1=application%2Fpdf&blobwhere=1278704743068&blobheadervalue2=inline%3Bfilename%3D362%5C827%5CInforme+actividades_es.pdf&blobheadervalue3=santander.wc.CFWCSancomQP01&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition&blobheadername3=appID#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2011.png]]></icon>
+					</item>
+					
+					<item id="">
+						<title>Datos relevantes 2011</title>
+						<format>PDF</format>
+						<size>41</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&SSURIsscontext=Satellite+Server&blobcol=urldata&SSURIsession=false&blobheadervalue1=application%2Fpdf&blobwhere=1278704742096&blobheadervalue2=inline%3Bfilename%3D82%5C46%5CDatos+relevantes+2011.pdf&blobheadervalue3=santander.wc.CFWCSancomQP01&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition&blobheadername3=appID#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2011.png]]></icon>
+					</item>
+					
+					<item id="">
+						<title>Carta del Presidente 2011</title>
+						<format>PDF</format>
+						<size>236</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&SSURIsscontext=Satellite+Server&blobcol=urldata&SSURIsession=false&blobheadervalue1=application%2Fpdf&blobwhere=1278704742385&blobheadervalue2=inline%3Bfilename%3D382%5C226%5CCarta+presidente+2011.pdf&blobheadervalue3=santander.wc.CFWCSancomQP01&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition&blobheadername3=appID#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2011.png]]></icon>
+					</item>
+					
+					<item id="">
+						<title>Carta del Consejero Delegado 2011</title>
+						<format>PDF</format>
+						<size>174</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&SSURIsscontext=Satellite+Server&blobcol=urldata&SSURIsession=false&blobheadervalue1=application%2Fpdf&blobwhere=1278704742107&blobheadervalue2=inline%3Bfilename%3D944%5C283%5CCarta+consejero+delegado+2011.pdf&blobheadervalue3=santander.wc.CFWCSancomQP01&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition&blobheadername3=appID#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2011.png]]></icon>
+					</item>
+					
+					<item id="">
+						<title>Informe de Gobierno Corporativo 2011</title>
+						<format>PDF</format>
+						<size>946</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&SSURIsscontext=Satellite+Server&blobcol=urldata&SSURIsession=false&blobheadervalue1=application%2Fpdf&blobwhere=1278704742374&blobheadervalue2=inline%3Bfilename%3D71%5C759%5CInforme+gobierno+corporativo.pdf&blobheadervalue3=santander.wc.CFWCSancomQP01&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition&blobheadername3=appID#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2011.png]]></icon>
+					</item>
+					
+					
+					<item id="">
+						<title>Información Económico-Financiera 2011</title>
+						<format>PDF</format>
+						<size>777</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&SSURIsscontext=Satellite+Server&blobcol=urldata&SSURIsession=false&blobheadervalue1=application%2Fpdf&blobwhere=1278704742342&blobheadervalue2=inline%3Bfilename%3D660%5C94%5CInforme+economico+financiero+2011.pdf&blobheadervalue3=santander.wc.CFWCSancomQP01&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition&blobheadername3=appID#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2011.png]]></icon>
+					</item>
+					
+						
+					<item id="">
+						<title>Gestion del Riesgo 2011</title>
+						<format>PDF</format>
+						<size>870</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&SSURIsscontext=Satellite+Server&blobcol=urldata&SSURIsession=false&blobheadervalue1=application%2Fpdf&blobwhere=1278704742502&blobheadervalue2=inline%3Bfilename%3D463%5C602%5CInforme+de+riesgos.pdf&blobheadervalue3=santander.wc.CFWCSancomQP01&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition&blobheadername3=appID#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2011.png]]></icon>
+					</item>
+					
+					<item id="">
+						<title>Anexos 2011</title>
+						<format>PDF</format>
+						<size>139</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&SSURIsscontext=Satellite+Server&blobcol=urldata&SSURIsession=false&blobheadervalue1=application%2Fpdf&blobwhere=1278704742997&blobheadervalue2=inline%3Bfilename%3D936%5C318%5CAnexos.pdf&blobheadervalue3=santander.wc.CFWCSancomQP01&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition&blobheadername3=appID#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2011.png]]></icon>
+					</item>
+				</documents>
+			</year>
+		
+			<year id="2010">
+				<documents>
+									
+					<item id="">
+						<title>Informe Anual 2010</title>
+						<format>PDF</format>
+						<size>10799</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680671012&SSURIsession=false&blobheadervalue2=inline%3B+filename%3D790%5C465%5CInforme+anual_ESP.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2010.png]]></icon>
+					</item>		
+					
+					<item id="">
+						<title>Informe de Auditoría y Cuentas Anuales 2010</title>
+						<format>PDF</format>
+						<size>6239</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680673190&SSURIsession=false&blobheadervalue2=inline%3B+filename%3D729%5C615%5CAF_CUENTAS_INFORME+COMPLETO_2010NEW%2B_esp.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2010.png]]></icon>
+					</item>	
+
+					<item id="">
+						<title>Informe de actividades 2010</title>
+						<format>PDF</format>
+						<size>5641</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680670666&SSURIsession=false&blobheadervalue2=inline%3B+filename%3DInforme+de+actividades_ESP.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2010.png]]></icon>
+					</item>
+					
+					<item id="">
+						<title>Datos relevantes 2010</title>
+						<format>PDF</format>
+						<size>35</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680673607&SSURIsession=false&blobheadervalue2=inline%3B+filename%3D727%5C70%5CDatos+relevantes_ESP.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2010.png]]></icon>
+					</item>
+					
+					<item id="">
+						<title>Carta del Presidente 2010</title>
+						<format>PDF</format>
+						<size>373</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680672177&SSURIsession=false&blobheadervalue2=inline%3B+filename%3D43%5C605%5CCarta+presidente_ESP.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2010.png]]></icon>
+					</item>
+					
+					<item id="">
+						<title>Carta del Consejero Delegado 2010</title>
+						<format>PDF</format>
+						<size>174</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680674253&SSURIsession=false&blobheadervalue2=inline%3B+filename%3D953%5C639%5CCarta+consejero+delegado_ESP.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2010.png]]></icon>
+					</item>
+					
+					<item id="">
+						<title>Informe de Gobierno Corporativo 2010</title>
+						<format>PDF</format>
+						<size>354</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680673057&SSURIsession=false&blobheadervalue2=inline%3B+filename%3D865%5C586%5CInforme+de+gobierno+corporativo_ESP.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2010.png]]></icon>
+					</item>
+					
+					<item id="">
+						<title>Información Económico-Financiera 2010</title>
+						<format>PDF</format>
+						<size>1504</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&SSURIsscontext=Satellite+Server&blobcol=urldata&SSURIsession=false&blobheadervalue1=application%2Fpdf&blobwhere=1278680671772&blobheadervalue2=inline%3Bfilename%3D655%5C521%5CInforme+financiero_ESP.pdf&blobheadervalue3=santander.wc.CFWCSancomQP01&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition&blobheadername3=appID#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2010.png]]></icon>
+					</item>
+					
+					<item id="">
+						<title>Gestion del Riesgo 2010</title>
+						<format>PDF</format>
+						<size>2054</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680675046&SSURIsession=false&blobheadervalue2=inline%3B+filename%3DSantander+en+2010_ESP.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2010.png]]></icon>
+					</item>
+					
+					<item id="">
+						<title>Anexos 2010</title>
+						<format>PDF</format>
+						<size>146</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680673057&SSURIsession=false&blobheadervalue2=inline%3B+filename%3D865%5C586%5CInforme+de+gobierno+corporativo_ESP.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2010.png]]></icon>
+					</item>
+				</documents>
+			</year>
+		
+			<year id="2009">
+				<documents>
+            
+					<item id="">
+						<title> Informe anual 2009</title>
+						<format>PDF</format>
+						<size>12549</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680634366&SSURIsession=false&blobheadervalue2=inline%3B+filename%3DInforme+anual_ESP.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2009.png]]></icon>
+					</item>
+            
+					<item id="">
+						<title>Informe de Auditoría y Cuentas Anuales 2009</title>
+						<format>PDF</format>
+						<size>6737</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680650175&SSURIsession=false&blobheadervalue2=inline%3B+filename%3D283%5C788%5CSAN_cuentas_V31+FINAL.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2009.png]]></icon>
+					</item>
+            
+					<item id="">
+						<title>Informe de actividades 2009</title>
+						<format>PDF</format>
+						<size>8183</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&SSURIsscontext=Satellite+Server&blobcol=urldata&SSURIsession=false&blobheadervalue1=application%2Fpdf&blobwhere=1278680633810&blobheadervalue2=inline%3Bfilename%3DInforme+de+actividades_ESP.pdf&blobheadervalue3=santander.wc.CFWCSancomQP01&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition&blobheadername3=appID#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2009.png]]></icon>
+					</item>
+            
+					<item id="">
+						<title>Datos relevantes 2009</title>
+						<format>PDF</format>
+						<size>64</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680649882&SSURIsession=false&blobheadervalue2=inline%3B+filename%3DDatos+relevantes_ESP.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2009.png]]></icon>
+					</item>
+            
+					<item id="">
+						<title>Carta del Presidente 2009</title>
+						<format>PDF</format>
+						<size>303</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680634626&SSURIsession=false&blobheadervalue2=inline%3B+filename%3D75%5C844%5CCarta+Presidente_ESP.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2009.png]]></icon>
+					</item>
+            
+					<item id="">
+						<title>Carta del Consejero Delegado 2009</title>
+						<format>PDF</format>
+						<size>332</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680633389&SSURIsession=false&blobheadervalue2=inline%3B+filename%3D1017%5C247%5CCarta+Consejero+Delegado_ESP.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2009.png]]></icon>
+					</item>
+            
+					<item id="">
+						<title>Santander en 2009</title>
+						<format>PDF</format>
+						<size>6984</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680651129&SSURIsession=false&blobheadervalue2=inline%3B+filename%3Dantander+en+2009_ESP.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2009.png]]></icon>
+					</item>
+            
+					<item id="">
+						<title>Informe de Gobierno Corporativo 2009
+						</title>
+						<format>PDF</format>
+						<size>950</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680633717&SSURIsession=false&blobheadervalue2=inline%3B+filename%3D865%5C586%5CInforme+de+gobierno+corporativo_ESP.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2009.png]]></icon>
+					</item>
+            
+					<item id="">
+						<title>
+						Información Económico-Financiera 2009
+						</title>
+						<format>PDF</format>
+						<size>1505</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680633327&SSURIsession=false&blobheadervalue2=inline%3B+filename%3D115%5C760%5CInformaci%C3%B3n+econ%C3%B3mico-financiera_ESP.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2009.png]]></icon>
+					</item>
+            
+					<item id="">
+						<title>
+					   Gestión del Riesgo 2009
+						</title>
+						<format>PDF</format>
+						<size>1781</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680634607&SSURIsession=false&blobheadervalue2=inline%3B+filename%3D484%5C269%5CGesti%C3%B3n+del+riesgo_ESP.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2009.png]]></icon>
+					</item>
+            
+					<item id="">
+						<title>
+						Anexos 2009
+						</title>
+						<format>PDF</format>
+						<size>159</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680649814&SSURIsession=false&blobheadervalue2=inline%3B+filename%3D203%5C687%5CAnexos_ESP.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2009.png]]></icon>
+					</item>
+
+				</documents>
+			</year>
+			
+			<year id="2008">
+				<documents>
+            
+					<item id="">
+						<title> 
+						Informe anual 2008
+						</title>
+						<format>PDF</format>
+						<size>7833</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680481778&SSURIsession=false&blobheadervalue2=inline%3B+filename%3D390%5C19%5C01+SAN_InformeAnual_Completo_WEB.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2008.png]]></icon>
+					</item>
+			
+					<item id="">
+						<title>
+						Informe de Auditoría y Cuentas Anuales 2008
+						</title>
+						<format>PDF</format>
+						<size>5060</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680484176&SSURIsession=false&blobheadervalue2=inline%3B+filename%3D482%5C172%5CAuditor.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2008.png]]></icon>
+					</item>
+		
+					<item id="">
+						<title>
+						Informe de actividades 2008
+						</title>
+						<format>PDF</format>
+						<size>3181</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680482576&SSURIsession=false&blobheadervalue2=inline%3B+filename%3DInforme+de+actividades+2008.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2008.png]]></icon>
+					</item>
+            
+					<item id="">
+						<title>
+						Datos relevantes 2008
+						</title>
+						<format>PDF</format>
+						<size>83</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&SSURIsscontext=Satellite+Server&blobcol=urldata&SSURIsession=false&blobheadervalue1=application%2Fpdf&blobwhere=1278680482894&blobheadervalue2=inline%3Bfilename%3D916%5C962%5Cdatos+relevantes.pdf&blobheadervalue3=santander.wc.CFWCSancomQP01&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition&blobheadername3=appID#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2008.png]]></icon>
+					</item>
+            
+					<item id="">
+						<title>
+						Carta del Presidente 2008</title>
+						<format>PDF</format>
+						<size>277</size>
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680481889&SSURIsession=false&blobheadervalue2=inline%3B+filename%3D808%5C843%5CCarta+Presidente.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2008.png]]></icon>
+					</item>
+            
+					<item id="">
+						<title>
+						Carta del Presidente 2008	
+						</title>
+						<format>PDF</format>
+						<size>277</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680481889&SSURIsession=false&blobheadervalue2=inline%3B+filename%3D808%5C843%5CCarta+Presidente.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2008.png]]></icon>
+					</item>
+            
+					<item id="">
+						<title>
+						Carta del Consejero Delegado 2008	
+						</title>
+						<format>PDF</format>
+						<size>344</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680483341&SSURIsession=false&blobheadervalue2=inline%3B+filename%3D523%5C713%5CCarta+del+Consejero+Delegado.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2008.png]]></icon>
+					</item>
+            
+					<item id="">
+						<title>
+						Santander en 2008
+						</title>
+						<format>PDF</format>
+						<size>2741</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680483988&SSURIsession=false&blobheadervalue2=inline%3B+filename%3DSantander+en+2008.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>		
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2008.png]]></icon>
+					</item>
+            
+					<item id="">
+						<title>
+					   Informe de Gobierno Corporativo 2008
+						</title>
+						<format>PDF</format>
+						<size>824</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680751488&SSURIsession=false&blobheadervalue2=inline%3B+filename%3D868%5C201%5CBlobServer.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2008.png]]></icon>
+					</item>	
+			
+					<item id="">
+						<title>
+						Información Económico-Financiera 2008
+						</title>
+						<format>PDF</format>
+						<size>1428</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680750727&SSURIsession=false&blobheadervalue2=inline%3B+filename%3D982%5C787%5CBlobServer2.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2008.png]]></icon>
+					</item>
+			
+					<item id="">
+						<title>
+						Gestión del Riesgo 2008
+						</title>
+						<format>PDF</format>
+						<size>1454</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680483244&SSURIsession=false&blobheadervalue2=inline%3B+filename%3D321%5C58%5CGesti%C3%B3n+del+riesgo.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2008.png]]></icon>
+					</item>
+			
+					<item id="">
+						<title>
+						Anexos 2008
+						</title>
+						<format>PDF</format>
+						<size>110</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680483284&SSURIsession=false&blobheadervalue2=inline%3B+filename%3D936%5C318%5CAnexos.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2008.png]]></icon>
+					</item>
+				</documents>
+			</year>
+            
+			<year id="2007">
+				<documents>
+			
+					<item id="">
+						<title>
+						Informe Anual 2007
+						</title>
+						<format>PDF</format>
+						<size>3738</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680753170&SSURIsession=false&blobheadervalue2=inline%3B+filename%3D122%5C421%5CInforme+Anual+2007.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>		
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2007.png]]></icon>
+					</item>
+			
+					<item id="">
+						<title>
+						Datos relevantes 2007
+						</title>
+						<format>PDF</format>
+						<size>91</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680470946&SSURIsession=false&blobheadervalue2=inline%3B+filename%3D948%5C271%5CDatos+relevantes.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2007.png]]></icon>
+					</item>
+			
+					<item id="">
+						<title>
+						Carta del Presidente
+						</title>
+						<format>PDF</format>
+						<size>278</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680469229&SSURIsession=false&blobheadervalue2=inline%3B+filename%3DCarta+Presidente.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>		
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2007.png]]></icon>
+					</item>
+			
+					<item id="">
+						<title>
+						Carta del Consejero Delegado 2007
+						</title>
+						<format>PDF</format>
+						<size>256</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680468492&SSURIsession=false&blobheadervalue2=inline%3B+filename%3D470%5C697%5CCarta+Consejero+Delegado.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2007.png]]></icon>
+					</item>
+			
+					<item id="">
+						<title>
+						Santander en 2007
+						</title>
+						<format>PDF</format>
+						<size>1135</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680470444&SSURIsession=false&blobheadervalue2=inline%3B+filename%3DSantander+2007.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2007.png]]></icon>
+					</item>
+
+					<item id="">
+						<title>
+						Informe de Gobierno Corporativo 2007
+						</title>
+						<format>PDF</format>
+						<size>525</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680468906&SSURIsession=false&blobheadervalue2=inline%3B+filename%3D71%5C814%5CInforme+Gobierno+Corporativo.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2007.png]]></icon>
+					</item>	
+			
+					<item id="">
+						<title>
+						Información Económico-Financiera 2007
+						</title>
+						<format>PDF</format>
+						<size>322</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680469770&SSURIsession=false&blobheadervalue2=inline%3B+filename%3D908%5C812%5CInforme+Financiero.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>		
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2007.png]]></icon>
+					</item>	
+			
+					<item id="">
+						<title>
+						Gestión del Riesgo 2007
+						</title>
+						<format>PDF</format>
+						<size>327</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680467679&SSURIsession=false&blobheadervalue2=inline%3B+filename%3D221%5C787%5CGestion+del+Riesgo.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2007.png]]></icon>
+					</item>	
+			
+					<item id="">
+						<title>
+						Modelo de Control Interno e Informe del Auditor 2007
+						</title>
+						<format>PDF</format>
+						<size>138</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680469051&SSURIsession=false&blobheadervalue2=inline%3B+filename%3D483%5C612%5CModelo+de+Control+Interno+e+Informe+del+Auditor.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>		
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2007.png]]></icon>
+					</item>	
+			
+					<item id="">
+						<title>
+						Informe de Auditoría y Cuentas Anuales 2007
+						</title>
+						<format>PDF</format>
+						<size>1091</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680467834&SSURIsession=false&blobheadervalue2=inline%3B+filename%3D890%5C1020%5CAuditoria.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>		
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2007.png]]></icon>
+					</item>	
+			
+					<item id="">
+						<title>
+						Anexos 2007
+						</title>
+						<format>PDF</format>
+						<size>107</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680470875&SSURIsession=false&blobheadervalue2=inline%3B+filename%3D936%5C318%5CAnexos.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2007.png]]></icon>
+					</item>	
+			
+				</documents>
+			</year>
+				
+			<year id="2006">
+				<documents>
+				
+					<item id="">
+						<title>
+						Informe Anual 2006
+						</title>
+						<format>PDF</format>
+						<size>4116</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680404728&SSURIsession=false&blobheadervalue2=inline%3B+filename%3DInforme+Anual+2006..pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2006.png]]></icon>
+					</item>	
+				
+					<item id="">
+						<title>
+						Datos relevantes 2006
+						</title>
+						<format>PDF</format>
+						<size>38</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680406688&SSURIsession=false&blobheadervalue2=inline%3B+filename%3D948%5C271%5CDatos+relevantes.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2006.png]]></icon>
+					</item>	
+				
+					<item id="">
+						<title>
+						Carta del Presidente 2006
+						</title>
+						<format>PDF</format>
+						<size>240</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680404985&SSURIsession=false&blobheadervalue2=inline%3B+filename%3D1017%5C592%5CCarta+del+Presidente..pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2006.png]]></icon>
+					</item>	
+				
+					<item id="">
+						<title>
+						Carta del Consejero Delegado 2006
+						</title>
+						<format>PDF</format>
+						<size>102</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680405501&SSURIsession=false&blobheadervalue2=inline%3B+filename%3D523%5C713%5CCarta+del+Consejero+Delegado.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2006.png]]></icon>
+					</item>	
+
+					<item id="">
+						<title>
+						Santander en 2006
+						</title>
+						<format>PDF</format>
+						<size>1604</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680403603&SSURIsession=false&blobheadervalue2=inline%3B+filename%3DGrupo+Santander+en+2006.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2006.png]]></icon>
+					</item>	
+				
+					<item id="">
+						<title>
+						Informe de Gobierno Corporativo 2006
+						</title>
+						<format>PDF</format>
+						<size>189</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680404241&SSURIsession=false&blobheadervalue2=inline%3B+filename%3D318%5C960%5CInforme+de+Gobierno+Corporativo.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2006.png]]></icon>
+					</item>	
+				
+					<item id="">
+						<title>
+						Información Económico-Financiera 2006
+						</title>
+						<format>PDF</format>
+						<size>136</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680406320&SSURIsession=false&blobheadervalue2=inline%3B+filename%3D784%5C1021%5CInformacion+Economico-Financiera.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2006.png]]></icon>
+					</item>	
+				
+					<item id="">
+						<title>
+						Gestión del Riesgo 2006
+						</title>
+						<format>PDF</format>
+						<size>404</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680403653&SSURIsession=false&blobheadervalue2=inline%3B+filename%3D221%5C787%5CGestion+del+Riesgo.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2006.png]]></icon>
+					</item>	
+				
+					<item id="">
+						<title>
+						Modelo de Control Interno e Informe del Auditor 2006
+						</title>
+						<format>PDF</format>
+						<size>148</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680406339&SSURIsession=false&blobheadervalue2=inline%3B+filename%3D483%5C612%5CModelo+de+Control+Interno+e+Informe+del+Auditor.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2006.png]]></icon>
+					</item>	
+				
+					<item id="">
+						<title>
+						Informe de Auditoría y Cuentas Anuales 2006
+						</title>
+						<format>PDF</format>
+						<size>920</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680404709&SSURIsession=false&blobheadervalue2=inline%3B+filename%3D310%5C845%5CInforme+de+Auditor%C3%ADa+y+Cuentas+Anuales..pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2006.png]]></icon>
+					</item>	
+				
+					<item id="">
+						<title>
+						Anexos 2006
+						</title>
+						<format>PDF</format>
+						<size>73</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680404537&SSURIsession=false&blobheadervalue2=inline%3B+filename%3D936%5C318%5CAnexos.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2006.png]]></icon>
+					</item>	
+				
+				</documents>
+			</year>
+				
+			<year id="2005">
+				<documents>
+				
+					<item id="">
+						<title>
+							Informe Anual 2005
+						</title>
+						<format>PDF</format>
+						<size>3216</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680395522&SSURIsession=false&blobheadervalue2=inline%3B+filename%3DInforme_Anual_2005.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2005.png]]></icon>
+					</item>	
+				
+					<item id="">
+						<title>
+						Datos relevantes 2005
+						</title>
+						<format>PDF</format>
+						<size>27,7</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680807109&SSURIsession=false&blobheadervalue2=inline%3B+filename%3D24%5C201%5CInformeAnual2005_Datos_relevantes.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2005.png]]></icon>
+					</item>	
+				
+					<item id="">
+						<title>
+						Carta del Presidente 2005
+						</title>
+						<format>PDF</format>
+						<size>201</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680805450&SSURIsession=false&blobheadervalue2=inline%3B+filename%3D746%5C857%5CCarta_Presidente2005.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2005.png]]></icon>
+					</item>	
+				
+					<item id="">
+						<title>
+						Carta del Consejero Delegado 2005
+						</title>
+						<format>PDF</format>
+						<size>106</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680805649&SSURIsession=false&blobheadervalue2=inline%3B+filename%3D598%5C330%5CCarta_CEO2005.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2005.png]]></icon>
+					</item>	
+				
+					<item id="">
+						<title>
+						Grupo Santander en 2005
+						</title>
+						<format>PDF</format>
+						<size>1,57</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680803372&SSURIsession=false&blobheadervalue2=inline%3B+filename%3DInformeAnual2005_Grupo_Santander_2005.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2005.png]]></icon>
+					</item>	
+
+					<item id="">
+						<title>
+						Informe de Gobierno Corporativo 2005
+						</title>
+						<format>PDF</format>
+						<size>171</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680803960&SSURIsession=false&blobheadervalue2=inline%3B+filename%3D449%5C477%5CInformeAnual2005_Informe_Gobierno__Corporativo.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2005.png]]></icon>
+					</item>	
+				
+					<item id="">
+						<title>
+						Información Económico-Financiera 2005
+						</title>
+						<format>PDF</format>
+						<size>278</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680804832&SSURIsession=false&blobheadervalue2=inline%3B+filename%3D870%5C383%5CInformeAnual2005_Informacion_Economico_Financiera.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2005.png]]></icon>
+					</item>	
+				
+					<item id="">
+						<title>
+						Gestión del Riesgo 2005
+						</title>
+						<format>PDF</format>
+						<size>279</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680804516&SSURIsession=false&blobheadervalue2=inline%3B+filename%3D37%5C837%5CInformeAnual2005_Riesgos.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2005.png]]></icon>
+					</item>	
+				
+					<item id="">
+						<title>
+						Informe de Auditoría y Cuentas Anuales 2005
+						</title>
+						<format>PDF</format>
+						<size>779</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680807327&SSURIsession=false&blobheadervalue2=inline%3B+filename%3D455%5C993%5CInforme_de_Auditoria_y_Cuentas_Anuales.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2005.png]]></icon>
+					</item>	
+				
+					<item id="">
+						<title>
+						Anexos 2005
+						</title>
+						<format>PDF</format>
+						<size>60,3</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680806290&SSURIsession=false&blobheadervalue2=inline%3B+filename%3D936%5C318%5CAnexos.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2005.png]]></icon>
+					</item>	
+				
+				</documents>
+			</year>
+				
+			<year id="2004">
+				<documents>
+				
+					<item id="">
+						<title>
+						Informe Anual Año 2004
+						</title>
+						<format>PDF</format>
+						<size>7097</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680804187&SSURIsession=false&blobheadervalue2=inline%3B+filename%3DInforme+anual+2004.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2004.png]]></icon>
+					</item>	
+				
+					<item id="">
+						<title>
+						Datos Relevantes
+						</title>
+						<format>PDF</format>
+						<size>49,6</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680805019&SSURIsession=false&blobheadervalue2=inline%3B+filename%3DInformeAnual_DatosRelevantes.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2004.png]]></icon>
+					</item>	
+				
+					<item id="">
+						<title>
+						Cartas del Presidente y del Consejero Delegado
+						</title>
+						<format>PDF</format>
+						<size>615</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680807346&SSURIsession=false&blobheadervalue2=inline%3B+filename%3DInformeAnual2004_Cartas_sinfirmas.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2004.png]]></icon>
+					</item>	
+				
+					<item id="">
+						<title>
+						Grupo Santander en 2004
+						</title>
+						<format>PDF</format>
+						<size>2799</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680806778&SSURIsession=false&blobheadervalue2=inline%3B+filename%3DGrupo+Santander+en+2004.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2004.png]]></icon>
+					</item>	
+				
+					<item id="">
+						<title>
+						Información Económico-Financiera
+						</title>
+						<format>PDF</format>
+						<size>753</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680804728&SSURIsession=false&blobheadervalue2=inline%3B+filename%3DInformeAnual2004_InfoEcoFinan.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2004.png]]></icon>
+					</item>	
+				
+					<item id="">
+						<title>
+						Gestión del Riesgo
+						</title>
+						<format>PDF</format>
+						<size>618</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680805946&SSURIsession=false&blobheadervalue2=inline%3B+filename%3DInformeAnual2004_GestionRiesgo.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2004.png]]></icon>
+					</item>	
+				
+					<item id="">
+						<title>
+						Informe de Auditoría y Cuentas Anuales
+						</title>
+						<format>PDF</format>
+						<size>1,26</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680803714&SSURIsession=false&blobheadervalue2=inline%3B+filename%3DInformeAnual_2004Auditoria_CuentasAnuales.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2004.png]]></icon>
+					</item>	
+				
+					<item id="">
+						<title>
+						Anexos
+						</title>
+						<format>PDF</format>
+						<size>299</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680807092&SSURIsession=false&blobheadervalue2=inline%3B+filename%3DInformeAnual2004_Anexos.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2004.png]]></icon>
+					</item>	
+				
+				</documents>
+			</year>
+				
+			<year id="2003">
+				<documents>
+				
+					<item id="">
+						<title>
+						Informe Anual año 2003
+						</title>
+						<format>PDF</format>
+						<size>6866</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680806634&SSURIsession=false&blobheadervalue2=inline%3B+filename%3DMeI_InformeAnual2003completo2.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2003.png]]></icon>
+					</item>	
+				
+					<item id="">
+						<title>
+						Datos Relevantes
+						</title>
+						<format>PDF</format>
+						<size>1,41</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680804312&SSURIsession=false&blobheadervalue2=inline%3B+filename%3DInformAnual2003_DatosRelevantes.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2003.png]]></icon>
+					</item>	
+				
+					<item id="">
+						<title>
+						Cartas del Presidente y el Consejero Delegado
+						</title>
+						<format>PDF</format>
+						<size>390</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680807054&SSURIsession=false&blobheadervalue2=inline%3B+filename%3DMeI_InformeAnual2003_Cartas.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2003.png]]></icon>
+					</item>	
+				
+					<item id="">
+						<title>
+						Grupo Santander 2003
+						</title>
+						<format>PDF</format>
+						<size>857</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680803750&SSURIsession=false&blobheadervalue2=inline%3B+filename%3DInformeAnual_GrupoSantander.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2003.png]]></icon>
+					</item>	
+				
+					<item id="">
+						<title>
+						Ciudad Grupo Santander
+						</title>
+						<format>PDF</format>
+						<size>629</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680803839&SSURIsession=false&blobheadervalue2=inline%3B+filename%3DMei_InformeAnual_CiudadSantander.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2003.png]]></icon>
+					</item>	
+				
+					<item id="">
+						<title>
+						Responsabilidad Social Corporativa
+						</title>
+						<format>PDF</format>
+						<size>922</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680806708&SSURIsession=false&blobheadervalue2=inline%3B+filename%3DMeI_InformeAnual_RSC.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2003.png]]></icon>
+					</item>	
+				
+					<item id="">
+						<title>
+						Gobierno Corporativo
+						</title>
+						<format>PDF</format>
+						<size>625</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680805329&SSURIsession=false&blobheadervalue2=inline%3B+filename%3DMeI_InformeAnual2003_GobiernoCorporativo.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2003.png]]></icon>
+					</item>	
+				
+					<item id="">
+						<title>
+						Información económico-financiera y del riesgo
+						</title>
+						<format>PDF</format>
+						<size>1,08</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680804079&SSURIsession=false&blobheadervalue2=inline%3B+filename%3DMeI_InformeAnual2003_InfoEconomica.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2003.png]]></icon>
+					</item>	
+				
+					<item id="">
+						<title>
+						Información Legal
+						</title>
+						<format>PDF</format>
+						<size>1,24</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680803820&SSURIsession=false&blobheadervalue2=inline%3B+filename%3DMeI_InformeAnual2003_InfoLegal.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2003.png]]></icon>
+					</item>	
+
+				
+					<item id="">
+						<title>
+						Apéndice
+						</title>
+						<format>PDF</format>
+						<size>562</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680805670&SSURIsession=false&blobheadervalue2=inline%3B+filename%3DMeI_InformeAnual2003_Apendice.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2003.png]]></icon>
+					</item>	
+				
+				</documents>
+			</year>
+				
+			<!--<year id="2002">
+				<documents>
+				
+					<item id="">
+						<title>
+						Informe Anual 2002
+						</title>
+						<format>PDF</format>
+						<size>2226</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680807291&SSURIsession=false&blobheadervalue2=inline%3B+filename%3DInformeAnual2002.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2002.png]]></icon>
+					</item>	
+				
+					<item id="">
+						<title>
+						Datos Relevantes
+						</title>
+						<format>PDF</format>
+						<size>127</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680811005&SSURIsession=false&blobheadervalue2=inline%3B+filename%3Danual2002a.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2002.png]]></icon>
+					</item>	
+			
+					<item id="">
+						<title>
+						Cartas del Presidente y el Consejero Delegado
+						</title>
+						<format>PDF</format>
+						<size>237</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680809509&SSURIsession=false&blobheadervalue2=inline%3B+filename%3Danual2002b.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2002.png]]></icon>
+					</item>	
+				
+					<item id="">
+						<title>
+						El Grupo Santander Central Hispano
+						</title>
+						<format>PDF</format>
+						<size>887</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680811048&SSURIsession=false&blobheadervalue2=inline%3B+filename%3Danual2002c.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2002.png]]></icon>
+					</item>	
+				
+					<item id="">
+						<title>
+						Informe sobre Gobierno Corporativo
+						</title>
+						<format>PDF</format>
+						<size>209</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680810922&SSURIsession=false&blobheadervalue2=inline%3B+filename%3Danual2002d.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2002.png]]></icon>
+					</item>	
+				
+					<item id="">
+						<title>
+						Responsabilidad Social corporativa
+						</title>
+						<format>PDF</format>
+						<size>29</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680808478&SSURIsession=false&blobheadervalue2=inline%3B+filename%3Danual2002f.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2002.png]]></icon>
+					</item>	
+				
+					<item id="">
+						<title>
+						Informe Financiero
+						</title>
+						<format>PDF</format>
+						<size>208</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680808068&SSURIsession=false&blobheadervalue2=inline%3B+filename%3Danual2002g.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2002.png]]></icon>
+					</item>	
+				
+					<item id="">
+						<title>
+						Informe Financiero
+						</title>
+						<format>PDF</format>
+						<size>208</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680809792&SSURIsession=false&blobheadervalue2=inline%3B+filename%3Danual2002h.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2002.png]]></icon>
+					</item>	
+				
+					<item id="">
+						<title>					
+						Gestión Financiera y del Riesgo
+						</title>
+						<format>PDF</format>
+						<size>114</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680809792&SSURIsession=false&blobheadervalue2=inline%3B+filename%3Danual2002h.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2002.png]]></icon>
+					</item>	
+				
+					<item id="">
+						<title>
+						Información Legal					
+						</title>
+						<format>PDF</format>
+						<size>457</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680809854&SSURIsession=false&blobheadervalue2=inline%3B+filename%3Danual2002i.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2002.png]]></icon>
+					</item>	
+				
+					<item id="">
+						<title>
+						Apéndices					
+						</title>
+						<format>PDF</format>
+						<size>55</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680809479&SSURIsession=false&blobheadervalue2=inline%3B+filename%3Danual2002j.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/anuales/A_2002.png]]></icon>
+					</item>	
+				
+				</documents>
+			</year>-->
+		</annual_reports>
+		
+		<quarterly_reports>
+			<year id="2015">
+				<documents>
+				    <item id="">
+						<title>3er Trimestre 2015</title>
+						<format>PDF</format>
+						<size>325</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?blobcol=urldata&blobheadername1=content-type&blobheadername2=Content-Disposition&blobheadername3=appID&blobheadervalue1=application%2Fpdf&blobheadervalue2=inline%3Bfilename%3D756%5C924%5Cweb_trimestral_jul-sep_3t15_esp.pdf&blobheadervalue3=santander.wc.CFWCSancomQP01&blobkey=id&blobtable=MungoBlobs&blobwhere=1278713455889&ssbinary=true]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/trimestrales/3T15.png]]></icon>
+					</item>
+					<item id="">
+						<title>2o Trimestre 2015</title>
+						<format>PDF</format>
+						<size>678</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?blobcol=urldata&blobheadername1=content-type&blobheadername2=Content-Disposition&blobheadername3=appID&blobheadervalue1=application%2Fpdf&blobheadervalue2=inline%3Bfilename%3D668%5c964%5cpag_trimestral_ene-mar_2T15_ESP.pdf&blobheadervalue3=santander.wc.CFWCSancomQP01&blobkey=id&blobtable=MungoBlobs&blobwhere=1278710298806&ssbinary=true]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/trimestrales/2T15.png]]></icon>
+					</item>
+					<item id="">
+						<title>1er Trimestre 2015</title>
+						<format>PDF</format>
+						<size>754</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?blobcol=urldata&blobheadername1=content-type&blobheadername2=Content-Disposition&blobheadername3=appID&blobheadervalue1=application%2Fpdf&blobheadervalue2=inline%3Bfilename%3D1019%5c195%5cweb_trimestral_ene-mar_1T15_ESP.pdf&blobheadervalue3=santander.wc.CFWCSancomQP01&blobkey=id&blobtable=MungoBlobs&blobwhere=1278708071778&ssbinary=true]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/trimestrales/1T15.png]]></icon>
+					</item>
+				</documents>
+			</year>
+			<year id="2014">
+				<documents>
+					<item id="">
+						<title>4o Trimestre 2014</title>
+						<format>PDF</format>
+						<size>540</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&SSURIsscontext=Satellite+Server&blobcol=urldata&SSURIsession=false&blobheadervalue1=application%2Fpdf&blobwhere=1278706513047&blobheadervalue2=inline%3Bfilename%3D910%5c345%5cweb_trimestral_oct-dic_4T14_ESP_kievit.pdf&blobheadervalue3=santander.wc.CFWCSancomQP01&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition&blobheadername3=appID#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/trimestrales/4T14.png]]></icon>
+					</item>
+					<item id="">
+						<title>3er Trimestre 2014</title>
+						<format>PDF</format>
+						<size>325</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&SSURIsscontext=Satellite+Server&blobcol=urldata&SSURIsession=false&blobheadervalue1=application%2Fpdf&blobwhere=1278704445483&blobheadervalue2=inline%3Bfilename%3D526%5C42%5Cweb_trimestral_jul-sep_3T14_ESP_kievit.pdf&blobheadervalue3=santander.wc.CFWCSancomQP01&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition&blobheadername3=appID#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/trimestrales/3T14.png]]></icon>
+					</item>
+					<item id="">
+						<title>2do Trimestre 2014</title>
+						<format>PDF</format>
+						<size>470</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&SSURIsscontext=Satellite+Server&blobcol=urldata&SSURIsession=false&blobheadervalue1=application%2Fpdf&blobwhere=1278702519594&blobheadervalue2=inline%3Bfilename%3D144%5C518%5Ctrimestralabrjunio2T14ESP.pdf&blobheadervalue3=santander.wc.CFWCSancomQP01&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition&blobheadername3=appID#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/trimestrales/2T14.png]]></icon>
+					</item>
+					<item id="">
+						<title>1er Trimestre 2014</title>
+						<format>PDF</format>
+						<size>575</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&SSURIsscontext=Satellite+Server&blobcol=urldata&SSURIsession=false&blobheadervalue1=application%2Fpdf&blobwhere=1278700815798&blobheadervalue2=inline%3Bfilename%3D101%5C53%5Cweb_trimestral_ene-marzo_1T14_ESP.pdf&blobheadervalue3=santander.wc.CFWCSancomQP01&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition&blobheadername3=appID#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/trimestrales/1T14.png]]></icon>
+					</item>
+				</documents>
+			</year>
+			
+			<year id="2013">
+				<documents>
+					<item id="">
+						<title>1er Trimestre 2013</title>
+						<format>PDF</format>
+						<size>407</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278694183374&SSURIsession=false&blobheadervalue2=inline%3B+filename%3D42%5C492%5C01_web_nuevo_trimestral_ene-mar_paginas.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/trimestrales/1T13.png]]></icon>
+					</item>
+					<item id="">
+						<title>2do Trimestre 2013</title>
+						<format>PDF</format>
+						<size>524</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278695517568&SSURIsession=false&blobheadervalue2=inline%3B+filename%3D329%5C360%5C2trimestre2013.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/trimestrales/2T13.png]]></icon>
+					</item>
+					
+					<item id="">
+						<title>3er Trimestre 2013</title>
+						<format>PDF</format>
+						<size>341</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278697455450&SSURIsession=false&blobheadervalue2=inline%3B+filename%3D429%5C73%5C3er+Trimestre+2013.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/trimestrales/3T13.png]]></icon>
+					</item>
+						
+					<item id="">
+						<title>4to Trimestre 2013</title>
+						<format>PDF</format>
+						<size>518</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&SSURIsscontext=Satellite+Server&blobcol=urldata&SSURIsession=false&blobheadervalue1=application%2Fpdf&blobwhere=1278699122501&blobheadervalue2=inline%3Bfilename%3D196%5C336%5C4t.pdf&blobheadervalue3=santander.wc.CFWCSancomQP01&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition&blobheadername3=appID#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/trimestrales/4T13.png]]></icon>
+					</item>
+				</documents>
+			</year>
+			
+			<year id="2012">
+				<documents>
+					<item id="">
+						<title>1er Trimestre 2012</title>
+						<format>PDF</format>
+						<size>910</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278694183374&SSURIsession=false&blobheadervalue2=inline%3B+filename%3D42%5C492%5C01_web_nuevo_trimestral_ene-mar_paginas.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/trimestrales/1T12.png]]></icon>
+						
+					</item>
+					
+					<item id="">
+						<title>2do Trimestre 2012</title>
+						<format>PDF</format>
+						<size>624</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278686824013&SSURIsession=false&blobheadervalue2=inline%3B+filename%3D407%5C529%5Cweb_2T12_2012_ESP.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/trimestrales/2T12.png]]></icon>
+					</item>
+					
+					<item id="">
+						<title>3er Trimestre 2012</title>
+						<format>PDF</format>
+						<size>779</size>  
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&SSURIsscontext=Satellite+Server&blobcol=urldata&SSURIsession=false&blobheadervalue1=application%2Fpdf&blobwhere=1278688959142&blobheadervalue2=inline%3B+filename%3D244%5C579%5Cversion_web_Trimestral_3T12_2012_ESP_OK.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition&blobheadername3=appID#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/trimestrales/3T12.png]]></icon>
+					</item>
+						
+					<item id="">
+						<title>4er Trimestre 2012</title>
+						<format>PDF</format>
+						<size>910</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278692199811&SSURIsession=false&blobheadervalue2=inline%3B+filename%3D487%5C223%5Cweb_4T12_Enero_diciembre_2012_ESP_ok.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/trimestrales/4T12.png]]></icon>
+					</item>
+				</documents>
+			</year>
+					
+			<year id="2011">
+				<documents>	
+					<item id="">
+						<title>1er Trimestre 2011</title>
+						<format>PDF</format>
+						<size>3737</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278683931371&SSURIsession=false&blobheadervalue2=inline%3B+filename%3D168%5C135%5CAF4_1T11_enero_marzo_esp.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/trimestrales/1T11.png]]></icon>
+						
+					</item>
+					
+					<item id="">
+						<title>2do Trimestre 2011</title>
+						<format>PDF</format>
+						<size>1095</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680593164&SSURIsession=false&blobheadervalue2=inline%3B+filename%3D988%5C282%5Cinformetrimestral2011-2.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/trimestrales/2T11.png]]></icon>
+					</item>
+					
+					<item id="">
+						<title>3er Trimestre 2011</title>
+						<format>PDF</format>
+						<size>1313</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680592689&SSURIsession=false&blobheadervalue2=inline%3B+filename%3D408%5C607%5C3Taccionistas.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/trimestrales/3T11.png]]></icon>
+					</item>
+					
+					<item id="">
+						<title>4er Trimestre 2011</title>
+						<format>PDF</format>
+						<size>1160</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278681355441&SSURIsession=false&blobheadervalue2=inline%3B+filename%3D824%5C685%5CInforme++trimestral+4T11_.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/trimestrales/4T11.png]]></icon>
+					</item>
+
+				</documents>
+			</year>
+			
+			<year id="2010">
+				<documents>	
+					<item id="">
+						<title>1er Trimestre 2010</title>
+						<format>PDF</format>
+						<size>803</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680591635&SSURIsession=false&blobheadervalue2=inline%3B+filename%3DAF_Maqueta_nueva_primer+trimestre-2010.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/trimestrales/1T10.png]]></icon>
+						
+					</item>
+					
+					<item id="">
+						<title>2do Trimestre 2010</title>
+						<format>PDF</format>
+						<size>341</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680594547&SSURIsession=false&blobheadervalue2=inline%3B+filename%3Dprimer+semestre.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/trimestrales/2T10.png]]></icon>
+					</item>
+					
+					<item id="">
+						<title>3er Trimestre 2010</title>
+						<format>PDF</format>
+						<size>396</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680592301&SSURIsession=false&blobheadervalue2=inline%3B+filename%3Dtercer+trimestre.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/trimestrales/3T10.png]]></icon>
+						</item>
+						
+						<item id="">
+						<title>4er Trimestre 2010</title>
+						<format>PDF</format>
+						<size>398</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680595241&SSURIsession=false&blobheadervalue2=inline%3B+filename%3DInforme_Trimestral+4T10+140211+final.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/trimestrales/4T10.png]]></icon>
+					</item>
+				
+				</documents>
+			</year>
+			
+			<year id="2009">
+				<documents>	
+					<item id="">
+						<title>1er Trimestre 2009</title>
+						<format>PDF</format>
+						<size>2744</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680594203&SSURIsession=false&blobheadervalue2=inline%3B+filename%3DInforme+de+Accionistas+primer+trimestre+09+final.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/trimestrales/1T09.png]]></icon>
+						
+					</item>
+					
+					<item id="">
+						<title>1er Semestre 2009</title>
+						<format>PDF</format>
+						<size>324</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&SSURIsscontext=Satellite+Server&blobcol=urldata&SSURIsession=false&blobheadervalue1=application%2Fpdf&blobwhere=1278680490676&blobheadervalue2=inline%3Bfilename%3DTrim+CASTELLANO+030809+v2.pdf&blobheadervalue3=santander.wc.CFWCSancomQP01&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition&blobheadername3=appID#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/trimestrales/2T09.png]]></icon>
+					</item>
+					
+					<item id="">
+						<title>3er Trimestre 2009</title>
+						<format>PDF</format>
+						<size>498</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680592788&SSURIsession=false&blobheadervalue2=inline%3B+filename%3DTrimestral+Accionistas+Final+web.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/trimestrales/3T09.png]]></icon>
+					</item>
+						
+					<item id="">
+						<title>4er Trimestre 2009</title>
+						<format>PDF</format>
+						<size>579</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680592672&SSURIsession=false&blobheadervalue2=inline%3B+filename%3DInforme+trimestral+4T09+final.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/trimestrales/4T09.png]]></icon>
+					</item>
+				
+				</documents>
+			</year>
+			
+			<year id="2008">
+				<documents>	
+					<item id="">
+						<title>1er Trimestre 2008</title>
+						<format>PDF</format>
+						<size>281</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&SSURIsscontext=Satellite+Server&blobcol=urldata&SSURIsession=false&blobheadervalue1=application%2Fpdf&blobwhere=1278680441375&blobheadervalue2=inline%3Bfilename%3D1tia.pdf&blobheadervalue3=santander.wc.CFWCSancomQP01&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition&blobheadername3=appID#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/trimestrales/1T08.png]]></icon>
+						
+					</item>
+					
+					<item id="">
+						<title>1er Semestre 2008</title>
+						<format>PDF</format>
+						<size>487</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&SSURIsscontext=Satellite+Server&blobcol=urldata&SSURIsession=false&blobheadervalue1=application%2Fpdf&blobwhere=1278680441741&blobheadervalue2=inline%3Bfilename%3D372%5C856%5CInforme_Accionistas-primer+semestre.pdf&blobheadervalue3=santander.wc.CFWCSancomQP01&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition&blobheadername3=appID#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/trimestrales/2T08.png]]></icon>
+					</item>
+					
+					<item id="">
+						<title>3er Trimestre 2008</title>
+						<format>PDF</format>
+						<size>259</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&SSURIsscontext=Satellite+Server&blobcol=urldata&SSURIsession=false&blobheadervalue1=application%2Fpdf&blobwhere=1278680503607&blobheadervalue2=inline%3Bfilename%3Dtrimestral+acctas+3T08.pdf&blobheadervalue3=santander.wc.CFWCSancomQP01&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition&blobheadername3=appID#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/trimestrales/3T08.png]]></icon>
+					</item>
+						
+					<item id="">
+						<title>4er Trimestre 2008</title>
+						<format>PDF</format>
+						<size>425</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&SSURIsscontext=Satellite+Server&blobcol=urldata&SSURIsession=false&blobheadervalue1=application%2Fpdf&blobwhere=1278680485539&blobheadervalue2=inline%3Bfilename%3DTrimestral+Accionistas+4T08.pdf&blobheadervalue3=santander.wc.CFWCSancomQP01&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition&blobheadername3=appID#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/trimestrales/4T08.png]]></icon>
+					</item>
+				</documents>
+			</year>
+			
+			<year id="2007">
+				<documents>	
+					<item id="">
+						<title>1er Trimestre 2007</title>
+						<format>PDF</format>
+						<size>4916</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680409181&SSURIsession=false&blobheadervalue2=inline%3B+filename%3DInforme+trimestral+accionistas+1T07B.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/trimestrales/1T07.png]]></icon>
+						
+					</item>
+					
+					<item id="">
+						<title>1er Semestre 2007</title>
+						<format>PDF</format>
+						<size>897</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680438946&SSURIsession=false&blobheadervalue2=inline%3B+filename%3DIN+TR+ACC+2T+ESP.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/trimestrales/2T07.png]]></icon>
+					</item>
+					
+					<item id="">
+						<title>3er Trimestre 2007</title>
+						<format>PDF</format>
+						<size>489</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680465624&SSURIsession=false&blobheadervalue2=inline%3B+filename%3DTrimestral+Accionistas+3T07def.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/trimestrales/3T07.png]]></icon>
+					</item>
+						
+					<item id="">
+						<title>4er Trimestre 2007</title>
+						<format>PDF</format>
+						<size>334</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680463640&SSURIsession=false&blobheadervalue2=inline%3B+filename%3DRED_INF_ENE-DIC-2007okok.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/trimestrales/4T07.png]]></icon>
+					</item>
+				</documents>
+			</year>
+			
+			<year id="2006">
+				<documents>	
+					<item id="">
+						<title>1er Trimestre 2006</title>
+						<format>PDF</format>
+						<size>344</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680591802&SSURIsession=false&blobheadervalue2=inline%3B+filename%3DInformeTrimestralAccionistas1T06.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/trimestrales/1T06.png]]></icon>
+						
+					</item>
+					
+					<item id="">
+						<title>2do Trimestre 2006</title>
+						<format>PDF</format>
+						<size>1535</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680400883&SSURIsession=false&blobheadervalue2=inline%3B+filename%3DInformeTrimestralAccionistas2T06.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment	]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/trimestrales/2T06.png]]></icon>
+					</item>
+					
+					<item id="">
+						<title>3er Trimestre 2006</title>
+						<format>PDF</format>
+						<size>1729</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&SSURIsscontext=Satellite+Server&blobcol=urldata&SSURIsession=false&blobheadervalue1=application%2Fpdf&blobwhere=1278680412867&blobheadervalue2=inline%3Bfilename%3DINF+ACC+3T06.pdf&blobheadervalue3=santander.wc.CFWCSancomQP01&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition&blobheadername3=appID#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/trimestrales/3T06.png]]></icon>
+					</item>
+						
+					<item id="">
+						<title>4er Trimestre 2006</title>
+						<format>PDF</format>
+						<size>716</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680463125&SSURIsession=false&blobheadervalue2=inline%3B+filename%3DInforme+Especial+Enero+07.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/trimestrales/4T06.png]]></icon>
+					</item>
+				</documents>
+			</year>
+			
+			<year id="2005">
+				<documents>	
+					<item id="">
+						<title>1er Trimestre 2005</title>
+						<format>PDF</format>
+						<size>1100</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&SSURIsscontext=Satellite+Server&blobcol=urldata&SSURIsession=false&blobheadervalue1=application%2Fpdf&blobwhere=1278680594842&blobheadervalue2=inline%3Bfilename%3DInforme_Trimestral_Accionista_1T05.pdf&blobheadervalue3=santander.wc.CFWCSancomQP01&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition&blobheadername3=appID#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/trimestrales/1T05.png]]></icon>
+						
+					</item>
+					
+					<item id="">
+						<title>2do Trimestre 2005</title>
+						<format>PDF</format>
+						<size>1520</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680591566&SSURIsession=false&blobheadervalue2=inline%3B+filename%3DInforme_Trimestral_Accionistas_2T05.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/trimestrales/2T05.png]]></icon>
+					</item>
+					
+					<item id="">
+						<title>3er Trimestre 2005</title>
+						<format>PDF</format>
+						<size>898</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680592116&SSURIsession=false&blobheadervalue2=inline%3B+filename%3DInforme_Trimestral_Accionistas_2005.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/trimestrales/3T05.png]]></icon>
+					</item>
+						
+				</documents>
+			</year>
+			
+			<year id="2004">
+				<documents>	
+					
+					<item id="">
+						<title>1er Trimestre 2004</title>
+						<format>PDF</format>
+						<size>620</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680591166&SSURIsession=false&blobheadervalue2=inline%3B+filename%3DnformeTrimestralAccionistas_1T04.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/trimestrales/1T04.png]]></icon>
+						
+					</item>
+					
+					<item id="">
+						<title>2º Trimestre 2004</title>
+						<format>PDF</format>
+						<size>2300</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&SSURIsscontext=Satellite+Server&blobcol=urldata&SSURIsession=false&blobheadervalue1=application%2Fpdf&blobwhere=1278680590177&blobheadervalue2=inline%3Bfilename%3DInformeTrimestralAccionistas_2T04.pdf&blobheadervalue3=santander.wc.CFWCSancomQP01&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition&blobheadername3=appID#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/trimestrales/2T04.png]]></icon>
+					</item>
+					
+					<item id="">
+						<title>3º Trimestre 2004</title>
+						<format>PDF</format>
+						<size>660</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&SSURIsscontext=Satellite+Server&blobcol=urldata&SSURIsession=false&blobheadervalue1=application%2Fpdf&blobwhere=1278680594882&blobheadervalue2=inline%3Bfilename%3DInformeTrimestralAccionistas_3T04.pdf&blobheadervalue3=santander.wc.CFWCSancomQP01&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition&blobheadername3=appID#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/trimestrales/3T04.png]]></icon>
+					</item>
+						
+					<item id="">
+						<title>4º Trimestre 2004</title>
+						<format>PDF</format>
+						<size>620</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680592053&SSURIsession=false&blobheadervalue2=inline%3B+filename%3DInformeTrimestralAccionistas_4T04.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/trimestrales/4T04.png]]></icon>
+					</item>
+				</documents>
+			</year>			
+			
+			<year id="2003">
+				<documents>	
+					
+					<item id="">
+						<title>2º Trimestre 2003</title>
+						<format>PDF</format>
+						<size>158</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680593701&SSURIsession=false&blobheadervalue2=inline%3B+filename%3DIT_A_2_trimestre_2003_espanol.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/trimestrales/2T03.png]]></icon>
+					</item>
+					
+					<item id="">
+						<title>3º Trimestre 2003</title>
+						<format>PDF</format>
+						<size>264</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680590688&SSURIsession=false&blobheadervalue2=inline%3B+filename%3DMI_Informes_InformeTrimestralAccionistas_3_TRIM_2003.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/trimestrales/3T03.png]]></icon>
+						</item>
+						
+					<item id="">
+						<title>4º Trimestre 2003</title>
+						<format>PDF</format>
+						<size>158</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680591874&SSURIsession=false&blobheadervalue2=inline%3B+filename%3DMI_Informes_InformeTrimestralAccionistas_4_TRIM_2003.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/trimestrales/4T03.png]]></icon>
+					</item>
+						
+				</documents>
+			</year>
+			
+			<!--<year id="2002">
+				<documents>	
+					
+					<item id="">
+						<title>1º Trimestre 2002</title>
+						<format>PDF</format>
+						<size>536</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&SSURIsscontext=Satellite+Server&blobcol=urldata&SSURIsession=false&blobheadervalue1=application%2Fpdf&blobwhere=1278680415978&blobheadervalue2=inline%3Bfilename%3DIT_A_1trimestre2002.pdf&blobheadervalue3=santander.wc.CFWCSancomQP01&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition&blobheadername3=appID#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/trimestrales/1T02.png]]></icon>
+					</item>
+						
+					<item id="">
+						<title>2º Trimestre 2002</title>
+						<format>PDF</format>
+						<size>472</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680415978&SSURIsession=false&blobheadervalue2=inline%3B+filename%3DIT_A_1trimestre2002.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/trimestrales/2T02.png]]></icon>
+					</item>
+					
+					<item id="">
+						<title>3º Trimestre 2002</title>
+						<format>PDF</format>
+						<size>441</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680415224&SSURIsession=false&blobheadervalue2=inline%3B+filename%3DIT_A_2trimestre2002.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/trimestrales/3T02.png]]></icon>
+					</item>
+						
+					<item id="">
+						<title>3º Trimestre 2002(boletin)</title>
+						<format>PDF</format>
+						<size>405</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680591534&SSURIsession=false&blobheadervalue2=inline%3B+filename%3D3er_Trimestre.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/trimestrales/3T02_boletin.png]]></icon>
+						</item>
+						
+					<item id="">
+						<title>4º Trimestre 2002</title>
+						<format>PDF</format>
+						<size>491</size> 
+						<url><![CDATA[http://www.santander.com/csgs/StaticBS?ssbinary=true&blobkey=id&blobcol=urldata&SSURIsscontext=Satellite+Server&blobheadervalue1=application%2Fpdf&blobwhere=1278680415162&SSURIsession=false&blobheadervalue2=inline%3B+filename%3DIT_A_4trimestre2002.pdf&SSURIapptype=BlobServer&blobtable=MungoBlobs&SSURIcontainer=Default&blobheadername1=content-type&blobheadername2=Content-Disposition#satellitefragment]]></url>
+						<icon><![CDATA[https://microsite.bancosantander.es/files/2015_junta_es/iconos/informes/trimestrales/4T02.png]]></icon>
+					</item>
+						
+				</documents>
+			</year>-->
+
+		</quarterly_reports>
+	</reports>
+
+</pdf_documents>
