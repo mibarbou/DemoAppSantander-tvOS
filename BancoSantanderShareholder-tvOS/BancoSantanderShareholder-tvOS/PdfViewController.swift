@@ -99,6 +99,10 @@ class PdfViewController: UIViewController, UICollectionViewDataSource, UICollect
                 next.imageView.adjustsImageWhenAncestorFocused = true
             })
             
+            collectionView.scrollEnabled = false
+            let indexPath = collectionView.indexPathForCell(next)!
+            collectionView.scrollToItemAtIndexPath(indexPath, atScrollPosition: .CenteredHorizontally, animated: true)
+            
             UIView.animateWithDuration(2.0, animations: { () -> Void in
                 
                 //                next.imageView.frame.size = self.focusSize
