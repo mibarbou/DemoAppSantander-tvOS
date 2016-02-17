@@ -175,6 +175,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="5Qk-bN-ujx">
+                                <rect key="frame" x="928" y="508" width="64" height="64"/>
+                                <color key="color" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </activityIndicatorView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Fx1-eR-DxL">
                                 <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="40" minimumInteritemSpacing="10" id="njd-Kc-Fng">
@@ -235,12 +239,15 @@
                         </subviews>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="Fx1-eR-DxL" secondAttribute="trailing" constant="-20" id="Q22-J6-VAK"/>
+                            <constraint firstItem="Fx1-eR-DxL" firstAttribute="centerY" secondItem="TKt-ah-BPy" secondAttribute="centerY" id="UjI-X1-GsZ"/>
+                            <constraint firstItem="Fx1-eR-DxL" firstAttribute="centerX" secondItem="TKt-ah-BPy" secondAttribute="centerX" id="bq6-DG-Yd1"/>
                             <constraint firstItem="Fx1-eR-DxL" firstAttribute="top" secondItem="Zmc-St-dZ1" secondAttribute="bottom" id="oKN-nj-xTb"/>
                             <constraint firstItem="sGU-BF-rFx" firstAttribute="top" secondItem="Fx1-eR-DxL" secondAttribute="bottom" id="slz-4Z-fVp"/>
                             <constraint firstItem="Fx1-eR-DxL" firstAttribute="leading" secondItem="TKt-ah-BPy" secondAttribute="leadingMargin" constant="-20" id="vZC-UB-xUF"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="5Qk-bN-ujx" id="rjo-y2-ZLz"/>
                         <outlet property="collectionView" destination="Fx1-eR-DxL" id="jpO-Xo-R8E"/>
                     </connections>
                 </viewController>

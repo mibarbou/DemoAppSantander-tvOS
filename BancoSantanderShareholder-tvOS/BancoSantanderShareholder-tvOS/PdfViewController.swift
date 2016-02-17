@@ -10,6 +10,7 @@ import UIKit
 
 class PdfViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
 
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var collectionView: UICollectionView!
     
     var images = [UIImage]()
@@ -23,36 +24,10 @@ class PdfViewController: UIViewController, UICollectionViewDataSource, UICollect
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print(pdf.url)
+//        print(pdf.url)
         
-        let url = NSURL(string:pdf.url)!
-        
-        let task = NSURLSession.sharedSession().dataTaskWithURL(url) { (data, response, error) -> Void in
-            
-            // Will happen when task completes
-     
-            if let pdfData = data {
-            
-                if let theImages = self.getImagesFromData(pdfData) {
-                    
-                    
-                    dispatch_async(dispatch_get_main_queue(), { () -> Void in
-                        
-                        self.images = theImages
-                        self.collectionView.reloadData()
-                    })
-   
-                }
-            
-            } else {
-                // Show error message
-                print("Error al descargar pdf")
-            }
-        }
-        
-        task.resume()
-        
-
+        getPdfFile()
+    
     }
 
 
@@ -151,6 +126,62 @@ class PdfViewController: UIViewController, UICollectionViewDataSource, UICollect
         
         
     }
+    
+    // MARK: Private Methods
+    
+    func getPdfFile(){
+        
+        let url = NSURL(string:pdf.url)!
+        
+        activityIndicator.startAnimating()
+        
+        let task = NSURLSession.sharedSession().dataTaskWithURL(url) { (data, response, error) -> Void in
+            
+            // Will happen when task completes
+            
+            if let pdfData = data {
+                
+                if let theImages = self.getImagesFromData(pdfData) {
+                    
+                    
+                    dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                        
+                        self.images = theImages
+                        self.activityIndicator.stopAnimating()
+                        self.collectionView.reloadData()
+                    })
+                    
+                }
+                
+            } else {
+                // Show error message
+                print("Error al descargar pdf")
+                self.activityIndicator.stopAnimating()
+                
+                let title = "Error"
+                let message = "Ha ocurrido un error al descargar el PDF"
+                
+                let okButton = "OK"
+                let retryButton = "Intentar Nuevamente"
+                
+                let alert = UIAlertController(title: title, message: message, preferredStyle: .Alert)
+                
+                let okAction = UIAlertAction(title: okButton, style: .Default, handler: nil)
+                let retryAction = UIAlertAction(title: retryButton, style: .Cancel) { _ in
+                    
+                    self.getPdfFile()
+                }
+                
+                alert.addAction(okAction)
+                alert.addAction(retryAction)
+                
+                self.presentViewController(alert, animated: true, completion: nil)
+            }
+        }
+        
+        task.resume()
+    }
+    
     
     func getImagesFromData(data: NSData) -> Array<UIImage>? {
         
