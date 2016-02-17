@@ -24,9 +24,37 @@ class PdfViewController: UIViewController, UICollectionViewDataSource, UICollect
         super.viewDidLoad()
         
         print(pdf.url)
+        
+        let url = NSURL(string:pdf.url)!
+        
+        let task = NSURLSession.sharedSession().dataTaskWithURL(url) { (data, response, error) -> Void in
+            
+            // Will happen when task completes
+     
+            if let pdfData = data {
+            
+                if let theImages = self.getImagesFromData(pdfData) {
+                    
+                    
+                    dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                        
+                        self.images = theImages
+                        self.collectionView.reloadData()
+                    })
+   
+                }
+            
+            } else {
+                // Show error message
+                print("Error al descargar pdf")
+            }
+        }
+        
+        task.resume()
+        
 
-        // Do any additional setup after loading the view.
     }
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -42,7 +70,7 @@ class PdfViewController: UIViewController, UICollectionViewDataSource, UICollect
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
-        return images.count;
+        return self.images.count;
     }
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
@@ -58,7 +86,7 @@ class PdfViewController: UIViewController, UICollectionViewDataSource, UICollect
             cell.titleLabel.layer.masksToBounds = true
             
             cell.titleLabel.text = "Página \(indexPath.row + 1)"
-            cell.imageView.image = images[indexPath.row]
+            cell.imageView.image = self.images[indexPath.row]
             cell.imageView.contentMode = .ScaleAspectFit
             
             if cell.gestureRecognizers?.count == nil {
@@ -124,11 +152,16 @@ class PdfViewController: UIViewController, UICollectionViewDataSource, UICollect
         
     }
     
-    func getImagesFromURL(url: NSURL) -> Array<UIImage>? {
+    func getImagesFromData(data: NSData) -> Array<UIImage>? {
         
         var images = [UIImage]()
         
-        guard let document = CGPDFDocumentCreateWithURL(url) else { return nil }
+//        guard let document = CGPDFDocumentCreateWithURL(url) else { return nil }
+ 
+        let dataPtr = CFDataCreate(kCFAllocatorDefault, UnsafePointer<UInt8>(data.bytes), data.length)
+        let dataProvider = CGDataProviderCreateWithCFData(dataPtr)
+    
+        guard let document = CGPDFDocumentCreateWithProvider(dataProvider) else {return nil}
         
         let pdfPages = CGPDFDocumentGetNumberOfPages(document);
         

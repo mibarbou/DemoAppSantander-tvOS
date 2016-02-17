@@ -190,7 +190,7 @@ class SecondViewController: UIViewController, UICollectionViewDataSource, UIColl
             if let fileData = data {
                 
                 let xml = SWXMLHash.parse(fileData)
-                print(xml)
+//                print(xml)
                 
                 for elem in xml["pdf_documents"]["reports"]["annual_reports"]["year"] {
                     
@@ -206,7 +206,7 @@ class SecondViewController: UIViewController, UICollectionViewDataSource, UIColl
                         
                         pdfArray.append(pdf)
                         
-                        print(item)
+//                        print(item)
                     }
                     
                     
