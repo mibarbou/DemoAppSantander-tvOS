@@ -88,17 +88,27 @@ class SecondViewController: UIViewController, UICollectionViewDataSource, UIColl
             let pdf = pdfArray[indexPath.row]
             
             cell.titleLabel.text = pdf.title
+            cell.sizeLabel.text = pdf.size + " MB"
+//            cell.sizeLabel.adjustsFontSizeToFitWidth = true
+            cell.imageView.image = UIImage(named: "santander.jpg")
             
             if pdf.icon != "" {
                 
-                if let theIcon = NSURL(string: pdf.icon) {
-                    
-                    if let data = NSData(contentsOfURL: theIcon) {
+                dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), { () -> Void in
+            
+                    if let theIcon = NSURL(string: pdf.icon) {
                         
-                        cell.imageView.image = UIImage(data: data)
+                        if let data = NSData(contentsOfURL: theIcon) {
+                            
+                            dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                                
+                                cell.imageView.image = UIImage(data: data)
+                            })
+           
+                        }
+                        
                     }
-                    
-                }
+                })
                 
             } else {
                 
@@ -202,9 +212,21 @@ class SecondViewController: UIViewController, UICollectionViewDataSource, UIColl
                         let size = item["size"].element!.text!
                         let icon = item["icon"].element!.text!
                         
-                        let pdf = Pdf(docname: docname, title: title, url: url, size: size, icon: icon)
                         
-                        pdfArray.append(pdf)
+                        // Solo mostramos PDF que tengan de peso un máximo
+                        
+                        let sizeInt:Int? = Int(size)
+                        
+                        if let theSize = sizeInt {
+                        
+                            if (theSize < 2000) {
+                            
+                                let pdf = Pdf(docname: docname, title: title, url: url, size: size, icon: icon)
+                                
+                                pdfArray.append(pdf)
+                                
+                            }
+                        }
                         
 //                        print(item)
                     }

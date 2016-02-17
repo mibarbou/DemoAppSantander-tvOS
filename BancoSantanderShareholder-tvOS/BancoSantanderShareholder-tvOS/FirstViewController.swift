@@ -134,17 +134,25 @@ class FirstViewController: UIViewController, UICollectionViewDataSource, UIColle
             cell.titleLabel.text = movie.title
             cell.descriptionLabel.text = movie.description
             cell.descriptionLabel.hidden = true
+            cell.imageView.image = UIImage(named: "santander.jpg")
             
             if movie.thumbnail != "" {
+                
+                dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), { () -> Void in
             
-                if let theThumbUrl = NSURL(string: movie.thumbnail) {
-                    
-                    if let data = NSData(contentsOfURL: theThumbUrl) {
+                    if let theThumbUrl = NSURL(string: movie.thumbnail) {
                         
-                        cell.imageView.image = UIImage(data: data)
+                        if let data = NSData(contentsOfURL: theThumbUrl) {
+                            
+                            dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                            
+                                cell.imageView.image = UIImage(data: data)
+                                
+                            })
+                        }
+                        
                     }
-                    
-                }
+                })
                 
             } else {
                 

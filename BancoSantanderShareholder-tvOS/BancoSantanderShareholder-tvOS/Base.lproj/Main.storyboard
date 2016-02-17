@@ -309,20 +309,34 @@
                                                         <constraint firstAttribute="width" secondItem="qfI-LB-mHM" secondAttribute="height" multiplier="59:78" id="vI2-vq-jGd"/>
                                                     </constraints>
                                                 </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="21H-ie-zI8">
+                                                    <rect key="frame" x="409" y="563" width="77" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="iah-wa-UPm"/>
+                                                        <constraint firstAttribute="width" constant="77" id="rcM-UI-kPO"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
+                                            <constraint firstAttribute="trailingMargin" secondItem="21H-ie-zI8" secondAttribute="trailing" constant="6" id="Hos-IJ-stO"/>
                                             <constraint firstItem="3mf-gQ-Fz5" firstAttribute="top" secondItem="iDd-wo-urY" secondAttribute="topMargin" constant="15" id="QzS-kf-A7C"/>
                                             <constraint firstAttribute="trailingMargin" secondItem="3mf-gQ-Fz5" secondAttribute="trailing" constant="31" id="TU3-hT-0iC"/>
                                             <constraint firstItem="qfI-LB-mHM" firstAttribute="top" secondItem="3mf-gQ-Fz5" secondAttribute="bottom" constant="44" id="Ux6-dG-6Ub"/>
                                             <constraint firstItem="qfI-LB-mHM" firstAttribute="centerX" secondItem="iDd-wo-urY" secondAttribute="centerX" id="hIN-gR-reU"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="21H-ie-zI8" secondAttribute="bottom" constant="8" id="li7-cS-Jd1"/>
                                             <constraint firstAttribute="bottomMargin" secondItem="qfI-LB-mHM" secondAttribute="bottom" constant="81" id="rcF-1L-zCd"/>
                                             <constraint firstItem="3mf-gQ-Fz5" firstAttribute="leading" secondItem="iDd-wo-urY" secondAttribute="leadingMargin" constant="31" id="sVw-Tt-wu8"/>
+                                            <constraint firstItem="3mf-gQ-Fz5" firstAttribute="centerX" secondItem="iDd-wo-urY" secondAttribute="centerX" id="xYM-4o-28G"/>
                                         </constraints>
                                         <connections>
                                             <outlet property="imageView" destination="qfI-LB-mHM" id="dBL-dA-JUQ"/>
+                                            <outlet property="sizeLabel" destination="21H-ie-zI8" id="1Tm-gF-b2X"/>
                                             <outlet property="titleLabel" destination="3mf-gQ-Fz5" id="2KS-le-eMy"/>
                                         </connections>
                                     </collectionViewCell>
