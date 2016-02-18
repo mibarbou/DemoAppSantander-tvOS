@@ -83,13 +83,12 @@ class SecondViewController: UIViewController, UICollectionViewDataSource, UIColl
         if let cell = collectionView.dequeueReusableCellWithReuseIdentifier("DocumentCell", forIndexPath: indexPath) as? DocumentCell {
             
             cell.layer.cornerRadius = 10
-//            cell.layer.shadowColor = UIColor.darkGrayColor().CGColor
-//            cell.layer.shadowOffset = CGSizeMake(2.0, 2.0)
+
             
             let pdf = pdfArray[indexPath.row]
             
             cell.titleLabel.text = pdf.title
-            cell.sizeLabel.text = pdf.size + " MB"
+            cell.sizeLabel.text = pdf.size + " KB"
 //            cell.sizeLabel.adjustsFontSizeToFitWidth = true
 
             

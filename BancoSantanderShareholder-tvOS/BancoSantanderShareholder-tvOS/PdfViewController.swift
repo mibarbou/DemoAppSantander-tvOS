@@ -186,9 +186,7 @@ class PdfViewController: UIViewController, UICollectionViewDataSource, UICollect
     func getImagesFromData(data: NSData) -> Array<UIImage>? {
         
         var images = [UIImage]()
-        
-//        guard let document = CGPDFDocumentCreateWithURL(url) else { return nil }
- 
+         
         let dataPtr = CFDataCreate(kCFAllocatorDefault, UnsafePointer<UInt8>(data.bytes), data.length)
         let dataProvider = CGDataProviderCreateWithCFData(dataPtr)
     
@@ -223,15 +221,5 @@ class PdfViewController: UIViewController, UICollectionViewDataSource, UICollect
         return images
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
