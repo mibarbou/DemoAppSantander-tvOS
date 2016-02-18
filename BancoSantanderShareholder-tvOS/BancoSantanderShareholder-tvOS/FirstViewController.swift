@@ -11,6 +11,7 @@ import Alamofire
 import SWXMLHash
 import HCYoutubeParser
 import AVFoundation
+import Kingfisher
 
 
 class FirstViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate  {
@@ -130,36 +131,16 @@ class FirstViewController: UIViewController, UICollectionViewDataSource, UIColle
             
             
             cell.movie = movie
-            cell.imageView.image = UIImage(contentsOfFile: movie.thumbnail)
             cell.titleLabel.text = movie.title
             cell.descriptionLabel.text = movie.description
             cell.descriptionLabel.hidden = true
-            cell.imageView.image = UIImage(named: "santander.jpg")
             
-            if movie.thumbnail != "" {
-                
-                dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), { () -> Void in
+            if let imageURL = NSURL(string: movie.thumbnail) {
             
-                    if let theThumbUrl = NSURL(string: movie.thumbnail) {
-                        
-                        if let data = NSData(contentsOfURL: theThumbUrl) {
-                            
-                            dispatch_async(dispatch_get_main_queue(), { () -> Void in
-                            
-                                cell.imageView.image = UIImage(data: data)
-                                
-                            })
-                        }
-                        
-                    }
-                })
-                
-            } else {
-                
-                cell.imageView.image = UIImage(named: "santander.jpg")
+                cell.imageView.kf_setImageWithURL(imageURL, placeholderImage: UIImage(named: "santander.jpg"))
             }
             
-            
+
             
             
             if cell.gestureRecognizers?.count == nil {

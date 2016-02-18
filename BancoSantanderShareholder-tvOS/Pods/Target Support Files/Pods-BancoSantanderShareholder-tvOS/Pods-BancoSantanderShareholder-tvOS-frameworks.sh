@@ -86,12 +86,12 @@ strip_invalid_archs() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-BancoSantanderShareholder-tvOS/Alamofire.framework"
   install_framework "Pods-BancoSantanderShareholder-tvOS/HCYoutubeParser.framework"
-  install_framework "Pods-BancoSantanderShareholder-tvOS/SDWebImage.framework"
+  install_framework "Pods-BancoSantanderShareholder-tvOS/Kingfisher.framework"
   install_framework "Pods-BancoSantanderShareholder-tvOS/SWXMLHash.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-BancoSantanderShareholder-tvOS/Alamofire.framework"
   install_framework "Pods-BancoSantanderShareholder-tvOS/HCYoutubeParser.framework"
-  install_framework "Pods-BancoSantanderShareholder-tvOS/SDWebImage.framework"
+  install_framework "Pods-BancoSantanderShareholder-tvOS/Kingfisher.framework"
   install_framework "Pods-BancoSantanderShareholder-tvOS/SWXMLHash.framework"
 fi

@@ -8,6 +8,7 @@
 
 import UIKit
 import SWXMLHash
+import Kingfisher
 
 
 class SecondViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
@@ -90,25 +91,14 @@ class SecondViewController: UIViewController, UICollectionViewDataSource, UIColl
             cell.titleLabel.text = pdf.title
             cell.sizeLabel.text = pdf.size + " MB"
 //            cell.sizeLabel.adjustsFontSizeToFitWidth = true
-            cell.imageView.image = UIImage(named: "santander.jpg")
+
             
             if pdf.icon != "" {
                 
-                dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), { () -> Void in
-            
-                    if let theIcon = NSURL(string: pdf.icon) {
-                        
-                        if let data = NSData(contentsOfURL: theIcon) {
-                            
-                            dispatch_async(dispatch_get_main_queue(), { () -> Void in
-                                
-                                cell.imageView.image = UIImage(data: data)
-                            })
-           
-                        }
-                        
-                    }
-                })
+                if let imageURL = NSURL(string: pdf.icon) {
+                    
+                    cell.imageView.kf_setImageWithURL(imageURL, placeholderImage: UIImage(named: "santander.jpg"))
+                }
                 
             } else {
                 
