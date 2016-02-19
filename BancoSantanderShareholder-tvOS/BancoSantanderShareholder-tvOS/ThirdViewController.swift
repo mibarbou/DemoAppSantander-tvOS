@@ -8,8 +8,11 @@
 
 import UIKit
 
-class ThirdViewController: UIViewController {
+class ThirdViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
+    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var containerView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -19,6 +22,41 @@ class ThirdViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    // MARK: - UITableViewDataSource
+    
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        
+        return 1
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        return 4
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
+        let cell = UITableViewCell()
+        
+        switch indexPath.row {
+            
+        case 0:
+           cell.textLabel?.text = "LA ACCIÓN"
+        case 1:
+            cell.textLabel?.text = "ACCIONARADO"
+        case 2:
+            cell.textLabel?.text = "DIVIDENDOS"
+        case 3:
+            cell.textLabel?.text = "RESULTADOS"
+        default:
+            break
+           
+        }
+        
+        return cell
+        
     }
     
 

@@ -18,6 +18,9 @@
 		D00710611C6DD60D008DE13C /* santander.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D00710601C6DD60D008DE13C /* santander.jpg */; };
 		D00710631C6DD8C4008DE13C /* PdfCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00710621C6DD8C4008DE13C /* PdfCell.swift */; };
 		D00710651C6DD8EE008DE13C /* Pdf.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00710641C6DD8EE008DE13C /* Pdf.swift */; };
+		D0921DD31C77350000E345E1 /* CotizacionesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0921DD21C77350000E345E1 /* CotizacionesViewController.swift */; };
+		D0921DDA1C77376200E345E1 /* AccionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0921DD91C77376200E345E1 /* AccionViewController.swift */; };
+		D0921DE31C773CA800E345E1 /* StockCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0921DE21C773CA800E345E1 /* StockCell.swift */; };
 		D0BDFD3C1C731FAC007B1F01 /* bannerSantander.png in Resources */ = {isa = PBXBuildFile; fileRef = D0BDFD3B1C731FAC007B1F01 /* bannerSantander.png */; };
 		D0C2E4961C6F88A000A45199 /* Financialreport4Q2015.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D0C2E4951C6F88A000A45199 /* Financialreport4Q2015.pdf */; };
 		D0C2E4981C6FBB1A00A45199 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C2E4971C6FBB1A00A45199 /* ThirdViewController.swift */; };
@@ -49,6 +52,9 @@
 		D00710601C6DD60D008DE13C /* santander.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = santander.jpg; sourceTree = "<group>"; };
 		D00710621C6DD8C4008DE13C /* PdfCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PdfCell.swift; sourceTree = "<group>"; };
 		D00710641C6DD8EE008DE13C /* Pdf.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pdf.swift; sourceTree = "<group>"; };
+		D0921DD21C77350000E345E1 /* CotizacionesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CotizacionesViewController.swift; sourceTree = "<group>"; };
+		D0921DD91C77376200E345E1 /* AccionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccionViewController.swift; sourceTree = "<group>"; };
+		D0921DE21C773CA800E345E1 /* StockCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StockCell.swift; sourceTree = "<group>"; };
 		D0BDFD3B1C731FAC007B1F01 /* bannerSantander.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bannerSantander.png; sourceTree = "<group>"; };
 		D0C2E4951C6F88A000A45199 /* Financialreport4Q2015.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Financialreport4Q2015.pdf; sourceTree = "<group>"; };
 		D0C2E4971C6FBB1A00A45199 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
@@ -129,11 +135,13 @@
 		D00710591C6DCE7E008DE13C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				D0921DD81C77373700E345E1 /* Accionistas */,
 				D007104A1C6DC9D9008DE13C /* FirstViewController.swift */,
 				D007104C1C6DC9D9008DE13C /* SecondViewController.swift */,
 				D0C2E4971C6FBB1A00A45199 /* ThirdViewController.swift */,
 				D0FF6C111C721E8C00222584 /* VideoViewController.swift */,
 				D0FF6C131C723CB000222584 /* PdfViewController.swift */,
+				D0921DD21C77350000E345E1 /* CotizacionesViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -141,9 +149,8 @@
 		D007105A1C6DCE86008DE13C /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				D007105B1C6DCED4008DE13C /* MovieCell.swift */,
-				D00710621C6DD8C4008DE13C /* PdfCell.swift */,
-				D0FF6C0F1C71FE5700222584 /* DocumentCell.swift */,
+				D0921DDB1C773B9400E345E1 /* Cells */,
+				D0921DCF1C77316800E345E1 /* Sections */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -155,6 +162,32 @@
 				D00710641C6DD8EE008DE13C /* Pdf.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		D0921DCF1C77316800E345E1 /* Sections */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Sections;
+			sourceTree = "<group>";
+		};
+		D0921DD81C77373700E345E1 /* Accionistas */ = {
+			isa = PBXGroup;
+			children = (
+				D0921DD91C77376200E345E1 /* AccionViewController.swift */,
+			);
+			name = Accionistas;
+			sourceTree = "<group>";
+		};
+		D0921DDB1C773B9400E345E1 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D007105B1C6DCED4008DE13C /* MovieCell.swift */,
+				D00710621C6DD8C4008DE13C /* PdfCell.swift */,
+				D0FF6C0F1C71FE5700222584 /* DocumentCell.swift */,
+				D0921DE21C773CA800E345E1 /* StockCell.swift */,
+			);
+			name = Cells;
 			sourceTree = "<group>";
 		};
 		D0FF969D1C7493D900B216F3 /* Resources */ = {
@@ -308,7 +341,9 @@
 			files = (
 				D00710631C6DD8C4008DE13C /* PdfCell.swift in Sources */,
 				D007104D1C6DC9D9008DE13C /* SecondViewController.swift in Sources */,
+				D0921DE31C773CA800E345E1 /* StockCell.swift in Sources */,
 				D00710491C6DC9D9008DE13C /* AppDelegate.swift in Sources */,
+				D0921DDA1C77376200E345E1 /* AccionViewController.swift in Sources */,
 				D00710651C6DD8EE008DE13C /* Pdf.swift in Sources */,
 				D007105C1C6DCED4008DE13C /* MovieCell.swift in Sources */,
 				D007104B1C6DC9D9008DE13C /* FirstViewController.swift in Sources */,
@@ -316,6 +351,7 @@
 				D0C2E4981C6FBB1A00A45199 /* ThirdViewController.swift in Sources */,
 				D0FF6C121C721E8C00222584 /* VideoViewController.swift in Sources */,
 				D007105F1C6DCF73008DE13C /* Movie.swift in Sources */,
+				D0921DD31C77350000E345E1 /* CotizacionesViewController.swift in Sources */,
 				D0FF6C141C723CB000222584 /* PdfViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
