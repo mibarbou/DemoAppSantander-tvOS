@@ -256,6 +256,7 @@
                     <connections>
                         <outlet property="activityIndicator" destination="5Qk-bN-ujx" id="rjo-y2-ZLz"/>
                         <outlet property="collectionView" destination="Fx1-eR-DxL" id="jpO-Xo-R8E"/>
+                        <segue destination="aZQ-dw-SXl" kind="show" identifier="goToPdfDetailSegue" id="xuN-rp-Gcn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iqW-Qa-H7y" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -404,7 +405,7 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="66" sectionHeaderHeight="40" sectionFooterHeight="40" translatesAutoresizingMaskIntoConstraints="NO" id="Wgf-jY-K4Z">
                                 <rect key="frame" x="33" y="197" width="387" height="596"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <sections/>
                                 <connections>
                                     <outlet property="dataSource" destination="9mb-EY-wHo" id="nt4-Pj-JRE"/>
@@ -515,10 +516,51 @@
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
         </scene>
+        <!--Pdf Detail View Controller-->
+        <scene sceneID="gWU-uR-PJH">
+            <objects>
+                <viewController id="aZQ-dw-SXl" customClass="PdfDetailViewController" customModule="BancoSantanderShareholder_tvOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="K5j-ka-Z6E"/>
+                        <viewControllerLayoutGuide type="bottom" id="h5j-oG-sih"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zz5-pH-Sw6">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OCD-Jw-S1O">
+                                <rect key="frame" x="0.0" y="0.0" width="1920" height="2500"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oFl-FR-yx6">
+                                        <rect key="frame" x="0.0" y="0.0" width="1920" height="2500"/>
+                                        <color key="backgroundColor" red="0.82745098039999998" green="0.83137254900000002" blue="0.83529411760000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        <gestureRecognizers/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="oFl-FR-yx6" firstAttribute="leading" secondItem="OCD-Jw-S1O" secondAttribute="leading" id="aQ3-r8-nfT"/>
+                                    <constraint firstAttribute="bottom" secondItem="oFl-FR-yx6" secondAttribute="bottom" id="bC3-tu-quC"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="oFl-FR-yx6" id="Ewu-vF-0Xh"/>
+                        <outlet property="scrollView" destination="OCD-Jw-S1O" id="UAa-SQ-PKU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Yz-G6-quF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7354" y="-1675"/>
+        </scene>
         <!--Accion-->
         <scene sceneID="njr-v5-kxO">
             <objects>
                 <viewController title="Accion" id="1TZ-sT-pRe" customClass="AccionViewController" customModule="BancoSantanderShareholder_tvOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Agz-ww-QkV"/>
+                        <viewControllerLayoutGuide type="bottom" id="9lC-xz-rDJ"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="zQG-A9-AK8">
                         <rect key="frame" x="0.0" y="0.0" width="1413" height="850"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

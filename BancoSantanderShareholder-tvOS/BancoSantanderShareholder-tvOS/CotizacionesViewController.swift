@@ -85,6 +85,40 @@ class CotizacionesViewController: UIViewController, UICollectionViewDataSource, 
         }
     }
     
+    // MARK: UICollectionViewDelegate
+    
+    
+    override func didUpdateFocusInContext(context: UIFocusUpdateContext, withAnimationCoordinator coordinator: UIFocusAnimationCoordinator) {
+        
+        if let prev = context.previouslyFocusedView as? StockCell {
+            
+            
+            UIView.animateWithDuration(0.1, animations: { () -> Void in
+                
+//                prev.imageView.adjustsImageWhenAncestorFocused = false
+//                prev.descriptionLabel.hidden = true
+                
+                
+                //                prev.frame.size = self.defaultCellSize
+                //                prev.imageView.frame.size = self.defaultSize
+            })
+        }
+        
+        if let next = context.nextFocusedView as? StockCell {
+            
+            
+            UIView.animateWithDuration(0.1, animations: { () -> Void in
+                
+//                next.imageView.adjustsImageWhenAncestorFocused = true
+//                next.descriptionLabel.hidden = false
+                
+                //                next.frame.size = self.focusCellSize
+                //                next.imageView.frame.size = self.focusSize
+            })
+        }
+        
+    }
+    
 
     /*
     // MARK: - Navigation

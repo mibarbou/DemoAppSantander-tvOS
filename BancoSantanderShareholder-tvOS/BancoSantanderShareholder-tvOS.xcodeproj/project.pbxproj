@@ -18,6 +18,7 @@
 		D00710611C6DD60D008DE13C /* santander.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D00710601C6DD60D008DE13C /* santander.jpg */; };
 		D00710631C6DD8C4008DE13C /* PdfCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00710621C6DD8C4008DE13C /* PdfCell.swift */; };
 		D00710651C6DD8EE008DE13C /* Pdf.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00710641C6DD8EE008DE13C /* Pdf.swift */; };
+		D0308F401C78E04900E617FA /* PdfDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0308F3F1C78E04900E617FA /* PdfDetailViewController.swift */; };
 		D0921DD31C77350000E345E1 /* CotizacionesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0921DD21C77350000E345E1 /* CotizacionesViewController.swift */; };
 		D0921DDA1C77376200E345E1 /* AccionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0921DD91C77376200E345E1 /* AccionViewController.swift */; };
 		D0921DE31C773CA800E345E1 /* StockCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0921DE21C773CA800E345E1 /* StockCell.swift */; };
@@ -52,6 +53,7 @@
 		D00710601C6DD60D008DE13C /* santander.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = santander.jpg; sourceTree = "<group>"; };
 		D00710621C6DD8C4008DE13C /* PdfCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PdfCell.swift; sourceTree = "<group>"; };
 		D00710641C6DD8EE008DE13C /* Pdf.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pdf.swift; sourceTree = "<group>"; };
+		D0308F3F1C78E04900E617FA /* PdfDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PdfDetailViewController.swift; sourceTree = "<group>"; };
 		D0921DD21C77350000E345E1 /* CotizacionesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CotizacionesViewController.swift; sourceTree = "<group>"; };
 		D0921DD91C77376200E345E1 /* AccionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccionViewController.swift; sourceTree = "<group>"; };
 		D0921DE21C773CA800E345E1 /* StockCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StockCell.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 				D0FF6C111C721E8C00222584 /* VideoViewController.swift */,
 				D0FF6C131C723CB000222584 /* PdfViewController.swift */,
 				D0921DD21C77350000E345E1 /* CotizacionesViewController.swift */,
+				D0308F3F1C78E04900E617FA /* PdfDetailViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -343,6 +346,7 @@
 				D007104D1C6DC9D9008DE13C /* SecondViewController.swift in Sources */,
 				D0921DE31C773CA800E345E1 /* StockCell.swift in Sources */,
 				D00710491C6DC9D9008DE13C /* AppDelegate.swift in Sources */,
+				D0308F401C78E04900E617FA /* PdfDetailViewController.swift in Sources */,
 				D0921DDA1C77376200E345E1 /* AccionViewController.swift in Sources */,
 				D00710651C6DD8EE008DE13C /* Pdf.swift in Sources */,
 				D007105C1C6DCED4008DE13C /* MovieCell.swift in Sources */,

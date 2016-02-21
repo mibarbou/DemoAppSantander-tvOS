@@ -36,6 +36,20 @@ class PdfViewController: UIViewController, UICollectionViewDataSource, UICollect
         // Dispose of any resources that can be recreated.
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        if segue.identifier == "goToPdfDetailSegue" {
+            
+            if let pdfVC = segue.destinationViewController as? PdfDetailViewController {
+                
+                if let theImage = sender {
+                    
+                    pdfVC.image = (theImage as? UIImage)!
+                }
+            }
+        }
+    }
+    
     // MARK: UICollectionViewDataSource
     
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
@@ -124,6 +138,24 @@ class PdfViewController: UIViewController, UICollectionViewDataSource, UICollect
     func tapped(gesture: UITapGestureRecognizer) {
         
         
+        if images.count > 0  {
+            
+            let itemTapped = gesture.view as? PdfCell
+            
+            if let theItem = itemTapped {
+                
+                let indexPath = self.collectionView.indexPathForCell(theItem)
+                
+                if let theIndex = indexPath {
+                    
+                    print("celda pulsada: \(theIndex.row)")
+                    
+                    self.performSegueWithIdentifier("goToPdfDetailSegue", sender:images[theIndex.row])
+                }
+                
+            }
+            
+        }
         
     }
     

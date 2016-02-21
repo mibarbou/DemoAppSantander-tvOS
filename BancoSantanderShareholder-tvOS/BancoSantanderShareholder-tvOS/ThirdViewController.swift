@@ -59,6 +59,14 @@ class ThirdViewController: UIViewController, UITableViewDataSource, UITableViewD
         
     }
     
+    func tableView(tableView: UITableView, didUpdateFocusInContext context: UITableViewFocusUpdateContext, withAnimationCoordinator coordinator: UIFocusAnimationCoordinator) {
+        
+        //this gives you the indexpath of the focused cell
+        let nextIndexPath = context.nextFocusedIndexPath
+        
+        print(nextIndexPath!.row)
+    }
+    
 
     /*
     // MARK: - Navigation
