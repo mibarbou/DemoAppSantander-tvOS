@@ -27,7 +27,8 @@
 		D0921DE31C773CA800E345E1 /* StockCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0921DE21C773CA800E345E1 /* StockCell.swift */; };
 		D0A259AC1C7B2046004508C8 /* clockIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = D0A259AB1C7B2046004508C8 /* clockIcon.png */; };
 		D0A259AE1C7B2111004508C8 /* arrowUpIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = D0A259AD1C7B2111004508C8 /* arrowUpIcon.png */; };
-		D0A259B01C7B2270004508C8 /* arrowsDownIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = D0A259AF1C7B2270004508C8 /* arrowsDownIcon.png */; };
+		D0A259B01C7B2270004508C8 /* arrowDownIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = D0A259AF1C7B2270004508C8 /* arrowDownIcon.png */; };
+		D0A259B41C7B4662004508C8 /* chartImage.png in Resources */ = {isa = PBXBuildFile; fileRef = D0A259B31C7B4662004508C8 /* chartImage.png */; };
 		D0BDFD3C1C731FAC007B1F01 /* bannerSantander.png in Resources */ = {isa = PBXBuildFile; fileRef = D0BDFD3B1C731FAC007B1F01 /* bannerSantander.png */; };
 		D0C2E4961C6F88A000A45199 /* Financialreport4Q2015.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D0C2E4951C6F88A000A45199 /* Financialreport4Q2015.pdf */; };
 		D0C2E4981C6FBB1A00A45199 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C2E4971C6FBB1A00A45199 /* ThirdViewController.swift */; };
@@ -68,7 +69,8 @@
 		D0921DE21C773CA800E345E1 /* StockCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StockCell.swift; sourceTree = "<group>"; };
 		D0A259AB1C7B2046004508C8 /* clockIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clockIcon.png; sourceTree = "<group>"; };
 		D0A259AD1C7B2111004508C8 /* arrowUpIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrowUpIcon.png; sourceTree = "<group>"; };
-		D0A259AF1C7B2270004508C8 /* arrowsDownIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrowsDownIcon.png; sourceTree = "<group>"; };
+		D0A259AF1C7B2270004508C8 /* arrowDownIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrowDownIcon.png; sourceTree = "<group>"; };
+		D0A259B31C7B4662004508C8 /* chartImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chartImage.png; sourceTree = "<group>"; };
 		D0BDFD3B1C731FAC007B1F01 /* bannerSantander.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bannerSantander.png; sourceTree = "<group>"; };
 		D0C2E4951C6F88A000A45199 /* Financialreport4Q2015.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Financialreport4Q2015.pdf; sourceTree = "<group>"; };
 		D0C2E4971C6FBB1A00A45199 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
@@ -211,7 +213,8 @@
 		D0FF969D1C7493D900B216F3 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				D0A259AF1C7B2270004508C8 /* arrowsDownIcon.png */,
+				D0A259B31C7B4662004508C8 /* chartImage.png */,
+				D0A259AF1C7B2270004508C8 /* arrowDownIcon.png */,
 				D0A259AD1C7B2111004508C8 /* arrowUpIcon.png */,
 				D0A259AB1C7B2046004508C8 /* clockIcon.png */,
 				D0FF969B1C7492FA00B216F3 /* photoIcon.png */,
@@ -295,7 +298,8 @@
 				D00710521C6DC9D9008DE13C /* Assets.xcassets in Resources */,
 				D00710501C6DC9D9008DE13C /* Main.storyboard in Resources */,
 				D00710611C6DD60D008DE13C /* santander.jpg in Resources */,
-				D0A259B01C7B2270004508C8 /* arrowsDownIcon.png in Resources */,
+				D0A259B01C7B2270004508C8 /* arrowDownIcon.png in Resources */,
+				D0A259B41C7B4662004508C8 /* chartImage.png in Resources */,
 				D0FF969A1C7490AC00B216F3 /* videoIcon.png in Resources */,
 				D0BDFD3C1C731FAC007B1F01 /* bannerSantander.png in Resources */,
 				D0C2E4961C6F88A000A45199 /* Financialreport4Q2015.pdf in Resources */,

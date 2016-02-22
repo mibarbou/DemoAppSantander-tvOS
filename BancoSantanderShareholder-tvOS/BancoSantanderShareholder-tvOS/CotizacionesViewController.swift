@@ -49,25 +49,100 @@ class CotizacionesViewController: UIViewController, UICollectionViewDataSource, 
         if let cell = collectionView.dequeueReusableCellWithReuseIdentifier("StockCell", forIndexPath: indexPath) as? StockCell {
             
             cell.layer.cornerRadius = 10
+            cell.shareNameLabel.text = "Acción SAN"
             
             switch indexPath.row {
                 
             case 0:
                 cell.cityLabel?.text = "LONDRES"
+                cell.currencyNameLabel.text = "Pence Sterling"
+                cell.updateTimeLabel.text = "11:44h"
+                let changeValue = "11,33"
+                cell.stockValueLabel.text = "283"
+                
+                let percentage = "4,17"
+                cell.changePercentageLabel.text = percentage + "%"
+                
+                (cell.changeImageView.image, cell.percentageImageView.image) = setArrowsValues(changeValue, percentage: percentage)
+                
             case 1:
                 cell.cityLabel?.text = "BUENOS AIRES"
+                cell.currencyNameLabel.text = "Argentine Peso"
+                cell.updateTimeLabel.text = "22:00h"
+                let changeValue = "-2,00"
+                cell.stockValueLabel.text = "60,00"
+                
+                let percentage = "-3,23"
+                cell.changePercentageLabel.text = percentage + "%"
+                
+                (cell.changeImageView.image, cell.percentageImageView.image) = setArrowsValues(changeValue, percentage: percentage)
+                
             case 2:
                 cell.cityLabel?.text = "LISBOA"
+                cell.currencyNameLabel.text = "Euro"
+                cell.updateTimeLabel.text = "10:17h"
+                let changeValue = "0,11"
+                cell.stockValueLabel.text = "3,61"
+                
+                let percentage = "3.14"
+                cell.changePercentageLabel.text = percentage + "%"
+                
+                (cell.changeImageView.image, cell.percentageImageView.image) = setArrowsValues(changeValue, percentage: percentage)
             case 3:
                 cell.cityLabel?.text = "MADRID"
+                cell.currencyNameLabel.text = "Euro"
+                cell.updateTimeLabel.text = "10:29h"
+                let changeValue = "0,12"
+                cell.stockValueLabel.text = "6,618"
+                
+                let percentage = "3,40"
+                cell.changePercentageLabel.text = percentage + "%"
+                
+                (cell.changeImageView.image, cell.percentageImageView.image) = setArrowsValues(changeValue, percentage: percentage)
             case 4:
                 cell.cityLabel?.text = "MEXICO"
+                cell.currencyNameLabel.text = "Mexican Peso"
+                cell.updateTimeLabel.text = "21:00h"
+                let changeValue = "-0,95"
+                cell.stockValueLabel.text = "72,00"
+                
+                let percentage = "-1,30"
+                cell.changePercentageLabel.text = percentage + "%"
+                
+                (cell.changeImageView.image, cell.percentageImageView.image) = setArrowsValues(changeValue, percentage: percentage)
             case 5:
                 cell.cityLabel?.text = "MILAN"
+                cell.currencyNameLabel.text = "Euro"
+                cell.updateTimeLabel.text = "17:30h"
+                let changeValue = "0,32"
+                cell.stockValueLabel.text = "3,89"
+                
+                let percentage = "8,96"
+                cell.changePercentageLabel.text = percentage + "%"
+                
+                (cell.changeImageView.image, cell.percentageImageView.image) = setArrowsValues(changeValue, percentage: percentage)
             case 6:
                 cell.cityLabel?.text = "NUEVA YORK"
+                cell.currencyNameLabel.text = "US Dollar"
+                cell.updateTimeLabel.text = "23:17h"
+                let changeValue = "-0,09"
+                cell.stockValueLabel.text = "3,86"
+                
+                let percentage = "-2,28"
+                cell.changePercentageLabel.text = percentage + "%"
+                
+                (cell.changeImageView.image, cell.percentageImageView.image) = setArrowsValues(changeValue, percentage: percentage)
             case 7:
                 cell.cityLabel?.text = "VARSOVIA"
+                cell.currencyNameLabel.text = "PZloty"
+                cell.updateTimeLabel.text = "09:04h"
+                let changeValue = "0,37"
+                cell.stockValueLabel.text = "16,81"
+                
+                let percentage = "2,25"
+                cell.changePercentageLabel.text = percentage + "%"
+                
+                (cell.changeImageView.image, cell.percentageImageView.image) = setArrowsValues(changeValue, percentage: percentage)
             default:
                 break
                 
@@ -91,6 +166,34 @@ class CotizacionesViewController: UIViewController, UICollectionViewDataSource, 
         }
     }
     
+    func setArrowsValues(value: String, percentage: String) -> (UIImage?,UIImage?) {
+        
+        var valueImage = UIImage()
+        var percentageImage = UIImage()
+        
+        if (value.containsString("-")) {
+            
+            valueImage = UIImage(named: "arrowDownIcon")!
+            
+        } else {
+            
+            valueImage = UIImage(named: "arrowUpIcon")!
+            
+        }
+        
+        if (percentage.containsString("-")) {
+            
+            percentageImage = UIImage(named: "arrowDownIcon")!
+            
+        } else {
+            
+            percentageImage = UIImage(named: "arrowUpIcon")!
+            
+        }
+        
+        return (valueImage, percentageImage)
+    }
+    
     // MARK: UICollectionViewDelegate
  
     
@@ -102,7 +205,7 @@ class CotizacionesViewController: UIViewController, UICollectionViewDataSource, 
             
             UIView.animateWithDuration(0.1, animations: { () -> Void in
                 
-                prev.center = CGPointMake(prev.center.x,prev.center.y + 200)
+                prev.center = CGPointMake(prev.center.x,prev.center.y + 100)
             
 //                prev.frame.size = self.defaultSize
 //                prev.layer.shadowColor = UIColor.clearColor().CGColor
@@ -123,7 +226,7 @@ class CotizacionesViewController: UIViewController, UICollectionViewDataSource, 
             
             UIView.animateWithDuration(0.1, animations: { () -> Void in
                 
-                next.center = CGPointMake(next.center.x,next.center.y - 200)
+                next.center = CGPointMake(next.center.x,next.center.y - 100)
                 
 //                next.frame.size = self.focusSize
                 

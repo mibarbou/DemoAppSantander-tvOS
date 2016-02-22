@@ -439,6 +439,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="o72-Cg-MsM">
+                                <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                            </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="MKg-4G-Log">
                                 <rect key="frame" x="0.0" y="190" width="1920" height="890"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="50" minimumInteritemSpacing="10" id="Ka5-3b-cyN">
@@ -480,8 +483,8 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Euro" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jal-PN-i9X">
-                                                    <rect key="frame" x="36" y="79" width="153" height="41"/>
-                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
+                                                    <rect key="frame" x="36" y="79" width="159" height="41"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="22"/>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -509,16 +512,13 @@
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="arrowUpIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="LGP-jw-cEC">
                                                     <rect key="frame" x="352" y="197" width="40" height="60"/>
                                                 </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="arrowUpIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="VRT-UI-vYV">
-                                                    <rect key="frame" x="533" y="197" width="40" height="60"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="chartImage.png" translatesAutoresizingMaskIntoConstraints="NO" id="upr-Hf-V6L">
+                                                    <rect key="frame" x="36" y="342" width="310" height="280"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                 </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="upr-Hf-V6L">
-                                                    <rect key="frame" x="36" y="342" width="313" height="279"/>
-                                                    <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QbZ-AH-3LB">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="chartImage.png" translatesAutoresizingMaskIntoConstraints="NO" id="QbZ-AH-3LB">
                                                     <rect key="frame" x="361" y="342" width="313" height="279"/>
-                                                    <color key="backgroundColor" red="0.1322747765" green="0.52609071289999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Gráfico sesión" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dP6-mz-co3">
                                                     <rect key="frame" x="36" y="297" width="248" height="32"/>
@@ -532,15 +532,20 @@
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="arrowUpIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="VRT-UI-vYV">
+                                                    <rect key="frame" x="533" y="197" width="40" height="60"/>
+                                                </imageView>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <connections>
+                                            <outlet property="changeImageView" destination="LGP-jw-cEC" id="qcF-fN-2QB"/>
                                             <outlet property="changePercentageLabel" destination="PES-0t-1x9" id="KC3-XJ-2QO"/>
                                             <outlet property="changeValueLabel" destination="PUl-AK-Avv" id="oFv-5x-944"/>
                                             <outlet property="cityLabel" destination="oJ8-1v-t8F" id="NRT-Lk-Iga"/>
                                             <outlet property="currencyNameLabel" destination="Jal-PN-i9X" id="EtJ-Va-bc7"/>
+                                            <outlet property="percentageImageView" destination="VRT-UI-vYV" id="edn-vx-Rvh"/>
                                             <outlet property="shareNameLabel" destination="CUS-wr-Pfv" id="QPw-Sv-SYL"/>
                                             <outlet property="stockValueLabel" destination="P4t-Oa-pjx" id="ZxD-kM-765"/>
                                             <outlet property="updateTimeLabel" destination="zxC-LG-OIC" id="Vx5-ft-HFn"/>
@@ -552,7 +557,22 @@
                                     <outlet property="delegate" destination="1jD-Vh-LS3" id="CaH-EW-gc5"/>
                                 </connections>
                             </collectionView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bannerSantander.png" translatesAutoresizingMaskIntoConstraints="NO" id="1gy-D0-M6b">
+                                <rect key="frame" x="40" y="171" width="410" height="100"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="COTIZACIONES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ytl-5s-s2U">
+                                <rect key="frame" x="706" y="161" width="508" height="119"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="50"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="o72-Cg-MsM" secondAttribute="trailing" constant="-20" id="3w9-JI-ivk"/>
+                            <constraint firstItem="NDD-pk-vAC" firstAttribute="top" secondItem="o72-Cg-MsM" secondAttribute="bottom" id="CwC-UU-JNV"/>
+                            <constraint firstItem="o72-Cg-MsM" firstAttribute="leading" secondItem="Xok-06-OXS" secondAttribute="leadingMargin" constant="-20" id="Iif-WS-CSZ"/>
+                            <constraint firstItem="o72-Cg-MsM" firstAttribute="top" secondItem="Nse-HZ-nHI" secondAttribute="bottom" id="LUc-Aw-Xo6"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Cotizaciones" id="r3u-hO-VJQ"/>
                     <connections>
@@ -728,6 +748,7 @@
         <image name="3.jpg" width="1920" height="720"/>
         <image name="arrowUpIcon.png" width="40" height="60"/>
         <image name="bannerSantander.png" width="410" height="100"/>
+        <image name="chartImage.png" width="737" height="535"/>
         <image name="clockIcon.png" width="60" height="60"/>
         <image name="docsIcon.png" width="44" height="54"/>
         <image name="photoIcon.png" width="44" height="35"/>
