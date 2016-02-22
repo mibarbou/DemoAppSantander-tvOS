@@ -13,6 +13,8 @@ class ThirdViewController: UIViewController, UITableViewDataSource, UITableViewD
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var containerView: UIView!
     
+    weak var currentViewController: UIViewController?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -62,9 +64,63 @@ class ThirdViewController: UIViewController, UITableViewDataSource, UITableViewD
     func tableView(tableView: UITableView, didUpdateFocusInContext context: UITableViewFocusUpdateContext, withAnimationCoordinator coordinator: UIFocusAnimationCoordinator) {
         
         //this gives you the indexpath of the focused cell
-        let nextIndexPath = context.nextFocusedIndexPath
+        if let nextIndexPath = context.nextFocusedIndexPath {
+            
+            print(nextIndexPath.row)
+            
+            changeContainer(nextIndexPath.row)
+        }
+    }
+    
+    
+    func changeContainer(index: Int) {
         
-        print(nextIndexPath!.row)
+        let viewController : UIViewController?
+        
+        switch index {
+            
+        case 0:
+            viewController = self.storyboard?.instantiateViewControllerWithIdentifier("ControllerAccion")
+            setChildControllerInContainer(viewController)
+        case 1:
+            viewController = self.storyboard?.instantiateViewControllerWithIdentifier("ControllerAccionarado")
+            setChildControllerInContainer(viewController)
+        case 2:
+            viewController = self.storyboard?.instantiateViewControllerWithIdentifier("ControllerDividendos")
+            setChildControllerInContainer(viewController)
+        case 3:
+            viewController = self.storyboard?.instantiateViewControllerWithIdentifier("ControllerResultados")
+            setChildControllerInContainer(viewController)
+        default:
+            break
+            
+        }
+        
+    
+        
+    }
+    
+    func setChildControllerInContainer(viewController:UIViewController?){
+        
+        if self.childViewControllers.count > 0 {
+            
+            let oldController = self.childViewControllers.last
+            
+            if let theOldController = oldController {
+                
+                theOldController.willMoveToParentViewController(nil)
+                theOldController.view.removeFromSuperview()
+            }
+        }
+        
+        if let theViewController = viewController {
+            
+            self.addChildViewController(theViewController)
+            self.containerView.addSubview(theViewController.view)
+            theViewController.didMoveToParentViewController(self)
+            
+        }
+        
     }
     
 

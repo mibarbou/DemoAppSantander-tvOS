@@ -414,9 +414,6 @@
                             </tableView>
                             <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="455-oS-46Z">
                                 <rect key="frame" x="476" y="197" width="1413" height="850"/>
-                                <connections>
-                                    <segue destination="1TZ-sT-pRe" kind="embed" id="BQU-IW-9P9"/>
-                                </connections>
                             </containerView>
                         </subviews>
                     </view>
@@ -428,7 +425,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3kq-CP-CUi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3174" y="367"/>
+            <point key="canvasLocation" x="5190" y="1007"/>
         </scene>
         <!--Cotizaciones-->
         <scene sceneID="V4l-u5-wYA">
@@ -556,13 +553,13 @@
         <!--Accion-->
         <scene sceneID="njr-v5-kxO">
             <objects>
-                <viewController title="Accion" id="1TZ-sT-pRe" customClass="AccionViewController" customModule="BancoSantanderShareholder_tvOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ControllerAccion" title="Accion" useStoryboardIdentifierAsRestorationIdentifier="YES" id="1TZ-sT-pRe" customClass="AccionViewController" customModule="BancoSantanderShareholder_tvOS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Agz-ww-QkV"/>
                         <viewControllerLayoutGuide type="bottom" id="9lC-xz-rDJ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="zQG-A9-AK8">
-                        <rect key="frame" x="0.0" y="0.0" width="1413" height="850"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="LA ACCIÓN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dmq-XT-FxM">
@@ -576,12 +573,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fxi-IZ-NcR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5390.5" y="415"/>
+            <point key="canvasLocation" x="7534" y="271"/>
         </scene>
-        <!--View Controller-->
+        <!--Accionarado View Controller-->
         <scene sceneID="vvd-OH-9Kc">
             <objects>
-                <viewController id="H1P-OI-Rc5" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ControllerAccionarado" useStoryboardIdentifierAsRestorationIdentifier="YES" id="H1P-OI-Rc5" customClass="AccionaradoViewController" customModule="BancoSantanderShareholder_tvOS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="szu-nu-eky"/>
                         <viewControllerLayoutGuide type="bottom" id="ATU-em-R9X"/>
@@ -589,11 +586,69 @@
                     <view key="view" contentMode="scaleToFill" id="cE5-hq-0Ee">
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Accionarado" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8rM-mF-NqF">
+                                <rect key="frame" x="441" y="381" width="667" height="160"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="62"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="azk-Gh-cPa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5534" y="1699"/>
+            <point key="canvasLocation" x="7550" y="1507"/>
+        </scene>
+        <!--Dividendos View Controller-->
+        <scene sceneID="J34-pU-PHx">
+            <objects>
+                <viewController storyboardIdentifier="ControllerDividendos" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ux4-lC-A0k" customClass="DividendosViewController" customModule="BancoSantanderShareholder_tvOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="R24-cF-Sos"/>
+                        <viewControllerLayoutGuide type="bottom" id="aIQ-1H-j6S"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="y5t-OC-HRG">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dividendos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xnB-qE-YzQ">
+                                <rect key="frame" x="626" y="460" width="667" height="160"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="62"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oiR-aM-UKi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7550" y="2823"/>
+        </scene>
+        <!--Resultados View Controller-->
+        <scene sceneID="s2M-9Y-q5K">
+            <objects>
+                <viewController storyboardIdentifier="ControllerResultados" useStoryboardIdentifierAsRestorationIdentifier="YES" id="dAq-Es-7NC" customClass="ResultadosViewController" customModule="BancoSantanderShareholder_tvOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1ag-Jo-eRC"/>
+                        <viewControllerLayoutGuide type="bottom" id="6bm-J9-f4x"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Fel-MG-vhj">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Resultados" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6KY-rL-NhK">
+                                <rect key="frame" x="626" y="460" width="667" height="160"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="62"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d9a-hC-cxe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7494" y="3991"/>
         </scene>
     </scenes>
     <resources>

@@ -19,6 +19,9 @@
 		D00710631C6DD8C4008DE13C /* PdfCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00710621C6DD8C4008DE13C /* PdfCell.swift */; };
 		D00710651C6DD8EE008DE13C /* Pdf.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00710641C6DD8EE008DE13C /* Pdf.swift */; };
 		D0308F401C78E04900E617FA /* PdfDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0308F3F1C78E04900E617FA /* PdfDetailViewController.swift */; };
+		D0308F441C7AFDF000E617FA /* AccionaradoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0308F431C7AFDF000E617FA /* AccionaradoViewController.swift */; };
+		D0308F461C7B01B100E617FA /* DividendosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0308F451C7B01B100E617FA /* DividendosViewController.swift */; };
+		D0308F481C7B01C800E617FA /* ResultadosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0308F471C7B01C800E617FA /* ResultadosViewController.swift */; };
 		D0921DD31C77350000E345E1 /* CotizacionesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0921DD21C77350000E345E1 /* CotizacionesViewController.swift */; };
 		D0921DDA1C77376200E345E1 /* AccionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0921DD91C77376200E345E1 /* AccionViewController.swift */; };
 		D0921DE31C773CA800E345E1 /* StockCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0921DE21C773CA800E345E1 /* StockCell.swift */; };
@@ -54,6 +57,9 @@
 		D00710621C6DD8C4008DE13C /* PdfCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PdfCell.swift; sourceTree = "<group>"; };
 		D00710641C6DD8EE008DE13C /* Pdf.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pdf.swift; sourceTree = "<group>"; };
 		D0308F3F1C78E04900E617FA /* PdfDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PdfDetailViewController.swift; sourceTree = "<group>"; };
+		D0308F431C7AFDF000E617FA /* AccionaradoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccionaradoViewController.swift; sourceTree = "<group>"; };
+		D0308F451C7B01B100E617FA /* DividendosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DividendosViewController.swift; sourceTree = "<group>"; };
+		D0308F471C7B01C800E617FA /* ResultadosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultadosViewController.swift; sourceTree = "<group>"; };
 		D0921DD21C77350000E345E1 /* CotizacionesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CotizacionesViewController.swift; sourceTree = "<group>"; };
 		D0921DD91C77376200E345E1 /* AccionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccionViewController.swift; sourceTree = "<group>"; };
 		D0921DE21C773CA800E345E1 /* StockCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StockCell.swift; sourceTree = "<group>"; };
@@ -178,6 +184,9 @@
 			isa = PBXGroup;
 			children = (
 				D0921DD91C77376200E345E1 /* AccionViewController.swift */,
+				D0308F431C7AFDF000E617FA /* AccionaradoViewController.swift */,
+				D0308F451C7B01B100E617FA /* DividendosViewController.swift */,
+				D0308F471C7B01C800E617FA /* ResultadosViewController.swift */,
 			);
 			name = Accionistas;
 			sourceTree = "<group>";
@@ -348,13 +357,16 @@
 				D00710491C6DC9D9008DE13C /* AppDelegate.swift in Sources */,
 				D0308F401C78E04900E617FA /* PdfDetailViewController.swift in Sources */,
 				D0921DDA1C77376200E345E1 /* AccionViewController.swift in Sources */,
+				D0308F461C7B01B100E617FA /* DividendosViewController.swift in Sources */,
 				D00710651C6DD8EE008DE13C /* Pdf.swift in Sources */,
 				D007105C1C6DCED4008DE13C /* MovieCell.swift in Sources */,
 				D007104B1C6DC9D9008DE13C /* FirstViewController.swift in Sources */,
 				D0FF6C101C71FE5700222584 /* DocumentCell.swift in Sources */,
 				D0C2E4981C6FBB1A00A45199 /* ThirdViewController.swift in Sources */,
+				D0308F481C7B01C800E617FA /* ResultadosViewController.swift in Sources */,
 				D0FF6C121C721E8C00222584 /* VideoViewController.swift in Sources */,
 				D007105F1C6DCF73008DE13C /* Movie.swift in Sources */,
+				D0308F441C7AFDF000E617FA /* AccionaradoViewController.swift in Sources */,
 				D0921DD31C77350000E345E1 /* CotizacionesViewController.swift in Sources */,
 				D0FF6C141C723CB000222584 /* PdfViewController.swift in Sources */,
 			);

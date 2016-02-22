@@ -18,7 +18,7 @@ class PdfDetailViewController: UIViewController {
     
     override func viewDidLayoutSubviews() {
         
-        initializeGestureRecognizer()
+//        initializeGestureRecognizer()
         
 //        let pan = UIPanGestureRecognizer(target: self, action: "panned:" )
 //        
@@ -27,6 +27,16 @@ class PdfDetailViewController: UIViewController {
 //
 //        
 //        scrollView.contentSize = CGSizeMake(1920, 1500)
+        
+        let swipeUp = UISwipeGestureRecognizer(target: self, action: "swipedUp")
+        swipeUp.direction = UISwipeGestureRecognizerDirection.Up
+        self.view.addGestureRecognizer(swipeUp)
+        
+        let swipeDown = UISwipeGestureRecognizer(target: self, action: "swipedDown")
+        swipeDown.direction = UISwipeGestureRecognizerDirection.Down
+        self.view.addGestureRecognizer(swipeDown)
+        
+        
         
     }
     
@@ -45,6 +55,17 @@ class PdfDetailViewController: UIViewController {
         imageView.image = image
         
     }
+    
+    func swipedUp(){
+        
+        print("UP!")
+    }
+    
+    func swipedDown(){
+        
+        print("DOWN!")
+    }
+    
     
     func initializeGestureRecognizer()
     {
