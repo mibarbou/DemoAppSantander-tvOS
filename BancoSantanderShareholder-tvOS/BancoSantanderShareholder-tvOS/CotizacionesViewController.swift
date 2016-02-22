@@ -58,11 +58,11 @@ class CotizacionesViewController: UIViewController, UICollectionViewDataSource, 
                 cell.currencyNameLabel.text = "Pence Sterling"
                 cell.updateTimeLabel.text = "11:44h"
                 let changeValue = "11,33"
+                cell.changeValueLabel.text = changeValue
                 cell.stockValueLabel.text = "283"
                 
                 let percentage = "4,17"
                 cell.changePercentageLabel.text = percentage + "%"
-                
                 (cell.changeImageView.image, cell.percentageImageView.image) = setArrowsValues(changeValue, percentage: percentage)
                 
             case 1:
@@ -70,6 +70,7 @@ class CotizacionesViewController: UIViewController, UICollectionViewDataSource, 
                 cell.currencyNameLabel.text = "Argentine Peso"
                 cell.updateTimeLabel.text = "22:00h"
                 let changeValue = "-2,00"
+                cell.changeValueLabel.text = changeValue
                 cell.stockValueLabel.text = "60,00"
                 
                 let percentage = "-3,23"
@@ -82,6 +83,7 @@ class CotizacionesViewController: UIViewController, UICollectionViewDataSource, 
                 cell.currencyNameLabel.text = "Euro"
                 cell.updateTimeLabel.text = "10:17h"
                 let changeValue = "0,11"
+                cell.changeValueLabel.text = changeValue
                 cell.stockValueLabel.text = "3,61"
                 
                 let percentage = "3.14"
@@ -93,6 +95,7 @@ class CotizacionesViewController: UIViewController, UICollectionViewDataSource, 
                 cell.currencyNameLabel.text = "Euro"
                 cell.updateTimeLabel.text = "10:29h"
                 let changeValue = "0,12"
+                cell.changeValueLabel.text = changeValue
                 cell.stockValueLabel.text = "6,618"
                 
                 let percentage = "3,40"
@@ -104,6 +107,7 @@ class CotizacionesViewController: UIViewController, UICollectionViewDataSource, 
                 cell.currencyNameLabel.text = "Mexican Peso"
                 cell.updateTimeLabel.text = "21:00h"
                 let changeValue = "-0,95"
+                cell.changeValueLabel.text = changeValue
                 cell.stockValueLabel.text = "72,00"
                 
                 let percentage = "-1,30"
@@ -115,6 +119,7 @@ class CotizacionesViewController: UIViewController, UICollectionViewDataSource, 
                 cell.currencyNameLabel.text = "Euro"
                 cell.updateTimeLabel.text = "17:30h"
                 let changeValue = "0,32"
+                cell.changeValueLabel.text = changeValue
                 cell.stockValueLabel.text = "3,89"
                 
                 let percentage = "8,96"
@@ -126,6 +131,7 @@ class CotizacionesViewController: UIViewController, UICollectionViewDataSource, 
                 cell.currencyNameLabel.text = "US Dollar"
                 cell.updateTimeLabel.text = "23:17h"
                 let changeValue = "-0,09"
+                cell.changeValueLabel.text = changeValue
                 cell.stockValueLabel.text = "3,86"
                 
                 let percentage = "-2,28"
@@ -134,9 +140,10 @@ class CotizacionesViewController: UIViewController, UICollectionViewDataSource, 
                 (cell.changeImageView.image, cell.percentageImageView.image) = setArrowsValues(changeValue, percentage: percentage)
             case 7:
                 cell.cityLabel?.text = "VARSOVIA"
-                cell.currencyNameLabel.text = "PZloty"
+                cell.currencyNameLabel.text = "Zloty"
                 cell.updateTimeLabel.text = "09:04h"
                 let changeValue = "0,37"
+                cell.changeValueLabel.text = changeValue
                 cell.stockValueLabel.text = "16,81"
                 
                 let percentage = "2,25"
@@ -246,6 +253,31 @@ class CotizacionesViewController: UIViewController, UICollectionViewDataSource, 
         }
         
         
+        
+    }
+    
+    func tapped(gesture: UITapGestureRecognizer) {
+        
+        self.performSegueWithIdentifier("goToStockDetailSegue", sender: nil)
+        
+//        if pdfArray.count > 0  {
+//            
+//            let itemTapped = gesture.view as? DocumentCell
+//            
+//            if let theItem = itemTapped {
+//                
+//                let indexPath = self.collectionView.indexPathForCell(theItem)
+//                
+//                if let theIndex = indexPath {
+//                    
+//                    print("celda pulsada: \(theIndex.row)")
+//                    
+//                    self.performSegueWithIdentifier("goToPdfSegue", sender:pdfArray[theIndex.row])
+//                }
+//                
+//            }
+//            
+//        }
         
     }
     
