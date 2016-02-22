@@ -10,10 +10,15 @@ import UIKit
 
 class StockDetailViewController: UIViewController {
 
+    @IBOutlet weak var frameView: UIView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        frameView.layer.cornerRadius = 10
     }
 
     override func didReceiveMemoryWarning() {
