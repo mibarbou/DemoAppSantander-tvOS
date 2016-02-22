@@ -12,5 +12,11 @@ class StockCell: UICollectionViewCell {
     
     @IBOutlet weak var cityLabel: UILabel!
     
+    @IBOutlet weak var shareNameLabel: UILabel!
+    @IBOutlet weak var currencyNameLabel: UILabel!
+    @IBOutlet weak var updateTimeLabel: UILabel!
+    @IBOutlet weak var changeValueLabel: UILabel!
+    @IBOutlet weak var changePercentageLabel: UILabel!
+    @IBOutlet weak var stockValueLabel: UILabel!
     
 }
