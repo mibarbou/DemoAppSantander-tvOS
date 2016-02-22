@@ -12,6 +12,10 @@ class CotizacionesViewController: UIViewController, UICollectionViewDataSource, 
 
     @IBOutlet weak var collectionView: UICollectionView!
     
+    let defaultSize = CGSizeMake(700, 650)
+    
+    let focusSize = CGSizeMake(840, 780)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -88,15 +92,23 @@ class CotizacionesViewController: UIViewController, UICollectionViewDataSource, 
     }
     
     // MARK: UICollectionViewDelegate
-    
+ 
     
     override func didUpdateFocusInContext(context: UIFocusUpdateContext, withAnimationCoordinator coordinator: UIFocusAnimationCoordinator) {
+        
         
         if let prev = context.previouslyFocusedView as? StockCell {
             
             
             UIView.animateWithDuration(0.1, animations: { () -> Void in
                 
+                prev.center = CGPointMake(prev.center.x,prev.center.y + 200)
+            
+//                prev.frame.size = self.defaultSize
+//                prev.layer.shadowColor = UIColor.clearColor().CGColor
+//                prev.layer.shadowOffset = CGSizeMake(0, 0)
+//                prev.layer.masksToBounds = true
+
 //                prev.imageView.adjustsImageWhenAncestorFocused = false
 //                prev.descriptionLabel.hidden = true
                 
@@ -111,13 +123,26 @@ class CotizacionesViewController: UIViewController, UICollectionViewDataSource, 
             
             UIView.animateWithDuration(0.1, animations: { () -> Void in
                 
+                next.center = CGPointMake(next.center.x,next.center.y - 200)
+                
+//                next.frame.size = self.focusSize
+                
+//                next.layer.shadowColor = UIColor.darkGrayColor().CGColor
+//                next.layer.shadowOffset = CGSizeMake(10, 10)
+//                next.layer.masksToBounds = true
 //                next.imageView.adjustsImageWhenAncestorFocused = true
 //                next.descriptionLabel.hidden = false
                 
                 //                next.frame.size = self.focusCellSize
                 //                next.imageView.frame.size = self.focusSize
             })
+            
+            collectionView.scrollEnabled = false
+            let indexPath = collectionView.indexPathForCell(next)!
+            collectionView.scrollToItemAtIndexPath(indexPath, atScrollPosition: .CenteredHorizontally, animated: true)
         }
+        
+        
         
     }
     

@@ -18,5 +18,6 @@ class StockCell: UICollectionViewCell {
     @IBOutlet weak var changeValueLabel: UILabel!
     @IBOutlet weak var changePercentageLabel: UILabel!
     @IBOutlet weak var stockValueLabel: UILabel!
+
     
 }
