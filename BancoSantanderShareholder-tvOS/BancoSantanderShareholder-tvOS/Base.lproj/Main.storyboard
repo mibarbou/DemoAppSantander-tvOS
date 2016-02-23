@@ -144,7 +144,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2540" y="-764"/>
+            <point key="canvasLocation" x="2316" y="-2372"/>
         </scene>
         <!--Video View Controller-->
         <scene sceneID="vfY-OI-onc">
@@ -161,7 +161,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HUj-tU-fdc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4750" y="-713"/>
+            <point key="canvasLocation" x="4654" y="-2345"/>
         </scene>
         <!--Pdf View Controller-->
         <scene sceneID="Xnu-St-6gd">
@@ -256,11 +256,12 @@
                     <connections>
                         <outlet property="activityIndicator" destination="5Qk-bN-ujx" id="rjo-y2-ZLz"/>
                         <outlet property="collectionView" destination="Fx1-eR-DxL" id="jpO-Xo-R8E"/>
+                        <segue destination="aZQ-dw-SXl" kind="show" identifier="goToPdfDetailSegue" id="xuN-rp-Gcn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iqW-Qa-H7y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4765" y="507"/>
+            <point key="canvasLocation" x="4637" y="-901"/>
         </scene>
         <!--Documentos-->
         <scene sceneID="wg7-f3-ORb">
@@ -283,11 +284,11 @@
                                     <size key="itemSize" width="500" height="600"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <inset key="sectionInset" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DocumentCell" id="iDd-wo-urY" customClass="DocumentCell" customModule="BancoSantanderShareholder_tvOS" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="101" width="500" height="600"/>
+                                        <rect key="frame" x="20" y="101" width="500" height="600"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="500" height="600"/>
@@ -388,9 +389,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2612" y="522"/>
+            <point key="canvasLocation" x="2356" y="-886"/>
         </scene>
-        <!--Fotos-->
+        <!--Accionistas-->
         <scene sceneID="MIg-FV-Fft">
             <objects>
                 <viewController id="9mb-EY-wHo" customClass="ThirdViewController" customModule="BancoSantanderShareholder_tvOS" customModuleProvider="target" sceneMemberID="viewController">
@@ -401,12 +402,324 @@
                     <view key="view" contentMode="scaleToFill" id="oOf-EN-rgK">
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" alpha="0.69999999999999996" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="66" sectionHeaderHeight="40" sectionFooterHeight="40" translatesAutoresizingMaskIntoConstraints="NO" id="Wgf-jY-K4Z">
+                                <rect key="frame" x="25" y="180" width="408" height="529"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <sections/>
+                                <connections>
+                                    <outlet property="dataSource" destination="9mb-EY-wHo" id="nt4-Pj-JRE"/>
+                                    <outlet property="delegate" destination="9mb-EY-wHo" id="Uxi-Zh-6zT"/>
+                                </connections>
+                            </tableView>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="455-oS-46Z">
+                                <rect key="frame" x="460" y="180" width="1430" height="880"/>
+                                <connections>
+                                    <segue destination="kPj-08-o3T" kind="embed" id="p2y-te-n2M"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Fotos" image="photoIcon.png" selectedImage="photoIcon.png" id="4Jf-K7-6I1"/>
+                    <tabBarItem key="tabBarItem" title="Accionistas" image="logoIcon.png" selectedImage="logoIcon.png" id="4Jf-K7-6I1"/>
+                    <connections>
+                        <outlet property="containerView" destination="455-oS-46Z" id="oSX-c7-WEg"/>
+                        <outlet property="tableView" destination="Wgf-jY-K4Z" id="LTG-8a-p1S"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3kq-CP-CUi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="862" y="1703"/>
+            <point key="canvasLocation" x="5190" y="1007"/>
+        </scene>
+        <!--Cotizaciones-->
+        <scene sceneID="V4l-u5-wYA">
+            <objects>
+                <viewController id="1jD-Vh-LS3" customClass="CotizacionesViewController" customModule="BancoSantanderShareholder_tvOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Nse-HZ-nHI"/>
+                        <viewControllerLayoutGuide type="bottom" id="NDD-pk-vAC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Xok-06-OXS">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="o72-Cg-MsM">
+                                <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                            </imageView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="MKg-4G-Log">
+                                <rect key="frame" x="0.0" y="190" width="1920" height="890"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="50" minimumInteritemSpacing="10" id="Ka5-3b-cyN">
+                                    <size key="itemSize" width="700" height="650"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="20" minY="200" maxX="20" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="StockCell" id="gIm-0x-dop" customClass="StockCell" customModule="BancoSantanderShareholder_tvOS" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="220" width="700" height="650"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="700" height="650"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MADRID" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oJ8-1v-t8F">
+                                                    <rect key="frame" x="210" y="22" width="475" height="69"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="45"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Acción SAN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CUS-wr-Pfv">
+                                                    <rect key="frame" x="36" y="38" width="159" height="41"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Actualizado" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AyG-tt-rBV">
+                                                    <rect key="frame" x="495" y="99" width="127" height="41"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10:29h" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zxC-LG-OIC">
+                                                    <rect key="frame" x="493" y="134" width="114" height="41"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Euro" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jal-PN-i9X">
+                                                    <rect key="frame" x="36" y="79" width="159" height="41"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="22"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0,12" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PUl-AK-Avv">
+                                                    <rect key="frame" x="400" y="222" width="120" height="41"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3,40%" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PES-0t-1x9">
+                                                    <rect key="frame" x="560" y="222" width="114" height="41"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3,618" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P4t-Oa-pjx">
+                                                    <rect key="frame" x="36" y="184" width="306" height="69"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="90"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="clockIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="nQs-rg-E93">
+                                                    <rect key="frame" x="616" y="116" width="60" height="60"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="arrowUpIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="LGP-jw-cEC">
+                                                    <rect key="frame" x="352" y="197" width="40" height="60"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="chartImage.png" translatesAutoresizingMaskIntoConstraints="NO" id="upr-Hf-V6L">
+                                                    <rect key="frame" x="36" y="342" width="310" height="280"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="chartImage.png" translatesAutoresizingMaskIntoConstraints="NO" id="QbZ-AH-3LB">
+                                                    <rect key="frame" x="361" y="342" width="313" height="279"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Gráfico sesión" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dP6-mz-co3">
+                                                    <rect key="frame" x="36" y="297" width="248" height="32"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Gráfico histórico" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PyZ-nG-LkR">
+                                                    <rect key="frame" x="361" y="297" width="248" height="32"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="arrowUpIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="VRT-UI-vYV">
+                                                    <rect key="frame" x="533" y="197" width="40" height="60"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="changeImageView" destination="LGP-jw-cEC" id="qcF-fN-2QB"/>
+                                            <outlet property="changePercentageLabel" destination="PES-0t-1x9" id="KC3-XJ-2QO"/>
+                                            <outlet property="changeValueLabel" destination="PUl-AK-Avv" id="oFv-5x-944"/>
+                                            <outlet property="cityLabel" destination="oJ8-1v-t8F" id="NRT-Lk-Iga"/>
+                                            <outlet property="currencyNameLabel" destination="Jal-PN-i9X" id="EtJ-Va-bc7"/>
+                                            <outlet property="percentageImageView" destination="VRT-UI-vYV" id="edn-vx-Rvh"/>
+                                            <outlet property="shareNameLabel" destination="CUS-wr-Pfv" id="QPw-Sv-SYL"/>
+                                            <outlet property="stockValueLabel" destination="P4t-Oa-pjx" id="ZxD-kM-765"/>
+                                            <outlet property="updateTimeLabel" destination="zxC-LG-OIC" id="Vx5-ft-HFn"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="1jD-Vh-LS3" id="cn9-2l-2Om"/>
+                                    <outlet property="delegate" destination="1jD-Vh-LS3" id="CaH-EW-gc5"/>
+                                </connections>
+                            </collectionView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bannerSantander.png" translatesAutoresizingMaskIntoConstraints="NO" id="1gy-D0-M6b">
+                                <rect key="frame" x="40" y="171" width="410" height="100"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="COTIZACIONES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ytl-5s-s2U">
+                                <rect key="frame" x="706" y="161" width="508" height="119"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="50"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="o72-Cg-MsM" secondAttribute="trailing" constant="-20" id="3w9-JI-ivk"/>
+                            <constraint firstItem="NDD-pk-vAC" firstAttribute="top" secondItem="o72-Cg-MsM" secondAttribute="bottom" id="CwC-UU-JNV"/>
+                            <constraint firstItem="o72-Cg-MsM" firstAttribute="leading" secondItem="Xok-06-OXS" secondAttribute="leadingMargin" constant="-20" id="Iif-WS-CSZ"/>
+                            <constraint firstItem="o72-Cg-MsM" firstAttribute="top" secondItem="Nse-HZ-nHI" secondAttribute="bottom" id="LUc-Aw-Xo6"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Cotizaciones" image="chartIcon.png" selectedImage="chartIcon.png" id="r3u-hO-VJQ"/>
+                    <connections>
+                        <outlet property="collectionView" destination="MKg-4G-Log" id="o79-j2-mJc"/>
+                        <segue destination="VAb-05-PZE" kind="show" identifier="goToStockDetailSegue" id="uWL-QM-st9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h29-Fn-vuU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1694" y="1967"/>
+        </scene>
+        <!--Stock Detail View Controller-->
+        <scene sceneID="rsf-0c-yhn">
+            <objects>
+                <viewController id="VAb-05-PZE" customClass="StockDetailViewController" customModule="BancoSantanderShareholder_tvOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OIG-rN-K6j"/>
+                        <viewControllerLayoutGuide type="bottom" id="Yyl-ED-nVs"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KbM-Bz-TsF">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="3.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="B6p-50-gQc">
+                                <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yN3-y4-kEf">
+                                <rect key="frame" x="60" y="60" width="1810" height="960"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="chartImage.png" translatesAutoresizingMaskIntoConstraints="NO" id="OJo-Vt-GUy">
+                                        <rect key="frame" x="736" y="51" width="990" height="400"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="arrowUpIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZB6-OK-wla">
+                                        <rect key="frame" x="515" y="113" width="40" height="60"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="arrowUpIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="hs2-m2-xJz">
+                                        <rect key="frame" x="334" y="113" width="40" height="60"/>
+                                    </imageView>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Gráfico histórico" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lDX-kP-T63">
+                                        <rect key="frame" x="1107" y="473" width="248" height="32"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="chartImage.png" translatesAutoresizingMaskIntoConstraints="NO" id="hb3-i0-QWZ">
+                                        <rect key="frame" x="736" y="526" width="990" height="400"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MADRID" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uzh-TY-pUg">
+                                        <rect key="frame" x="212" y="8" width="443" height="61"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="45"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3,618" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1UX-MQ-f0B">
+                                        <rect key="frame" x="55" y="104" width="271" height="69"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="90"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3,40%" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ddv-4F-8rr">
+                                        <rect key="frame" x="553" y="122" width="114" height="41"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Gráfico sesión" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YPw-Eo-chZ">
+                                        <rect key="frame" x="1107" y="11" width="248" height="32"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0,12" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KxW-OY-tB7">
+                                        <rect key="frame" x="389" y="125" width="120" height="41"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Actualizado" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lb5-kg-PRa">
+                                        <rect key="frame" x="54" y="189" width="127" height="41"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="clockIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="zgb-Ml-asi">
+                                        <rect key="frame" x="184" y="198" width="60" height="60"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10:29h" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gkw-tu-a3q">
+                                        <rect key="frame" x="54" y="226" width="114" height="41"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Euro" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kDE-mE-9KJ">
+                                        <rect key="frame" x="54" y="57" width="159" height="41"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="22"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Acción SAN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H1R-t2-k0b">
+                                        <rect key="frame" x="54" y="24" width="159" height="41"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tableImage.png" translatesAutoresizingMaskIntoConstraints="NO" id="uXY-kH-LoJ">
+                                        <rect key="frame" x="116" y="282" width="500" height="324"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tableImage.png" translatesAutoresizingMaskIntoConstraints="NO" id="DkQ-Yo-reI">
+                                        <rect key="frame" x="116" y="619" width="500" height="324"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="VOLUMEN" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gDF-So-Y0J">
+                                        <rect key="frame" x="55" y="620" width="30" height="321"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="26"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="COTIZACIÓN" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cyN-Zx-jtj">
+                                        <rect key="frame" x="60" y="285" width="21" height="321"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="26"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                    </view>
+                    <connections>
+                        <outlet property="changePercentageLabel" destination="Ddv-4F-8rr" id="T1Z-4p-yJ0"/>
+                        <outlet property="changeValueLabel" destination="KxW-OY-tB7" id="6Y0-MQ-wpl"/>
+                        <outlet property="cityLabel" destination="Uzh-TY-pUg" id="cDv-CN-bTK"/>
+                        <outlet property="currencyLabel" destination="kDE-mE-9KJ" id="owH-z6-HzU"/>
+                        <outlet property="frameView" destination="yN3-y4-kEf" id="HRd-63-EIY"/>
+                        <outlet property="percentageImageView" destination="ZB6-OK-wla" id="cGO-v1-yxD"/>
+                        <outlet property="stockValueLabel" destination="1UX-MQ-f0B" id="jdc-8U-eaR"/>
+                        <outlet property="updateTimeLabel" destination="gkw-tu-a3q" id="lgR-aD-Gku"/>
+                        <outlet property="valueImageView" destination="hs2-m2-xJz" id="X7l-B1-ktd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ktl-DU-eFC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2250" y="3694"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -422,20 +735,328 @@
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="9mb-EY-wHo" kind="relationship" relationship="viewControllers" id="Tt2-lk-4zP"/>
+                        <segue destination="1jD-Vh-LS3" kind="relationship" relationship="viewControllers" id="DjZ-VT-D8n"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
         </scene>
+        <!--Pdf Detail View Controller-->
+        <scene sceneID="gWU-uR-PJH">
+            <objects>
+                <viewController id="aZQ-dw-SXl" customClass="PdfDetailViewController" customModule="BancoSantanderShareholder_tvOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="K5j-ka-Z6E"/>
+                        <viewControllerLayoutGuide type="bottom" id="h5j-oG-sih"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zz5-pH-Sw6">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ITL-vw-j7t" customClass="FocusScrollView" customModule="BancoSantanderShareholder_tvOS" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                            </scrollView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sgG-rX-7gn">
+                                <rect key="frame" x="0.0" y="-460" width="1500" height="2000"/>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="h5j-oG-sih" firstAttribute="top" secondItem="ITL-vw-j7t" secondAttribute="bottom" id="Akx-sS-d7M"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ITL-vw-j7t" secondAttribute="trailing" constant="-20" id="ETG-Jy-44Y"/>
+                            <constraint firstItem="ITL-vw-j7t" firstAttribute="leading" secondItem="zz5-pH-Sw6" secondAttribute="leadingMargin" constant="-20" id="dvb-6B-S7b"/>
+                            <constraint firstItem="ITL-vw-j7t" firstAttribute="top" secondItem="K5j-ka-Z6E" secondAttribute="bottom" id="ioc-H4-ZJh"/>
+                            <constraint firstItem="sgG-rX-7gn" firstAttribute="centerX" secondItem="zz5-pH-Sw6" secondAttribute="centerX" id="jBT-xp-xrV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="sgG-rX-7gn" id="AEh-AY-eec"/>
+                        <outlet property="scrollView" destination="ITL-vw-j7t" id="AuW-JU-ykb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Yz-G6-quF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7354" y="-1675"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="O0k-JR-dTN">
+            <objects>
+                <viewController storyboardIdentifier="ControllerInicio" useStoryboardIdentifierAsRestorationIdentifier="YES" id="kPj-08-o3T" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MXJ-ps-p2Z"/>
+                        <viewControllerLayoutGuide type="bottom" id="Qip-Ve-set"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6gR-ar-UdA">
+                        <rect key="frame" x="0.0" y="0.0" width="1430" height="880"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="INFORME TRIMESTRAL ACCIONISTAS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AQz-bk-ntQ">
+                                <rect key="frame" x="439" y="58" width="658" height="61"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="36"/>
+                                <color key="textColor" red="0.89411764705882357" green="0.0" blue="0.019607843137254902" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="OCTUBRE - DICIEMBRE 2015" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B0B-4f-uVj">
+                                <rect key="frame" x="540" y="127" width="457" height="103"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="36"/>
+                                <color key="textColor" red="0.89411764709999997" green="0.0" blue="0.019607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MGq-a0-0nb">
+                                <rect key="frame" x="196" y="270" width="1146" height="70"/>
+                                <string key="text">"En 2015 hemos alcanzado nuestros objetivos y lo hemos hecho aumentando los ingresos, mejorando la satisfacción del cliente y con más clientes vinculados y digitalmente activos".</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="22"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ANA BOTÍN, PRESIDENTA BANCO SANTANDER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q7i-xm-Qka">
+                                <rect key="frame" x="495" y="391" width="549" height="55"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="firma.png" translatesAutoresizingMaskIntoConstraints="NO" id="cAR-r4-bDP">
+                                <rect key="frame" x="559" y="463" width="421" height="100"/>
+                            </imageView>
+                        </subviews>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="1430" height="880"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zW7-hr-bV2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7694" y="215"/>
+        </scene>
+        <!--Accion-->
+        <scene sceneID="njr-v5-kxO">
+            <objects>
+                <viewController storyboardIdentifier="ControllerAccion" title="Accion" useStoryboardIdentifierAsRestorationIdentifier="YES" id="1TZ-sT-pRe" customClass="AccionViewController" customModule="BancoSantanderShareholder_tvOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Agz-ww-QkV"/>
+                        <viewControllerLayoutGuide type="bottom" id="9lC-xz-rDJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zQG-A9-AK8">
+                        <rect key="frame" x="0.0" y="0.0" width="1430" height="880"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="LA ACCIÓN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dmq-XT-FxM">
+                                <rect key="frame" x="462" y="10" width="507" height="75"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="42"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="La acción Santander cerró 2015 con una cotización de 4,56 euros por título." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="phz-mc-Lov">
+                                <rect key="frame" x="218" y="93" width="994" height="48"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="25"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Datos clave de la cotización" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A0K-gU-JUJ">
+                                <rect key="frame" x="59" y="164" width="994" height="48"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="25"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ktt-D5-Z0o">
+                                <rect key="frame" x="93" y="249" width="300" height="250"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="INICIO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LAr-zt-I5s">
+                                        <rect key="frame" x="65" y="31" width="170" height="48"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="26"/>
+                                        <color key="textColor" red="0.98431372549019602" green="0.0" blue="0.023529411764705882" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(31/12/2014)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7rB-Eu-P9D">
+                                        <rect key="frame" x="49" y="87" width="202" height="39"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="7,00€" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qzI-Ht-jUb">
+                                        <rect key="frame" x="45" y="146" width="210" height="71"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="48"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4bN-ML-Nl9">
+                                <rect key="frame" x="770" y="249" width="300" height="250"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MÍNIMA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="asw-5y-Ge3">
+                                        <rect key="frame" x="65" y="31" width="170" height="48"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="26"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(14/12/2015)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kJR-Ul-bDO">
+                                        <rect key="frame" x="49" y="87" width="202" height="39"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="4,45€" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kP2-77-YUr">
+                                        <rect key="frame" x="45" y="146" width="210" height="71"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="48"/>
+                                        <color key="textColor" red="0.62745098039215685" green="0.31764705882352939" blue="0.45098039215686275" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j2k-rx-heK">
+                                <rect key="frame" x="1107" y="249" width="300" height="250"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CIERRE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6YC-HA-fiK">
+                                        <rect key="frame" x="65" y="31" width="170" height="48"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="26"/>
+                                        <color key="textColor" red="0.98431372549999996" green="0.0" blue="0.023529411760000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(31/12/2015)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BDR-xa-qqs">
+                                        <rect key="frame" x="49" y="87" width="202" height="39"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="4,56€" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3my-xT-Kv8">
+                                        <rect key="frame" x="45" y="146" width="210" height="71"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="48"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ggo-5d-wUK">
+                                <rect key="frame" x="432" y="249" width="300" height="250"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MÁXIMA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pve-oe-ApH">
+                                        <rect key="frame" x="65" y="31" width="170" height="48"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="26"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(07/04/2015)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tkZ-kv-H4A">
+                                        <rect key="frame" x="49" y="87" width="202" height="39"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="7,17€" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XVr-2t-rbH">
+                                        <rect key="frame" x="45" y="146" width="210" height="71"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="48"/>
+                                        <color key="textColor" red="0.63137254901960782" green="0.73725490196078436" blue="0.11372549019607843" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="1430" height="880"/>
+                    <connections>
+                        <outlet property="view1" destination="Ktt-D5-Z0o" id="Re1-7r-5Uw"/>
+                        <outlet property="view2" destination="Ggo-5d-wUK" id="WaP-wB-gQ6"/>
+                        <outlet property="view3" destination="4bN-ML-Nl9" id="CtT-DC-3fQ"/>
+                        <outlet property="view4" destination="j2k-rx-heK" id="WKG-ZM-pVh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fxi-IZ-NcR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7558" y="1447"/>
+        </scene>
+        <!--Accionarado View Controller-->
+        <scene sceneID="vvd-OH-9Kc">
+            <objects>
+                <viewController storyboardIdentifier="ControllerAccionarado" useStoryboardIdentifierAsRestorationIdentifier="YES" id="H1P-OI-Rc5" customClass="AccionaradoViewController" customModule="BancoSantanderShareholder_tvOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="szu-nu-eky"/>
+                        <viewControllerLayoutGuide type="bottom" id="ATU-em-R9X"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cE5-hq-0Ee">
+                        <rect key="frame" x="0.0" y="0.0" width="1430" height="880"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Accionarado" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8rM-mF-NqF">
+                                <rect key="frame" x="441" y="381" width="667" height="160"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="62"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="1430" height="880"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="azk-Gh-cPa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7574" y="2507"/>
+        </scene>
+        <!--Dividendos View Controller-->
+        <scene sceneID="J34-pU-PHx">
+            <objects>
+                <viewController storyboardIdentifier="ControllerDividendos" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ux4-lC-A0k" customClass="DividendosViewController" customModule="BancoSantanderShareholder_tvOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="R24-cF-Sos"/>
+                        <viewControllerLayoutGuide type="bottom" id="aIQ-1H-j6S"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="y5t-OC-HRG">
+                        <rect key="frame" x="0.0" y="0.0" width="1430" height="880"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dividendos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xnB-qE-YzQ">
+                                <rect key="frame" x="626" y="460" width="667" height="160"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="62"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="1430" height="880"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oiR-aM-UKi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7582" y="3559"/>
+        </scene>
+        <!--Resultados View Controller-->
+        <scene sceneID="s2M-9Y-q5K">
+            <objects>
+                <viewController storyboardIdentifier="ControllerResultados" useStoryboardIdentifierAsRestorationIdentifier="YES" id="dAq-Es-7NC" customClass="ResultadosViewController" customModule="BancoSantanderShareholder_tvOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1ag-Jo-eRC"/>
+                        <viewControllerLayoutGuide type="bottom" id="6bm-J9-f4x"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Fel-MG-vhj">
+                        <rect key="frame" x="0.0" y="0.0" width="1430" height="880"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Resultados" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6KY-rL-NhK">
+                                <rect key="frame" x="382" y="360" width="667" height="160"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="62"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="1430" height="880"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d9a-hC-cxe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7574" y="4647"/>
+        </scene>
     </scenes>
     <resources>
         <image name="1.jpg" width="1920" height="720"/>
         <image name="2.jpg" width="1920" height="720"/>
         <image name="3.jpg" width="1920" height="720"/>
+        <image name="arrowUpIcon.png" width="40" height="60"/>
         <image name="bannerSantander.png" width="410" height="100"/>
+        <image name="chartIcon.png" width="44" height="44"/>
+        <image name="chartImage.png" width="737" height="535"/>
+        <image name="clockIcon.png" width="60" height="60"/>
         <image name="docsIcon.png" width="44" height="54"/>
-        <image name="photoIcon.png" width="44" height="35"/>
+        <image name="firma.png" width="380" height="90"/>
+        <image name="logoIcon.png" width="44" height="40"/>
+        <image name="tableImage.png" width="500" height="324"/>
         <image name="videoIcon.png" width="44" height="44"/>
     </resources>
 </document>

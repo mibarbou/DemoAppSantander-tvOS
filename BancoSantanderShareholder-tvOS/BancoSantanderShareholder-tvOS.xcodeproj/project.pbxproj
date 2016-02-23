@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		489CFDD2B9D4C318002B6301 /* Pods_BancoSantanderShareholder_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39E4EDBE3D895D76EC305CB8 /* Pods_BancoSantanderShareholder_tvOS.framework */; };
+		D000A1761C7CAEC500B9D373 /* FocusScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D000A1751C7CAEC500B9D373 /* FocusScrollView.swift */; };
 		D00710491C6DC9D9008DE13C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00710481C6DC9D9008DE13C /* AppDelegate.swift */; };
 		D007104B1C6DC9D9008DE13C /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D007104A1C6DC9D9008DE13C /* FirstViewController.swift */; };
 		D007104D1C6DC9D9008DE13C /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D007104C1C6DC9D9008DE13C /* SecondViewController.swift */; };
@@ -18,6 +19,23 @@
 		D00710611C6DD60D008DE13C /* santander.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D00710601C6DD60D008DE13C /* santander.jpg */; };
 		D00710631C6DD8C4008DE13C /* PdfCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00710621C6DD8C4008DE13C /* PdfCell.swift */; };
 		D00710651C6DD8EE008DE13C /* Pdf.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00710641C6DD8EE008DE13C /* Pdf.swift */; };
+		D0308F401C78E04900E617FA /* PdfDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0308F3F1C78E04900E617FA /* PdfDetailViewController.swift */; };
+		D0308F441C7AFDF000E617FA /* AccionaradoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0308F431C7AFDF000E617FA /* AccionaradoViewController.swift */; };
+		D0308F461C7B01B100E617FA /* DividendosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0308F451C7B01B100E617FA /* DividendosViewController.swift */; };
+		D0308F481C7B01C800E617FA /* ResultadosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0308F471C7B01C800E617FA /* ResultadosViewController.swift */; };
+		D0921DD31C77350000E345E1 /* CotizacionesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0921DD21C77350000E345E1 /* CotizacionesViewController.swift */; };
+		D0921DDA1C77376200E345E1 /* AccionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0921DD91C77376200E345E1 /* AccionViewController.swift */; };
+		D0921DE31C773CA800E345E1 /* StockCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0921DE21C773CA800E345E1 /* StockCell.swift */; };
+		D0A259AC1C7B2046004508C8 /* clockIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = D0A259AB1C7B2046004508C8 /* clockIcon.png */; };
+		D0A259AE1C7B2111004508C8 /* arrowUpIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = D0A259AD1C7B2111004508C8 /* arrowUpIcon.png */; };
+		D0A259B01C7B2270004508C8 /* arrowDownIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = D0A259AF1C7B2270004508C8 /* arrowDownIcon.png */; };
+		D0A259B41C7B4662004508C8 /* chartImage.png in Resources */ = {isa = PBXBuildFile; fileRef = D0A259B31C7B4662004508C8 /* chartImage.png */; };
+		D0A259B61C7B5CA0004508C8 /* StockDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A259B51C7B5CA0004508C8 /* StockDetailViewController.swift */; };
+		D0A259B81C7B6EE7004508C8 /* tableImage.png in Resources */ = {isa = PBXBuildFile; fileRef = D0A259B71C7B6EE7004508C8 /* tableImage.png */; };
+		D0A259BA1C7C3872004508C8 /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A259B91C7C3872004508C8 /* Stock.swift */; };
+		D0A259BC1C7C5FF3004508C8 /* chartIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = D0A259BB1C7C5FF3004508C8 /* chartIcon.png */; };
+		D0A259BE1C7C6096004508C8 /* logoIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = D0A259BD1C7C6096004508C8 /* logoIcon.png */; };
+		D0A259C01C7C6BD7004508C8 /* firma.png in Resources */ = {isa = PBXBuildFile; fileRef = D0A259BF1C7C6BD7004508C8 /* firma.png */; };
 		D0BDFD3C1C731FAC007B1F01 /* bannerSantander.png in Resources */ = {isa = PBXBuildFile; fileRef = D0BDFD3B1C731FAC007B1F01 /* bannerSantander.png */; };
 		D0C2E4961C6F88A000A45199 /* Financialreport4Q2015.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D0C2E4951C6F88A000A45199 /* Financialreport4Q2015.pdf */; };
 		D0C2E4981C6FBB1A00A45199 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C2E4971C6FBB1A00A45199 /* ThirdViewController.swift */; };
@@ -37,6 +55,7 @@
 		39E4EDBE3D895D76EC305CB8 /* Pods_BancoSantanderShareholder_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BancoSantanderShareholder_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		55FB47626CB488F039591622 /* Pods-BancoSantanderShareholder-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BancoSantanderShareholder-tvOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BancoSantanderShareholder-tvOS/Pods-BancoSantanderShareholder-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		B5E5EADA67A345C4E6A1D1EF /* Pods-BancoSantanderShareholder-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BancoSantanderShareholder-tvOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-BancoSantanderShareholder-tvOS/Pods-BancoSantanderShareholder-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		D000A1751C7CAEC500B9D373 /* FocusScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FocusScrollView.swift; sourceTree = "<group>"; };
 		D00710451C6DC9D9008DE13C /* BancoSantanderShareholder-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BancoSantanderShareholder-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D00710481C6DC9D9008DE13C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D007104A1C6DC9D9008DE13C /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +68,23 @@
 		D00710601C6DD60D008DE13C /* santander.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = santander.jpg; sourceTree = "<group>"; };
 		D00710621C6DD8C4008DE13C /* PdfCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PdfCell.swift; sourceTree = "<group>"; };
 		D00710641C6DD8EE008DE13C /* Pdf.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pdf.swift; sourceTree = "<group>"; };
+		D0308F3F1C78E04900E617FA /* PdfDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PdfDetailViewController.swift; sourceTree = "<group>"; };
+		D0308F431C7AFDF000E617FA /* AccionaradoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccionaradoViewController.swift; sourceTree = "<group>"; };
+		D0308F451C7B01B100E617FA /* DividendosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DividendosViewController.swift; sourceTree = "<group>"; };
+		D0308F471C7B01C800E617FA /* ResultadosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultadosViewController.swift; sourceTree = "<group>"; };
+		D0921DD21C77350000E345E1 /* CotizacionesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CotizacionesViewController.swift; sourceTree = "<group>"; };
+		D0921DD91C77376200E345E1 /* AccionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccionViewController.swift; sourceTree = "<group>"; };
+		D0921DE21C773CA800E345E1 /* StockCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StockCell.swift; sourceTree = "<group>"; };
+		D0A259AB1C7B2046004508C8 /* clockIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clockIcon.png; sourceTree = "<group>"; };
+		D0A259AD1C7B2111004508C8 /* arrowUpIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrowUpIcon.png; sourceTree = "<group>"; };
+		D0A259AF1C7B2270004508C8 /* arrowDownIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrowDownIcon.png; sourceTree = "<group>"; };
+		D0A259B31C7B4662004508C8 /* chartImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chartImage.png; sourceTree = "<group>"; };
+		D0A259B51C7B5CA0004508C8 /* StockDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StockDetailViewController.swift; sourceTree = "<group>"; };
+		D0A259B71C7B6EE7004508C8 /* tableImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tableImage.png; sourceTree = "<group>"; };
+		D0A259B91C7C3872004508C8 /* Stock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stock.swift; sourceTree = "<group>"; };
+		D0A259BB1C7C5FF3004508C8 /* chartIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chartIcon.png; sourceTree = "<group>"; };
+		D0A259BD1C7C6096004508C8 /* logoIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logoIcon.png; sourceTree = "<group>"; };
+		D0A259BF1C7C6BD7004508C8 /* firma.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = firma.png; sourceTree = "<group>"; };
 		D0BDFD3B1C731FAC007B1F01 /* bannerSantander.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bannerSantander.png; sourceTree = "<group>"; };
 		D0C2E4951C6F88A000A45199 /* Financialreport4Q2015.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Financialreport4Q2015.pdf; sourceTree = "<group>"; };
 		D0C2E4971C6FBB1A00A45199 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
@@ -129,11 +165,15 @@
 		D00710591C6DCE7E008DE13C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				D0921DD81C77373700E345E1 /* Accionistas */,
 				D007104A1C6DC9D9008DE13C /* FirstViewController.swift */,
 				D007104C1C6DC9D9008DE13C /* SecondViewController.swift */,
 				D0C2E4971C6FBB1A00A45199 /* ThirdViewController.swift */,
 				D0FF6C111C721E8C00222584 /* VideoViewController.swift */,
 				D0FF6C131C723CB000222584 /* PdfViewController.swift */,
+				D0921DD21C77350000E345E1 /* CotizacionesViewController.swift */,
+				D0308F3F1C78E04900E617FA /* PdfDetailViewController.swift */,
+				D0A259B51C7B5CA0004508C8 /* StockDetailViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -141,9 +181,9 @@
 		D007105A1C6DCE86008DE13C /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				D007105B1C6DCED4008DE13C /* MovieCell.swift */,
-				D00710621C6DD8C4008DE13C /* PdfCell.swift */,
-				D0FF6C0F1C71FE5700222584 /* DocumentCell.swift */,
+				D0921DDB1C773B9400E345E1 /* Cells */,
+				D0921DCF1C77316800E345E1 /* Sections */,
+				D000A1751C7CAEC500B9D373 /* FocusScrollView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -153,13 +193,51 @@
 			children = (
 				D007105E1C6DCF73008DE13C /* Movie.swift */,
 				D00710641C6DD8EE008DE13C /* Pdf.swift */,
+				D0A259B91C7C3872004508C8 /* Stock.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		D0921DCF1C77316800E345E1 /* Sections */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Sections;
+			sourceTree = "<group>";
+		};
+		D0921DD81C77373700E345E1 /* Accionistas */ = {
+			isa = PBXGroup;
+			children = (
+				D0921DD91C77376200E345E1 /* AccionViewController.swift */,
+				D0308F431C7AFDF000E617FA /* AccionaradoViewController.swift */,
+				D0308F451C7B01B100E617FA /* DividendosViewController.swift */,
+				D0308F471C7B01C800E617FA /* ResultadosViewController.swift */,
+			);
+			name = Accionistas;
+			sourceTree = "<group>";
+		};
+		D0921DDB1C773B9400E345E1 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D007105B1C6DCED4008DE13C /* MovieCell.swift */,
+				D00710621C6DD8C4008DE13C /* PdfCell.swift */,
+				D0FF6C0F1C71FE5700222584 /* DocumentCell.swift */,
+				D0921DE21C773CA800E345E1 /* StockCell.swift */,
+			);
+			name = Cells;
 			sourceTree = "<group>";
 		};
 		D0FF969D1C7493D900B216F3 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D0A259BF1C7C6BD7004508C8 /* firma.png */,
+				D0A259BD1C7C6096004508C8 /* logoIcon.png */,
+				D0A259BB1C7C5FF3004508C8 /* chartIcon.png */,
+				D0A259B71C7B6EE7004508C8 /* tableImage.png */,
+				D0A259B31C7B4662004508C8 /* chartImage.png */,
+				D0A259AF1C7B2270004508C8 /* arrowDownIcon.png */,
+				D0A259AD1C7B2111004508C8 /* arrowUpIcon.png */,
+				D0A259AB1C7B2046004508C8 /* clockIcon.png */,
 				D0FF969B1C7492FA00B216F3 /* photoIcon.png */,
 				D0FF96991C7490AC00B216F3 /* videoIcon.png */,
 				D0FF96971C74906F00B216F3 /* docsIcon.png */,
@@ -237,13 +315,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0FF96921C748BC300B216F3 /* 3.jpg in Resources */,
+				D0A259B81C7B6EE7004508C8 /* tableImage.png in Resources */,
+				D0A259AE1C7B2111004508C8 /* arrowUpIcon.png in Resources */,
+				D0A259BE1C7C6096004508C8 /* logoIcon.png in Resources */,
 				D00710521C6DC9D9008DE13C /* Assets.xcassets in Resources */,
 				D00710501C6DC9D9008DE13C /* Main.storyboard in Resources */,
+				D0A259BC1C7C5FF3004508C8 /* chartIcon.png in Resources */,
+				D0A259C01C7C6BD7004508C8 /* firma.png in Resources */,
 				D00710611C6DD60D008DE13C /* santander.jpg in Resources */,
+				D0A259B01C7B2270004508C8 /* arrowDownIcon.png in Resources */,
+				D0A259B41C7B4662004508C8 /* chartImage.png in Resources */,
 				D0FF969A1C7490AC00B216F3 /* videoIcon.png in Resources */,
 				D0BDFD3C1C731FAC007B1F01 /* bannerSantander.png in Resources */,
 				D0C2E4961C6F88A000A45199 /* Financialreport4Q2015.pdf in Resources */,
 				D0FF969C1C7492FA00B216F3 /* photoIcon.png in Resources */,
+				D0A259AC1C7B2046004508C8 /* clockIcon.png in Resources */,
 				D0FF96981C74906F00B216F3 /* docsIcon.png in Resources */,
 				D0FFD3F71C73568400F6F2AD /* documentos_pdf.xml in Resources */,
 				D0FF96911C748BC300B216F3 /* 2.jpg in Resources */,
@@ -308,14 +394,24 @@
 			files = (
 				D00710631C6DD8C4008DE13C /* PdfCell.swift in Sources */,
 				D007104D1C6DC9D9008DE13C /* SecondViewController.swift in Sources */,
+				D0921DE31C773CA800E345E1 /* StockCell.swift in Sources */,
 				D00710491C6DC9D9008DE13C /* AppDelegate.swift in Sources */,
+				D0A259B61C7B5CA0004508C8 /* StockDetailViewController.swift in Sources */,
+				D0308F401C78E04900E617FA /* PdfDetailViewController.swift in Sources */,
+				D0921DDA1C77376200E345E1 /* AccionViewController.swift in Sources */,
+				D0308F461C7B01B100E617FA /* DividendosViewController.swift in Sources */,
 				D00710651C6DD8EE008DE13C /* Pdf.swift in Sources */,
+				D000A1761C7CAEC500B9D373 /* FocusScrollView.swift in Sources */,
 				D007105C1C6DCED4008DE13C /* MovieCell.swift in Sources */,
 				D007104B1C6DC9D9008DE13C /* FirstViewController.swift in Sources */,
 				D0FF6C101C71FE5700222584 /* DocumentCell.swift in Sources */,
 				D0C2E4981C6FBB1A00A45199 /* ThirdViewController.swift in Sources */,
+				D0308F481C7B01C800E617FA /* ResultadosViewController.swift in Sources */,
 				D0FF6C121C721E8C00222584 /* VideoViewController.swift in Sources */,
 				D007105F1C6DCF73008DE13C /* Movie.swift in Sources */,
+				D0308F441C7AFDF000E617FA /* AccionaradoViewController.swift in Sources */,
+				D0921DD31C77350000E345E1 /* CotizacionesViewController.swift in Sources */,
+				D0A259BA1C7C3872004508C8 /* Stock.swift in Sources */,
 				D0FF6C141C723CB000222584 /* PdfViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
