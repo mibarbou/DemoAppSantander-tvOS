@@ -403,9 +403,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="66" sectionHeaderHeight="40" sectionFooterHeight="40" translatesAutoresizingMaskIntoConstraints="NO" id="Wgf-jY-K4Z">
-                                <rect key="frame" x="33" y="197" width="387" height="596"/>
-                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <tableView clipsSubviews="YES" alpha="0.69999999999999996" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="66" sectionHeaderHeight="40" sectionFooterHeight="40" translatesAutoresizingMaskIntoConstraints="NO" id="Wgf-jY-K4Z">
+                                <rect key="frame" x="25" y="180" width="408" height="529"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <sections/>
                                 <connections>
                                     <outlet property="dataSource" destination="9mb-EY-wHo" id="nt4-Pj-JRE"/>
@@ -413,11 +413,14 @@
                                 </connections>
                             </tableView>
                             <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="455-oS-46Z">
-                                <rect key="frame" x="476" y="197" width="1413" height="850"/>
+                                <rect key="frame" x="460" y="180" width="1430" height="880"/>
+                                <connections>
+                                    <segue destination="kPj-08-o3T" kind="embed" id="p2y-te-n2M"/>
+                                </connections>
                             </containerView>
                         </subviews>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Accionistas" image="photoIcon.png" selectedImage="photoIcon.png" id="4Jf-K7-6I1"/>
+                    <tabBarItem key="tabBarItem" title="Accionistas" image="logoIcon.png" selectedImage="logoIcon.png" id="4Jf-K7-6I1"/>
                     <connections>
                         <outlet property="containerView" destination="455-oS-46Z" id="oSX-c7-WEg"/>
                         <outlet property="tableView" destination="Wgf-jY-K4Z" id="LTG-8a-p1S"/>
@@ -574,7 +577,7 @@
                             <constraint firstItem="o72-Cg-MsM" firstAttribute="top" secondItem="Nse-HZ-nHI" secondAttribute="bottom" id="LUc-Aw-Xo6"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Cotizaciones" id="r3u-hO-VJQ"/>
+                    <tabBarItem key="tabBarItem" title="Cotizaciones" image="chartIcon.png" selectedImage="chartIcon.png" id="r3u-hO-VJQ"/>
                     <connections>
                         <outlet property="collectionView" destination="MKg-4G-Log" id="o79-j2-mJc"/>
                         <segue destination="VAb-05-PZE" kind="show" identifier="goToStockDetailSegue" id="uWL-QM-st9"/>
@@ -776,6 +779,55 @@
             </objects>
             <point key="canvasLocation" x="7354" y="-1675"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="O0k-JR-dTN">
+            <objects>
+                <viewController storyboardIdentifier="ControllerInicio" useStoryboardIdentifierAsRestorationIdentifier="YES" id="kPj-08-o3T" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MXJ-ps-p2Z"/>
+                        <viewControllerLayoutGuide type="bottom" id="Qip-Ve-set"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6gR-ar-UdA">
+                        <rect key="frame" x="0.0" y="0.0" width="1430" height="880"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="INFORME TRIMESTRAL ACCIONISTAS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AQz-bk-ntQ">
+                                <rect key="frame" x="439" y="58" width="658" height="61"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="36"/>
+                                <color key="textColor" red="0.89411764705882357" green="0.0" blue="0.019607843137254902" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="OCTUBRE - DICIEMBRE 2015" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B0B-4f-uVj">
+                                <rect key="frame" x="540" y="127" width="457" height="103"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="36"/>
+                                <color key="textColor" red="0.89411764709999997" green="0.0" blue="0.019607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MGq-a0-0nb">
+                                <rect key="frame" x="196" y="270" width="1146" height="70"/>
+                                <string key="text">"En 2015 hemos alcanzado nuestros objetivos y lo hemos hecho aumentando los ingresos, mejorando la satisfacción del cliente y con más clientes vinculados y digitalmente activos".</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="22"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ANA BOTÍN, PRESIDENTA BANCO SANTANDER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q7i-xm-Qka">
+                                <rect key="frame" x="495" y="391" width="549" height="55"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="firma.png" translatesAutoresizingMaskIntoConstraints="NO" id="cAR-r4-bDP">
+                                <rect key="frame" x="559" y="463" width="421" height="100"/>
+                            </imageView>
+                        </subviews>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="1430" height="880"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zW7-hr-bV2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7694" y="215"/>
+        </scene>
         <!--Accion-->
         <scene sceneID="njr-v5-kxO">
             <objects>
@@ -785,21 +837,131 @@
                         <viewControllerLayoutGuide type="bottom" id="9lC-xz-rDJ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="zQG-A9-AK8">
-                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1430" height="880"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="LA ACCIÓN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dmq-XT-FxM">
-                                <rect key="frame" x="301" y="288" width="988" height="233"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="46"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="462" y="10" width="507" height="75"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="42"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="La acción Santander cerró 2015 con una cotización de 4,56 euros por título." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="phz-mc-Lov">
+                                <rect key="frame" x="218" y="93" width="994" height="48"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="25"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Datos clave de la cotización" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A0K-gU-JUJ">
+                                <rect key="frame" x="59" y="164" width="994" height="48"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="25"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ktt-D5-Z0o">
+                                <rect key="frame" x="93" y="249" width="300" height="250"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="INICIO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LAr-zt-I5s">
+                                        <rect key="frame" x="65" y="31" width="170" height="48"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="26"/>
+                                        <color key="textColor" red="0.98431372549019602" green="0.0" blue="0.023529411764705882" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(31/12/2014)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7rB-Eu-P9D">
+                                        <rect key="frame" x="49" y="87" width="202" height="39"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="7,00€" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qzI-Ht-jUb">
+                                        <rect key="frame" x="45" y="146" width="210" height="71"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="48"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4bN-ML-Nl9">
+                                <rect key="frame" x="770" y="249" width="300" height="250"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MÍNIMA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="asw-5y-Ge3">
+                                        <rect key="frame" x="65" y="31" width="170" height="48"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="26"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(14/12/2015)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kJR-Ul-bDO">
+                                        <rect key="frame" x="49" y="87" width="202" height="39"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="4,45€" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kP2-77-YUr">
+                                        <rect key="frame" x="45" y="146" width="210" height="71"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="48"/>
+                                        <color key="textColor" red="0.62745098039215685" green="0.31764705882352939" blue="0.45098039215686275" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j2k-rx-heK">
+                                <rect key="frame" x="1107" y="249" width="300" height="250"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CIERRE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6YC-HA-fiK">
+                                        <rect key="frame" x="65" y="31" width="170" height="48"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="26"/>
+                                        <color key="textColor" red="0.98431372549999996" green="0.0" blue="0.023529411760000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(31/12/2015)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BDR-xa-qqs">
+                                        <rect key="frame" x="49" y="87" width="202" height="39"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="4,56€" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3my-xT-Kv8">
+                                        <rect key="frame" x="45" y="146" width="210" height="71"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="48"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ggo-5d-wUK">
+                                <rect key="frame" x="432" y="249" width="300" height="250"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MÁXIMA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pve-oe-ApH">
+                                        <rect key="frame" x="65" y="31" width="170" height="48"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="26"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(07/04/2015)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tkZ-kv-H4A">
+                                        <rect key="frame" x="49" y="87" width="202" height="39"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="7,17€" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XVr-2t-rbH">
+                                        <rect key="frame" x="45" y="146" width="210" height="71"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="48"/>
+                                        <color key="textColor" red="0.63137254901960782" green="0.73725490196078436" blue="0.11372549019607843" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                     </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="1430" height="880"/>
+                    <connections>
+                        <outlet property="view1" destination="Ktt-D5-Z0o" id="Re1-7r-5Uw"/>
+                        <outlet property="view2" destination="Ggo-5d-wUK" id="WaP-wB-gQ6"/>
+                        <outlet property="view3" destination="4bN-ML-Nl9" id="CtT-DC-3fQ"/>
+                        <outlet property="view4" destination="j2k-rx-heK" id="WKG-ZM-pVh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fxi-IZ-NcR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7534" y="271"/>
+            <point key="canvasLocation" x="7558" y="1447"/>
         </scene>
         <!--Accionarado View Controller-->
         <scene sceneID="vvd-OH-9Kc">
@@ -810,7 +972,7 @@
                         <viewControllerLayoutGuide type="bottom" id="ATU-em-R9X"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="cE5-hq-0Ee">
-                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1430" height="880"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Accionarado" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8rM-mF-NqF">
@@ -821,10 +983,12 @@
                             </label>
                         </subviews>
                     </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="1430" height="880"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="azk-Gh-cPa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7550" y="1507"/>
+            <point key="canvasLocation" x="7574" y="2507"/>
         </scene>
         <!--Dividendos View Controller-->
         <scene sceneID="J34-pU-PHx">
@@ -835,7 +999,7 @@
                         <viewControllerLayoutGuide type="bottom" id="aIQ-1H-j6S"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="y5t-OC-HRG">
-                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1430" height="880"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dividendos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xnB-qE-YzQ">
@@ -846,10 +1010,12 @@
                             </label>
                         </subviews>
                     </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="1430" height="880"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oiR-aM-UKi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7550" y="2823"/>
+            <point key="canvasLocation" x="7582" y="3559"/>
         </scene>
         <!--Resultados View Controller-->
         <scene sceneID="s2M-9Y-q5K">
@@ -860,21 +1026,23 @@
                         <viewControllerLayoutGuide type="bottom" id="6bm-J9-f4x"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Fel-MG-vhj">
-                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1430" height="880"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Resultados" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6KY-rL-NhK">
-                                <rect key="frame" x="626" y="460" width="667" height="160"/>
+                                <rect key="frame" x="382" y="360" width="667" height="160"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="62"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                     </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="1430" height="880"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d9a-hC-cxe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7494" y="3991"/>
+            <point key="canvasLocation" x="7574" y="4647"/>
         </scene>
     </scenes>
     <resources>
@@ -883,10 +1051,12 @@
         <image name="3.jpg" width="1920" height="720"/>
         <image name="arrowUpIcon.png" width="40" height="60"/>
         <image name="bannerSantander.png" width="410" height="100"/>
+        <image name="chartIcon.png" width="44" height="44"/>
         <image name="chartImage.png" width="737" height="535"/>
         <image name="clockIcon.png" width="60" height="60"/>
         <image name="docsIcon.png" width="44" height="54"/>
-        <image name="photoIcon.png" width="44" height="35"/>
+        <image name="firma.png" width="380" height="90"/>
+        <image name="logoIcon.png" width="44" height="40"/>
         <image name="tableImage.png" width="500" height="324"/>
         <image name="videoIcon.png" width="44" height="44"/>
     </resources>

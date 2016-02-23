@@ -10,10 +10,28 @@ import UIKit
 
 class AccionViewController: UIViewController {
 
+    @IBOutlet weak var view1: UIView!
+    @IBOutlet weak var view2: UIView!
+    @IBOutlet weak var view3: UIView!
+    @IBOutlet weak var view4: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        view1.layer.borderColor = UIColor.darkGrayColor().CGColor
+        view1.layer.borderWidth = 2.0
+        
+        view2.layer.borderColor = UIColor.darkGrayColor().CGColor
+        view2.layer.borderWidth = 2.0
+        
+        view3.layer.borderColor = UIColor.darkGrayColor().CGColor
+        view3.layer.borderWidth = 2.0
+        
+        view4.layer.borderColor = UIColor.darkGrayColor().CGColor
+        view4.layer.borderWidth = 2.0
+        
     }
 
     override func didReceiveMemoryWarning() {

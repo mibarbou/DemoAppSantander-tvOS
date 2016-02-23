@@ -63,13 +63,23 @@ class ThirdViewController: UIViewController, UITableViewDataSource, UITableViewD
     
     func tableView(tableView: UITableView, didUpdateFocusInContext context: UITableViewFocusUpdateContext, withAnimationCoordinator coordinator: UIFocusAnimationCoordinator) {
         
+      
         //this gives you the indexpath of the focused cell
         if let nextIndexPath = context.nextFocusedIndexPath {
             
             print(nextIndexPath.row)
             
             changeContainer(nextIndexPath.row)
+        } else {
+            // Ningun elemento de la tabla tiene el foco
+            changeContainer(-1)
+            
         }
+    }
+    
+    override func didUpdateFocusInContext(context: UIFocusUpdateContext, withAnimationCoordinator coordinator: UIFocusAnimationCoordinator) {
+     
+       
     }
     
     
@@ -92,6 +102,8 @@ class ThirdViewController: UIViewController, UITableViewDataSource, UITableViewD
             viewController = self.storyboard?.instantiateViewControllerWithIdentifier("ControllerResultados")
             setChildControllerInContainer(viewController)
         default:
+            viewController = self.storyboard?.instantiateViewControllerWithIdentifier("ControllerInicio")
+            setChildControllerInContainer(viewController)
             break
             
         }
