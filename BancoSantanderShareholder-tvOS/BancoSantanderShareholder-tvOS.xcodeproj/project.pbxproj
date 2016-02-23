@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		489CFDD2B9D4C318002B6301 /* Pods_BancoSantanderShareholder_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39E4EDBE3D895D76EC305CB8 /* Pods_BancoSantanderShareholder_tvOS.framework */; };
+		D000A1761C7CAEC500B9D373 /* FocusScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D000A1751C7CAEC500B9D373 /* FocusScrollView.swift */; };
 		D00710491C6DC9D9008DE13C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00710481C6DC9D9008DE13C /* AppDelegate.swift */; };
 		D007104B1C6DC9D9008DE13C /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D007104A1C6DC9D9008DE13C /* FirstViewController.swift */; };
 		D007104D1C6DC9D9008DE13C /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D007104C1C6DC9D9008DE13C /* SecondViewController.swift */; };
@@ -54,6 +55,7 @@
 		39E4EDBE3D895D76EC305CB8 /* Pods_BancoSantanderShareholder_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BancoSantanderShareholder_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		55FB47626CB488F039591622 /* Pods-BancoSantanderShareholder-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BancoSantanderShareholder-tvOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BancoSantanderShareholder-tvOS/Pods-BancoSantanderShareholder-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		B5E5EADA67A345C4E6A1D1EF /* Pods-BancoSantanderShareholder-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BancoSantanderShareholder-tvOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-BancoSantanderShareholder-tvOS/Pods-BancoSantanderShareholder-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		D000A1751C7CAEC500B9D373 /* FocusScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FocusScrollView.swift; sourceTree = "<group>"; };
 		D00710451C6DC9D9008DE13C /* BancoSantanderShareholder-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BancoSantanderShareholder-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D00710481C6DC9D9008DE13C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D007104A1C6DC9D9008DE13C /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -181,6 +183,7 @@
 			children = (
 				D0921DDB1C773B9400E345E1 /* Cells */,
 				D0921DCF1C77316800E345E1 /* Sections */,
+				D000A1751C7CAEC500B9D373 /* FocusScrollView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -398,6 +401,7 @@
 				D0921DDA1C77376200E345E1 /* AccionViewController.swift in Sources */,
 				D0308F461C7B01B100E617FA /* DividendosViewController.swift in Sources */,
 				D00710651C6DD8EE008DE13C /* Pdf.swift in Sources */,
+				D000A1761C7CAEC500B9D373 /* FocusScrollView.swift in Sources */,
 				D007105C1C6DCED4008DE13C /* MovieCell.swift in Sources */,
 				D007104B1C6DC9D9008DE13C /* FirstViewController.swift in Sources */,
 				D0FF6C101C71FE5700222584 /* DocumentCell.swift in Sources */,

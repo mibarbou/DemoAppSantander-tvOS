@@ -9,16 +9,18 @@
 import UIKit
 
 class PdfDetailViewController: UIViewController {
-  
-    @IBOutlet weak var scrollView: UIScrollView!
+ 
+    @IBOutlet weak var scrollView: FocusScrollView!
+    
     @IBOutlet weak var imageView: UIImageView!
+    
     var image = UIImage()
     
     var currentY : CGFloat = 0   //this saves current Y position
     
     override func viewDidLayoutSubviews() {
         
-//        initializeGestureRecognizer()
+        initializeGestureRecognizer()
         
 //        let pan = UIPanGestureRecognizer(target: self, action: "panned:" )
 //        
@@ -26,15 +28,15 @@ class PdfDetailViewController: UIViewController {
 //        scrollView.addGestureRecognizer(pan)
 //
 //        
-//        scrollView.contentSize = CGSizeMake(1920, 1500)
+        scrollView.contentSize = CGSizeMake(1920, 1080)
         
-        let swipeUp = UISwipeGestureRecognizer(target: self, action: "swipedUp")
-        swipeUp.direction = UISwipeGestureRecognizerDirection.Up
-        self.view.addGestureRecognizer(swipeUp)
-        
-        let swipeDown = UISwipeGestureRecognizer(target: self, action: "swipedDown")
-        swipeDown.direction = UISwipeGestureRecognizerDirection.Down
-        self.view.addGestureRecognizer(swipeDown)
+//        let swipeUp = UISwipeGestureRecognizer(target: self, action: "swipedUp")
+//        swipeUp.direction = UISwipeGestureRecognizerDirection.Up
+//        self.view.addGestureRecognizer(swipeUp)
+//        
+//        let swipeDown = UISwipeGestureRecognizer(target: self, action: "swipedDown")
+//        swipeDown.direction = UISwipeGestureRecognizerDirection.Down
+//        self.view.addGestureRecognizer(swipeDown)
         
         
         
@@ -64,6 +66,8 @@ class PdfDetailViewController: UIViewController {
     func swipedDown(){
         
         print("DOWN!")
+        
+//        scrollView.scrollRectToVisible(CGRectMake(0, 1300, 100, 100), animated: true)
     }
     
     
@@ -71,13 +75,13 @@ class PdfDetailViewController: UIViewController {
     {
         //For PanGesture Recoginzation
         let panGesture: UIPanGestureRecognizer = UIPanGestureRecognizer(target: self, action: Selector("recognizePanGesture:"))
-        self.scrollView.addGestureRecognizer(panGesture)
+        self.view.addGestureRecognizer(panGesture)
     }
     
     func recognizePanGesture(sender: UIPanGestureRecognizer)
     {
         
-        let translate = sender.translationInView(self.view)
+        let translate = sender.translationInView(self.imageView)
         var newY = sender.view!.center.y + translate.y
         
         if(newY >= self.view.frame.height - 20) {
@@ -93,7 +97,7 @@ class PdfDetailViewController: UIViewController {
         
         print(newY)
         
-        sender.setTranslation(CGPointZero, inView: self.view)
+        sender.setTranslation(CGPointZero, inView: self.imageView)
     }
 
     override func didReceiveMemoryWarning() {

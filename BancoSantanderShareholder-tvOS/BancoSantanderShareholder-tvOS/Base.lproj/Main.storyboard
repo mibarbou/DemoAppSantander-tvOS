@@ -754,25 +754,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OCD-Jw-S1O">
-                                <rect key="frame" x="0.0" y="0.0" width="1920" height="2500"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oFl-FR-yx6">
-                                        <rect key="frame" x="0.0" y="0.0" width="1920" height="2500"/>
-                                        <color key="backgroundColor" red="0.82745098039999998" green="0.83137254900000002" blue="0.83529411760000005" alpha="1" colorSpace="calibratedRGB"/>
-                                        <gestureRecognizers/>
-                                    </imageView>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="oFl-FR-yx6" firstAttribute="leading" secondItem="OCD-Jw-S1O" secondAttribute="leading" id="aQ3-r8-nfT"/>
-                                    <constraint firstAttribute="bottom" secondItem="oFl-FR-yx6" secondAttribute="bottom" id="bC3-tu-quC"/>
-                                </constraints>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ITL-vw-j7t" customClass="FocusScrollView" customModule="BancoSantanderShareholder_tvOS" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                             </scrollView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sgG-rX-7gn">
+                                <rect key="frame" x="0.0" y="-460" width="1500" height="2000"/>
+                            </imageView>
                         </subviews>
+                        <constraints>
+                            <constraint firstItem="h5j-oG-sih" firstAttribute="top" secondItem="ITL-vw-j7t" secondAttribute="bottom" id="Akx-sS-d7M"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ITL-vw-j7t" secondAttribute="trailing" constant="-20" id="ETG-Jy-44Y"/>
+                            <constraint firstItem="ITL-vw-j7t" firstAttribute="leading" secondItem="zz5-pH-Sw6" secondAttribute="leadingMargin" constant="-20" id="dvb-6B-S7b"/>
+                            <constraint firstItem="ITL-vw-j7t" firstAttribute="top" secondItem="K5j-ka-Z6E" secondAttribute="bottom" id="ioc-H4-ZJh"/>
+                            <constraint firstItem="sgG-rX-7gn" firstAttribute="centerX" secondItem="zz5-pH-Sw6" secondAttribute="centerX" id="jBT-xp-xrV"/>
+                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="imageView" destination="oFl-FR-yx6" id="Ewu-vF-0Xh"/>
-                        <outlet property="scrollView" destination="OCD-Jw-S1O" id="UAa-SQ-PKU"/>
+                        <outlet property="imageView" destination="sgG-rX-7gn" id="AEh-AY-eec"/>
+                        <outlet property="scrollView" destination="ITL-vw-j7t" id="AuW-JU-ykb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Yz-G6-quF" userLabel="First Responder" sceneMemberID="firstResponder"/>
