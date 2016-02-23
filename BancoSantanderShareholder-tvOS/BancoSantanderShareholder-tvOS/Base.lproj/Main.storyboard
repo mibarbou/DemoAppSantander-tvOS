@@ -577,7 +577,7 @@
                     <tabBarItem key="tabBarItem" title="Cotizaciones" id="r3u-hO-VJQ"/>
                     <connections>
                         <outlet property="collectionView" destination="MKg-4G-Log" id="o79-j2-mJc"/>
-                        <segue destination="VAb-05-PZE" kind="presentation" identifier="goToStockDetailSegue" modalTransitionStyle="coverVertical" id="uWL-QM-st9"/>
+                        <segue destination="VAb-05-PZE" kind="show" identifier="goToStockDetailSegue" id="uWL-QM-st9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h29-Fn-vuU" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -703,12 +703,20 @@
                         </subviews>
                     </view>
                     <connections>
+                        <outlet property="changePercentageLabel" destination="Ddv-4F-8rr" id="T1Z-4p-yJ0"/>
+                        <outlet property="changeValueLabel" destination="KxW-OY-tB7" id="6Y0-MQ-wpl"/>
+                        <outlet property="cityLabel" destination="Uzh-TY-pUg" id="cDv-CN-bTK"/>
+                        <outlet property="currencyLabel" destination="kDE-mE-9KJ" id="owH-z6-HzU"/>
                         <outlet property="frameView" destination="yN3-y4-kEf" id="HRd-63-EIY"/>
+                        <outlet property="percentageImageView" destination="ZB6-OK-wla" id="cGO-v1-yxD"/>
+                        <outlet property="stockValueLabel" destination="1UX-MQ-f0B" id="jdc-8U-eaR"/>
+                        <outlet property="updateTimeLabel" destination="gkw-tu-a3q" id="lgR-aD-Gku"/>
+                        <outlet property="valueImageView" destination="hs2-m2-xJz" id="X7l-B1-ktd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ktl-DU-eFC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1674" y="3582"/>
+            <point key="canvasLocation" x="2250" y="3694"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">

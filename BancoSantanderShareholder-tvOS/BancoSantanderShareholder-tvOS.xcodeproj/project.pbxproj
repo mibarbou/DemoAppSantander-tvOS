@@ -31,6 +31,7 @@
 		D0A259B41C7B4662004508C8 /* chartImage.png in Resources */ = {isa = PBXBuildFile; fileRef = D0A259B31C7B4662004508C8 /* chartImage.png */; };
 		D0A259B61C7B5CA0004508C8 /* StockDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A259B51C7B5CA0004508C8 /* StockDetailViewController.swift */; };
 		D0A259B81C7B6EE7004508C8 /* tableImage.png in Resources */ = {isa = PBXBuildFile; fileRef = D0A259B71C7B6EE7004508C8 /* tableImage.png */; };
+		D0A259BA1C7C3872004508C8 /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A259B91C7C3872004508C8 /* Stock.swift */; };
 		D0BDFD3C1C731FAC007B1F01 /* bannerSantander.png in Resources */ = {isa = PBXBuildFile; fileRef = D0BDFD3B1C731FAC007B1F01 /* bannerSantander.png */; };
 		D0C2E4961C6F88A000A45199 /* Financialreport4Q2015.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D0C2E4951C6F88A000A45199 /* Financialreport4Q2015.pdf */; };
 		D0C2E4981C6FBB1A00A45199 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C2E4971C6FBB1A00A45199 /* ThirdViewController.swift */; };
@@ -75,6 +76,7 @@
 		D0A259B31C7B4662004508C8 /* chartImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chartImage.png; sourceTree = "<group>"; };
 		D0A259B51C7B5CA0004508C8 /* StockDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StockDetailViewController.swift; sourceTree = "<group>"; };
 		D0A259B71C7B6EE7004508C8 /* tableImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tableImage.png; sourceTree = "<group>"; };
+		D0A259B91C7C3872004508C8 /* Stock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stock.swift; sourceTree = "<group>"; };
 		D0BDFD3B1C731FAC007B1F01 /* bannerSantander.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bannerSantander.png; sourceTree = "<group>"; };
 		D0C2E4951C6F88A000A45199 /* Financialreport4Q2015.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Financialreport4Q2015.pdf; sourceTree = "<group>"; };
 		D0C2E4971C6FBB1A00A45199 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 			children = (
 				D007105E1C6DCF73008DE13C /* Movie.swift */,
 				D00710641C6DD8EE008DE13C /* Pdf.swift */,
+				D0A259B91C7C3872004508C8 /* Stock.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -392,6 +395,7 @@
 				D007105F1C6DCF73008DE13C /* Movie.swift in Sources */,
 				D0308F441C7AFDF000E617FA /* AccionaradoViewController.swift in Sources */,
 				D0921DD31C77350000E345E1 /* CotizacionesViewController.swift in Sources */,
+				D0A259BA1C7C3872004508C8 /* Stock.swift in Sources */,
 				D0FF6C141C723CB000222584 /* PdfViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

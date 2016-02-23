@@ -12,12 +12,16 @@ class CotizacionesViewController: UIViewController, UICollectionViewDataSource, 
 
     @IBOutlet weak var collectionView: UICollectionView!
     
+    var stocks = [Stock]()
+    
     let defaultSize = CGSizeMake(700, 650)
     
     let focusSize = CGSizeMake(840, 780)
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        createDummyData()
 
         // Do any additional setup after loading the view.
     }
@@ -25,6 +29,20 @@ class CotizacionesViewController: UIViewController, UICollectionViewDataSource, 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        if segue.identifier == "goToStockDetailSegue" {
+            
+            if let stockDetailVC = segue.destinationViewController as? StockDetailViewController {
+                
+                if let theStock = sender {
+                    
+                    stockDetailVC.stock = (theStock as? Stock)!
+                }
+            }
+        }
     }
     
     // MARK: UICollectionViewDataSource
@@ -36,7 +54,7 @@ class CotizacionesViewController: UIViewController, UICollectionViewDataSource, 
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
-        return 8;
+        return stocks.count;
     }
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
@@ -51,109 +69,15 @@ class CotizacionesViewController: UIViewController, UICollectionViewDataSource, 
             cell.layer.cornerRadius = 10
             cell.shareNameLabel.text = "Acción SAN"
             
-            switch indexPath.row {
-                
-            case 0:
-                cell.cityLabel?.text = "LONDRES"
-                cell.currencyNameLabel.text = "Pence Sterling"
-                cell.updateTimeLabel.text = "11:44h"
-                let changeValue = "11,33"
-                cell.changeValueLabel.text = changeValue
-                cell.stockValueLabel.text = "283"
-                
-                let percentage = "4,17"
-                cell.changePercentageLabel.text = percentage + "%"
-                (cell.changeImageView.image, cell.percentageImageView.image) = setArrowsValues(changeValue, percentage: percentage)
-                
-            case 1:
-                cell.cityLabel?.text = "BUENOS AIRES"
-                cell.currencyNameLabel.text = "Argentine Peso"
-                cell.updateTimeLabel.text = "22:00h"
-                let changeValue = "-2,00"
-                cell.changeValueLabel.text = changeValue
-                cell.stockValueLabel.text = "60,00"
-                
-                let percentage = "-3,23"
-                cell.changePercentageLabel.text = percentage + "%"
-                
-                (cell.changeImageView.image, cell.percentageImageView.image) = setArrowsValues(changeValue, percentage: percentage)
-                
-            case 2:
-                cell.cityLabel?.text = "LISBOA"
-                cell.currencyNameLabel.text = "Euro"
-                cell.updateTimeLabel.text = "10:17h"
-                let changeValue = "0,11"
-                cell.changeValueLabel.text = changeValue
-                cell.stockValueLabel.text = "3,61"
-                
-                let percentage = "3.14"
-                cell.changePercentageLabel.text = percentage + "%"
-                
-                (cell.changeImageView.image, cell.percentageImageView.image) = setArrowsValues(changeValue, percentage: percentage)
-            case 3:
-                cell.cityLabel?.text = "MADRID"
-                cell.currencyNameLabel.text = "Euro"
-                cell.updateTimeLabel.text = "10:29h"
-                let changeValue = "0,12"
-                cell.changeValueLabel.text = changeValue
-                cell.stockValueLabel.text = "6,618"
-                
-                let percentage = "3,40"
-                cell.changePercentageLabel.text = percentage + "%"
-                
-                (cell.changeImageView.image, cell.percentageImageView.image) = setArrowsValues(changeValue, percentage: percentage)
-            case 4:
-                cell.cityLabel?.text = "MEXICO"
-                cell.currencyNameLabel.text = "Mexican Peso"
-                cell.updateTimeLabel.text = "21:00h"
-                let changeValue = "-0,95"
-                cell.changeValueLabel.text = changeValue
-                cell.stockValueLabel.text = "72,00"
-                
-                let percentage = "-1,30"
-                cell.changePercentageLabel.text = percentage + "%"
-                
-                (cell.changeImageView.image, cell.percentageImageView.image) = setArrowsValues(changeValue, percentage: percentage)
-            case 5:
-                cell.cityLabel?.text = "MILAN"
-                cell.currencyNameLabel.text = "Euro"
-                cell.updateTimeLabel.text = "17:30h"
-                let changeValue = "0,32"
-                cell.changeValueLabel.text = changeValue
-                cell.stockValueLabel.text = "3,89"
-                
-                let percentage = "8,96"
-                cell.changePercentageLabel.text = percentage + "%"
-                
-                (cell.changeImageView.image, cell.percentageImageView.image) = setArrowsValues(changeValue, percentage: percentage)
-            case 6:
-                cell.cityLabel?.text = "NUEVA YORK"
-                cell.currencyNameLabel.text = "US Dollar"
-                cell.updateTimeLabel.text = "23:17h"
-                let changeValue = "-0,09"
-                cell.changeValueLabel.text = changeValue
-                cell.stockValueLabel.text = "3,86"
-                
-                let percentage = "-2,28"
-                cell.changePercentageLabel.text = percentage + "%"
-                
-                (cell.changeImageView.image, cell.percentageImageView.image) = setArrowsValues(changeValue, percentage: percentage)
-            case 7:
-                cell.cityLabel?.text = "VARSOVIA"
-                cell.currencyNameLabel.text = "Zloty"
-                cell.updateTimeLabel.text = "09:04h"
-                let changeValue = "0,37"
-                cell.changeValueLabel.text = changeValue
-                cell.stockValueLabel.text = "16,81"
-                
-                let percentage = "2,25"
-                cell.changePercentageLabel.text = percentage + "%"
-                
-                (cell.changeImageView.image, cell.percentageImageView.image) = setArrowsValues(changeValue, percentage: percentage)
-            default:
-                break
-                
-            }
+            let stock = stocks[indexPath.row] as Stock
+            
+            cell.cityLabel?.text = stock.city
+            cell.currencyNameLabel.text = stock.currency
+            cell.updateTimeLabel.text = stock.updateTime
+            cell.changeValueLabel.text = stock.changeValue
+            cell.stockValueLabel.text = "283"
+            cell.changePercentageLabel.text = stock.changePercentage + "%"
+            (cell.changeImageView.image, cell.percentageImageView.image) = setArrowsValues(stock.changeValue, percentage: stock.changePercentage)
             
             
             if cell.gestureRecognizers?.count == nil {
@@ -257,39 +181,61 @@ class CotizacionesViewController: UIViewController, UICollectionViewDataSource, 
     }
     
     func tapped(gesture: UITapGestureRecognizer) {
+    
         
-        self.performSegueWithIdentifier("goToStockDetailSegue", sender: nil)
+        if stocks.count > 0  {
+            
+            let itemTapped = gesture.view as? StockCell
+            
+            if let theItem = itemTapped {
+                
+                let indexPath = self.collectionView.indexPathForCell(theItem)
+                
+                if let theIndex = indexPath {
+                    
+                    print("celda pulsada: \(theIndex.row)")
+                    
+                    self.performSegueWithIdentifier("goToStockDetailSegue", sender:stocks[theIndex.row])
+                }
+                
+            }
+            
+        }
         
-//        if pdfArray.count > 0  {
-//            
-//            let itemTapped = gesture.view as? DocumentCell
-//            
-//            if let theItem = itemTapped {
-//                
-//                let indexPath = self.collectionView.indexPathForCell(theItem)
-//                
-//                if let theIndex = indexPath {
-//                    
-//                    print("celda pulsada: \(theIndex.row)")
-//                    
-//                    self.performSegueWithIdentifier("goToPdfSegue", sender:pdfArray[theIndex.row])
-//                }
-//                
-//            }
-//            
-//        }
+    }
+    
+    
+    func createDummyData(){
+        
+        let londres = Stock(city: "LONDRES", currency: "Pence Sterling", updateTime: "11:44h", changeValue: "11,33", changePercentage: "4,17", stockValue: "283")
+        stocks.append(londres)
+        
+        let buenosAires = Stock(city: "BUENOS AIRES", currency: "Argentine Peso", updateTime: "22:00h", changeValue: "-2,00", changePercentage: "-3,23", stockValue: "60,00")
+        stocks.append(buenosAires)
+        
+        let lisboa = Stock(city: "LISBOA", currency: "Euro", updateTime: "10:17h", changeValue: "0,11", changePercentage: "3,14", stockValue: "3,61")
+        stocks.append(lisboa)
+        
+        let madrid = Stock(city: "MADRID", currency: "Euro", updateTime: "10:29h", changeValue: "0,12", changePercentage: "3,40", stockValue: "6,618")
+        stocks.append(madrid)
+        
+        let mexico = Stock(city: "MEXICO", currency: "Mexican Peso", updateTime: "21:00h", changeValue: "-0,95", changePercentage: "-1,30", stockValue: "72,00")
+        stocks.append(mexico)
+        
+        let milan = Stock(city: "MILAN", currency: "Euro", updateTime: "17:30h", changeValue: "0,32", changePercentage: "8,96", stockValue: "3,89")
+        stocks.append(milan)
+        
+        let nuevaYork = Stock(city: "NUEVA YORK", currency: "US Dollar", updateTime: "23:17h", changeValue: "0,09", changePercentage: "-2,28", stockValue: "3,86")
+        stocks.append(nuevaYork)
+        
+        let varsovia = Stock(city: "VARSOVIA", currency: "Zloty", updateTime: "09:04h", changeValue: "0,37", changePercentage: "2,25", stockValue: "16,81")
+        stocks.append(varsovia)
+        
+        self.collectionView.reloadData()
         
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+   
 
 }
