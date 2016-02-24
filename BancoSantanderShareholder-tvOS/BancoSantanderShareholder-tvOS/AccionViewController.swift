@@ -15,10 +15,15 @@ class AccionViewController: UIViewController {
     @IBOutlet weak var view3: UIView!
     @IBOutlet weak var view4: UIView!
     
+    @IBOutlet weak var headerLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        headerLabel.layer.borderColor = UIColor.darkGrayColor().CGColor
+        headerLabel.layer.borderWidth = 2.0
         
         view1.layer.borderColor = UIColor.darkGrayColor().CGColor
         view1.layer.borderWidth = 2.0

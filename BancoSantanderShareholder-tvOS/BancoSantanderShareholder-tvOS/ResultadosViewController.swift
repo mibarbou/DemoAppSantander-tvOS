@@ -10,10 +10,15 @@ import UIKit
 
 class ResultadosViewController: UIViewController {
 
+    @IBOutlet weak var headerLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+    
         // Do any additional setup after loading the view.
+        
+        headerLabel.layer.borderColor = UIColor.darkGrayColor().CGColor
+        headerLabel.layer.borderWidth = 2.0
     }
 
     override func didReceiveMemoryWarning() {

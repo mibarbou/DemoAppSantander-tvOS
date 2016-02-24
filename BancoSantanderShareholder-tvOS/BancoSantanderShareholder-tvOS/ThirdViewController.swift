@@ -47,9 +47,9 @@ class ThirdViewController: UIViewController, UITableViewDataSource, UITableViewD
         case 0:
            cell.textLabel?.text = "LA ACCIÓN"
         case 1:
-            cell.textLabel?.text = "ACCIONARADO"
-        case 2:
             cell.textLabel?.text = "DIVIDENDOS"
+        case 2:
+            cell.textLabel?.text = "ACCIONARADO"
         case 3:
             cell.textLabel?.text = "RESULTADOS"
         default:
@@ -93,10 +93,10 @@ class ThirdViewController: UIViewController, UITableViewDataSource, UITableViewD
             viewController = self.storyboard?.instantiateViewControllerWithIdentifier("ControllerAccion")
             setChildControllerInContainer(viewController)
         case 1:
-            viewController = self.storyboard?.instantiateViewControllerWithIdentifier("ControllerAccionarado")
+            viewController = self.storyboard?.instantiateViewControllerWithIdentifier("ControllerDividendos")
             setChildControllerInContainer(viewController)
         case 2:
-            viewController = self.storyboard?.instantiateViewControllerWithIdentifier("ControllerDividendos")
+            viewController = self.storyboard?.instantiateViewControllerWithIdentifier("ControllerAccionarado")
             setChildControllerInContainer(viewController)
         case 3:
             viewController = self.storyboard?.instantiateViewControllerWithIdentifier("ControllerResultados")
