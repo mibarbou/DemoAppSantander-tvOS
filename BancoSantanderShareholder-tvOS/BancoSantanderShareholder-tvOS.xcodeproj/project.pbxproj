@@ -22,6 +22,10 @@
 		D028C3601C7D961E004614DC /* TVServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D028C35F1C7D961E004614DC /* TVServices.framework */; };
 		D028C3631C7D961E004614DC /* ServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D028C3621C7D961E004614DC /* ServiceProvider.swift */; };
 		D028C3671C7D961E004614DC /* ShareholderShorcuts.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D028C35E1C7D961D004614DC /* ShareholderShorcuts.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D028C37E1C7DC98B004614DC /* cotizaciones.png in Resources */ = {isa = PBXBuildFile; fileRef = D028C37B1C7DC98B004614DC /* cotizaciones.png */; };
+		D028C37F1C7DC98B004614DC /* documentos.png in Resources */ = {isa = PBXBuildFile; fileRef = D028C37C1C7DC98B004614DC /* documentos.png */; };
+		D028C3801C7DC98B004614DC /* videos.png in Resources */ = {isa = PBXBuildFile; fileRef = D028C37D1C7DC98B004614DC /* videos.png */; };
+		D028C3821C7DCABD004614DC /* TopShelf.png in Resources */ = {isa = PBXBuildFile; fileRef = D028C3811C7DCABD004614DC /* TopShelf.png */; };
 		D0308F401C78E04900E617FA /* PdfDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0308F3F1C78E04900E617FA /* PdfDetailViewController.swift */; };
 		D0308F441C7AFDF000E617FA /* AccionaradoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0308F431C7AFDF000E617FA /* AccionaradoViewController.swift */; };
 		D0308F461C7B01B100E617FA /* DividendosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0308F451C7B01B100E617FA /* DividendosViewController.swift */; };
@@ -99,6 +103,10 @@
 		D028C35F1C7D961E004614DC /* TVServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TVServices.framework; path = System/Library/Frameworks/TVServices.framework; sourceTree = SDKROOT; };
 		D028C3621C7D961E004614DC /* ServiceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProvider.swift; sourceTree = "<group>"; };
 		D028C3641C7D961E004614DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D028C37B1C7DC98B004614DC /* cotizaciones.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cotizaciones.png; sourceTree = "<group>"; };
+		D028C37C1C7DC98B004614DC /* documentos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = documentos.png; sourceTree = "<group>"; };
+		D028C37D1C7DC98B004614DC /* videos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = videos.png; sourceTree = "<group>"; };
+		D028C3811C7DCABD004614DC /* TopShelf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TopShelf.png; sourceTree = "<group>"; };
 		D0308F3F1C78E04900E617FA /* PdfDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PdfDetailViewController.swift; sourceTree = "<group>"; };
 		D0308F431C7AFDF000E617FA /* AccionaradoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccionaradoViewController.swift; sourceTree = "<group>"; };
 		D0308F451C7B01B100E617FA /* DividendosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DividendosViewController.swift; sourceTree = "<group>"; };
@@ -243,6 +251,10 @@
 		D028C3611C7D961E004614DC /* ShareholderShorcuts */ = {
 			isa = PBXGroup;
 			children = (
+				D028C3811C7DCABD004614DC /* TopShelf.png */,
+				D028C37B1C7DC98B004614DC /* cotizaciones.png */,
+				D028C37C1C7DC98B004614DC /* documentos.png */,
+				D028C37D1C7DC98B004614DC /* videos.png */,
 				D028C3621C7D961E004614DC /* ServiceProvider.swift */,
 				D028C3641C7D961E004614DC /* Info.plist */,
 			);
@@ -416,6 +428,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D028C3821C7DCABD004614DC /* TopShelf.png in Resources */,
+				D028C37F1C7DC98B004614DC /* documentos.png in Resources */,
+				D028C3801C7DC98B004614DC /* videos.png in Resources */,
+				D028C37E1C7DC98B004614DC /* cotizaciones.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -691,6 +707,7 @@
 				D028C3691C7D961E004614DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
