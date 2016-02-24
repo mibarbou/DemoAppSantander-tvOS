@@ -19,6 +19,9 @@
 		D00710611C6DD60D008DE13C /* santander.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D00710601C6DD60D008DE13C /* santander.jpg */; };
 		D00710631C6DD8C4008DE13C /* PdfCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00710621C6DD8C4008DE13C /* PdfCell.swift */; };
 		D00710651C6DD8EE008DE13C /* Pdf.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00710641C6DD8EE008DE13C /* Pdf.swift */; };
+		D028C3601C7D961E004614DC /* TVServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D028C35F1C7D961E004614DC /* TVServices.framework */; };
+		D028C3631C7D961E004614DC /* ServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D028C3621C7D961E004614DC /* ServiceProvider.swift */; };
+		D028C3671C7D961E004614DC /* ShareholderShorcuts.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D028C35E1C7D961D004614DC /* ShareholderShorcuts.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		D0308F401C78E04900E617FA /* PdfDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0308F3F1C78E04900E617FA /* PdfDetailViewController.swift */; };
 		D0308F441C7AFDF000E617FA /* AccionaradoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0308F431C7AFDF000E617FA /* AccionaradoViewController.swift */; };
 		D0308F461C7B01B100E617FA /* DividendosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0308F451C7B01B100E617FA /* DividendosViewController.swift */; };
@@ -51,6 +54,30 @@
 		D0FFD3F71C73568400F6F2AD /* documentos_pdf.xml in Resources */ = {isa = PBXBuildFile; fileRef = D0FFD3F61C73568400F6F2AD /* documentos_pdf.xml */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		D028C3651C7D961E004614DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D007103D1C6DC9D9008DE13C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D028C35D1C7D961D004614DC;
+			remoteInfo = ShareholderShorcuts;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D028C36B1C7D961E004614DC /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D028C3671C7D961E004614DC /* ShareholderShorcuts.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		39E4EDBE3D895D76EC305CB8 /* Pods_BancoSantanderShareholder_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BancoSantanderShareholder_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		55FB47626CB488F039591622 /* Pods-BancoSantanderShareholder-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BancoSantanderShareholder-tvOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BancoSantanderShareholder-tvOS/Pods-BancoSantanderShareholder-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
@@ -68,6 +95,10 @@
 		D00710601C6DD60D008DE13C /* santander.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = santander.jpg; sourceTree = "<group>"; };
 		D00710621C6DD8C4008DE13C /* PdfCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PdfCell.swift; sourceTree = "<group>"; };
 		D00710641C6DD8EE008DE13C /* Pdf.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pdf.swift; sourceTree = "<group>"; };
+		D028C35E1C7D961D004614DC /* ShareholderShorcuts.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ShareholderShorcuts.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D028C35F1C7D961E004614DC /* TVServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TVServices.framework; path = System/Library/Frameworks/TVServices.framework; sourceTree = SDKROOT; };
+		D028C3621C7D961E004614DC /* ServiceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProvider.swift; sourceTree = "<group>"; };
+		D028C3641C7D961E004614DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0308F3F1C78E04900E617FA /* PdfDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PdfDetailViewController.swift; sourceTree = "<group>"; };
 		D0308F431C7AFDF000E617FA /* AccionaradoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccionaradoViewController.swift; sourceTree = "<group>"; };
 		D0308F451C7B01B100E617FA /* DividendosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DividendosViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +140,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D028C35B1C7D961D004614DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D028C3601C7D961E004614DC /* TVServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -116,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				39E4EDBE3D895D76EC305CB8 /* Pods_BancoSantanderShareholder_tvOS.framework */,
+				D028C35F1C7D961E004614DC /* TVServices.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -133,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				D00710471C6DC9D9008DE13C /* BancoSantanderShareholder-tvOS */,
+				D028C3611C7D961E004614DC /* ShareholderShorcuts */,
 				D00710461C6DC9D9008DE13C /* Products */,
 				7708FD35238409C7AD259855 /* Pods */,
 				53B4FAC0F037365D11F0EF7E /* Frameworks */,
@@ -143,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				D00710451C6DC9D9008DE13C /* BancoSantanderShareholder-tvOS.app */,
+				D028C35E1C7D961D004614DC /* ShareholderShorcuts.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -196,6 +238,15 @@
 				D0A259B91C7C3872004508C8 /* Stock.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		D028C3611C7D961E004614DC /* ShareholderShorcuts */ = {
+			isa = PBXGroup;
+			children = (
+				D028C3621C7D961E004614DC /* ServiceProvider.swift */,
+				D028C3641C7D961E004614DC /* Info.plist */,
+			);
+			path = ShareholderShorcuts;
 			sourceTree = "<group>";
 		};
 		D0921DCF1C77316800E345E1 /* Sections */ = {
@@ -265,15 +316,34 @@
 				D00710431C6DC9D9008DE13C /* Resources */,
 				F1680EEE07FCFA06EB221519 /* Embed Pods Frameworks */,
 				16DD164D5A8108C6E076FC13 /* Copy Pods Resources */,
+				D028C36B1C7D961E004614DC /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D028C3661C7D961E004614DC /* PBXTargetDependency */,
 			);
 			name = "BancoSantanderShareholder-tvOS";
 			productName = "BancoSantanderShareholder-tvOS";
 			productReference = D00710451C6DC9D9008DE13C /* BancoSantanderShareholder-tvOS.app */;
 			productType = "com.apple.product-type.application";
+		};
+		D028C35D1C7D961D004614DC /* ShareholderShorcuts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D028C36A1C7D961E004614DC /* Build configuration list for PBXNativeTarget "ShareholderShorcuts" */;
+			buildPhases = (
+				D028C35A1C7D961D004614DC /* Sources */,
+				D028C35B1C7D961D004614DC /* Frameworks */,
+				D028C35C1C7D961D004614DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShareholderShorcuts;
+			productName = ShareholderShorcuts;
+			productReference = D028C35E1C7D961D004614DC /* ShareholderShorcuts.appex */;
+			productType = "com.apple.product-type.tv-app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -286,6 +356,10 @@
 				ORGANIZATIONNAME = "Grupo CMC";
 				TargetAttributes = {
 					D00710441C6DC9D9008DE13C = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = C3XJQ6RL5C;
+					};
+					D028C35D1C7D961D004614DC = {
 						CreatedOnToolsVersion = 7.2.1;
 						DevelopmentTeam = C3XJQ6RL5C;
 					};
@@ -305,6 +379,7 @@
 			projectRoot = "";
 			targets = (
 				D00710441C6DC9D9008DE13C /* BancoSantanderShareholder-tvOS */,
+				D028C35D1C7D961D004614DC /* ShareholderShorcuts */,
 			);
 		};
 /* End PBXProject section */
@@ -334,6 +409,13 @@
 				D0FFD3F71C73568400F6F2AD /* documentos_pdf.xml in Resources */,
 				D0FF96911C748BC300B216F3 /* 2.jpg in Resources */,
 				D0FF96901C748BC300B216F3 /* 1.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D028C35C1C7D961D004614DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,7 +498,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D028C35A1C7D961D004614DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D028C3631C7D961E004614DC /* ServiceProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D028C3661C7D961E004614DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D028C35D1C7D961D004614DC /* ShareholderShorcuts */;
+			targetProxy = D028C3651C7D961E004614DC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D007104E1C6DC9D9008DE13C /* Main.storyboard */ = {
@@ -518,6 +616,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "BancoSantanderShareholder-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "es.grupocmc.BancoSantanderShareholder-tvOS";
@@ -532,10 +631,35 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "BancoSantanderShareholder-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "es.grupocmc.BancoSantanderShareholder-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D028C3681C7D961E004614DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = ShareholderShorcuts/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "es.grupocmc.BancoSantanderShareholder-tvOS.ShareholderShorcuts";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		D028C3691C7D961E004614DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = ShareholderShorcuts/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "es.grupocmc.BancoSantanderShareholder-tvOS.ShareholderShorcuts";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
@@ -559,6 +683,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		D028C36A1C7D961E004614DC /* Build configuration list for PBXNativeTarget "ShareholderShorcuts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D028C3681C7D961E004614DC /* Debug */,
+				D028C3691C7D961E004614DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

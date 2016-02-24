@@ -40,6 +40,38 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
+    
+    
+    
+    func application(app: UIApplication, openURL url: NSURL, options: [String : AnyObject]) -> Bool {
+        
+        if url.host == nil
+        {
+            return true
+        }
+        
+        let urlString = url.absoluteString
+        let queryArray = urlString.componentsSeparatedByString("/")
+        let query = queryArray[2]
+        if query.rangeOfString("section") != nil
+        {
+            let sectionIndexPathRow = Int(queryArray[3])
+      
+            
+            if let theIndex = sectionIndexPathRow
+            {
+                if let tabBarController = self.window!.rootViewController as? UITabBarController
+                {
+//                    let svc = tabBarController.viewControllers![0] as! MoviesViewController
+                    tabBarController.selectedIndex = theIndex
+                }
+            }
+        }
+        
+        
+        
+        return true
+    }
 
 
 }

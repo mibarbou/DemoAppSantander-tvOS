@@ -75,7 +75,7 @@ class CotizacionesViewController: UIViewController, UICollectionViewDataSource, 
             cell.currencyNameLabel.text = stock.currency
             cell.updateTimeLabel.text = stock.updateTime
             cell.changeValueLabel.text = stock.changeValue
-            cell.stockValueLabel.text = "283"
+            cell.stockValueLabel.text = stock.stockValue
             cell.changePercentageLabel.text = stock.changePercentage + "%"
             (cell.changeImageView.image, cell.percentageImageView.image) = setArrowsValues(stock.changeValue, percentage: stock.changePercentage)
             
