@@ -1,1108 +1,3045 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		095406039B4D371E48D08B38A2975AC8 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D27B90D9B7F8EA81F488AB43016599 /* Error.swift */; };
-		0BA862AA78ABDA3A2AA0FB50BEEE79DE /* KingfisherOptionsInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717A5C7B989B24DACBEC7DC466E02128 /* KingfisherOptionsInfo.swift */; };
-		16102E4E35FAA0FC4161282FECE56469 /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3BB7CFA7B204F70C0360AD65C080A7 /* Timeline.swift */; };
-		1A0E24F4CC0A582722B8E1553908DDD5 /* String+MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7439294DF0868F9E3AB46D0768E200B3 /* String+MD5.swift */; };
-		29A99D18ED4668CC2F63A09AC0166ED4 /* HCYoutubeParser-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E892A16540AC717EFE637C0C2B9EE98 /* HCYoutubeParser-dummy.m */; };
-		2D3405986FC586FA6C0A5E0B6BA7E64E /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E69BFD342B6B4CE5C2ACEF4E9F3C6C3 /* Validation.swift */; };
-		2FA6F20D1F5C04B851962042BA64F6AA /* HCYoutubeParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 31232DF16462593B94DCFF5F4560BE59 /* HCYoutubeParser.m */; };
-		34CCDCA848A701466256BC2927DA8856 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED40FE3EAC152BB84F70681293257DB /* NetworkReachabilityManager.swift */; };
-		3EA8F215C9C1432D74E5CCA4834AA8C0 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7E486121051BE79FD100951BE8D4D5 /* ResponseSerialization.swift */; };
-		4081EA628AF0B73AC51FFB9D7AB3B89E /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7960D3020B7242DC9A383B536543EB5 /* Manager.swift */; };
-		40A9E088DD6F13F7CC33FB83D6DD4888 /* HCYoutubeParser.h in Headers */ = {isa = PBXBuildFile; fileRef = CB95B8E6326838A989AD2A9F6283E3CE /* HCYoutubeParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4343E3FC9F2FDF479F3B57BBD9272B28 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B10253D8E0D21DF7A9815E64CCFEFF7B /* CFNetwork.framework */; };
-		4C56FE64F60D5558C04396C3F82DDDE3 /* Pods-BancoSantanderShareholder-tvOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B5F5CF112128BEE4D9C21C89D8C6CD2 /* Pods-BancoSantanderShareholder-tvOS-dummy.m */; };
-		4F9F47E161CD795B9DCF8FB63389C2E2 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5C43FA5AC328E6C6A6661D1D38C950 /* ImageDownloader.swift */; };
-		5BC19E6E0F199276003F0AF96838BCE5 /* Upload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DCF1094CCC1E33C0A3D745BF89A3AE /* Upload.swift */; };
-		5C89BA5DDA2E01E9829747EF9F32EE5D /* Kingfisher.h in Headers */ = {isa = PBXBuildFile; fileRef = 26EA937A7B8DA70A739443A00DD18879 /* Kingfisher.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5CB05FBCB32D21E194B5ECF680CB6AE0 /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992FB90351C13F6850023EA9CDD60C50 /* Download.swift */; };
-		62E8346F03C03E7F4D631361F325689E /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E3BF60E7FB0F6D1AFD32D0F85577F9 /* Response.swift */; };
-		68A2E7FCF409D89D67564C0587377BD5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9DD0635577B07C5953D5F403A262315 /* Foundation.framework */; };
-		6955A8891A2F24D1BEB524140477C5C6 /* SWXMLHash.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76768376FE6266CB700CEA24BFE31D6 /* SWXMLHash.swift */; };
-		6B5D074B0BCA71D300455F09210B7201 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBB9D4E96F9FE6495B365AFA7AD86E5 /* Resource.swift */; };
-		6E622771918298205EBEF656749DBB4E /* Kingfisher-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AA4CF14EE0E86B00A09854E6991A3611 /* Kingfisher-dummy.m */; };
-		720C651326F68C4AC0A0F490B35F37D5 /* KingfisherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A536EA38254E148296DF66F48D10E00 /* KingfisherManager.swift */; };
-		733FFA92A6A6AB48ADB39A83E9A181AB /* UIButton+Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB91F62BD53EFB674D29BC9AF2D3F1A /* UIButton+Kingfisher.swift */; };
-		7B48852C4D848FA2DA416A98F6425869 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B3F7B2D6B221981E4F542B859D2729 /* ServerTrustPolicy.swift */; };
-		837D4EF31291D34B1BBD609A05EDA1C8 /* Kingfisher-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C356D85D3691F6DBDBFA85ACC45BA612 /* Kingfisher-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		89B2D791AB7666F5DBD0270A7693AB7F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9DD0635577B07C5953D5F403A262315 /* Foundation.framework */; };
-		8C41BB9D41DCD1E5C7CEDC2536D3A37F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9DD0635577B07C5953D5F403A262315 /* Foundation.framework */; };
-		8EB11202167FCDDF1257AAAB1D1FB244 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACA870CFF893C77AFCCC18739AA37E2 /* Alamofire.swift */; };
-		90252E012F36786012EEFD2A09A5C819 /* Pods-BancoSantanderShareholder-tvOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 11517C76738EBAD6B57592E196D15DCA /* Pods-BancoSantanderShareholder-tvOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		917CFAA86AE1B5C919CE426F6F038AC7 /* SWXMLHash-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 393F5F8D4B50AB372BF6BFB56537DD7C /* SWXMLHash-dummy.m */; };
-		93834370001004256C49BB4C57294876 /* ImageTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = D636654FBCA74A66D587681A42738138 /* ImageTransition.swift */; };
-		9469DF81ECB494E84675969B5E13374C /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3502664ADCBFA40B6EB2AD4689B2A040 /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		97121D3105C3EE54FD9FFD7A02F80B2B /* ThreadHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6551C2D81670A02D583553991AD327C7 /* ThreadHelper.swift */; };
-		AA314156AC500125F4078EE968DB14C6 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456605A47E1BACA6A4931E49962140E9 /* Result.swift */; };
-		ADF19C953CE2A7D0B72EC93A81FCCC26 /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 94B964A2189CE838212BF70E15609981 /* Alamofire-dummy.m */; };
-		AE4CF87C02C042DF13ED5B21C4FDC1E0 /* Stream.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67A87CE7A2A4B5924B19FB68550989F /* Stream.swift */; };
-		B0D10FD0D827CFBB77BA39A64C3D6460 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9DD0635577B07C5953D5F403A262315 /* Foundation.framework */; };
-		B1473AEB6A8D100EEB16EE78C3D07019 /* SWXMLHash-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B9AF7EF213302EF3618B15091106BEDE /* SWXMLHash-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B6DE75F44001B5D7D09FBCFDBA607343 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCD4DF8DFDEBAD7CF7770C02C8A1A25 /* ImageCache.swift */; };
-		BE41196F6A3903E59C3306FE3F8B43FE /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CE5DD8CE7F9BEC3C368F645938B045 /* Notifications.swift */; };
-		C0DB70AB368765DC64BFB5FEA75E0696 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506DEFD199BB3B3B7151A329426F1709 /* ParameterEncoding.swift */; };
-		C7B6DD7C0456C50289A2C381DFE9FA3F /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D979E6449BB1BD8B5C805FE3B26756 /* MultipartFormData.swift */; };
-		D3037A231F1C6A1B2BB2A5474F42A8AE /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2642ED190CA6ED230B826B571AF80A /* Image.swift */; };
-		DED9D0FF58DC281359A2732D0AD92F20 /* ImageView+Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B9C15807E05464EFE528163CA5DA07 /* ImageView+Kingfisher.swift */; };
-		E5060845EB6F90C8FBA99E9A4C895654 /* HCYoutubeParser-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 00C29C954D72E4C5D6BFF090720A783E /* HCYoutubeParser-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EFE92E8D3813DD26E78E93EEAF6D7E7E /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CBDA1A9FCACA876ACDC0F8AEBDC679 /* Request.swift */; };
-		F4959862416413BD51547EDA75EBD8EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9DD0635577B07C5953D5F403A262315 /* Foundation.framework */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		19B819804B88C8AAADF366283463ED44 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 68BCDE9D3B31D7BD0A2D373305627634;
-			remoteInfo = HCYoutubeParser;
-		};
-		30BD51A404552383B56BD91183C8801F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 175892047F5D57D69AC9D102FB92A2F2;
-			remoteInfo = Kingfisher;
-		};
-		9275C042B84A5007702AF9FD05108302 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2107C59D758D15A87462F56500FECE1C;
-			remoteInfo = SWXMLHash;
-		};
-		96FB0EDAD959194097CEF4E7410AE6E4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 79C040AFDDCE1BCBF6D8B5EB0B85887F;
-			remoteInfo = Alamofire;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		00C29C954D72E4C5D6BFF090720A783E /* HCYoutubeParser-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HCYoutubeParser-umbrella.h"; sourceTree = "<group>"; };
-		06FD991A1EE3E1D299D1F17D90F71645 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0B5F5CF112128BEE4D9C21C89D8C6CD2 /* Pods-BancoSantanderShareholder-tvOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BancoSantanderShareholder-tvOS-dummy.m"; sourceTree = "<group>"; };
-		0CCD4DF8DFDEBAD7CF7770C02C8A1A25 /* ImageCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageCache.swift; path = Sources/ImageCache.swift; sourceTree = "<group>"; };
-		11517C76738EBAD6B57592E196D15DCA /* Pods-BancoSantanderShareholder-tvOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BancoSantanderShareholder-tvOS-umbrella.h"; sourceTree = "<group>"; };
-		11DCF1094CCC1E33C0A3D745BF89A3AE /* Upload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Upload.swift; path = Source/Upload.swift; sourceTree = "<group>"; };
-		20A1104624962DFD87D7A683ADF3484F /* Kingfisher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Kingfisher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		23D979E6449BB1BD8B5C805FE3B26756 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
-		26EA937A7B8DA70A739443A00DD18879 /* Kingfisher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Kingfisher.h; path = Sources/Kingfisher.h; sourceTree = "<group>"; };
-		2B7E486121051BE79FD100951BE8D4D5 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
-		31232DF16462593B94DCFF5F4560BE59 /* HCYoutubeParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HCYoutubeParser.m; path = YoutubeParser/Classes/HCYoutubeParser.m; sourceTree = "<group>"; };
-		3502664ADCBFA40B6EB2AD4689B2A040 /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
-		38741306FEDC12ACB703E1A409BF5636 /* HCYoutubeParser.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HCYoutubeParser.xcconfig; sourceTree = "<group>"; };
-		3903BDB493FBD678BBAB0387C7F93D21 /* HCYoutubeParser-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HCYoutubeParser-prefix.pch"; sourceTree = "<group>"; };
-		393F5F8D4B50AB372BF6BFB56537DD7C /* SWXMLHash-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SWXMLHash-dummy.m"; sourceTree = "<group>"; };
-		39E2B7621295BB33966E5B4F83B8FD75 /* Pods-BancoSantanderShareholder-tvOS-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BancoSantanderShareholder-tvOS-resources.sh"; sourceTree = "<group>"; };
-		3E2642ED190CA6ED230B826B571AF80A /* Image.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Image.swift; path = Sources/Image.swift; sourceTree = "<group>"; };
-		4307FC6A492B380CAED53EEF3470F4A7 /* Pods_BancoSantanderShareholder_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BancoSantanderShareholder_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		456605A47E1BACA6A4931E49962140E9 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
-		48892BCE310A156ED5E712BD90D9FA5C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		48E3BF60E7FB0F6D1AFD32D0F85577F9 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
-		4BE5CDEFB8D0BDA2DD1DBF86CFF6C5A4 /* Kingfisher-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Kingfisher-prefix.pch"; sourceTree = "<group>"; };
-		506DEFD199BB3B3B7151A329426F1709 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
-		50CBDA1A9FCACA876ACDC0F8AEBDC679 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
-		52D8A9AF526F3A9893DB5A0EC21FE9D6 /* SWXMLHash.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SWXMLHash.modulemap; sourceTree = "<group>"; };
-		5A536EA38254E148296DF66F48D10E00 /* KingfisherManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KingfisherManager.swift; path = Sources/KingfisherManager.swift; sourceTree = "<group>"; };
-		5F3BB7CFA7B204F70C0360AD65C080A7 /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
-		5F7551D39B567415C90CF46B96EB79F3 /* Pods-BancoSantanderShareholder-tvOS-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BancoSantanderShareholder-tvOS-frameworks.sh"; sourceTree = "<group>"; };
-		60B3F7B2D6B221981E4F542B859D2729 /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
-		6551C2D81670A02D583553991AD327C7 /* ThreadHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ThreadHelper.swift; path = Sources/ThreadHelper.swift; sourceTree = "<group>"; };
-		6D492694BCAD6DEBE4AEE2139F0A83BB /* Kingfisher.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Kingfisher.xcconfig; sourceTree = "<group>"; };
-		6E892A16540AC717EFE637C0C2B9EE98 /* HCYoutubeParser-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HCYoutubeParser-dummy.m"; sourceTree = "<group>"; };
-		715B2C8794F4B4382A1D250D73F98915 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Alamofire.modulemap; sourceTree = "<group>"; };
-		717A5C7B989B24DACBEC7DC466E02128 /* KingfisherOptionsInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KingfisherOptionsInfo.swift; path = Sources/KingfisherOptionsInfo.swift; sourceTree = "<group>"; };
-		7313322BB073388450205303C113C53B /* Kingfisher.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Kingfisher.modulemap; sourceTree = "<group>"; };
-		7439294DF0868F9E3AB46D0768E200B3 /* String+MD5.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+MD5.swift"; path = "Sources/String+MD5.swift"; sourceTree = "<group>"; };
-		74D27B90D9B7F8EA81F488AB43016599 /* Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Error.swift; path = Source/Error.swift; sourceTree = "<group>"; };
-		7C79703FE0125766A66EB683D1FE416D /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7F7DEFAEF7F9C93DA6D501A11CB48DC5 /* HCYoutubeParser.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = HCYoutubeParser.modulemap; sourceTree = "<group>"; };
-		8B5C43FA5AC328E6C6A6661D1D38C950 /* ImageDownloader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageDownloader.swift; path = Sources/ImageDownloader.swift; sourceTree = "<group>"; };
-		8ED40FE3EAC152BB84F70681293257DB /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
-		8F5E6440D0167CEA0CDB3970C78D8679 /* SWXMLHash-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SWXMLHash-prefix.pch"; sourceTree = "<group>"; };
-		90FC3A523AE71C70F41C197A3B746E20 /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
-		91B9C15807E05464EFE528163CA5DA07 /* ImageView+Kingfisher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ImageView+Kingfisher.swift"; path = "Sources/ImageView+Kingfisher.swift"; sourceTree = "<group>"; };
-		94B964A2189CE838212BF70E15609981 /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
-		992FB90351C13F6850023EA9CDD60C50 /* Download.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Download.swift; path = Source/Download.swift; sourceTree = "<group>"; };
-		9E69BFD342B6B4CE5C2ACEF4E9F3C6C3 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
-		A319088D85F35CE80622203898045612 /* Pods-BancoSantanderShareholder-tvOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-BancoSantanderShareholder-tvOS.modulemap"; sourceTree = "<group>"; };
-		AA05BB733B51BDCF7DE621EB455E2E33 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AA4CF14EE0E86B00A09854E6991A3611 /* Kingfisher-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Kingfisher-dummy.m"; sourceTree = "<group>"; };
-		AE9F8C63860AF3B0C6769BCBF5D03697 /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
-		AEBB9D4E96F9FE6495B365AFA7AD86E5 /* Resource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Resource.swift; path = Sources/Resource.swift; sourceTree = "<group>"; };
-		B10253D8E0D21DF7A9815E64CCFEFF7B /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS9.1.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
-		B4E8DB1EEC185482CE3616244E13B218 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B9AF7EF213302EF3618B15091106BEDE /* SWXMLHash-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SWXMLHash-umbrella.h"; sourceTree = "<group>"; };
-		B9DD0635577B07C5953D5F403A262315 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS9.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		BA01777C4D82248991DA033AD414258D /* Pods-BancoSantanderShareholder-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BancoSantanderShareholder-tvOS.release.xcconfig"; sourceTree = "<group>"; };
-		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		BB15BB75D5A051B529BE31ED55FCBD49 /* Pods-BancoSantanderShareholder-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BancoSantanderShareholder-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
-		C0CE5DD8CE7F9BEC3C368F645938B045 /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
-		C356D85D3691F6DBDBFA85ACC45BA612 /* Kingfisher-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Kingfisher-umbrella.h"; sourceTree = "<group>"; };
-		C67A87CE7A2A4B5924B19FB68550989F /* Stream.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Stream.swift; path = Source/Stream.swift; sourceTree = "<group>"; };
-		CB95B8E6326838A989AD2A9F6283E3CE /* HCYoutubeParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCYoutubeParser.h; path = YoutubeParser/Classes/HCYoutubeParser.h; sourceTree = "<group>"; };
-		D636654FBCA74A66D587681A42738138 /* ImageTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageTransition.swift; path = Sources/ImageTransition.swift; sourceTree = "<group>"; };
-		D676CB1A70B4F11BE0E52569D41059A1 /* Pods-BancoSantanderShareholder-tvOS-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BancoSantanderShareholder-tvOS-acknowledgements.markdown"; sourceTree = "<group>"; };
-		DACA870CFF893C77AFCCC18739AA37E2 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
-		DBB91F62BD53EFB674D29BC9AF2D3F1A /* UIButton+Kingfisher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIButton+Kingfisher.swift"; path = "Sources/UIButton+Kingfisher.swift"; sourceTree = "<group>"; };
-		E7960D3020B7242DC9A383B536543EB5 /* Manager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Manager.swift; path = Source/Manager.swift; sourceTree = "<group>"; };
-		E95C810E02A2D9D170C684FA2F275026 /* SWXMLHash.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SWXMLHash.xcconfig; sourceTree = "<group>"; };
-		EF7B89796717943581F87D68883DF467 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F63B33196BEB0A6339C2BF68C4E79795 /* Pods-BancoSantanderShareholder-tvOS-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BancoSantanderShareholder-tvOS-acknowledgements.plist"; sourceTree = "<group>"; };
-		F74565D1A4BE9C400C27A184B607E8D3 /* SWXMLHash.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SWXMLHash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F76768376FE6266CB700CEA24BFE31D6 /* SWXMLHash.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SWXMLHash.swift; path = Source/SWXMLHash.swift; sourceTree = "<group>"; };
-		F9CF31B8A5F8840BBE9DDEFB6C1BC383 /* HCYoutubeParser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HCYoutubeParser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		1A7CA150F8202D455853CCCC3C516C55 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4343E3FC9F2FDF479F3B57BBD9272B28 /* CFNetwork.framework in Frameworks */,
-				B0D10FD0D827CFBB77BA39A64C3D6460 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5EDBA347CF6053A96617F0DF4144F634 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8C41BB9D41DCD1E5C7CEDC2536D3A37F /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		74D0EC384012C2E5F249F24EA2C8E3CC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				68A2E7FCF409D89D67564C0587377BD5 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B1729F851F648EC60EE93CDB3C8BAEAD /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				89B2D791AB7666F5DBD0270A7693AB7F /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FD419CF95EFD9472B4933A1EA0574B34 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F4959862416413BD51547EDA75EBD8EC /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		095FF757275F1967FE59FFF2C4DDEA2B /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				715B2C8794F4B4382A1D250D73F98915 /* Alamofire.modulemap */,
-				AE9F8C63860AF3B0C6769BCBF5D03697 /* Alamofire.xcconfig */,
-				94B964A2189CE838212BF70E15609981 /* Alamofire-dummy.m */,
-				90FC3A523AE71C70F41C197A3B746E20 /* Alamofire-prefix.pch */,
-				3502664ADCBFA40B6EB2AD4689B2A040 /* Alamofire-umbrella.h */,
-				48892BCE310A156ED5E712BD90D9FA5C /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Alamofire";
-			sourceTree = "<group>";
-		};
-		28086938E51317B8EFFC846B46CC7C82 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				B5ECBA72461533E118104A3E87357492 /* Alamofire */,
-				9B3C3910C4865FA7E0736FBB4C89AC32 /* HCYoutubeParser */,
-				47F7CBF1768DD82B1AD8B96607FFB04C /* Kingfisher */,
-				A8CA91886D98AD1A78B4855E3534BFF9 /* SWXMLHash */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		47F7CBF1768DD82B1AD8B96607FFB04C /* Kingfisher */ = {
-			isa = PBXGroup;
-			children = (
-				3E2642ED190CA6ED230B826B571AF80A /* Image.swift */,
-				0CCD4DF8DFDEBAD7CF7770C02C8A1A25 /* ImageCache.swift */,
-				8B5C43FA5AC328E6C6A6661D1D38C950 /* ImageDownloader.swift */,
-				D636654FBCA74A66D587681A42738138 /* ImageTransition.swift */,
-				91B9C15807E05464EFE528163CA5DA07 /* ImageView+Kingfisher.swift */,
-				26EA937A7B8DA70A739443A00DD18879 /* Kingfisher.h */,
-				5A536EA38254E148296DF66F48D10E00 /* KingfisherManager.swift */,
-				717A5C7B989B24DACBEC7DC466E02128 /* KingfisherOptionsInfo.swift */,
-				AEBB9D4E96F9FE6495B365AFA7AD86E5 /* Resource.swift */,
-				7439294DF0868F9E3AB46D0768E200B3 /* String+MD5.swift */,
-				6551C2D81670A02D583553991AD327C7 /* ThreadHelper.swift */,
-				DBB91F62BD53EFB674D29BC9AF2D3F1A /* UIButton+Kingfisher.swift */,
-				A442B30F0BF3868BFA9882FBF8F68545 /* Support Files */,
-			);
-			path = Kingfisher;
-			sourceTree = "<group>";
-		};
-		5525E95300AB75A08BF9692051F0BF5F /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				7F7DEFAEF7F9C93DA6D501A11CB48DC5 /* HCYoutubeParser.modulemap */,
-				38741306FEDC12ACB703E1A409BF5636 /* HCYoutubeParser.xcconfig */,
-				6E892A16540AC717EFE637C0C2B9EE98 /* HCYoutubeParser-dummy.m */,
-				3903BDB493FBD678BBAB0387C7F93D21 /* HCYoutubeParser-prefix.pch */,
-				00C29C954D72E4C5D6BFF090720A783E /* HCYoutubeParser-umbrella.h */,
-				AA05BB733B51BDCF7DE621EB455E2E33 /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/HCYoutubeParser";
-			sourceTree = "<group>";
-		};
-		5C45C4158389C18842EAB109F543D370 /* Pods-BancoSantanderShareholder-tvOS */ = {
-			isa = PBXGroup;
-			children = (
-				06FD991A1EE3E1D299D1F17D90F71645 /* Info.plist */,
-				A319088D85F35CE80622203898045612 /* Pods-BancoSantanderShareholder-tvOS.modulemap */,
-				D676CB1A70B4F11BE0E52569D41059A1 /* Pods-BancoSantanderShareholder-tvOS-acknowledgements.markdown */,
-				F63B33196BEB0A6339C2BF68C4E79795 /* Pods-BancoSantanderShareholder-tvOS-acknowledgements.plist */,
-				0B5F5CF112128BEE4D9C21C89D8C6CD2 /* Pods-BancoSantanderShareholder-tvOS-dummy.m */,
-				5F7551D39B567415C90CF46B96EB79F3 /* Pods-BancoSantanderShareholder-tvOS-frameworks.sh */,
-				39E2B7621295BB33966E5B4F83B8FD75 /* Pods-BancoSantanderShareholder-tvOS-resources.sh */,
-				11517C76738EBAD6B57592E196D15DCA /* Pods-BancoSantanderShareholder-tvOS-umbrella.h */,
-				BB15BB75D5A051B529BE31ED55FCBD49 /* Pods-BancoSantanderShareholder-tvOS.debug.xcconfig */,
-				BA01777C4D82248991DA033AD414258D /* Pods-BancoSantanderShareholder-tvOS.release.xcconfig */,
-			);
-			name = "Pods-BancoSantanderShareholder-tvOS";
-			path = "Target Support Files/Pods-BancoSantanderShareholder-tvOS";
-			sourceTree = "<group>";
-		};
-		6C0C6046C2DEE3163A5BF3B6E1516E4E /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				5C45C4158389C18842EAB109F543D370 /* Pods-BancoSantanderShareholder-tvOS */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		6EC461C1435A31577346ED4ADA0BD5A9 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				71B249B85DD94F115F38450BF379A615 /* tvOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		71B249B85DD94F115F38450BF379A615 /* tvOS */ = {
-			isa = PBXGroup;
-			children = (
-				B10253D8E0D21DF7A9815E64CCFEFF7B /* CFNetwork.framework */,
-				B9DD0635577B07C5953D5F403A262315 /* Foundation.framework */,
-			);
-			name = tvOS;
-			sourceTree = "<group>";
-		};
-		7DB346D0F39D3F0E887471402A8071AB = {
-			isa = PBXGroup;
-			children = (
-				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
-				6EC461C1435A31577346ED4ADA0BD5A9 /* Frameworks */,
-				28086938E51317B8EFFC846B46CC7C82 /* Pods */,
-				92E7A85ECFF117A3295D2BD8F83A7937 /* Products */,
-				6C0C6046C2DEE3163A5BF3B6E1516E4E /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		8EDD0E6851A22CA0760479C4CBA6BCB2 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				EF7B89796717943581F87D68883DF467 /* Info.plist */,
-				52D8A9AF526F3A9893DB5A0EC21FE9D6 /* SWXMLHash.modulemap */,
-				E95C810E02A2D9D170C684FA2F275026 /* SWXMLHash.xcconfig */,
-				393F5F8D4B50AB372BF6BFB56537DD7C /* SWXMLHash-dummy.m */,
-				8F5E6440D0167CEA0CDB3970C78D8679 /* SWXMLHash-prefix.pch */,
-				B9AF7EF213302EF3618B15091106BEDE /* SWXMLHash-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/SWXMLHash";
-			sourceTree = "<group>";
-		};
-		92E7A85ECFF117A3295D2BD8F83A7937 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				7C79703FE0125766A66EB683D1FE416D /* Alamofire.framework */,
-				F9CF31B8A5F8840BBE9DDEFB6C1BC383 /* HCYoutubeParser.framework */,
-				20A1104624962DFD87D7A683ADF3484F /* Kingfisher.framework */,
-				4307FC6A492B380CAED53EEF3470F4A7 /* Pods_BancoSantanderShareholder_tvOS.framework */,
-				F74565D1A4BE9C400C27A184B607E8D3 /* SWXMLHash.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		9B3C3910C4865FA7E0736FBB4C89AC32 /* HCYoutubeParser */ = {
-			isa = PBXGroup;
-			children = (
-				CB95B8E6326838A989AD2A9F6283E3CE /* HCYoutubeParser.h */,
-				31232DF16462593B94DCFF5F4560BE59 /* HCYoutubeParser.m */,
-				5525E95300AB75A08BF9692051F0BF5F /* Support Files */,
-			);
-			path = HCYoutubeParser;
-			sourceTree = "<group>";
-		};
-		A442B30F0BF3868BFA9882FBF8F68545 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				B4E8DB1EEC185482CE3616244E13B218 /* Info.plist */,
-				7313322BB073388450205303C113C53B /* Kingfisher.modulemap */,
-				6D492694BCAD6DEBE4AEE2139F0A83BB /* Kingfisher.xcconfig */,
-				AA4CF14EE0E86B00A09854E6991A3611 /* Kingfisher-dummy.m */,
-				4BE5CDEFB8D0BDA2DD1DBF86CFF6C5A4 /* Kingfisher-prefix.pch */,
-				C356D85D3691F6DBDBFA85ACC45BA612 /* Kingfisher-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Kingfisher";
-			sourceTree = "<group>";
-		};
-		A8CA91886D98AD1A78B4855E3534BFF9 /* SWXMLHash */ = {
-			isa = PBXGroup;
-			children = (
-				F76768376FE6266CB700CEA24BFE31D6 /* SWXMLHash.swift */,
-				8EDD0E6851A22CA0760479C4CBA6BCB2 /* Support Files */,
-			);
-			path = SWXMLHash;
-			sourceTree = "<group>";
-		};
-		B5ECBA72461533E118104A3E87357492 /* Alamofire */ = {
-			isa = PBXGroup;
-			children = (
-				DACA870CFF893C77AFCCC18739AA37E2 /* Alamofire.swift */,
-				992FB90351C13F6850023EA9CDD60C50 /* Download.swift */,
-				74D27B90D9B7F8EA81F488AB43016599 /* Error.swift */,
-				E7960D3020B7242DC9A383B536543EB5 /* Manager.swift */,
-				23D979E6449BB1BD8B5C805FE3B26756 /* MultipartFormData.swift */,
-				8ED40FE3EAC152BB84F70681293257DB /* NetworkReachabilityManager.swift */,
-				C0CE5DD8CE7F9BEC3C368F645938B045 /* Notifications.swift */,
-				506DEFD199BB3B3B7151A329426F1709 /* ParameterEncoding.swift */,
-				50CBDA1A9FCACA876ACDC0F8AEBDC679 /* Request.swift */,
-				48E3BF60E7FB0F6D1AFD32D0F85577F9 /* Response.swift */,
-				2B7E486121051BE79FD100951BE8D4D5 /* ResponseSerialization.swift */,
-				456605A47E1BACA6A4931E49962140E9 /* Result.swift */,
-				60B3F7B2D6B221981E4F542B859D2729 /* ServerTrustPolicy.swift */,
-				C67A87CE7A2A4B5924B19FB68550989F /* Stream.swift */,
-				5F3BB7CFA7B204F70C0360AD65C080A7 /* Timeline.swift */,
-				11DCF1094CCC1E33C0A3D745BF89A3AE /* Upload.swift */,
-				9E69BFD342B6B4CE5C2ACEF4E9F3C6C3 /* Validation.swift */,
-				095FF757275F1967FE59FFF2C4DDEA2B /* Support Files */,
-			);
-			path = Alamofire;
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXHeadersBuildPhase section */
-		97DB0E9239CAD080A2D2C21EC7B01594 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E5060845EB6F90C8FBA99E9A4C895654 /* HCYoutubeParser-umbrella.h in Headers */,
-				40A9E088DD6F13F7CC33FB83D6DD4888 /* HCYoutubeParser.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E1430875070E1174813C4812A4B13E27 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				837D4EF31291D34B1BBD609A05EDA1C8 /* Kingfisher-umbrella.h in Headers */,
-				5C89BA5DDA2E01E9829747EF9F32EE5D /* Kingfisher.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EFDF3B631BBB965A372347705CA14854 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9469DF81ECB494E84675969B5E13374C /* Alamofire-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F388D89630D3FB3BDC1C04C0232D6611 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				90252E012F36786012EEFD2A09A5C819 /* Pods-BancoSantanderShareholder-tvOS-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F6E4C77CF1822D7A1E79D4FF22BBDFCC /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B1473AEB6A8D100EEB16EE78C3D07019 /* SWXMLHash-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
-/* Begin PBXNativeTarget section */
-		175892047F5D57D69AC9D102FB92A2F2 /* Kingfisher */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8EA1620441C79C9D60DEC1253A4DED9E /* Build configuration list for PBXNativeTarget "Kingfisher" */;
-			buildPhases = (
-				B3113E81B0E726CF2B7A925DE56BA37B /* Sources */,
-				1A7CA150F8202D455853CCCC3C516C55 /* Frameworks */,
-				E1430875070E1174813C4812A4B13E27 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Kingfisher;
-			productName = Kingfisher;
-			productReference = 20A1104624962DFD87D7A683ADF3484F /* Kingfisher.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		2107C59D758D15A87462F56500FECE1C /* SWXMLHash */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DBAF2F69FD0EBC71BBBB5DA00E232D4F /* Build configuration list for PBXNativeTarget "SWXMLHash" */;
-			buildPhases = (
-				7DC29EC3314C272918FB20CAA3541994 /* Sources */,
-				74D0EC384012C2E5F249F24EA2C8E3CC /* Frameworks */,
-				F6E4C77CF1822D7A1E79D4FF22BBDFCC /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = SWXMLHash;
-			productName = SWXMLHash;
-			productReference = F74565D1A4BE9C400C27A184B607E8D3 /* SWXMLHash.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		68BCDE9D3B31D7BD0A2D373305627634 /* HCYoutubeParser */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 56C8A8379043A1207E0273B9087FC493 /* Build configuration list for PBXNativeTarget "HCYoutubeParser" */;
-			buildPhases = (
-				F7959F22CC54DFF1B6B0445FA86527BF /* Sources */,
-				FD419CF95EFD9472B4933A1EA0574B34 /* Frameworks */,
-				97DB0E9239CAD080A2D2C21EC7B01594 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = HCYoutubeParser;
-			productName = HCYoutubeParser;
-			productReference = F9CF31B8A5F8840BBE9DDEFB6C1BC383 /* HCYoutubeParser.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		79C040AFDDCE1BCBF6D8B5EB0B85887F /* Alamofire */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3CFB42910790CF0BDBCCEBAACD6B9367 /* Build configuration list for PBXNativeTarget "Alamofire" */;
-			buildPhases = (
-				95CC2C7E06DC188A05DAAEE9CAA555A3 /* Sources */,
-				B1729F851F648EC60EE93CDB3C8BAEAD /* Frameworks */,
-				EFDF3B631BBB965A372347705CA14854 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Alamofire;
-			productName = Alamofire;
-			productReference = 7C79703FE0125766A66EB683D1FE416D /* Alamofire.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		F971C6FECA51A0760B17A3D8189044C6 /* Pods-BancoSantanderShareholder-tvOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B575707461DF788FAA14687108A9A866 /* Build configuration list for PBXNativeTarget "Pods-BancoSantanderShareholder-tvOS" */;
-			buildPhases = (
-				0E1A8969484B3FCF0CF16022393A3FC7 /* Sources */,
-				5EDBA347CF6053A96617F0DF4144F634 /* Frameworks */,
-				F388D89630D3FB3BDC1C04C0232D6611 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E99C2D6390BBBBC481A89625E1FF652D /* PBXTargetDependency */,
-				1707BFE4F26C4C19F242D83419D6D868 /* PBXTargetDependency */,
-				9657B385F694A4481F66FE0FD629D724 /* PBXTargetDependency */,
-				A9C2E449AA67397D63A3AA46FA481C14 /* PBXTargetDependency */,
-			);
-			name = "Pods-BancoSantanderShareholder-tvOS";
-			productName = "Pods-BancoSantanderShareholder-tvOS";
-			productReference = 4307FC6A492B380CAED53EEF3470F4A7 /* Pods_BancoSantanderShareholder_tvOS.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0700;
-			};
-			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-			);
-			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 92E7A85ECFF117A3295D2BD8F83A7937 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				79C040AFDDCE1BCBF6D8B5EB0B85887F /* Alamofire */,
-				68BCDE9D3B31D7BD0A2D373305627634 /* HCYoutubeParser */,
-				175892047F5D57D69AC9D102FB92A2F2 /* Kingfisher */,
-				F971C6FECA51A0760B17A3D8189044C6 /* Pods-BancoSantanderShareholder-tvOS */,
-				2107C59D758D15A87462F56500FECE1C /* SWXMLHash */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXSourcesBuildPhase section */
-		0E1A8969484B3FCF0CF16022393A3FC7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4C56FE64F60D5558C04396C3F82DDDE3 /* Pods-BancoSantanderShareholder-tvOS-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7DC29EC3314C272918FB20CAA3541994 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				917CFAA86AE1B5C919CE426F6F038AC7 /* SWXMLHash-dummy.m in Sources */,
-				6955A8891A2F24D1BEB524140477C5C6 /* SWXMLHash.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		95CC2C7E06DC188A05DAAEE9CAA555A3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				ADF19C953CE2A7D0B72EC93A81FCCC26 /* Alamofire-dummy.m in Sources */,
-				8EB11202167FCDDF1257AAAB1D1FB244 /* Alamofire.swift in Sources */,
-				5CB05FBCB32D21E194B5ECF680CB6AE0 /* Download.swift in Sources */,
-				095406039B4D371E48D08B38A2975AC8 /* Error.swift in Sources */,
-				4081EA628AF0B73AC51FFB9D7AB3B89E /* Manager.swift in Sources */,
-				C7B6DD7C0456C50289A2C381DFE9FA3F /* MultipartFormData.swift in Sources */,
-				34CCDCA848A701466256BC2927DA8856 /* NetworkReachabilityManager.swift in Sources */,
-				BE41196F6A3903E59C3306FE3F8B43FE /* Notifications.swift in Sources */,
-				C0DB70AB368765DC64BFB5FEA75E0696 /* ParameterEncoding.swift in Sources */,
-				EFE92E8D3813DD26E78E93EEAF6D7E7E /* Request.swift in Sources */,
-				62E8346F03C03E7F4D631361F325689E /* Response.swift in Sources */,
-				3EA8F215C9C1432D74E5CCA4834AA8C0 /* ResponseSerialization.swift in Sources */,
-				AA314156AC500125F4078EE968DB14C6 /* Result.swift in Sources */,
-				7B48852C4D848FA2DA416A98F6425869 /* ServerTrustPolicy.swift in Sources */,
-				AE4CF87C02C042DF13ED5B21C4FDC1E0 /* Stream.swift in Sources */,
-				16102E4E35FAA0FC4161282FECE56469 /* Timeline.swift in Sources */,
-				5BC19E6E0F199276003F0AF96838BCE5 /* Upload.swift in Sources */,
-				2D3405986FC586FA6C0A5E0B6BA7E64E /* Validation.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B3113E81B0E726CF2B7A925DE56BA37B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D3037A231F1C6A1B2BB2A5474F42A8AE /* Image.swift in Sources */,
-				B6DE75F44001B5D7D09FBCFDBA607343 /* ImageCache.swift in Sources */,
-				4F9F47E161CD795B9DCF8FB63389C2E2 /* ImageDownloader.swift in Sources */,
-				93834370001004256C49BB4C57294876 /* ImageTransition.swift in Sources */,
-				DED9D0FF58DC281359A2732D0AD92F20 /* ImageView+Kingfisher.swift in Sources */,
-				6E622771918298205EBEF656749DBB4E /* Kingfisher-dummy.m in Sources */,
-				720C651326F68C4AC0A0F490B35F37D5 /* KingfisherManager.swift in Sources */,
-				0BA862AA78ABDA3A2AA0FB50BEEE79DE /* KingfisherOptionsInfo.swift in Sources */,
-				6B5D074B0BCA71D300455F09210B7201 /* Resource.swift in Sources */,
-				1A0E24F4CC0A582722B8E1553908DDD5 /* String+MD5.swift in Sources */,
-				97121D3105C3EE54FD9FFD7A02F80B2B /* ThreadHelper.swift in Sources */,
-				733FFA92A6A6AB48ADB39A83E9A181AB /* UIButton+Kingfisher.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F7959F22CC54DFF1B6B0445FA86527BF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				29A99D18ED4668CC2F63A09AC0166ED4 /* HCYoutubeParser-dummy.m in Sources */,
-				2FA6F20D1F5C04B851962042BA64F6AA /* HCYoutubeParser.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		1707BFE4F26C4C19F242D83419D6D868 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = HCYoutubeParser;
-			target = 68BCDE9D3B31D7BD0A2D373305627634 /* HCYoutubeParser */;
-			targetProxy = 19B819804B88C8AAADF366283463ED44 /* PBXContainerItemProxy */;
-		};
-		9657B385F694A4481F66FE0FD629D724 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Kingfisher;
-			target = 175892047F5D57D69AC9D102FB92A2F2 /* Kingfisher */;
-			targetProxy = 30BD51A404552383B56BD91183C8801F /* PBXContainerItemProxy */;
-		};
-		A9C2E449AA67397D63A3AA46FA481C14 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SWXMLHash;
-			target = 2107C59D758D15A87462F56500FECE1C /* SWXMLHash */;
-			targetProxy = 9275C042B84A5007702AF9FD05108302 /* PBXContainerItemProxy */;
-		};
-		E99C2D6390BBBBC481A89625E1FF652D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Alamofire;
-			target = 79C040AFDDCE1BCBF6D8B5EB0B85887F /* Alamofire */;
-			targetProxy = 96FB0EDAD959194097CEF4E7410AE6E4 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin XCBuildConfiguration section */
-		069D1B10F92CBB056FAE6F19A8841AE9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AE9F8C63860AF3B0C6769BCBF5D03697 /* Alamofire.xcconfig */;
-			buildSettings = {
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = Alamofire;
-				SDKROOT = appletvos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		135C7276EB1380AD30188FBB48D09078 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_DEBUG=1",
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-			};
-			name = Debug;
-		};
-		1FA2EDCC04C90BEBA05BAAFAB61DB74C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		23DFBB749CA7DC67D264E883ABD84C66 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BA01777C4D82248991DA033AD414258D /* Pods-BancoSantanderShareholder-tvOS.release.xcconfig */;
-			buildSettings = {
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-BancoSantanderShareholder-tvOS/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-BancoSantanderShareholder-tvOS/Pods-BancoSantanderShareholder-tvOS.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_BancoSantanderShareholder_tvOS;
-				SDKROOT = appletvos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		2C7878CDACC5E672247B3FD10236FA9C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BB15BB75D5A051B529BE31ED55FCBD49 /* Pods-BancoSantanderShareholder-tvOS.debug.xcconfig */;
-			buildSettings = {
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-BancoSantanderShareholder-tvOS/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-BancoSantanderShareholder-tvOS/Pods-BancoSantanderShareholder-tvOS.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_BancoSantanderShareholder_tvOS;
-				SDKROOT = appletvos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		3B82D7E03CCA0A8F8C2A6B6EF72BDD4F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E95C810E02A2D9D170C684FA2F275026 /* SWXMLHash.xcconfig */;
-			buildSettings = {
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SWXMLHash/SWXMLHash-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SWXMLHash/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SWXMLHash/SWXMLHash.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = SWXMLHash;
-				SDKROOT = appletvos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		693ACB1FE2B150D60E4A14269874A7B6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AE9F8C63860AF3B0C6769BCBF5D03697 /* Alamofire.xcconfig */;
-			buildSettings = {
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = Alamofire;
-				SDKROOT = appletvos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		74DC07B936EA38EF1FAA0A16A586715B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 38741306FEDC12ACB703E1A409BF5636 /* HCYoutubeParser.xcconfig */;
-			buildSettings = {
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/HCYoutubeParser/HCYoutubeParser-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/HCYoutubeParser/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/HCYoutubeParser/HCYoutubeParser.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = HCYoutubeParser;
-				SDKROOT = appletvos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		86C51B6DB7E9B6E15636515391F5BD6A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6D492694BCAD6DEBE4AEE2139F0A83BB /* Kingfisher.xcconfig */;
-			buildSettings = {
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Kingfisher/Kingfisher-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Kingfisher/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Kingfisher/Kingfisher.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = Kingfisher;
-				SDKROOT = appletvos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		8A78FBCDCD1EB487934D1A2C27297A24 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6D492694BCAD6DEBE4AEE2139F0A83BB /* Kingfisher.xcconfig */;
-			buildSettings = {
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Kingfisher/Kingfisher-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Kingfisher/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Kingfisher/Kingfisher.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = Kingfisher;
-				SDKROOT = appletvos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		CA9E588A7155CFE061652B684ECD0010 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E95C810E02A2D9D170C684FA2F275026 /* SWXMLHash.xcconfig */;
-			buildSettings = {
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SWXMLHash/SWXMLHash-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SWXMLHash/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SWXMLHash/SWXMLHash.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = SWXMLHash;
-				SDKROOT = appletvos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		EBB82630EE122654478DC433DB0AB320 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 38741306FEDC12ACB703E1A409BF5636 /* HCYoutubeParser.xcconfig */;
-			buildSettings = {
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/HCYoutubeParser/HCYoutubeParser-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/HCYoutubeParser/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/HCYoutubeParser/HCYoutubeParser.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = HCYoutubeParser;
-				SDKROOT = appletvos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				135C7276EB1380AD30188FBB48D09078 /* Debug */,
-				1FA2EDCC04C90BEBA05BAAFAB61DB74C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		3CFB42910790CF0BDBCCEBAACD6B9367 /* Build configuration list for PBXNativeTarget "Alamofire" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				069D1B10F92CBB056FAE6F19A8841AE9 /* Debug */,
-				693ACB1FE2B150D60E4A14269874A7B6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		56C8A8379043A1207E0273B9087FC493 /* Build configuration list for PBXNativeTarget "HCYoutubeParser" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				74DC07B936EA38EF1FAA0A16A586715B /* Debug */,
-				EBB82630EE122654478DC433DB0AB320 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		8EA1620441C79C9D60DEC1253A4DED9E /* Build configuration list for PBXNativeTarget "Kingfisher" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				86C51B6DB7E9B6E15636515391F5BD6A /* Debug */,
-				8A78FBCDCD1EB487934D1A2C27297A24 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B575707461DF788FAA14687108A9A866 /* Build configuration list for PBXNativeTarget "Pods-BancoSantanderShareholder-tvOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2C7878CDACC5E672247B3FD10236FA9C /* Debug */,
-				23DFBB749CA7DC67D264E883ABD84C66 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DBAF2F69FD0EBC71BBBB5DA00E232D4F /* Build configuration list for PBXNativeTarget "SWXMLHash" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3B82D7E03CCA0A8F8C2A6B6EF72BDD4F /* Debug */,
-				CA9E588A7155CFE061652B684ECD0010 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>00C29C954D72E4C5D6BFF090720A783E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>HCYoutubeParser-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>069D1B10F92CBB056FAE6F19A8841AE9</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>AE9F8C63860AF3B0C6769BCBF5D03697</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/Alamofire/Alamofire-prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Alamofire/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Alamofire/Alamofire.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>PRODUCT_NAME</key>
+				<string>Alamofire</string>
+				<key>SDKROOT</key>
+				<string>appletvos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>SWIFT_OPTIMIZATION_LEVEL</key>
+				<string>-Onone</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>3</string>
+				<key>TVOS_DEPLOYMENT_TARGET</key>
+				<string>9.0</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>06FD991A1EE3E1D299D1F17D90F71645</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>095406039B4D371E48D08B38A2975AC8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>74D27B90D9B7F8EA81F488AB43016599</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>095FF757275F1967FE59FFF2C4DDEA2B</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>715B2C8794F4B4382A1D250D73F98915</string>
+				<string>AE9F8C63860AF3B0C6769BCBF5D03697</string>
+				<string>94B964A2189CE838212BF70E15609981</string>
+				<string>90FC3A523AE71C70F41C197A3B746E20</string>
+				<string>3502664ADCBFA40B6EB2AD4689B2A040</string>
+				<string>48892BCE310A156ED5E712BD90D9FA5C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Support Files</string>
+			<key>path</key>
+			<string>../Target Support Files/Alamofire</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0B5F5CF112128BEE4D9C21C89D8C6CD2</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Pods-BancoSantanderShareholder-tvOS-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0BA862AA78ABDA3A2AA0FB50BEEE79DE</key>
+		<dict>
+			<key>fileRef</key>
+			<string>717A5C7B989B24DACBEC7DC466E02128</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0CCD4DF8DFDEBAD7CF7770C02C8A1A25</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>ImageCache.swift</string>
+			<key>path</key>
+			<string>Sources/ImageCache.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0E1A8969484B3FCF0CF16022393A3FC7</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>4C56FE64F60D5558C04396C3F82DDDE3</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>11517C76738EBAD6B57592E196D15DCA</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Pods-BancoSantanderShareholder-tvOS-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>11DCF1094CCC1E33C0A3D745BF89A3AE</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>Upload.swift</string>
+			<key>path</key>
+			<string>Source/Upload.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>135C7276EB1380AD30188FBB48D09078</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>ENABLE_TESTABILITY</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>POD_CONFIGURATION_DEBUG=1</string>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>STRIP_INSTALLED_PRODUCT</key>
+				<string>NO</string>
+				<key>SYMROOT</key>
+				<string>${SRCROOT}/../build</string>
+				<key>TVOS_DEPLOYMENT_TARGET</key>
+				<string>9.0</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>16102E4E35FAA0FC4161282FECE56469</key>
+		<dict>
+			<key>fileRef</key>
+			<string>5F3BB7CFA7B204F70C0360AD65C080A7</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>1707BFE4F26C4C19F242D83419D6D868</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>HCYoutubeParser</string>
+			<key>target</key>
+			<string>68BCDE9D3B31D7BD0A2D373305627634</string>
+			<key>targetProxy</key>
+			<string>19B819804B88C8AAADF366283463ED44</string>
+		</dict>
+		<key>175892047F5D57D69AC9D102FB92A2F2</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>8EA1620441C79C9D60DEC1253A4DED9E</string>
+			<key>buildPhases</key>
+			<array>
+				<string>B3113E81B0E726CF2B7A925DE56BA37B</string>
+				<string>1A7CA150F8202D455853CCCC3C516C55</string>
+				<string>E1430875070E1174813C4812A4B13E27</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Kingfisher</string>
+			<key>productName</key>
+			<string>Kingfisher</string>
+			<key>productReference</key>
+			<string>20A1104624962DFD87D7A683ADF3484F</string>
+			<key>productType</key>
+			<string>com.apple.product-type.framework</string>
+		</dict>
+		<key>19B819804B88C8AAADF366283463ED44</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>68BCDE9D3B31D7BD0A2D373305627634</string>
+			<key>remoteInfo</key>
+			<string>HCYoutubeParser</string>
+		</dict>
+		<key>1A0E24F4CC0A582722B8E1553908DDD5</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7439294DF0868F9E3AB46D0768E200B3</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>1A7CA150F8202D455853CCCC3C516C55</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>4343E3FC9F2FDF479F3B57BBD9272B28</string>
+				<string>B0D10FD0D827CFBB77BA39A64C3D6460</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>1FA2EDCC04C90BEBA05BAAFAB61DB74C</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>POD_CONFIGURATION_RELEASE=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>STRIP_INSTALLED_PRODUCT</key>
+				<string>NO</string>
+				<key>SYMROOT</key>
+				<string>${SRCROOT}/../build</string>
+				<key>TVOS_DEPLOYMENT_TARGET</key>
+				<string>9.0</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>20A1104624962DFD87D7A683ADF3484F</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>Kingfisher.framework</string>
+			<key>path</key>
+			<string>Kingfisher.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>2107C59D758D15A87462F56500FECE1C</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>DBAF2F69FD0EBC71BBBB5DA00E232D4F</string>
+			<key>buildPhases</key>
+			<array>
+				<string>7DC29EC3314C272918FB20CAA3541994</string>
+				<string>74D0EC384012C2E5F249F24EA2C8E3CC</string>
+				<string>F6E4C77CF1822D7A1E79D4FF22BBDFCC</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>SWXMLHash</string>
+			<key>productName</key>
+			<string>SWXMLHash</string>
+			<key>productReference</key>
+			<string>F74565D1A4BE9C400C27A184B607E8D3</string>
+			<key>productType</key>
+			<string>com.apple.product-type.framework</string>
+		</dict>
+		<key>23D979E6449BB1BD8B5C805FE3B26756</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>MultipartFormData.swift</string>
+			<key>path</key>
+			<string>Source/MultipartFormData.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>23DFBB749CA7DC67D264E883ABD84C66</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>BA01777C4D82248991DA033AD414258D</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf-with-dsym</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Pods-BancoSantanderShareholder-tvOS/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Pods-BancoSantanderShareholder-tvOS/Pods-BancoSantanderShareholder-tvOS.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>org.cocoapods.${PRODUCT_NAME:rfc1034identifier}</string>
+				<key>PRODUCT_NAME</key>
+				<string>Pods_BancoSantanderShareholder_tvOS</string>
+				<key>SDKROOT</key>
+				<string>appletvos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>3</string>
+				<key>TVOS_DEPLOYMENT_TARGET</key>
+				<string>9.0</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>26EA937A7B8DA70A739443A00DD18879</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>Kingfisher.h</string>
+			<key>path</key>
+			<string>Sources/Kingfisher.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>28086938E51317B8EFFC846B46CC7C82</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>B5ECBA72461533E118104A3E87357492</string>
+				<string>9B3C3910C4865FA7E0736FBB4C89AC32</string>
+				<string>47F7CBF1768DD82B1AD8B96607FFB04C</string>
+				<string>A8CA91886D98AD1A78B4855E3534BFF9</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>29A99D18ED4668CC2F63A09AC0166ED4</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6E892A16540AC717EFE637C0C2B9EE98</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>2B7E486121051BE79FD100951BE8D4D5</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>ResponseSerialization.swift</string>
+			<key>path</key>
+			<string>Source/ResponseSerialization.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2C7878CDACC5E672247B3FD10236FA9C</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>BB15BB75D5A051B529BE31ED55FCBD49</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Pods-BancoSantanderShareholder-tvOS/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Pods-BancoSantanderShareholder-tvOS/Pods-BancoSantanderShareholder-tvOS.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>org.cocoapods.${PRODUCT_NAME:rfc1034identifier}</string>
+				<key>PRODUCT_NAME</key>
+				<string>Pods_BancoSantanderShareholder_tvOS</string>
+				<key>SDKROOT</key>
+				<string>appletvos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>SWIFT_OPTIMIZATION_LEVEL</key>
+				<string>-Onone</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>3</string>
+				<key>TVOS_DEPLOYMENT_TARGET</key>
+				<string>9.0</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>2D3405986FC586FA6C0A5E0B6BA7E64E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9E69BFD342B6B4CE5C2ACEF4E9F3C6C3</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>2D8E8EC45A3A1A1D94AE762CB5028504</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>135C7276EB1380AD30188FBB48D09078</string>
+				<string>1FA2EDCC04C90BEBA05BAAFAB61DB74C</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>2FA6F20D1F5C04B851962042BA64F6AA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>31232DF16462593B94DCFF5F4560BE59</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>30BD51A404552383B56BD91183C8801F</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>175892047F5D57D69AC9D102FB92A2F2</string>
+			<key>remoteInfo</key>
+			<string>Kingfisher</string>
+		</dict>
+		<key>31232DF16462593B94DCFF5F4560BE59</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>HCYoutubeParser.m</string>
+			<key>path</key>
+			<string>YoutubeParser/Classes/HCYoutubeParser.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>34CCDCA848A701466256BC2927DA8856</key>
+		<dict>
+			<key>fileRef</key>
+			<string>8ED40FE3EAC152BB84F70681293257DB</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3502664ADCBFA40B6EB2AD4689B2A040</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Alamofire-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>38741306FEDC12ACB703E1A409BF5636</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>HCYoutubeParser.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3903BDB493FBD678BBAB0387C7F93D21</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>HCYoutubeParser-prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>393F5F8D4B50AB372BF6BFB56537DD7C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>SWXMLHash-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>39E2B7621295BB33966E5B4F83B8FD75</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-BancoSantanderShareholder-tvOS-resources.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3B82D7E03CCA0A8F8C2A6B6EF72BDD4F</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>E95C810E02A2D9D170C684FA2F275026</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/SWXMLHash/SWXMLHash-prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/SWXMLHash/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/SWXMLHash/SWXMLHash.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>PRODUCT_NAME</key>
+				<string>SWXMLHash</string>
+				<key>SDKROOT</key>
+				<string>appletvos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>SWIFT_OPTIMIZATION_LEVEL</key>
+				<string>-Onone</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>3</string>
+				<key>TVOS_DEPLOYMENT_TARGET</key>
+				<string>9.0</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>3CFB42910790CF0BDBCCEBAACD6B9367</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>069D1B10F92CBB056FAE6F19A8841AE9</string>
+				<string>693ACB1FE2B150D60E4A14269874A7B6</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>3E2642ED190CA6ED230B826B571AF80A</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>Image.swift</string>
+			<key>path</key>
+			<string>Sources/Image.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3EA8F215C9C1432D74E5CCA4834AA8C0</key>
+		<dict>
+			<key>fileRef</key>
+			<string>2B7E486121051BE79FD100951BE8D4D5</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>4081EA628AF0B73AC51FFB9D7AB3B89E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E7960D3020B7242DC9A383B536543EB5</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>40A9E088DD6F13F7CC33FB83D6DD4888</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CB95B8E6326838A989AD2A9F6283E3CE</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>4307FC6A492B380CAED53EEF3470F4A7</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>Pods_BancoSantanderShareholder_tvOS.framework</string>
+			<key>path</key>
+			<string>Pods-BancoSantanderShareholder-tvOS.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>4343E3FC9F2FDF479F3B57BBD9272B28</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B10253D8E0D21DF7A9815E64CCFEFF7B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>456605A47E1BACA6A4931E49962140E9</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>Result.swift</string>
+			<key>path</key>
+			<string>Source/Result.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>47F7CBF1768DD82B1AD8B96607FFB04C</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>3E2642ED190CA6ED230B826B571AF80A</string>
+				<string>0CCD4DF8DFDEBAD7CF7770C02C8A1A25</string>
+				<string>8B5C43FA5AC328E6C6A6661D1D38C950</string>
+				<string>D636654FBCA74A66D587681A42738138</string>
+				<string>91B9C15807E05464EFE528163CA5DA07</string>
+				<string>26EA937A7B8DA70A739443A00DD18879</string>
+				<string>5A536EA38254E148296DF66F48D10E00</string>
+				<string>717A5C7B989B24DACBEC7DC466E02128</string>
+				<string>AEBB9D4E96F9FE6495B365AFA7AD86E5</string>
+				<string>7439294DF0868F9E3AB46D0768E200B3</string>
+				<string>6551C2D81670A02D583553991AD327C7</string>
+				<string>DBB91F62BD53EFB674D29BC9AF2D3F1A</string>
+				<string>A442B30F0BF3868BFA9882FBF8F68545</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Kingfisher</string>
+			<key>path</key>
+			<string>Kingfisher</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>48892BCE310A156ED5E712BD90D9FA5C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>48E3BF60E7FB0F6D1AFD32D0F85577F9</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>Response.swift</string>
+			<key>path</key>
+			<string>Source/Response.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4BE5CDEFB8D0BDA2DD1DBF86CFF6C5A4</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Kingfisher-prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4C56FE64F60D5558C04396C3F82DDDE3</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0B5F5CF112128BEE4D9C21C89D8C6CD2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>4F9F47E161CD795B9DCF8FB63389C2E2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>8B5C43FA5AC328E6C6A6661D1D38C950</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>506DEFD199BB3B3B7151A329426F1709</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>ParameterEncoding.swift</string>
+			<key>path</key>
+			<string>Source/ParameterEncoding.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>50CBDA1A9FCACA876ACDC0F8AEBDC679</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>Request.swift</string>
+			<key>path</key>
+			<string>Source/Request.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>52D8A9AF526F3A9893DB5A0EC21FE9D6</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>SWXMLHash.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5525E95300AB75A08BF9692051F0BF5F</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>7F7DEFAEF7F9C93DA6D501A11CB48DC5</string>
+				<string>38741306FEDC12ACB703E1A409BF5636</string>
+				<string>6E892A16540AC717EFE637C0C2B9EE98</string>
+				<string>3903BDB493FBD678BBAB0387C7F93D21</string>
+				<string>00C29C954D72E4C5D6BFF090720A783E</string>
+				<string>AA05BB733B51BDCF7DE621EB455E2E33</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Support Files</string>
+			<key>path</key>
+			<string>../Target Support Files/HCYoutubeParser</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>56C8A8379043A1207E0273B9087FC493</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>74DC07B936EA38EF1FAA0A16A586715B</string>
+				<string>EBB82630EE122654478DC433DB0AB320</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>5A536EA38254E148296DF66F48D10E00</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>KingfisherManager.swift</string>
+			<key>path</key>
+			<string>Sources/KingfisherManager.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5BC19E6E0F199276003F0AF96838BCE5</key>
+		<dict>
+			<key>fileRef</key>
+			<string>11DCF1094CCC1E33C0A3D745BF89A3AE</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>5C45C4158389C18842EAB109F543D370</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>06FD991A1EE3E1D299D1F17D90F71645</string>
+				<string>A319088D85F35CE80622203898045612</string>
+				<string>D676CB1A70B4F11BE0E52569D41059A1</string>
+				<string>F63B33196BEB0A6339C2BF68C4E79795</string>
+				<string>0B5F5CF112128BEE4D9C21C89D8C6CD2</string>
+				<string>5F7551D39B567415C90CF46B96EB79F3</string>
+				<string>39E2B7621295BB33966E5B4F83B8FD75</string>
+				<string>11517C76738EBAD6B57592E196D15DCA</string>
+				<string>BB15BB75D5A051B529BE31ED55FCBD49</string>
+				<string>BA01777C4D82248991DA033AD414258D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods-BancoSantanderShareholder-tvOS</string>
+			<key>path</key>
+			<string>Target Support Files/Pods-BancoSantanderShareholder-tvOS</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5C89BA5DDA2E01E9829747EF9F32EE5D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>26EA937A7B8DA70A739443A00DD18879</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>5CB05FBCB32D21E194B5ECF680CB6AE0</key>
+		<dict>
+			<key>fileRef</key>
+			<string>992FB90351C13F6850023EA9CDD60C50</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>5EDBA347CF6053A96617F0DF4144F634</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>8C41BB9D41DCD1E5C7CEDC2536D3A37F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>5F3BB7CFA7B204F70C0360AD65C080A7</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>Timeline.swift</string>
+			<key>path</key>
+			<string>Source/Timeline.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5F7551D39B567415C90CF46B96EB79F3</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-BancoSantanderShareholder-tvOS-frameworks.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>60B3F7B2D6B221981E4F542B859D2729</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>ServerTrustPolicy.swift</string>
+			<key>path</key>
+			<string>Source/ServerTrustPolicy.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>62E8346F03C03E7F4D631361F325689E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>48E3BF60E7FB0F6D1AFD32D0F85577F9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6551C2D81670A02D583553991AD327C7</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>ThreadHelper.swift</string>
+			<key>path</key>
+			<string>Sources/ThreadHelper.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>68A2E7FCF409D89D67564C0587377BD5</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B9DD0635577B07C5953D5F403A262315</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>68BCDE9D3B31D7BD0A2D373305627634</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>56C8A8379043A1207E0273B9087FC493</string>
+			<key>buildPhases</key>
+			<array>
+				<string>F7959F22CC54DFF1B6B0445FA86527BF</string>
+				<string>FD419CF95EFD9472B4933A1EA0574B34</string>
+				<string>97DB0E9239CAD080A2D2C21EC7B01594</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>HCYoutubeParser</string>
+			<key>productName</key>
+			<string>HCYoutubeParser</string>
+			<key>productReference</key>
+			<string>F9CF31B8A5F8840BBE9DDEFB6C1BC383</string>
+			<key>productType</key>
+			<string>com.apple.product-type.framework</string>
+		</dict>
+		<key>693ACB1FE2B150D60E4A14269874A7B6</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>AE9F8C63860AF3B0C6769BCBF5D03697</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf-with-dsym</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/Alamofire/Alamofire-prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Alamofire/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Alamofire/Alamofire.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>PRODUCT_NAME</key>
+				<string>Alamofire</string>
+				<key>SDKROOT</key>
+				<string>appletvos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>3</string>
+				<key>TVOS_DEPLOYMENT_TARGET</key>
+				<string>9.0</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>6955A8891A2F24D1BEB524140477C5C6</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F76768376FE6266CB700CEA24BFE31D6</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6B5D074B0BCA71D300455F09210B7201</key>
+		<dict>
+			<key>fileRef</key>
+			<string>AEBB9D4E96F9FE6495B365AFA7AD86E5</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6C0C6046C2DEE3163A5BF3B6E1516E4E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>5C45C4158389C18842EAB109F543D370</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Targets Support Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6D492694BCAD6DEBE4AEE2139F0A83BB</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Kingfisher.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6E622771918298205EBEF656749DBB4E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>AA4CF14EE0E86B00A09854E6991A3611</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6E892A16540AC717EFE637C0C2B9EE98</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>HCYoutubeParser-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6EC461C1435A31577346ED4ADA0BD5A9</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>71B249B85DD94F115F38450BF379A615</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>715B2C8794F4B4382A1D250D73F98915</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Alamofire.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>717A5C7B989B24DACBEC7DC466E02128</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>KingfisherOptionsInfo.swift</string>
+			<key>path</key>
+			<string>Sources/KingfisherOptionsInfo.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>71B249B85DD94F115F38450BF379A615</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>B10253D8E0D21DF7A9815E64CCFEFF7B</string>
+				<string>B9DD0635577B07C5953D5F403A262315</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>tvOS</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>720C651326F68C4AC0A0F490B35F37D5</key>
+		<dict>
+			<key>fileRef</key>
+			<string>5A536EA38254E148296DF66F48D10E00</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7313322BB073388450205303C113C53B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Kingfisher.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>733FFA92A6A6AB48ADB39A83E9A181AB</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DBB91F62BD53EFB674D29BC9AF2D3F1A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7439294DF0868F9E3AB46D0768E200B3</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>String+MD5.swift</string>
+			<key>path</key>
+			<string>Sources/String+MD5.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>74D0EC384012C2E5F249F24EA2C8E3CC</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>68A2E7FCF409D89D67564C0587377BD5</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>74D27B90D9B7F8EA81F488AB43016599</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>Error.swift</string>
+			<key>path</key>
+			<string>Source/Error.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>74DC07B936EA38EF1FAA0A16A586715B</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>38741306FEDC12ACB703E1A409BF5636</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/HCYoutubeParser/HCYoutubeParser-prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/HCYoutubeParser/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/HCYoutubeParser/HCYoutubeParser.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>PRODUCT_NAME</key>
+				<string>HCYoutubeParser</string>
+				<key>SDKROOT</key>
+				<string>appletvos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>3</string>
+				<key>TVOS_DEPLOYMENT_TARGET</key>
+				<string>9.0</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>79C040AFDDCE1BCBF6D8B5EB0B85887F</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>3CFB42910790CF0BDBCCEBAACD6B9367</string>
+			<key>buildPhases</key>
+			<array>
+				<string>95CC2C7E06DC188A05DAAEE9CAA555A3</string>
+				<string>B1729F851F648EC60EE93CDB3C8BAEAD</string>
+				<string>EFDF3B631BBB965A372347705CA14854</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Alamofire</string>
+			<key>productName</key>
+			<string>Alamofire</string>
+			<key>productReference</key>
+			<string>7C79703FE0125766A66EB683D1FE416D</string>
+			<key>productType</key>
+			<string>com.apple.product-type.framework</string>
+		</dict>
+		<key>7B48852C4D848FA2DA416A98F6425869</key>
+		<dict>
+			<key>fileRef</key>
+			<string>60B3F7B2D6B221981E4F542B859D2729</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7C79703FE0125766A66EB683D1FE416D</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>Alamofire.framework</string>
+			<key>path</key>
+			<string>Alamofire.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>7DB346D0F39D3F0E887471402A8071AB</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>BA6428E9F66FD5A23C0A2E06ED26CD2F</string>
+				<string>6EC461C1435A31577346ED4ADA0BD5A9</string>
+				<string>28086938E51317B8EFFC846B46CC7C82</string>
+				<string>92E7A85ECFF117A3295D2BD8F83A7937</string>
+				<string>6C0C6046C2DEE3163A5BF3B6E1516E4E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7DC29EC3314C272918FB20CAA3541994</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>917CFAA86AE1B5C919CE426F6F038AC7</string>
+				<string>6955A8891A2F24D1BEB524140477C5C6</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>7F7DEFAEF7F9C93DA6D501A11CB48DC5</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>HCYoutubeParser.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>837D4EF31291D34B1BBD609A05EDA1C8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C356D85D3691F6DBDBFA85ACC45BA612</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>86C51B6DB7E9B6E15636515391F5BD6A</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>6D492694BCAD6DEBE4AEE2139F0A83BB</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/Kingfisher/Kingfisher-prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Kingfisher/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Kingfisher/Kingfisher.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>PRODUCT_NAME</key>
+				<string>Kingfisher</string>
+				<key>SDKROOT</key>
+				<string>appletvos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>SWIFT_OPTIMIZATION_LEVEL</key>
+				<string>-Onone</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>3</string>
+				<key>TVOS_DEPLOYMENT_TARGET</key>
+				<string>9.0</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>89B2D791AB7666F5DBD0270A7693AB7F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B9DD0635577B07C5953D5F403A262315</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>8A78FBCDCD1EB487934D1A2C27297A24</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>6D492694BCAD6DEBE4AEE2139F0A83BB</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf-with-dsym</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/Kingfisher/Kingfisher-prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Kingfisher/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Kingfisher/Kingfisher.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>PRODUCT_NAME</key>
+				<string>Kingfisher</string>
+				<key>SDKROOT</key>
+				<string>appletvos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>3</string>
+				<key>TVOS_DEPLOYMENT_TARGET</key>
+				<string>9.0</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>8B5C43FA5AC328E6C6A6661D1D38C950</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>ImageDownloader.swift</string>
+			<key>path</key>
+			<string>Sources/ImageDownloader.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8C41BB9D41DCD1E5C7CEDC2536D3A37F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B9DD0635577B07C5953D5F403A262315</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>8EA1620441C79C9D60DEC1253A4DED9E</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>86C51B6DB7E9B6E15636515391F5BD6A</string>
+				<string>8A78FBCDCD1EB487934D1A2C27297A24</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>8EB11202167FCDDF1257AAAB1D1FB244</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DACA870CFF893C77AFCCC18739AA37E2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>8ED40FE3EAC152BB84F70681293257DB</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>NetworkReachabilityManager.swift</string>
+			<key>path</key>
+			<string>Source/NetworkReachabilityManager.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8EDD0E6851A22CA0760479C4CBA6BCB2</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>EF7B89796717943581F87D68883DF467</string>
+				<string>52D8A9AF526F3A9893DB5A0EC21FE9D6</string>
+				<string>E95C810E02A2D9D170C684FA2F275026</string>
+				<string>393F5F8D4B50AB372BF6BFB56537DD7C</string>
+				<string>8F5E6440D0167CEA0CDB3970C78D8679</string>
+				<string>B9AF7EF213302EF3618B15091106BEDE</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Support Files</string>
+			<key>path</key>
+			<string>../Target Support Files/SWXMLHash</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8F5E6440D0167CEA0CDB3970C78D8679</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>SWXMLHash-prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>90252E012F36786012EEFD2A09A5C819</key>
+		<dict>
+			<key>fileRef</key>
+			<string>11517C76738EBAD6B57592E196D15DCA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>90FC3A523AE71C70F41C197A3B746E20</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Alamofire-prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>917CFAA86AE1B5C919CE426F6F038AC7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>393F5F8D4B50AB372BF6BFB56537DD7C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>91B9C15807E05464EFE528163CA5DA07</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>ImageView+Kingfisher.swift</string>
+			<key>path</key>
+			<string>Sources/ImageView+Kingfisher.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9275C042B84A5007702AF9FD05108302</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>2107C59D758D15A87462F56500FECE1C</string>
+			<key>remoteInfo</key>
+			<string>SWXMLHash</string>
+		</dict>
+		<key>92E7A85ECFF117A3295D2BD8F83A7937</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>7C79703FE0125766A66EB683D1FE416D</string>
+				<string>F9CF31B8A5F8840BBE9DDEFB6C1BC383</string>
+				<string>20A1104624962DFD87D7A683ADF3484F</string>
+				<string>4307FC6A492B380CAED53EEF3470F4A7</string>
+				<string>F74565D1A4BE9C400C27A184B607E8D3</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>93834370001004256C49BB4C57294876</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D636654FBCA74A66D587681A42738138</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9469DF81ECB494E84675969B5E13374C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3502664ADCBFA40B6EB2AD4689B2A040</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>94B964A2189CE838212BF70E15609981</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Alamofire-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>95CC2C7E06DC188A05DAAEE9CAA555A3</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>ADF19C953CE2A7D0B72EC93A81FCCC26</string>
+				<string>8EB11202167FCDDF1257AAAB1D1FB244</string>
+				<string>5CB05FBCB32D21E194B5ECF680CB6AE0</string>
+				<string>095406039B4D371E48D08B38A2975AC8</string>
+				<string>4081EA628AF0B73AC51FFB9D7AB3B89E</string>
+				<string>C7B6DD7C0456C50289A2C381DFE9FA3F</string>
+				<string>34CCDCA848A701466256BC2927DA8856</string>
+				<string>BE41196F6A3903E59C3306FE3F8B43FE</string>
+				<string>C0DB70AB368765DC64BFB5FEA75E0696</string>
+				<string>EFE92E8D3813DD26E78E93EEAF6D7E7E</string>
+				<string>62E8346F03C03E7F4D631361F325689E</string>
+				<string>3EA8F215C9C1432D74E5CCA4834AA8C0</string>
+				<string>AA314156AC500125F4078EE968DB14C6</string>
+				<string>7B48852C4D848FA2DA416A98F6425869</string>
+				<string>AE4CF87C02C042DF13ED5B21C4FDC1E0</string>
+				<string>16102E4E35FAA0FC4161282FECE56469</string>
+				<string>5BC19E6E0F199276003F0AF96838BCE5</string>
+				<string>2D3405986FC586FA6C0A5E0B6BA7E64E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>9657B385F694A4481F66FE0FD629D724</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>Kingfisher</string>
+			<key>target</key>
+			<string>175892047F5D57D69AC9D102FB92A2F2</string>
+			<key>targetProxy</key>
+			<string>30BD51A404552383B56BD91183C8801F</string>
+		</dict>
+		<key>96FB0EDAD959194097CEF4E7410AE6E4</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>79C040AFDDCE1BCBF6D8B5EB0B85887F</string>
+			<key>remoteInfo</key>
+			<string>Alamofire</string>
+		</dict>
+		<key>97121D3105C3EE54FD9FFD7A02F80B2B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6551C2D81670A02D583553991AD327C7</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>97DB0E9239CAD080A2D2C21EC7B01594</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>E5060845EB6F90C8FBA99E9A4C895654</string>
+				<string>40A9E088DD6F13F7CC33FB83D6DD4888</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>992FB90351C13F6850023EA9CDD60C50</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>Download.swift</string>
+			<key>path</key>
+			<string>Source/Download.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9B3C3910C4865FA7E0736FBB4C89AC32</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>CB95B8E6326838A989AD2A9F6283E3CE</string>
+				<string>31232DF16462593B94DCFF5F4560BE59</string>
+				<string>5525E95300AB75A08BF9692051F0BF5F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>HCYoutubeParser</string>
+			<key>path</key>
+			<string>HCYoutubeParser</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9E69BFD342B6B4CE5C2ACEF4E9F3C6C3</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>Validation.swift</string>
+			<key>path</key>
+			<string>Source/Validation.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A319088D85F35CE80622203898045612</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Pods-BancoSantanderShareholder-tvOS.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A442B30F0BF3868BFA9882FBF8F68545</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>B4E8DB1EEC185482CE3616244E13B218</string>
+				<string>7313322BB073388450205303C113C53B</string>
+				<string>6D492694BCAD6DEBE4AEE2139F0A83BB</string>
+				<string>AA4CF14EE0E86B00A09854E6991A3611</string>
+				<string>4BE5CDEFB8D0BDA2DD1DBF86CFF6C5A4</string>
+				<string>C356D85D3691F6DBDBFA85ACC45BA612</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Support Files</string>
+			<key>path</key>
+			<string>../Target Support Files/Kingfisher</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A8CA91886D98AD1A78B4855E3534BFF9</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>F76768376FE6266CB700CEA24BFE31D6</string>
+				<string>8EDD0E6851A22CA0760479C4CBA6BCB2</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>SWXMLHash</string>
+			<key>path</key>
+			<string>SWXMLHash</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A9C2E449AA67397D63A3AA46FA481C14</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>SWXMLHash</string>
+			<key>target</key>
+			<string>2107C59D758D15A87462F56500FECE1C</string>
+			<key>targetProxy</key>
+			<string>9275C042B84A5007702AF9FD05108302</string>
+		</dict>
+		<key>AA05BB733B51BDCF7DE621EB455E2E33</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AA314156AC500125F4078EE968DB14C6</key>
+		<dict>
+			<key>fileRef</key>
+			<string>456605A47E1BACA6A4931E49962140E9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>AA4CF14EE0E86B00A09854E6991A3611</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Kingfisher-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>ADF19C953CE2A7D0B72EC93A81FCCC26</key>
+		<dict>
+			<key>fileRef</key>
+			<string>94B964A2189CE838212BF70E15609981</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>AE4CF87C02C042DF13ED5B21C4FDC1E0</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C67A87CE7A2A4B5924B19FB68550989F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>AE9F8C63860AF3B0C6769BCBF5D03697</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Alamofire.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AEBB9D4E96F9FE6495B365AFA7AD86E5</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>Resource.swift</string>
+			<key>path</key>
+			<string>Sources/Resource.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B0D10FD0D827CFBB77BA39A64C3D6460</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B9DD0635577B07C5953D5F403A262315</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B10253D8E0D21DF7A9815E64CCFEFF7B</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>CFNetwork.framework</string>
+			<key>path</key>
+			<string>Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS9.1.sdk/System/Library/Frameworks/CFNetwork.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>B1473AEB6A8D100EEB16EE78C3D07019</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B9AF7EF213302EF3618B15091106BEDE</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>B1729F851F648EC60EE93CDB3C8BAEAD</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>89B2D791AB7666F5DBD0270A7693AB7F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>B3113E81B0E726CF2B7A925DE56BA37B</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>D3037A231F1C6A1B2BB2A5474F42A8AE</string>
+				<string>B6DE75F44001B5D7D09FBCFDBA607343</string>
+				<string>4F9F47E161CD795B9DCF8FB63389C2E2</string>
+				<string>93834370001004256C49BB4C57294876</string>
+				<string>DED9D0FF58DC281359A2732D0AD92F20</string>
+				<string>6E622771918298205EBEF656749DBB4E</string>
+				<string>720C651326F68C4AC0A0F490B35F37D5</string>
+				<string>0BA862AA78ABDA3A2AA0FB50BEEE79DE</string>
+				<string>6B5D074B0BCA71D300455F09210B7201</string>
+				<string>1A0E24F4CC0A582722B8E1553908DDD5</string>
+				<string>97121D3105C3EE54FD9FFD7A02F80B2B</string>
+				<string>733FFA92A6A6AB48ADB39A83E9A181AB</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>B4E8DB1EEC185482CE3616244E13B218</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B575707461DF788FAA14687108A9A866</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>2C7878CDACC5E672247B3FD10236FA9C</string>
+				<string>23DFBB749CA7DC67D264E883ABD84C66</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>B5ECBA72461533E118104A3E87357492</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>DACA870CFF893C77AFCCC18739AA37E2</string>
+				<string>992FB90351C13F6850023EA9CDD60C50</string>
+				<string>74D27B90D9B7F8EA81F488AB43016599</string>
+				<string>E7960D3020B7242DC9A383B536543EB5</string>
+				<string>23D979E6449BB1BD8B5C805FE3B26756</string>
+				<string>8ED40FE3EAC152BB84F70681293257DB</string>
+				<string>C0CE5DD8CE7F9BEC3C368F645938B045</string>
+				<string>506DEFD199BB3B3B7151A329426F1709</string>
+				<string>50CBDA1A9FCACA876ACDC0F8AEBDC679</string>
+				<string>48E3BF60E7FB0F6D1AFD32D0F85577F9</string>
+				<string>2B7E486121051BE79FD100951BE8D4D5</string>
+				<string>456605A47E1BACA6A4931E49962140E9</string>
+				<string>60B3F7B2D6B221981E4F542B859D2729</string>
+				<string>C67A87CE7A2A4B5924B19FB68550989F</string>
+				<string>5F3BB7CFA7B204F70C0360AD65C080A7</string>
+				<string>11DCF1094CCC1E33C0A3D745BF89A3AE</string>
+				<string>9E69BFD342B6B4CE5C2ACEF4E9F3C6C3</string>
+				<string>095FF757275F1967FE59FFF2C4DDEA2B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Alamofire</string>
+			<key>path</key>
+			<string>Alamofire</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B6DE75F44001B5D7D09FBCFDBA607343</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0CCD4DF8DFDEBAD7CF7770C02C8A1A25</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B9AF7EF213302EF3618B15091106BEDE</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>SWXMLHash-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B9DD0635577B07C5953D5F403A262315</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS9.1.sdk/System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>BA01777C4D82248991DA033AD414258D</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-BancoSantanderShareholder-tvOS.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BA6428E9F66FD5A23C0A2E06ED26CD2F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>name</key>
+			<string>Podfile</string>
+			<key>path</key>
+			<string>../Podfile</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+			<key>xcLanguageSpecificationIdentifier</key>
+			<string>xcode.lang.ruby</string>
+		</dict>
+		<key>BB15BB75D5A051B529BE31ED55FCBD49</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-BancoSantanderShareholder-tvOS.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BE41196F6A3903E59C3306FE3F8B43FE</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C0CE5DD8CE7F9BEC3C368F645938B045</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C0CE5DD8CE7F9BEC3C368F645938B045</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>Notifications.swift</string>
+			<key>path</key>
+			<string>Source/Notifications.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C0DB70AB368765DC64BFB5FEA75E0696</key>
+		<dict>
+			<key>fileRef</key>
+			<string>506DEFD199BB3B3B7151A329426F1709</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C356D85D3691F6DBDBFA85ACC45BA612</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Kingfisher-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C67A87CE7A2A4B5924B19FB68550989F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>Stream.swift</string>
+			<key>path</key>
+			<string>Source/Stream.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C7B6DD7C0456C50289A2C381DFE9FA3F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>23D979E6449BB1BD8B5C805FE3B26756</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CA9E588A7155CFE061652B684ECD0010</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>E95C810E02A2D9D170C684FA2F275026</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf-with-dsym</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/SWXMLHash/SWXMLHash-prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/SWXMLHash/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/SWXMLHash/SWXMLHash.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>PRODUCT_NAME</key>
+				<string>SWXMLHash</string>
+				<key>SDKROOT</key>
+				<string>appletvos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>3</string>
+				<key>TVOS_DEPLOYMENT_TARGET</key>
+				<string>9.0</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>CB95B8E6326838A989AD2A9F6283E3CE</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>HCYoutubeParser.h</string>
+			<key>path</key>
+			<string>YoutubeParser/Classes/HCYoutubeParser.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D3037A231F1C6A1B2BB2A5474F42A8AE</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3E2642ED190CA6ED230B826B571AF80A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D41D8CD98F00B204E9800998ECF8427E</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastSwiftUpdateCheck</key>
+				<string>0720</string>
+				<key>LastUpgradeCheck</key>
+				<string>0700</string>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>2D8E8EC45A3A1A1D94AE762CB5028504</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+			</array>
+			<key>mainGroup</key>
+			<string>7DB346D0F39D3F0E887471402A8071AB</string>
+			<key>productRefGroup</key>
+			<string>92E7A85ECFF117A3295D2BD8F83A7937</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>79C040AFDDCE1BCBF6D8B5EB0B85887F</string>
+				<string>68BCDE9D3B31D7BD0A2D373305627634</string>
+				<string>175892047F5D57D69AC9D102FB92A2F2</string>
+				<string>F971C6FECA51A0760B17A3D8189044C6</string>
+				<string>2107C59D758D15A87462F56500FECE1C</string>
+			</array>
+		</dict>
+		<key>D636654FBCA74A66D587681A42738138</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>ImageTransition.swift</string>
+			<key>path</key>
+			<string>Sources/ImageTransition.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D676CB1A70B4F11BE0E52569D41059A1</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>path</key>
+			<string>Pods-BancoSantanderShareholder-tvOS-acknowledgements.markdown</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DACA870CFF893C77AFCCC18739AA37E2</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>Alamofire.swift</string>
+			<key>path</key>
+			<string>Source/Alamofire.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DBAF2F69FD0EBC71BBBB5DA00E232D4F</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>3B82D7E03CCA0A8F8C2A6B6EF72BDD4F</string>
+				<string>CA9E588A7155CFE061652B684ECD0010</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>DBB91F62BD53EFB674D29BC9AF2D3F1A</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>UIButton+Kingfisher.swift</string>
+			<key>path</key>
+			<string>Sources/UIButton+Kingfisher.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DED9D0FF58DC281359A2732D0AD92F20</key>
+		<dict>
+			<key>fileRef</key>
+			<string>91B9C15807E05464EFE528163CA5DA07</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E1430875070E1174813C4812A4B13E27</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>837D4EF31291D34B1BBD609A05EDA1C8</string>
+				<string>5C89BA5DDA2E01E9829747EF9F32EE5D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>E5060845EB6F90C8FBA99E9A4C895654</key>
+		<dict>
+			<key>fileRef</key>
+			<string>00C29C954D72E4C5D6BFF090720A783E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>E7960D3020B7242DC9A383B536543EB5</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>Manager.swift</string>
+			<key>path</key>
+			<string>Source/Manager.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E95C810E02A2D9D170C684FA2F275026</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>SWXMLHash.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E99C2D6390BBBBC481A89625E1FF652D</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>Alamofire</string>
+			<key>target</key>
+			<string>79C040AFDDCE1BCBF6D8B5EB0B85887F</string>
+			<key>targetProxy</key>
+			<string>96FB0EDAD959194097CEF4E7410AE6E4</string>
+		</dict>
+		<key>EBB82630EE122654478DC433DB0AB320</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>38741306FEDC12ACB703E1A409BF5636</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf-with-dsym</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/HCYoutubeParser/HCYoutubeParser-prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/HCYoutubeParser/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/HCYoutubeParser/HCYoutubeParser.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>PRODUCT_NAME</key>
+				<string>HCYoutubeParser</string>
+				<key>SDKROOT</key>
+				<string>appletvos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>3</string>
+				<key>TVOS_DEPLOYMENT_TARGET</key>
+				<string>9.0</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>EF7B89796717943581F87D68883DF467</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>EFDF3B631BBB965A372347705CA14854</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>9469DF81ECB494E84675969B5E13374C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>EFE92E8D3813DD26E78E93EEAF6D7E7E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>50CBDA1A9FCACA876ACDC0F8AEBDC679</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F388D89630D3FB3BDC1C04C0232D6611</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>90252E012F36786012EEFD2A09A5C819</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>F4959862416413BD51547EDA75EBD8EC</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B9DD0635577B07C5953D5F403A262315</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F63B33196BEB0A6339C2BF68C4E79795</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Pods-BancoSantanderShareholder-tvOS-acknowledgements.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F6E4C77CF1822D7A1E79D4FF22BBDFCC</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>B1473AEB6A8D100EEB16EE78C3D07019</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>F74565D1A4BE9C400C27A184B607E8D3</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>SWXMLHash.framework</string>
+			<key>path</key>
+			<string>SWXMLHash.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>F76768376FE6266CB700CEA24BFE31D6</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>SWXMLHash.swift</string>
+			<key>path</key>
+			<string>Source/SWXMLHash.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F7959F22CC54DFF1B6B0445FA86527BF</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>29A99D18ED4668CC2F63A09AC0166ED4</string>
+				<string>2FA6F20D1F5C04B851962042BA64F6AA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>F971C6FECA51A0760B17A3D8189044C6</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>B575707461DF788FAA14687108A9A866</string>
+			<key>buildPhases</key>
+			<array>
+				<string>0E1A8969484B3FCF0CF16022393A3FC7</string>
+				<string>5EDBA347CF6053A96617F0DF4144F634</string>
+				<string>F388D89630D3FB3BDC1C04C0232D6611</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>E99C2D6390BBBBC481A89625E1FF652D</string>
+				<string>1707BFE4F26C4C19F242D83419D6D868</string>
+				<string>9657B385F694A4481F66FE0FD629D724</string>
+				<string>A9C2E449AA67397D63A3AA46FA481C14</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Pods-BancoSantanderShareholder-tvOS</string>
+			<key>productName</key>
+			<string>Pods-BancoSantanderShareholder-tvOS</string>
+			<key>productReference</key>
+			<string>4307FC6A492B380CAED53EEF3470F4A7</string>
+			<key>productType</key>
+			<string>com.apple.product-type.framework</string>
+		</dict>
+		<key>F9CF31B8A5F8840BBE9DDEFB6C1BC383</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>HCYoutubeParser.framework</string>
+			<key>path</key>
+			<string>HCYoutubeParser.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>FD419CF95EFD9472B4933A1EA0574B34</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>F4959862416413BD51547EDA75EBD8EC</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>D41D8CD98F00B204E9800998ECF8427E</string>
+</dict>
+</plist>

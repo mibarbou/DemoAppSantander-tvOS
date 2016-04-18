@@ -74,7 +74,7 @@ class PdfDetailViewController: UIViewController {
     func initializeGestureRecognizer()
     {
         //For PanGesture Recoginzation
-        let panGesture: UIPanGestureRecognizer = UIPanGestureRecognizer(target: self, action: Selector("recognizePanGesture:"))
+        let panGesture: UIPanGestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(PdfDetailViewController.recognizePanGesture(_:)))
         self.view.addGestureRecognizer(panGesture)
     }
     

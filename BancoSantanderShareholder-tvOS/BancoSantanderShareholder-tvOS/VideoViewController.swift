@@ -24,7 +24,7 @@ class VideoViewController: UIViewController {
         
         if let theMovieId = movie?.videoId {
             
-            let tapRecognizer = UITapGestureRecognizer(target: self, action: "pausePlayTapped:")
+            let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(VideoViewController.pausePlayTapped(_:)))
             tapRecognizer.allowedPressTypes = [NSNumber(integer: UIPressType.PlayPause.rawValue)];
             self.view.addGestureRecognizer(tapRecognizer)
         

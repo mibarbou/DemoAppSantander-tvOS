@@ -36,7 +36,7 @@ class ServiceProvider: NSObject, TVTopShelfProvider {
         let wrapperItem = TVContentItem(contentIdentifier: wrapperID)!
         var ContentItems = [TVContentItem]()
         
-        for (var i = 0; i < 4; i++)
+        for i in 0 ..< 4
         {
             let identifier = TVContentIdentifier(identifier: "VOD", container: wrapperID)!
             let contentItem = TVContentItem(contentIdentifier: identifier )!

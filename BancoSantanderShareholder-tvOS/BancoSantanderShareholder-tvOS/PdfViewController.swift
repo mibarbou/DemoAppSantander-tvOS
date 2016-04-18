@@ -80,7 +80,7 @@ class PdfViewController: UIViewController, UICollectionViewDataSource, UICollect
             
             if cell.gestureRecognizers?.count == nil {
                 
-                let tap = UITapGestureRecognizer(target: self, action: "tapped:")
+                let tap = UITapGestureRecognizer(target: self, action: #selector(PdfViewController.tapped(_:)))
                 tap.allowedPressTypes = [NSNumber(integer: UIPressType.Select.rawValue)]
                 cell.addGestureRecognizer(tap)
                 
@@ -226,8 +226,8 @@ class PdfViewController: UIViewController, UICollectionViewDataSource, UICollect
         
         let pdfPages = CGPDFDocumentGetNumberOfPages(document);
         
-        for (var i = 1; i <= pdfPages; i++){
-            
+        for i in 1...pdfPages {
+
             guard let page = CGPDFDocumentGetPage(document, i) else { return nil }
             
             let pageRect = CGPDFPageGetBoxRect(page, .MediaBox)

@@ -145,7 +145,7 @@ class FirstViewController: UIViewController, UICollectionViewDataSource, UIColle
             
             if cell.gestureRecognizers?.count == nil {
                 
-                let tap = UITapGestureRecognizer(target: self, action: "tapped:")
+                let tap = UITapGestureRecognizer(target: self, action: #selector(FirstViewController.tapped(_:)))
                 tap.allowedPressTypes = [NSNumber(integer: UIPressType.Select.rawValue)]
                 cell.addGestureRecognizer(tap)
                 
@@ -220,7 +220,7 @@ class FirstViewController: UIViewController, UICollectionViewDataSource, UIColle
         
         let pdfPages = CGPDFDocumentGetNumberOfPages(document);
         
-        for (var i = 1; i <= pdfPages; i++){
+        for i in 1...pdfPages {
         
             guard let page = CGPDFDocumentGetPage(document, i) else { return nil }
         

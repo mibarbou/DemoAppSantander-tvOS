@@ -82,7 +82,7 @@ class CotizacionesViewController: UIViewController, UICollectionViewDataSource, 
             
             if cell.gestureRecognizers?.count == nil {
                 
-                let tap = UITapGestureRecognizer(target: self, action: "tapped:")
+                let tap = UITapGestureRecognizer(target: self, action: #selector(CotizacionesViewController.tapped(_:)))
                 tap.allowedPressTypes = [NSNumber(integer: UIPressType.Select.rawValue)]
                 cell.addGestureRecognizer(tap)
                 
