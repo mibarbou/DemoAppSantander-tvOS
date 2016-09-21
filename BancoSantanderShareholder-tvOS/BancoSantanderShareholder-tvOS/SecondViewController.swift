@@ -30,15 +30,6 @@ class SecondViewController: UIViewController, UICollectionViewDataSource, UIColl
         getXmlFile()
         self.collectionView.reloadData()
         
-//        let urlpath = NSBundle.mainBundle().pathForResource("Financialreport4Q2015", ofType: "pdf")
-//        let url:NSURL = NSURL.fileURLWithPath(urlpath!)
-//
-//        let images = getImagesFromURL(url)
-//
-//        if let theImages = images {
-//
-//            self.images = theImages
-//        }
     
     }
 

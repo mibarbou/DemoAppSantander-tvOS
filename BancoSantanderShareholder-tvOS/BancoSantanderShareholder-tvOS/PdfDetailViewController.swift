@@ -22,23 +22,9 @@ class PdfDetailViewController: UIViewController {
         
         initializeGestureRecognizer()
         
-//        let pan = UIPanGestureRecognizer(target: self, action: "panned:" )
-//        
-//        scrollView.panGestureRecognizer.allowedTouchTypes = [UITouchType.Indirect.rawValue]
-//        scrollView.addGestureRecognizer(pan)
-//
-//        
+    
         scrollView.contentSize = CGSizeMake(1920, 1080)
-        
-//        let swipeUp = UISwipeGestureRecognizer(target: self, action: "swipedUp")
-//        swipeUp.direction = UISwipeGestureRecognizerDirection.Up
-//        self.view.addGestureRecognizer(swipeUp)
-//        
-//        let swipeDown = UISwipeGestureRecognizer(target: self, action: "swipedDown")
-//        swipeDown.direction = UISwipeGestureRecognizerDirection.Down
-//        self.view.addGestureRecognizer(swipeDown)
-        
-        
+         
         
     }
     

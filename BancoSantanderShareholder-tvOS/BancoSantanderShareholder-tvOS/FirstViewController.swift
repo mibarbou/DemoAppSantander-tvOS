@@ -36,48 +36,7 @@ class FirstViewController: UIViewController, UICollectionViewDataSource, UIColle
         
         getYoutubeVideos()
         
-//        Alamofire.request(.GET, "https://www.googleapis.com/youtube/v3/channels?part=banco+santander&managedByMe=false&maxResults=20&mine=false&key=AIzaSyDihxCK70Qsf6S2e98dM8ku9tnYvdeO3LU").response { (request, response, data, error) -> Void in
-//            
-//            if error != nil {
-//                
-//                print(error)
-//                
-//            } else {
-//            
-//                let xml = SWXMLHash.parse(data!)
-//                
-//                for elem in xml["media"]["videos"]["item"] {
-//                    
-//                    print(elem["title"].element!.text!)
-//                    
-//                    let title = elem["title"].element!.text!
-//                    let description = elem["description"].element!.text!
-//                    let url = elem["url"].element!.text!
-//                    let thumbnail = elem["thumbnail"].element!.text!
-//                    
-//                    let movie = Movie(title: title, url: url, thumbnail: thumbnail, description: description)
-//                    
-//                    self.movies.append(movie)
-//                    
-//                }
-//                
-//                print(xml)
-//                print(request)
-//                print(response)
-//                self.collectionView.reloadData()
-//            
-//            }
-//        }
-        
-//        let urlpath = NSBundle.mainBundle().pathForResource("Financialreport4Q2015", ofType: "pdf")
-//        let url:NSURL = NSURL.fileURLWithPath(urlpath!)
-//        
-//        let images = getImagesFromURL(url)
-//        
-//        if let theImages = images {
-//            
-//            print(theImages)
-//        }
+
 
     }
 
@@ -173,9 +132,7 @@ class FirstViewController: UIViewController, UICollectionViewDataSource, UIColle
                 prev.imageView.adjustsImageWhenAncestorFocused = false
                 prev.descriptionLabel.hidden = true
 
-                
-//                prev.frame.size = self.defaultCellSize
-//                prev.imageView.frame.size = self.defaultSize
+
             })
         }
         
@@ -187,8 +144,7 @@ class FirstViewController: UIViewController, UICollectionViewDataSource, UIColle
                 next.imageView.adjustsImageWhenAncestorFocused = true
                 next.descriptionLabel.hidden = false
                 
-//                next.frame.size = self.focusCellSize
-//                next.imageView.frame.size = self.focusSize
+
             })
         }
         

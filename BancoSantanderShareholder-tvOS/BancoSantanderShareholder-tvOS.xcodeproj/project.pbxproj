@@ -232,7 +232,6 @@
 			isa = PBXGroup;
 			children = (
 				D0921DDB1C773B9400E345E1 /* Cells */,
-				D0921DCF1C77316800E345E1 /* Sections */,
 				D000A1751C7CAEC500B9D373 /* FocusScrollView.swift */,
 			);
 			name = Views;
@@ -259,13 +258,6 @@
 				D028C3641C7D961E004614DC /* Info.plist */,
 			);
 			path = ShareholderShorcuts;
-			sourceTree = "<group>";
-		};
-		D0921DCF1C77316800E345E1 /* Sections */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Sections;
 			sourceTree = "<group>";
 		};
 		D0921DD81C77373700E345E1 /* Accionistas */ = {
