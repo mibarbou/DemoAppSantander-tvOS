@@ -26,25 +26,25 @@ class DividendosViewController: UIViewController {
         // Do any additional setup after loading the view.
         subview1.layer.cornerRadius = 50
         view1.layer.borderWidth = 2.0
-        view1.layer.borderColor = UIColor(red: 135.0 / 255.0, green: 135 / 255.0, blue: 135 / 255.0, alpha: 1).CGColor
-        view1.backgroundColor = UIColor.clearColor()
+        view1.layer.borderColor = UIColor(red: 135.0 / 255.0, green: 135 / 255.0, blue: 135 / 255.0, alpha: 1).cgColor
+        view1.backgroundColor = UIColor.clear
         
         subview2.layer.cornerRadius = 50
         view2.layer.borderWidth = 2.0
-        view2.layer.borderColor = UIColor(red: 135.0 / 255.0, green: 135 / 255.0, blue: 135 / 255.0, alpha: 1).CGColor
-        view2.backgroundColor = UIColor.clearColor()
+        view2.layer.borderColor = UIColor(red: 135.0 / 255.0, green: 135 / 255.0, blue: 135 / 255.0, alpha: 1).cgColor
+        view2.backgroundColor = UIColor.clear
         
         subview3.layer.cornerRadius = 50
         view3.layer.borderWidth = 2.0
-        view3.layer.borderColor = UIColor(red: 138.0 / 255.0, green: 34 / 255.0, blue: 84 / 255.0, alpha: 1).CGColor
-        view3.backgroundColor = UIColor.clearColor()
+        view3.layer.borderColor = UIColor(red: 138.0 / 255.0, green: 34 / 255.0, blue: 84 / 255.0, alpha: 1).cgColor
+        view3.backgroundColor = UIColor.clear
         
         subview4.layer.cornerRadius = 50
         view4.layer.borderWidth = 2.0
-        view4.layer.borderColor = UIColor(red: 138.0 / 255.0, green: 34 / 255.0, blue: 84 / 255.0, alpha: 1).CGColor
-        view4.backgroundColor = UIColor.clearColor()
+        view4.layer.borderColor = UIColor(red: 138.0 / 255.0, green: 34 / 255.0, blue: 84 / 255.0, alpha: 1).cgColor
+        view4.backgroundColor = UIColor.clear
         
-        headerLabel.layer.borderColor = UIColor.darkGrayColor().CGColor
+        headerLabel.layer.borderColor = UIColor.darkGray.cgColor
         headerLabel.layer.borderWidth = 2.0
         
     }

@@ -10,11 +10,11 @@ import UIKit
 
 class FocusScrollView: UIScrollView {
 
-    override func canBecomeFocused() -> Bool {
+    override var canBecomeFocused : Bool {
         return true
     }
     
-    override func didUpdateFocusInContext(context: UIFocusUpdateContext, withAnimationCoordinator coordinator: UIFocusAnimationCoordinator) {
+    override func didUpdateFocus(in context: UIFocusUpdateContext, with coordinator: UIFocusAnimationCoordinator) {
         
         if context.previouslyFocusedView === self {
             

@@ -17,7 +17,7 @@ class ResultadosViewController: UIViewController {
     
         // Do any additional setup after loading the view.
         
-        headerLabel.layer.borderColor = UIColor.darkGrayColor().CGColor
+        headerLabel.layer.borderColor = UIColor.darkGray.cgColor
         headerLabel.layer.borderWidth = 2.0
     }
 

@@ -1,21 +1,21 @@
 PODS:
-  - Alamofire (3.2.0)
+  - Alamofire (4.4.0)
   - HCYoutubeParser (0.0.5)
-  - Kingfisher (2.0.3)
-  - SWXMLHash (2.1.0)
+  - Kingfisher (3.5.1)
+  - SWXMLHash (3.0.4)
 
 DEPENDENCIES:
-  - Alamofire (~> 3.2.0)
+  - Alamofire
   - HCYoutubeParser
   - Kingfisher
   - SWXMLHash
 
 SPEC CHECKSUMS:
-  Alamofire: 4da478599fccddff361205c8929333d7fe18dceb
+  Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
   HCYoutubeParser: bc1db8c062e4b835eda381f2be2f9970f6a8d071
-  Kingfisher: 44c1f1912f19371a67d701e67c96d6bb45ca1c8d
-  SWXMLHash: 7257a358b3ab2f7a209e0b4e4cf552e8b6df5f0f
+  Kingfisher: 12eeffeef42ea45b68c5e5acfe8ba9005b713ab4
+  SWXMLHash: 29d20b84692fc319ea8ed933058fe7d8d005139b
 
-PODFILE CHECKSUM: 8a0961d693dbddbfadfd398368d2578dde56d750
+PODFILE CHECKSUM: 6cecf60f6098dd40b18d643f72f767ee43091ffa
 
-COCOAPODS: 1.0.0.beta.3
+COCOAPODS: 1.2.0

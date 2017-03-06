@@ -25,18 +25,18 @@ class VideoViewController: UIViewController {
         if let theMovieId = movie?.videoId {
             
             let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(VideoViewController.pausePlayTapped(_:)))
-            tapRecognizer.allowedPressTypes = [NSNumber(integer: UIPressType.PlayPause.rawValue)];
+            tapRecognizer.allowedPressTypes = [NSNumber(value: UIPressType.playPause.rawValue as Int)];
             self.view.addGestureRecognizer(tapRecognizer)
         
             let youTubeString : String = "https://www.youtube.com/watch?v=" + theMovieId
-            let videos : NSDictionary = HCYoutubeParser.h264videosWithYoutubeURL(NSURL(string: youTubeString))
+            let videos : NSDictionary = HCYoutubeParser.h264videos(withYoutubeURL: URL(string: youTubeString)) as NSDictionary
             let urlString : String = videos["medium"] as! String
-            let asset = AVAsset(URL: NSURL(string: urlString)!)
+            let asset = AVAsset(url: URL(string: urlString)!)
             
             let avPlayerItem = AVPlayerItem(asset:asset)
             avPlayer = AVPlayer(playerItem: avPlayerItem)
             let avPlayerLayer  = AVPlayerLayer(player: avPlayer)
-            avPlayerLayer.frame = CGRectMake(0, 0, self.view.frame.width, self.view.frame.height);
+            avPlayerLayer.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height);
             self.view.layer.addSublayer(avPlayerLayer)
             avPlayer.play()
         }
@@ -48,7 +48,7 @@ class VideoViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func pausePlayTapped(gesture: UITapGestureRecognizer){
+    func pausePlayTapped(_ gesture: UITapGestureRecognizer){
      
         if avPlayer.rate == 1.0 {
         

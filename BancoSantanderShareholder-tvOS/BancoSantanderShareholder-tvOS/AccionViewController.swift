@@ -22,19 +22,19 @@ class AccionViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
-        headerLabel.layer.borderColor = UIColor.darkGrayColor().CGColor
+        headerLabel.layer.borderColor = UIColor.darkGray.cgColor
         headerLabel.layer.borderWidth = 2.0
         
-        view1.layer.borderColor = UIColor.darkGrayColor().CGColor
+        view1.layer.borderColor = UIColor.darkGray.cgColor
         view1.layer.borderWidth = 2.0
         
-        view2.layer.borderColor = UIColor.darkGrayColor().CGColor
+        view2.layer.borderColor = UIColor.darkGray.cgColor
         view2.layer.borderWidth = 2.0
         
-        view3.layer.borderColor = UIColor.darkGrayColor().CGColor
+        view3.layer.borderColor = UIColor.darkGray.cgColor
         view3.layer.borderWidth = 2.0
         
-        view4.layer.borderColor = UIColor.darkGrayColor().CGColor
+        view4.layer.borderColor = UIColor.darkGray.cgColor
         view4.layer.borderWidth = 2.0
         
     }

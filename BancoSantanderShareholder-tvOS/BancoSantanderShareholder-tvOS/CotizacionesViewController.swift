@@ -14,9 +14,9 @@ class CotizacionesViewController: UIViewController, UICollectionViewDataSource, 
     
     var stocks = [Stock]()
     
-    let defaultSize = CGSizeMake(700, 650)
+    let defaultSize = CGSize(width: 700, height: 650)
     
-    let focusSize = CGSizeMake(840, 780)
+    let focusSize = CGSize(width: 840, height: 780)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,11 +31,11 @@ class CotizacionesViewController: UIViewController, UICollectionViewDataSource, 
         // Dispose of any resources that can be recreated.
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if segue.identifier == "goToStockDetailSegue" {
             
-            if let stockDetailVC = segue.destinationViewController as? StockDetailViewController {
+            if let stockDetailVC = segue.destination as? StockDetailViewController {
                 
                 if let theStock = sender {
                     
@@ -47,24 +47,24 @@ class CotizacionesViewController: UIViewController, UICollectionViewDataSource, 
     
     // MARK: UICollectionViewDataSource
     
-    func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
         
         return 1
     }
     
-    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
         return stocks.count;
     }
     
-    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: IndexPath) -> CGSize {
         
-        return CGSizeMake(700, 650)
+        return CGSize(width: 700, height: 650)
     }
     
-    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        if let cell = collectionView.dequeueReusableCellWithReuseIdentifier("StockCell", forIndexPath: indexPath) as? StockCell {
+        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "StockCell", for: indexPath) as? StockCell {
             
             cell.layer.cornerRadius = 10
             cell.shareNameLabel.text = "Acción SAN"
@@ -83,7 +83,7 @@ class CotizacionesViewController: UIViewController, UICollectionViewDataSource, 
             if cell.gestureRecognizers?.count == nil {
                 
                 let tap = UITapGestureRecognizer(target: self, action: #selector(CotizacionesViewController.tapped(_:)))
-                tap.allowedPressTypes = [NSNumber(integer: UIPressType.Select.rawValue)]
+                tap.allowedPressTypes = [NSNumber(value: UIPressType.select.rawValue as Int)]
                 cell.addGestureRecognizer(tap)
                 
             }
@@ -97,12 +97,12 @@ class CotizacionesViewController: UIViewController, UICollectionViewDataSource, 
         }
     }
     
-    func setArrowsValues(value: String, percentage: String) -> (UIImage?,UIImage?) {
+    func setArrowsValues(_ value: String, percentage: String) -> (UIImage?,UIImage?) {
         
         var valueImage = UIImage()
         var percentageImage = UIImage()
         
-        if (value.containsString("-")) {
+        if (value.contains("-")) {
             
             valueImage = UIImage(named: "arrowDownIcon")!
             
@@ -112,7 +112,7 @@ class CotizacionesViewController: UIViewController, UICollectionViewDataSource, 
             
         }
         
-        if (percentage.containsString("-")) {
+        if (percentage.contains("-")) {
             
             percentageImage = UIImage(named: "arrowDownIcon")!
             
@@ -128,15 +128,15 @@ class CotizacionesViewController: UIViewController, UICollectionViewDataSource, 
     // MARK: UICollectionViewDelegate
  
     
-    override func didUpdateFocusInContext(context: UIFocusUpdateContext, withAnimationCoordinator coordinator: UIFocusAnimationCoordinator) {
+    override func didUpdateFocus(in context: UIFocusUpdateContext, with coordinator: UIFocusAnimationCoordinator) {
         
         
         if let prev = context.previouslyFocusedView as? StockCell {
             
             
-            UIView.animateWithDuration(0.1, animations: { () -> Void in
+            UIView.animate(withDuration: 0.1, animations: { () -> Void in
                 
-                prev.center = CGPointMake(prev.center.x,prev.center.y + 100)
+                prev.center = CGPoint(x: prev.center.x,y: prev.center.y + 100)
             
 //                prev.frame.size = self.defaultSize
 //                prev.layer.shadowColor = UIColor.clearColor().CGColor
@@ -155,9 +155,9 @@ class CotizacionesViewController: UIViewController, UICollectionViewDataSource, 
         if let next = context.nextFocusedView as? StockCell {
             
             
-            UIView.animateWithDuration(0.1, animations: { () -> Void in
+            UIView.animate(withDuration: 0.1, animations: { () -> Void in
                 
-                next.center = CGPointMake(next.center.x,next.center.y - 100)
+                next.center = CGPoint(x: next.center.x,y: next.center.y - 100)
                 
 //                next.frame.size = self.focusSize
                 
@@ -171,16 +171,16 @@ class CotizacionesViewController: UIViewController, UICollectionViewDataSource, 
                 //                next.imageView.frame.size = self.focusSize
             })
             
-            collectionView.scrollEnabled = false
-            let indexPath = collectionView.indexPathForCell(next)!
-            collectionView.scrollToItemAtIndexPath(indexPath, atScrollPosition: .CenteredHorizontally, animated: true)
+            collectionView.isScrollEnabled = false
+            let indexPath = collectionView.indexPath(for: next)!
+            collectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
         }
         
         
         
     }
     
-    func tapped(gesture: UITapGestureRecognizer) {
+    func tapped(_ gesture: UITapGestureRecognizer) {
     
         
         if stocks.count > 0  {
@@ -189,13 +189,13 @@ class CotizacionesViewController: UIViewController, UICollectionViewDataSource, 
             
             if let theItem = itemTapped {
                 
-                let indexPath = self.collectionView.indexPathForCell(theItem)
+                let indexPath = self.collectionView.indexPath(for: theItem)
                 
                 if let theIndex = indexPath {
                     
                     print("celda pulsada: \(theIndex.row)")
                     
-                    self.performSegueWithIdentifier("goToStockDetailSegue", sender:stocks[theIndex.row])
+                    self.performSegue(withIdentifier: "goToStockDetailSegue", sender:stocks[theIndex.row])
                 }
                 
             }

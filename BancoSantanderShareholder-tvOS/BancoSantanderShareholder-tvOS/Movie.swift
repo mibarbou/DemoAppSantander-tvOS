@@ -34,10 +34,10 @@ class Movie {
             self.description = description
         }
         
-        if let thumbnail = movieDict["snippet"]?["thumbnails"]??["high"]??["url"] as? String {
-            
-            self.thumbnail = thumbnail
-        }
+//        if let thumbnail = movieDict["snippet"]?["thumbnails"]["high"]["url"] as! String {
+//            
+//            self.thumbnail = thumbnail
+//        }
     }
     
     

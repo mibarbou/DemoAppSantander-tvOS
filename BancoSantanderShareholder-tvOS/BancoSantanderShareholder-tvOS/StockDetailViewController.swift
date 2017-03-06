@@ -41,7 +41,7 @@ class StockDetailViewController: UIViewController {
    
     }
     
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
         
@@ -52,12 +52,12 @@ class StockDetailViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func setArrowsValues(value: String, percentage: String) -> (UIImage?,UIImage?) {
+    func setArrowsValues(_ value: String, percentage: String) -> (UIImage?,UIImage?) {
         
         var valueImage = UIImage()
         var percentageImage = UIImage()
         
-        if (value.containsString("-")) {
+        if (value.contains("-")) {
             
             valueImage = UIImage(named: "arrowDownIcon")!
             
@@ -67,7 +67,7 @@ class StockDetailViewController: UIViewController {
             
         }
         
-        if (percentage.containsString("-")) {
+        if (percentage.contains("-")) {
             
             percentageImage = UIImage(named: "arrowDownIcon")!
             

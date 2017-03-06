@@ -314,12 +314,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D00710561C6DC9D9008DE13C /* Build configuration list for PBXNativeTarget "BancoSantanderShareholder-tvOS" */;
 			buildPhases = (
-				90FB08A10EE0FBABCE414C42 /* Check Pods Manifest.lock */,
+				90FB08A10EE0FBABCE414C42 /* [CP] Check Pods Manifest.lock */,
 				D00710411C6DC9D9008DE13C /* Sources */,
 				D00710421C6DC9D9008DE13C /* Frameworks */,
 				D00710431C6DC9D9008DE13C /* Resources */,
-				F1680EEE07FCFA06EB221519 /* Embed Pods Frameworks */,
-				16DD164D5A8108C6E076FC13 /* Copy Pods Resources */,
+				F1680EEE07FCFA06EB221519 /* [CP] Embed Pods Frameworks */,
+				16DD164D5A8108C6E076FC13 /* [CP] Copy Pods Resources */,
 				D028C36B1C7D961E004614DC /* Embed App Extensions */,
 			);
 			buildRules = (
@@ -356,16 +356,18 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Grupo CMC";
 				TargetAttributes = {
 					D00710441C6DC9D9008DE13C = {
 						CreatedOnToolsVersion = 7.2.1;
 						DevelopmentTeam = C3XJQ6RL5C;
+						LastSwiftMigration = 0820;
 					};
 					D028C35D1C7D961D004614DC = {
 						CreatedOnToolsVersion = 7.2.1;
 						DevelopmentTeam = C3XJQ6RL5C;
+						LastSwiftMigration = 0820;
 					};
 				};
 			};
@@ -430,14 +432,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		16DD164D5A8108C6E076FC13 /* Copy Pods Resources */ = {
+		16DD164D5A8108C6E076FC13 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -445,29 +447,29 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BancoSantanderShareholder-tvOS/Pods-BancoSantanderShareholder-tvOS-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		90FB08A10EE0FBABCE414C42 /* Check Pods Manifest.lock */ = {
+		90FB08A10EE0FBABCE414C42 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		F1680EEE07FCFA06EB221519 /* Embed Pods Frameworks */ = {
+		F1680EEE07FCFA06EB221519 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -549,8 +551,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
@@ -593,8 +597,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
@@ -611,6 +617,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = appletvos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.1;
 				VALIDATE_PRODUCT = YES;
@@ -621,14 +628,15 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 55FB47626CB488F039591622 /* Pods-BancoSantanderShareholder-tvOS.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "BancoSantanderShareholder-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "es.grupocmc.BancoSantanderShareholder-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -636,14 +644,15 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B5E5EADA67A345C4E6A1D1EF /* Pods-BancoSantanderShareholder-tvOS.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "BancoSantanderShareholder-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "es.grupocmc.BancoSantanderShareholder-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -656,6 +665,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "es.grupocmc.BancoSantanderShareholder-tvOS.ShareholderShorcuts";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -668,6 +678,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "es.grupocmc.BancoSantanderShareholder-tvOS.ShareholderShorcuts";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

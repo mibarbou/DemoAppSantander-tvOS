@@ -23,12 +23,12 @@ class PdfDetailViewController: UIViewController {
         initializeGestureRecognizer()
         
     
-        scrollView.contentSize = CGSizeMake(1920, 1080)
+        scrollView.contentSize = CGSize(width: 1920, height: 1080)
          
         
     }
     
-    func panned(gesture: UIPanGestureRecognizer) {
+    func panned(_ gesture: UIPanGestureRecognizer) {
         
         print("PANNNNNN!!")
         
@@ -64,10 +64,10 @@ class PdfDetailViewController: UIViewController {
         self.view.addGestureRecognizer(panGesture)
     }
     
-    func recognizePanGesture(sender: UIPanGestureRecognizer)
+    func recognizePanGesture(_ sender: UIPanGestureRecognizer)
     {
         
-        let translate = sender.translationInView(self.imageView)
+        let translate = sender.translation(in: self.imageView)
         var newY = sender.view!.center.y + translate.y
         
         if(newY >= self.view.frame.height - 20) {
@@ -83,7 +83,7 @@ class PdfDetailViewController: UIViewController {
         
         print(newY)
         
-        sender.setTranslation(CGPointZero, inView: self.imageView)
+        sender.setTranslation(CGPoint.zero, in: self.imageView)
     }
 
     override func didReceiveMemoryWarning() {

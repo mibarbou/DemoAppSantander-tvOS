@@ -7,17 +7,16 @@
 //
 
 import UIKit
-import SWXMLHash
 import Kingfisher
-
+import SWXMLHash
 
 class SecondViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
 
     @IBOutlet weak var collectionView: UICollectionView!
     
-    let defaultSize = CGSizeMake(500, 500)
+    let defaultSize = CGSize(width: 500, height: 500)
     
-    let focusSize = CGSizeMake(600, 600)
+    let focusSize = CGSize(width: 600, height: 600)
     
     var images = [UIImage]()
     
@@ -38,11 +37,11 @@ class SecondViewController: UIViewController, UICollectionViewDataSource, UIColl
         // Dispose of any resources that can be recreated.
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if segue.identifier == "goToPdfSegue" {
             
-            if let pdfVC = segue.destinationViewController as? PdfViewController {
+            if let pdfVC = segue.destination as? PdfViewController {
                 
                 if let thePdf = sender {
                     
@@ -54,24 +53,24 @@ class SecondViewController: UIViewController, UICollectionViewDataSource, UIColl
     
     // MARK: UICollectionViewDataSource
     
-    func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
         
         return 1;
     }
     
-    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
         return pdfArray.count;
     }
     
-    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: IndexPath) -> CGSize {
         
-        return CGSizeMake(500, 600)
+        return CGSize(width: 500, height: 600)
     }
     
-    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        if let cell = collectionView.dequeueReusableCellWithReuseIdentifier("DocumentCell", forIndexPath: indexPath) as? DocumentCell {
+        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "DocumentCell", for: indexPath) as? DocumentCell {
             
             cell.layer.cornerRadius = 10
 
@@ -85,9 +84,9 @@ class SecondViewController: UIViewController, UICollectionViewDataSource, UIColl
             
             if pdf.icon != "" {
                 
-                if let imageURL = NSURL(string: pdf.icon) {
-                    
-                    cell.imageView.kf_setImageWithURL(imageURL, placeholderImage: UIImage(named: "santander.jpg"))
+                if let imageURL = URL(string: pdf.icon) {
+                                        
+                    cell.imageView.kf.setImage(with: imageURL, placeholder: UIImage(named: "santander.jpg"), options: nil, progressBlock: nil, completionHandler: nil)
                 }
                 
             } else {
@@ -96,12 +95,12 @@ class SecondViewController: UIViewController, UICollectionViewDataSource, UIColl
             }
                 
             
-            cell.imageView.contentMode = .ScaleAspectFit
+            cell.imageView.contentMode = .scaleAspectFit
            
             if cell.gestureRecognizers?.count == nil {
              
                 let tap = UITapGestureRecognizer(target: self, action: #selector(SecondViewController.tapped(_:)) )
-                tap.allowedPressTypes = [NSNumber(integer: UIPressType.Select.rawValue)]
+                tap.allowedPressTypes = [NSNumber(value: UIPressType.select.rawValue as Int)]
                 cell.addGestureRecognizer(tap)
                 
             }
@@ -117,11 +116,11 @@ class SecondViewController: UIViewController, UICollectionViewDataSource, UIColl
     
     // MARK: UICollectionViewDelegate
     
-    override func didUpdateFocusInContext(context: UIFocusUpdateContext, withAnimationCoordinator coordinator: UIFocusAnimationCoordinator) {
+    override func didUpdateFocus(in context: UIFocusUpdateContext, with coordinator: UIFocusAnimationCoordinator) {
         
         if let prev = context.previouslyFocusedView as? DocumentCell {
             
-            UIView.animateWithDuration(0.1, animations: { () -> Void in
+            UIView.animate(withDuration: 0.1, animations: { () -> Void in
                 
                 prev.imageView.adjustsImageWhenAncestorFocused = false
 
@@ -132,7 +131,7 @@ class SecondViewController: UIViewController, UICollectionViewDataSource, UIColl
         
         if let next = context.nextFocusedView as? DocumentCell {
             
-            UIView.animateWithDuration(0.1, animations: { () -> Void in
+            UIView.animate(withDuration: 0.1, animations: { () -> Void in
                 
                 next.imageView.adjustsImageWhenAncestorFocused = true
 
@@ -144,7 +143,7 @@ class SecondViewController: UIViewController, UICollectionViewDataSource, UIColl
     }
 
     
-    func tapped(gesture: UITapGestureRecognizer) {
+    func tapped(_ gesture: UITapGestureRecognizer) {
         
         if pdfArray.count > 0  {
             
@@ -152,13 +151,13 @@ class SecondViewController: UIViewController, UICollectionViewDataSource, UIColl
             
             if let theItem = itemTapped {
             
-                let indexPath = self.collectionView.indexPathForCell(theItem)
+                let indexPath = self.collectionView.indexPath(for: theItem)
                 
                 if let theIndex = indexPath {
                     
                     print("celda pulsada: \(theIndex.row)")
                     
-                    self.performSegueWithIdentifier("goToPdfSegue", sender:pdfArray[theIndex.row])
+                    self.performSegue(withIdentifier: "goToPdfSegue", sender:pdfArray[theIndex.row])
                 }
                 
             }
@@ -171,11 +170,11 @@ class SecondViewController: UIViewController, UICollectionViewDataSource, UIColl
     
     func getXmlFile() {
         
-        let path = NSBundle.mainBundle().pathForResource("documentos_pdf", ofType: "xml")
+        let path = Bundle.main.path(forResource: "documentos_pdf", ofType: "xml")
         
         if path != nil {
             
-            let data: NSData? = NSData(contentsOfFile:path!)
+            let data: Data? = try? Data(contentsOf: URL(fileURLWithPath: path!))
             
             if let fileData = data {
                 
@@ -222,33 +221,33 @@ class SecondViewController: UIViewController, UICollectionViewDataSource, UIColl
     }
     
     
-    func getImagesFromURL(url: NSURL) -> Array<UIImage>? {
+    func getImagesFromURL(_ url: URL) -> Array<UIImage>? {
         
         var images = [UIImage]()
         
-        guard let document = CGPDFDocumentCreateWithURL(url) else { return nil }
+        guard let document = CGPDFDocument(url as NSURL) else { return nil }
         
-        let pdfPages = CGPDFDocumentGetNumberOfPages(document);
+        let pdfPages = document.numberOfPages;
         
         for i in 1...pdfPages{
             
-            guard let page = CGPDFDocumentGetPage(document, i) else { return nil }
+            guard let page = document.page(at: i) else { return nil }
             
-            let pageRect = CGPDFPageGetBoxRect(page, .MediaBox)
+            let pageRect = page.getBoxRect(.mediaBox)
             
             UIGraphicsBeginImageContextWithOptions(pageRect.size, true, 0)
             let context = UIGraphicsGetCurrentContext()
             
-            CGContextSetFillColorWithColor(context, UIColor.whiteColor().CGColor)
-            CGContextFillRect(context,pageRect)
+            context?.setFillColor(UIColor.white.cgColor)
+            context?.fill(pageRect)
             
-            CGContextTranslateCTM(context, 0.0, pageRect.size.height);
-            CGContextScaleCTM(context, 1.0, -1.0);
+            context?.translateBy(x: 0.0, y: pageRect.size.height);
+            context?.scaleBy(x: 1.0, y: -1.0);
             
-            CGContextDrawPDFPage(context, page);
+            context?.drawPDFPage(page);
             let img = UIGraphicsGetImageFromCurrentImageContext()
             
-            images.append(img)
+            images.append(img!)
             
         }
         

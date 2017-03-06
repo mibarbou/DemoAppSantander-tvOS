@@ -16,7 +16,7 @@ class MovieCell: UICollectionViewCell {
     
     var movie : Movie?
     
-    func configureCell(movie: Movie) {
+    func configureCell(_ movie: Movie) {
         
         titleLabel.text = movie.title
         

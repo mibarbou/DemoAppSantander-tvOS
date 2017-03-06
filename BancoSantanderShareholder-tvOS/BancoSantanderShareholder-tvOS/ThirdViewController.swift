@@ -28,17 +28,17 @@ class ThirdViewController: UIViewController, UITableViewDataSource, UITableViewD
     
     // MARK: - UITableViewDataSource
     
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    func numberOfSections(in tableView: UITableView) -> Int {
         
         return 1
     }
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         return 4
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = UITableViewCell()
         
@@ -61,7 +61,7 @@ class ThirdViewController: UIViewController, UITableViewDataSource, UITableViewD
         
     }
     
-    func tableView(tableView: UITableView, didUpdateFocusInContext context: UITableViewFocusUpdateContext, withAnimationCoordinator coordinator: UIFocusAnimationCoordinator) {
+    func tableView(_ tableView: UITableView, didUpdateFocusIn context: UITableViewFocusUpdateContext, with coordinator: UIFocusAnimationCoordinator) {
         
       
         //this gives you the indexpath of the focused cell
@@ -77,32 +77,32 @@ class ThirdViewController: UIViewController, UITableViewDataSource, UITableViewD
         }
     }
     
-    override func didUpdateFocusInContext(context: UIFocusUpdateContext, withAnimationCoordinator coordinator: UIFocusAnimationCoordinator) {
+    override func didUpdateFocus(in context: UIFocusUpdateContext, with coordinator: UIFocusAnimationCoordinator) {
      
        
     }
     
     
-    func changeContainer(index: Int) {
+    func changeContainer(_ index: Int) {
         
         let viewController : UIViewController?
         
         switch index {
             
         case 0:
-            viewController = self.storyboard?.instantiateViewControllerWithIdentifier("ControllerAccion")
+            viewController = self.storyboard?.instantiateViewController(withIdentifier: "ControllerAccion")
             setChildControllerInContainer(viewController)
         case 1:
-            viewController = self.storyboard?.instantiateViewControllerWithIdentifier("ControllerDividendos")
+            viewController = self.storyboard?.instantiateViewController(withIdentifier: "ControllerDividendos")
             setChildControllerInContainer(viewController)
         case 2:
-            viewController = self.storyboard?.instantiateViewControllerWithIdentifier("ControllerAccionarado")
+            viewController = self.storyboard?.instantiateViewController(withIdentifier: "ControllerAccionarado")
             setChildControllerInContainer(viewController)
         case 3:
-            viewController = self.storyboard?.instantiateViewControllerWithIdentifier("ControllerResultados")
+            viewController = self.storyboard?.instantiateViewController(withIdentifier: "ControllerResultados")
             setChildControllerInContainer(viewController)
         default:
-            viewController = self.storyboard?.instantiateViewControllerWithIdentifier("ControllerInicio")
+            viewController = self.storyboard?.instantiateViewController(withIdentifier: "ControllerInicio")
             setChildControllerInContainer(viewController)
             break
             
@@ -112,7 +112,7 @@ class ThirdViewController: UIViewController, UITableViewDataSource, UITableViewD
         
     }
     
-    func setChildControllerInContainer(viewController:UIViewController?){
+    func setChildControllerInContainer(_ viewController:UIViewController?){
         
         if self.childViewControllers.count > 0 {
             
@@ -120,7 +120,7 @@ class ThirdViewController: UIViewController, UITableViewDataSource, UITableViewD
             
             if let theOldController = oldController {
                 
-                theOldController.willMoveToParentViewController(nil)
+                theOldController.willMove(toParentViewController: nil)
                 theOldController.view.removeFromSuperview()
             }
         }
@@ -129,7 +129,7 @@ class ThirdViewController: UIViewController, UITableViewDataSource, UITableViewD
             
             self.addChildViewController(theViewController)
             self.containerView.addSubview(theViewController.view)
-            theViewController.didMoveToParentViewController(self)
+            theViewController.didMove(toParentViewController: self)
             
         }
         

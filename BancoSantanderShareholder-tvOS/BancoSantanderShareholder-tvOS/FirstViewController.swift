@@ -20,11 +20,11 @@ class FirstViewController: UIViewController, UICollectionViewDataSource, UIColle
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
 
     
-    let defaultSize = CGSizeMake(350, 220)
-    let focusSize = CGSizeMake(420, 264)
+    let defaultSize = CGSize(width: 350, height: 220)
+    let focusSize = CGSize(width: 420, height: 264)
     
-    let defaultCellSize = CGSizeMake(540, 600)
-    let focusCellSize = CGSizeMake(648, 720)
+    let defaultCellSize = CGSize(width: 540, height: 600)
+    let focusCellSize = CGSize(width: 648, height: 720)
     
     var movies = [Movie]()
     
@@ -45,11 +45,11 @@ class FirstViewController: UIViewController, UICollectionViewDataSource, UIColle
         // Dispose of any resources that can be recreated.
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if segue.identifier == "goToVideoSegue" {
             
-            if let movieVC = segue.destinationViewController as? VideoViewController {
+            if let movieVC = segue.destination as? VideoViewController {
                 
                 if let theMovie = sender {
                 
@@ -62,24 +62,24 @@ class FirstViewController: UIViewController, UICollectionViewDataSource, UIColle
     
     // MARK: UICollectionViewDataSource
     
-    func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
         
         return 1
     }
  
-    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
         return movies.count;
     }
     
-    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: IndexPath) -> CGSize {
         
-        return CGSizeMake(540, 600)
+        return CGSize(width: 540, height: 600)
     }
     
-    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        if let cell = collectionView.dequeueReusableCellWithReuseIdentifier("MovieCell", forIndexPath: indexPath) as? MovieCell {
+        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MovieCell", for: indexPath) as? MovieCell {
             
 //            let movie = movies[indexPath.row]
 //            cell.configureCell(movie)
@@ -92,11 +92,11 @@ class FirstViewController: UIViewController, UICollectionViewDataSource, UIColle
             cell.movie = movie
             cell.titleLabel.text = movie.title
             cell.descriptionLabel.text = movie.description
-            cell.descriptionLabel.hidden = true
+            cell.descriptionLabel.isHidden = true
             
-            if let imageURL = NSURL(string: movie.thumbnail) {
+            if let imageURL = URL(string: movie.thumbnail) {
             
-                cell.imageView.kf_setImageWithURL(imageURL, placeholderImage: UIImage(named: "santander.jpg"))
+                cell.imageView.kf.setImage(with: imageURL, placeholder: UIImage(named: "santander.jpg"), options: nil, progressBlock: nil, completionHandler: nil)
             }
             
 
@@ -105,7 +105,7 @@ class FirstViewController: UIViewController, UICollectionViewDataSource, UIColle
             if cell.gestureRecognizers?.count == nil {
                 
                 let tap = UITapGestureRecognizer(target: self, action: #selector(FirstViewController.tapped(_:)))
-                tap.allowedPressTypes = [NSNumber(integer: UIPressType.Select.rawValue)]
+                tap.allowedPressTypes = [NSNumber(value: UIPressType.select.rawValue as Int)]
                 cell.addGestureRecognizer(tap)
                 
             }
@@ -122,15 +122,15 @@ class FirstViewController: UIViewController, UICollectionViewDataSource, UIColle
     // MARK: UICollectionViewDelegate
 
     
-    override func didUpdateFocusInContext(context: UIFocusUpdateContext, withAnimationCoordinator coordinator: UIFocusAnimationCoordinator) {
+    override func didUpdateFocus(in context: UIFocusUpdateContext, with coordinator: UIFocusAnimationCoordinator) {
         
         if let prev = context.previouslyFocusedView as? MovieCell {
             
             
-            UIView.animateWithDuration(0.1, animations: { () -> Void in
+            UIView.animate(withDuration: 0.1, animations: { () -> Void in
                 
                 prev.imageView.adjustsImageWhenAncestorFocused = false
-                prev.descriptionLabel.hidden = true
+                prev.descriptionLabel.isHidden = true
 
 
             })
@@ -139,10 +139,10 @@ class FirstViewController: UIViewController, UICollectionViewDataSource, UIColle
         if let next = context.nextFocusedView as? MovieCell {
             
             
-            UIView.animateWithDuration(0.1, animations: { () -> Void in
+            UIView.animate(withDuration: 0.1, animations: { () -> Void in
                 
                 next.imageView.adjustsImageWhenAncestorFocused = true
-                next.descriptionLabel.hidden = false
+                next.descriptionLabel.isHidden = false
                 
 
             })
@@ -153,7 +153,7 @@ class FirstViewController: UIViewController, UICollectionViewDataSource, UIColle
     // MARK: Private functions
     
     
-    func tapped(gesture: UITapGestureRecognizer) {
+    func tapped(_ gesture: UITapGestureRecognizer) {
         
         if let cell = gesture.view as? MovieCell {
             // Load the next view controller and pass in the movie
@@ -161,40 +161,40 @@ class FirstViewController: UIViewController, UICollectionViewDataSource, UIColle
             
             if let theMovie = cell.movie {
                 
-                self.performSegueWithIdentifier("goToVideoSegue", sender: theMovie)
+                self.performSegue(withIdentifier: "goToVideoSegue", sender: theMovie)
 
             }
             
         }
     }
     
-    func getImagesFromURL(url: NSURL) -> Array<UIImage>? {
+    func getImagesFromURL(_ url: URL) -> Array<UIImage>? {
         
         var images = [UIImage]()
         
-        guard let document = CGPDFDocumentCreateWithURL(url) else { return nil }
+        guard let document = CGPDFDocument(url as NSURL) else { return nil }
         
-        let pdfPages = CGPDFDocumentGetNumberOfPages(document);
+        let pdfPages = document.numberOfPages;
         
         for i in 1...pdfPages {
         
-            guard let page = CGPDFDocumentGetPage(document, i) else { return nil }
+            guard let page = document.page(at: i) else { return nil }
         
-            let pageRect = CGPDFPageGetBoxRect(page, .MediaBox)
+            let pageRect = page.getBoxRect(.mediaBox)
             
             UIGraphicsBeginImageContextWithOptions(pageRect.size, true, 0)
             let context = UIGraphicsGetCurrentContext()
             
-            CGContextSetFillColorWithColor(context, UIColor.whiteColor().CGColor)
-            CGContextFillRect(context,pageRect)
+            context?.setFillColor(UIColor.white.cgColor)
+            context?.fill(pageRect)
             
-            CGContextTranslateCTM(context, 0.0, pageRect.size.height);
-            CGContextScaleCTM(context, 1.0, -1.0);
+            context?.translateBy(x: 0.0, y: pageRect.size.height);
+            context?.scaleBy(x: 1.0, y: -1.0);
             
-            CGContextDrawPDFPage(context, page);
+            context?.drawPDFPage(page);
             let img = UIGraphicsGetImageFromCurrentImageContext()
             
-            images.append(img)
+            images.append(img!)
             
         }
         
@@ -207,26 +207,20 @@ class FirstViewController: UIViewController, UICollectionViewDataSource, UIColle
         
         self.activityIndicator.startAnimating()
         
-        Alamofire.request(.GET, "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet%2CcontentDetails&maxResults=50&playlistId=UUL8xzwgqyOr4748Efwe_dFw&key=AIzaSyALEEpQoXgEfav7Jb-1qj7e8fiU30V9nsw").response { (request, response, data, error) -> Void in
+        Alamofire.request("https://www.googleapis.com/youtube/v3/playlistItems?part=snippet%2CcontentDetails&maxResults=50&playlistId=UUL8xzwgqyOr4748Efwe_dFw&key=AIzaSyALEEpQoXgEfav7Jb-1qj7e8fiU30V9nsw", method: .get, parameters: nil, encoding: URLEncoding.default, headers: nil).responseJSON { (response) in
             
-            
-            if error != nil {
-                
-                print(error.debugDescription)
-                self.activityIndicator.stopAnimating()
-                
-            } else {
+            if response.result.isSuccess {
                 
                 do {
                     
-                    let dict = try NSJSONSerialization.JSONObjectWithData(data!, options: .AllowFragments) as? Dictionary<String, AnyObject>
+                    let dict = try JSONSerialization.jsonObject(with: response.data!, options: .allowFragments) as? Dictionary<String, AnyObject>
                     
                     if let results = dict!["items"] as? [Dictionary<String, AnyObject>]{
                         
                         print(results)
                         
                         for obj in results {
-
+                            
                             let movie = Movie(movieDict: obj)
                             self.movies.append(movie)
                         }
@@ -242,7 +236,6 @@ class FirstViewController: UIViewController, UICollectionViewDataSource, UIColle
                     
                 }
             }
-            
         }
         
     }

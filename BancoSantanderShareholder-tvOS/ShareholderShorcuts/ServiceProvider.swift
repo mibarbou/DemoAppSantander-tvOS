@@ -19,7 +19,7 @@ class ServiceProvider: NSObject, TVTopShelfProvider {
 
     var topShelfStyle: TVTopShelfContentStyle {
         // Return desired Top Shelf style.
-        return .Sectioned
+        return .sectioned
     }
 
     var topShelfItems: [TVContentItem] {
@@ -43,29 +43,29 @@ class ServiceProvider: NSObject, TVTopShelfProvider {
             
             switch i {
             case 0:
-                contentItem.imageURL = NSBundle.mainBundle().URLForResource("videos", withExtension: "png")
+                contentItem.imageURL = Bundle.main.url(forResource: "videos", withExtension: "png")
                 contentItem.imageShape = .HDTV
                 contentItem.title = "Vídeos"
-                contentItem.displayURL = NSURL(string: "SantanderShareholder://section/\(i)");
-                contentItem.playURL = NSURL(string: "VideoApp://video/\(i)");
+                contentItem.displayURL = URL(string: "SantanderShareholder://section/\(i)");
+                contentItem.playURL = URL(string: "VideoApp://video/\(i)");
             case 1:
-                contentItem.imageURL = NSBundle.mainBundle().URLForResource("documentos", withExtension: "png")
+                contentItem.imageURL = Bundle.main.url(forResource: "documentos", withExtension: "png")
                 contentItem.imageShape = .HDTV
                 contentItem.title = "Documentos"
-                contentItem.displayURL = NSURL(string: "SantanderShareholder://section/\(i)");
-                contentItem.playURL = NSURL(string: "VideoApp://video/\(i)");
+                contentItem.displayURL = URL(string: "SantanderShareholder://section/\(i)");
+                contentItem.playURL = URL(string: "VideoApp://video/\(i)");
             case 2:
-                contentItem.imageURL = NSBundle.mainBundle().URLForResource("TopShelf", withExtension: "png")
+                contentItem.imageURL = Bundle.main.url(forResource: "TopShelf", withExtension: "png")
                 contentItem.imageShape = .HDTV
                 contentItem.title = "Accionistas"
-                contentItem.displayURL = NSURL(string: "SantanderShareholder://section/\(i)");
-                contentItem.playURL = NSURL(string: "VideoApp://video/\(i)");
+                contentItem.displayURL = URL(string: "SantanderShareholder://section/\(i)");
+                contentItem.playURL = URL(string: "VideoApp://video/\(i)");
             case 3:
-                contentItem.imageURL = NSBundle.mainBundle().URLForResource("cotizaciones", withExtension: "png")
+                contentItem.imageURL = Bundle.main.url(forResource: "cotizaciones", withExtension: "png")
                 contentItem.imageShape = .HDTV
                 contentItem.title = "Cotizaciones"
-                contentItem.displayURL = NSURL(string: "SantanderShareholder://section/\(i)");
-                contentItem.playURL = NSURL(string: "VideoApp://video/\(i)");
+                contentItem.displayURL = URL(string: "SantanderShareholder://section/\(i)");
+                contentItem.playURL = URL(string: "VideoApp://video/\(i)");
             default:
                 break
                 
